@@ -1,79 +1,680 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge; chrome=1">
+    <meta name="keywords" content="众筹,在校学生众筹,校园众筹,大学生,电商,社交,sns,创业,就业,创客,投资,支持,项目,学生创业,愿望">
+    <meta name="description" content="奇异点（qiyidea.com）——在校学生创业平台，首家利用新概念模式（筹资金、找伙伴、谈想法、搞活动）为在校学生解决社会上创业问题的综合性平台网站。">
+    <meta name="author" content="qiyi.com">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Qiyidea : 奇异点2.0">
+    <!-- Note there is no responsive meta tag here -->
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="icon" href="favicon.ico">
 
-    <title>Qiyidea</title>
-  </head>
+    <title>奇异点・qiyidea.com | 在校学生创业平台</title>
 
-  <body>
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/CDQuantum/qiyidea">View on GitHub</a>
+    <!-- Custom styles for this template -->
+    <link href="css/non-responsive.css" rel="stylesheet">
+    <!--<link href="css/sticky-footer-navbar.css" rel="stylesheet">-->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+   
 
-          <h1 id="project_title">Qiyidea</h1>
-          <h2 id="project_tagline">奇异点2.0</h2>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/assets/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/assets/ie-emulation-modes-warning.js"></script>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/CDQuantum/qiyidea/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/CDQuantum/qiyidea/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+    <!--[if lt IE 9]>
+      <script src="js/assets/html5shiv.min.js"></script>
+      <script src="js/assets/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Static  navbar -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">Project name</a>-->
+                <a class="navbar-brand navbar-brand-logo" href="#">
+                    <img alt="奇异点・qiyidea.com" src="img/qiyidea_logo.png">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="list.html">浏览项目</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">发起项目 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">筹资金</a></li>
+                            <li><a href="#">筹实物</a></li>
+                            <li><a href="#">发现小伙伴</a></li>
+                            <!--<li class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>-->
+                        </ul>
+                    </li>
+                    <li><a href="#contact">帮助中心</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="admin/user_signin.html">注册</a></li>
+                    <li><a href="admin/home.html">登录</a></li>
+                    <li><a href="#">第三方登录</a></li>
+                </ul>
+                <div class="navbar-form navbar-right navbar-form-input">
+                    <form class="navbar-left" role="form" action="index.html">
+                        <div class="input-group">
+                            <input type="text" placeholder="发现更多金点子" class="form-control  input-sm">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success btn-sm" type="button">查询</button>
+                            </span>
+                        </div>
+                    </form>
+
+                </div>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="img/banner/tour_bg.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>年轻就应该奋斗</h1>
+                        <p>每一个奇异点的学生都是项目经理，他们规划项目并努力实现。<br>然后大声呐喊：青春没有回头，机会不会驻留！<br>这一刻，我能做到！！</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">发起你的愿望</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/banner/carousel3_bg.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <!--<h1>Example headline.</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/banner/carousel2_bg.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <!--<h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">了解更多</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/banner/carousel1_bg.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <!--<h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>-->
+    </div><!-- /.carousel -->
+    <!-- Begin page content -->
+    <div class="container">
+        <div class=" clearfix mtmb15"></div>
+        <h2 class="bs-docs-featurette-title text-center">为所有学生提供一个孵化梦想的平台。</h2>
+        <p class="lead text-center"> 全部  筹资金  筹实物  找伙伴 搞活动   最新  最热</p>
+        <!--<hr class="half-rule">-->
+
+        <div class="row featurette" style="margin:0; padding:20px 0 0 0;">
+            <div class="pull-left mp0" >
+                <h3 class="mp0">企业项目 </h3>
+            </div>
+            <span class="pull-right mp0">
+                <a href="list.html">更多</a>
+            </span>
+        </div>
+        <hr class="clearfix mt5mb15">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="project-view.html"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/5.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="project-view.html" title="有梦想，就有新世界——扶持创业人计划">有梦想，就有新世界——扶持创业人计划</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="project-view.html">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>60%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥1,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>16天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="project-view-team.html"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/6.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="BelayCords - Reversible USB Charging Cords iPhone & Android">BelayCords - Reversible USB Charging Cords iPhone…</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="#">Made In College</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                            <span class="sr-only">10% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>10%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥1,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>10天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/7.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="一花一草一清皂，让我们一起“皂”化时光">一花一草一清皂，让我们一起“皂”化时光</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="#">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                            <span class="sr-only">100% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>110%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥5,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>1天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/8.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="用相机记录下你的青涩年华">用相机记录下你的青涩年华</a></h5>
+                        <label class="small"> 项目经理： <strong><a href="#">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                            <span class="sr-only">0% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>0%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥0</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>20天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/9.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="有梦想，就有新世界——扶持创业人计划">有梦想，就有新世界——扶持创业人计划</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="#">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>60%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥1,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>16天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/10.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="BelayCords - Reversible USB Charging Cords iPhone & Android">BelayCords - Reversible USB Charging Cords iPhone…</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="#">Made In College</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                            <span class="sr-only">10% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>10%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥1,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>10天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/11.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="一花一草一清皂，让我们一起“皂”化时光">一花一草一清皂，让我们一起“皂”化时光</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="#">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                            <span class="sr-only">100% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>110%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥5,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>1天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/12.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="用相机记录下你的青涩年华">用相机记录下你的青涩年华</a></h5>
+                        <label class="small"> 项目经理： <strong><a href="#">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                            <span class="sr-only">0% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>0%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥0</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>20天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix mt5mb15"></div>
+        <div class="row featurette mp0" >
+            <div class="pull-left mp0">
+                <h3 class="mp0">个人项目 </h3>
+            </div>
+            <span class="pull-right mp0">
+                <a href="list.html">更多</a>
+            </span>
+
+        </div>
+        <hr class="clearfix mt5mb15">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/1.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="有梦想，就有新世界——扶持创业人计划">有梦想，就有新世界——扶持创业人计划</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="#">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>60%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥1,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>16天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/2.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="BelayCords - Reversible USB Charging Cords iPhone & Android">BelayCords - Reversible USB Charging Cords iPhone…</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="#">Made In College</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                            <span class="sr-only">10% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>10%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥1,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>10天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/3.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="一花一草一清皂，让我们一起“皂”化时光">一花一草一清皂，让我们一起“皂”化时光</a> </h5>
+                        <label class="small"> 项目经理： <strong><a href="#">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                            <span class="sr-only">100% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>110%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥5,247</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>1天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/4.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="用相机记录下你的青涩年华">用相机记录下你的青涩年华</a></h5>
+                        <label class="small"> 项目经理： <strong><a href="#">王二者一</a></strong></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                            <span class="sr-only">0% 完成</span>
+                        </div>
+                    </div>
+                    <div class="item-rate clearfix small">
+                        <span class="rate1">
+                            <em>0%</em><br>已达
+                        </span>
+                        <span class="rate2">
+                            <em>￥0</em><br>已筹资
+                        </span>
+                        <span class="rate3">
+                            <em>20天</em><br>剩余时间
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix mt5mb15"></div>
+        <div class="row featurette mp0">
+            <div class="pull-left mp0">
+                <h3 class="mp0">风云人物 </h3>
+            </div>
+            <span class="pull-right mp0" >
+                <a href="videoVerticalList_videoSelect.action">更多</a>
+            </span>
+
+        </div>
+        <hr class="clearfix mt5mb15" >
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="简介内容，长度200字以内" title="简介内容，长度200字以内" src="img/project/p1.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="当小船遇见小舟——追梦CEO对话只为她设计CEO">当小船遇见小舟——追梦CEO对话只为她设计CEO</a> </h5>
+                        <p class="intro">
+                            这是summer崭新的365天，同时也是一部创业实录，你将看到因你的支持，我们的努力，而产生的力量。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/p2.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="有梦想，就有新世界——扶持创业人计划">平面设计师--天右</a> </h5>
+                        <p class="intro">
+                            身为一名设计师，一定要有自己的设计灵魂
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/p3.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="有梦想，就有新世界——扶持创业人计划">有梦想，就有新世界——英语记忆大师周铁夫</a> </h5>
+                        <p class="intro">
+                            The high resolution flame fractals of Dr. Bob Jansen are not just mathematical monsters: they could be serious fine art.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img alt="项目简介内容，长度200字以内" title="项目简介内容，长度200字以内" src="img/project/p4.jpg"></a>
+                    <div class="caption">
+                        <h5><a href="#" title="有梦想，就有新世界——扶持创业人计划">有梦想，就有新世界——皮影达人小罗</a> </h5>
+                        <p class="intro">
+
+                            我想找到志同道合的小伙伴，一起做点很具体且有趣的事。
+                            而这些事情都和中国一种非物质文化遗产——皮影戏有关
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div class=" partner">
+        <div class="container">
+            <h1>如何成为一个金牌项目经理</h1>
+            <p>Each and every Kickstarter project is the independent creation of someone like you.<br />
+                Want to know more about how projects happen, or start your own?
+            </p>
+            <p><a class="btn btn-success btn-lg" role="button">了解更多</a></p>
+        </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Qiyidea maintained by <a href="https://github.com/CDQuantum">CDQuantum</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <!--<div class="partner">
+        <ul class="list-inline">
+            <li>
+                <a href="http://www.chuangxin.com/" target="_blank"><img src="img/index/chuangxin.png" alt="创新工场"></a>
+            </li>
+            <li>
+                <a href="http://www.segmentfault.com/" target="_blank"><img src="img/index/segmentfault.png" alt="SegmentFault"></a>
+            </li>
+
+            <li><a href="http://www.chekucafe.com/" target="_blank"><img src="img/index/cheku.png" alt="车库咖啡"></a></li>
+            <li><a href="http://www.innospace.com.cn/" target="_blank"><img src="img/index/innospace.png" alt="InnoSapce"></a></li>
+            <li><a href="http://www.ucloud.cn/" target="_blank"><img src="img/index/ucloud.png" alt="UCloud"></a></li>
+            <li><a href="http://www.sinacloud.com/" target="_blank"><img src="img/index/sinacloud.png" alt="新浪云计算"></a></li>
+        </ul>
+    </div>-->
+
+    <div class="footer">
+        <div class="footer-info">
+            <div class="wrapper">
+                <div class="footer-info-widget footer-info-widget-links">
+                    <div class="footer-info-widget-container">
+                        <h3>众筹项目</h3>
+                        <ul class="list-inline">
+                            <li><a href="http://www.qiyidea.com/" target="_blank">企业项目</a></li>
+                            <li><a href="http://www.qiyidea.com/" target="_blank">个人项目</a></li>
+                            <li>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            <li><a href="http://www.qiyidea.com/" target="_blank">优秀团队</a></li>
+                            <li><a href="http://www.qiyidea.com/" target="_blank">金牌个人</a></li>
+                            <li>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            <li><a href="http://www.qiyidea.cn/" target="_blank">筹资金</a></li>
+                            <li><a href="http://www.qiyidea.com/" target="_blank">筹实物</a></li>
+                            <li><a href="http://www.qiyidea.com/" target="_blank">找伙伴</a></li>
+                            
+                        </ul>
+                    </div>
+                </div><div class="footer-info-widget footer-info-widget-cs">
+                    <div class="footer-info-widget-container">
+                        <h3>客户服务</h3>
+                        <ul class="list-unstyled">
+                            <li>人工服务：<span class="highlight">028 - 12345678</span></li>
+                            <li>仲裁邮箱：<span class="highlight">info@qiyidea.com</span></li>
+                            <li>QQ：<span class="highlight">xxxxxxxx</span></li>
+                        </ul><a href="/faq.html" class="btn btn-other">常见问题</a>
+                    </div>
+                </div>
+                <div class="footer-info-widget footer-info-widget-about">
+                    <div class="footer-info-widget-container">
+                        <h3>关于我们</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="/about.html">公司简介</a></li>
+                            <li><a href="/contact.html">联系我们</a></li>
+                            <li><a href="/jobs.html">加入我们</a><a href="/jobs.html" class="hiring-footer"></a></li>
+                            <li><a href="/tos.html">服务条款</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-info-widget footer-info-widget-follow">
+                    <div class="footer-info-widget-container">
+                        <h3>关注我们</h3>
+                        <div><img src="img/index/qiyidea_icon.png" alt="奇异点微信"></div>
+                        <!--<ul class="list-inline">
+                            <li><a href="#"><i class="upicon upicon-weibo"></i></a></li>
+                            <li><a href="#"><i class="upicon upicon-github"></i></a></li>
+                            <li><a href="#"><i class="upicon upicon-sf"></i></a></li>
+                        </ul>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <div class="media">
+                
+                <div class="media-body">
+                    &copy;
+                    <script type="text/javascript">
+                        var d = new Date();
+                        document.write(d.getFullYear());</script> Qiyidea.com, All Rights Reserved. 奇异点 版权所有  &nbsp;&nbsp;  蜀ICP备xxxxxx号
+                </div>
+            </div>
+             
+        </div>
+        <!--<div class="container">
+            <p class="text-muted">
+                &copy;
+                <script type="text/javascript">
+                    var d = new Date();
+                    document.write(d.getFullYear());</script>   成都昆腾软件开发有限公司 版权所有  Quantum. Co., Ltd   蜀ICP备xxxxxx号
+            </p>
+        </div>-->
     </div>
 
-    
-
-  </body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/assets/ie10-viewport-bug-workaround.js"></script>
+</body>
 </html>

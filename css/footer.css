@@ -1,0 +1,5 @@
+﻿#footer{margin:20px 0 0 0;text-align:center;clear:both;font-size:11px}
+#footer ul>li{display:inline;padding:0 5px;border-right:1px solid #ccc;position:relative}
+#footer ul>li.undisclosed{display:none}
+#footer ul>li:last-child{border-right:0}
+#footer a,#footer p{display:inline-block;height:13px;line-height:13px;font-size:11px;border-right:0 solid #999}

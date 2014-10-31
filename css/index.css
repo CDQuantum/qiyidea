@@ -1,0 +1,182 @@
+﻿/* index list   */
+.thumbnail {
+padding:0;
+}
+.thumbnail>.caption>p.intro {
+    overflow:hidden;
+    max-height:100px;
+    height:100px;
+}
+.thumbnail> a> img {
+    height: 140px; width: 220px; display: block;
+}
+.thumbnail > .progress,.project-view-status>.progress {
+    margin-bottom:0px; border-radius:5; height:5px;
+}
+.project-view-status > .rener-progress {
+    margin-left:15px;
+    margin-right:15px;
+}
+.project-view-status > hr {
+margin-top:10px;
+margin-bottom:10px;
+border:none;
+border-bottom:1px dashed #e4e4e4;
+}
+.project-view-status > .progress {
+    height:20px;
+}
+.thumbnail > .progress>.progress-bar,.project-view-status>.progress>.progress-bar {
+    background-color:#62D8FF;
+}
+
+
+.caption h5 {
+    min-height:30px;
+    overflow:hidden;
+    max-height:30px;
+    height:30px;
+}
+.caption h5 a {
+    color:#333;
+}
+    .caption h5 a:hover {
+        text-decoration:none;
+        color:#FF6699; 
+    }
+.item-rate {
+padding: 8px 10px 15px 10px;
+line-height: 18px;
+color: #A4A4A4;
+position: relative;
+}
+
+.rate1 {
+display: block;
+float: left;
+text-align: left;
+width: 50px;
+}
+.rate2 {
+display: block;
+float: left;
+text-align: center;
+width: 76px;
+}
+.rate3 {
+display: block;
+float: right;
+text-align: right;
+/* width: 60px; */
+}
+
+.item-rate em {
+color: #555;
+}
+
+/* index page footer img logo */
+.partner {
+    margin-top:50px;
+padding-top: 35px;
+height: 240px;
+background: #d0e0e3;
+text-align: center;
+}
+.partner ul{margin:0}
+.list-inline>li:first-child {
+padding-left: 0;
+}
+.list-inline>li {
+display: inline-block;
+}
+
+.footer>.footer-info {
+height: 250px;
+background: #4D4D4D;
+padding-top: 24px;
+}
+
+
+.footer-info-widget {
+width: 235px;
+float: left;
+text-align: center;
+}
+
+
+.footer-info-widget-container {
+display: inline-block;
+text-align: left;
+}
+
+.footer-info-widget h3 {
+    padding:0; 
+    margin:0;
+margin-bottom: 32px;
+color: #c8c8c8;
+font-size: 14px;
+}
+
+.footer-info-widget ul {
+line-height: 30px;
+font-size: 12px;
+max-width: 190px;
+color: #8f8f8f;
+}
+
+    .footer-info-widget ul li {
+    padding-left:0px;
+    }
+.footer-info-widget a {
+color: #8f8f8f;
+}
+.footer>.footer-info>.wrapper>.footer-info-widget>.footer-info-widget-container > .btn {
+display: inline-block;
+padding: 2px 0;
+width: 80px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+white-space: nowrap;
+cursor: pointer;
+background-image: none;
+}
+.footer>.footer-info>.wrapper>.footer-info-widget>.footer-info-widget-container > .btn-other {
+font-size: 12px;
+font-weight: 700;
+background: #2f2f2f;
+color: #fff;
+}
+
+.footer>.footer-info>.wrapper>.footer-info-widget>.footer-info-widget-container > .btn-other:hover{background:#242424;color:#02a3c6!important}
+.footer>.footer-info>.wrapper>.footer-info-widget>.footer-info-widget-container > .btn-other:active{background:#242424}
+
+.footer-info-widget-follow i {
+margin-right: 9px;
+}
+.list-inline {
+padding-left: 0;
+list-style: none;
+}
+.upicon-weibo {
+display: inline-block;
+width: 20px;
+height: 20px;
+background: url(../img/index/weibo.png);
+background-position: 0 0;
+}
+
+.footer-copy {
+height: 60px;
+background: #F5F5F5;
+color: #5b5b5b;
+font-size: 12px;
+text-align:center;
+}
+ 
+
+    .footer>.footer-copy > .media {
+     padding:25px 0 0 0;
+    }

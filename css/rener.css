@@ -1,0 +1,86 @@
+﻿i,i.iconcolor {
+    color:#A5ABB8;
+}
+
+.ren-my-tag-box >h4>span> span.badge {
+    padding:0px 0px 0px 7px;
+    background:none;
+}
+
+#ImgPr {
+max-width: 190px;max-height: 190px;
+vertical-align: middle;
+}
+* html #ImgPr { /* for IE6 */
+width: expression(this.width > 190 && this.width > this.height ? 190 : auto);
+height: expression(this.height > 190 ? 190 : auto);
+}
+
+.ren-image-pre-box {
+min-height:150px;
+max-height:150px;
+min-width:190px;
+max-width:190px;
+overflow:hidden;
+vertical-align: middle;
+}
+
+/* 项目主页概述 */
+.article-options {
+margin: 0 -20px;
+padding: 0;
+list-style: none;
+}
+.article-options > li {
+	float: left;
+	width: 33.33333333333333%;
+	text-align: center;
+}
+.article-options > li + li .article-option { border-left: 1px solid #ddd; }
+.article-option b, .article-option span {
+	display: block;
+}
+
+.timeline >.row> .timedate {
+min-width:70px;
+}
+.timeline >.row> .timedate>i {
+position:absolute; margin-left:50px;margin-left:-1px\9; margin-top:2px; z-index:99; 
+}
+.timeline >.row>.line {
+border-left: 1px solid #dfdfdf;
+}
+
+div.dot {
+border-bottom:1px dotted #dfdfdf;
+}
+
+ 
+.bs-callout {
+  padding: 5px 10px;
+  margin:10px 0;
+border-left: 1px solid #aeaeae;
+border-left-width: 5px;
+border-radius: 3px;
+background-color:#efefef;
+}
+.bs-callout-primary {
+    border-left: 5px solid #428bca;
+}
+.bs-callout-success {
+    border-left: 5px solid #5cb85c;
+}
+.bs-callout-info {
+    border-left: 5px solid #5bc0de;
+}
+.bs-callout-warning {
+    border-left: 5px solid #f0ad4e;
+}
+.bs-callout-danger {
+    border-left: 5px solid #d9534f;
+}
+
+.ren-funding > dl > dt, .ren-funding > dl > dd {
+padding-top:5px;
+padding-bottom:5px;
+}

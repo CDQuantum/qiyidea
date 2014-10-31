@@ -1,0 +1,413 @@
+﻿body {
+}
+.landing {
+    min-height:665px;
+    background:white url(../img/login/bg-landing-1.jpg) 40% 5% no-repeat;
+}
+.introduction-p {
+    font-size: 18px;
+    max-width: 350px;
+    margin: 0 0 15px 0;
+    line-height: 25px;
+    color: #383d48;
+    padding:0px;
+}
+
+
+.user-signin-1 .panel {
+    position:absolute;
+    width:100%;
+    /* background-color: #FFF; */
+background:rgba(255,255,255,0.4);
+/*  startcolorstr 其格式为 #AARRGGBB 。 AA 、 RR 、 GG 、 BB 为十六进制正整数。取值范围为 00 – FF 。 RR 指定红色值， GG 指定绿色值， BB 指定蓝色值，参阅 #RRGGBB 颜色单位。 AA 指定透明度。 00 是完全透明。 FF 是完全不透明。超出取值范围的值将被恢复为默认值。
+　　取值范围为 #FF000000 – #FFFFFFFF 。默认值为 #FF0000FF 。不透明蓝色。
+    */
+filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+-webkit-box-shadow: 0 0 0 1px rgba(255,255,255,.6);
+
+margin: 1em;
+padding: 1em;
+border-radius: 5px;
+/*
+    box-shadow: 0 0 0 1px rgba(255,255,255,.6);
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+    */
+}
+.paddright0 {
+    padding-right:0px;
+}
+.paddleft0 {
+    padding-left:0px;
+}
+a {
+    color: #379CE0;
+    text-decoration: none;
+}
+a:hover {
+    color: #379CE0;
+    text-decoration: none;
+}
+.lp-secondary {
+display: block;
+color: #3784d3;
+text-decoration: none;
+}
+.lp-secondary:hover {
+display: block;
+color: #3784d3;
+text-decoration: none;
+}
+#login-container {
+    font: 13px;
+color: #383d48;
+margin: 0;
+padding: 0;
+line-height: 20px;
+}
+.free-register {
+    border-top: 1px solid #BBB;
+}
+hr {
+    margin-top:7px;border:0;background-color:#bbb;height:1px;
+}
+#forgot-pwd-form p{
+    font-size: 13px;
+}
+.section-header {
+font-size: 24px;
+font-weight: 200;
+line-height: 32px;
+}
+.martop30 {
+    margin-top:30px;
+}
+.marbottom20 {
+    margin-bottom:20px;
+}
+.martop100 {
+    margin-top:100px;
+}
+.marbottom100 {
+    margin-bottom:100px;
+}
+.section-1 {
+    font-size: 18px;
+}
+.marleft27 {
+    margin-left: 27px;
+}
+.martop5 {
+    margin-top: 5px;
+}
+.paddbottom50 {
+    padding-bottom: 50px;
+}
+.width170 {
+    width:170px;
+}
+.width70 {
+    width:70%;
+    margin:0px auto;
+}
+.marbottom50 {
+    margin-bottom: 50px;
+}
+.width140{
+    width:140px;
+}
+.boxSite {
+	position: relative;
+	overflow: hidden;
+}
+.clearLeft {
+clear: left;
+}
+section,figure {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	outline: 0;
+	background: transparent;
+}
+.boxSite header {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	background: rgba(0,0,0,.3);
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display:block;
+}
+
+.boxSite h2 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	text-shadow: 1px 1px 0 #202020;
+	font: 1.3em/1.1em Arial,sans-serif;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+	outline: 0;
+	background: transparent;
+}
+h2 {
+	display: block;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+.container img {
+	vertical-align: middle;
+	text-align: center;
+}
+.boxSite div {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 230px;
+	height: 155px;
+	background:rgba(255,255,255,0.4);
+/*  startcolorstr 其格式为 #AARRGGBB 。 AA 、 RR 、 GG 、 BB 为十六进制正整数。取值范围为 00 – FF 。 RR 指定红色值， GG 指定绿色值， BB 指定蓝色值，参阅 #RRGGBB 颜色单位。 AA 指定透明度。 00 是完全透明。 FF 是完全不透明。超出取值范围的值将被恢复为默认值。
+　　取值范围为 #FF000000 – #FFFFFFFF 。默认值为 #FF0000FF 。不透明蓝色。
+    */
+filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+-webkit-box-shadow: 0 0 0 1px rgba(255,255,255,.6);
+
+	padding: 43px 10px 10px 10px;
+	z-index: 1;
+}
+.bottom-type {
+	font-size:13px;
+	text-align:center;
+	padding:10px 0px 30px 0px;
+	color: #777;
+}
+.padd {
+    padding:0px 10px 0px 10px;
+}
+.group-title {
+    font-size: 15px;
+}
+.sender-and-recipients {
+    font: 13px Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #383d48;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+.marleft10 {
+    margin-left: 10px;
+}
+textarea {
+    height:34px;overflow-y:visible;resize: none;
+}
+.marbottom10 {
+    margin-bottom:10px;
+}
+.reply-user-info {
+    width:90%;
+    margin-left:44px;
+}
+.subtext {
+    color: #839096;
+}
+.total-reply {
+    margin-left:4px;
+}
+.menber-class{
+font-weight: 200;
+line-height: 32px;
+}
+.martop0 {
+    margin-top:0px;
+}
+.is-add-firend-info{
+    margin-top:5px;
+}
+.marbottom15 {
+    margin-bottom:15px;
+}
+.width95 {
+    width:95px;
+}
+.width136 {
+    width:136px;
+}
+.paddingtop20 {
+    padding-top:20px;
+}
+
+.martop10 {
+    margin-top:10px;
+}
+.width300 {
+    width:300px;
+}
+.paddright13 {
+    padding-right:13px;
+}
+.border-doil {
+    border-bottom:1px #ddd dotted;
+    border-spacing:2px;
+}
+.title-type{
+width:420px;
+overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+white-space:nowrap;/* 不换行 */
+}
+.padding0 {
+    padding:0px 0px 0px 0px;
+}
+.title-hover-bolor:hover {
+    color:white;
+    background-color:green;
+}
+.post-time-type{
+    margin-left:10px;
+    color:#007722
+}
+.paddrow {
+    padding: 0px 30px 0px 35px;
+}
+.paddrow .on {
+    font-size: 12px;
+    color: #fff;
+    background:#83bf73;
+    border-radius: 3px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    word-spacing: normal;
+    margin-right: 5px;
+    padding:1px 8px;
+}
+.already-add-group {
+   margin-left:15px;display:block;margin-top: 5px;
+}
+.old-user-reply {
+    border-left:1px solid #000;
+    padding-left:5px;
+}
+.new-reply-user-content {
+    margin-top:20px;
+}
+.no-add-group{
+    margin-left:15px;
+}
+.marginr20 {
+    margin-right:20px;
+}
+.fonts {
+    font-size:15px;
+}
+.backgroundc{
+    background-color:#EBF6FE;
+}
+.color{
+    color:#f8b703;
+}
+.font-w {
+    font-weight:bold;
+    color:#777;
+}
+.paddbottom20 {
+    padding-bottom:20px;
+}
+.paddtop2 {
+    padding-top:5px;
+}
+.bg-color {
+    background-color:#0bb538;
+    color:white;
+}
+
+.btn-twitter {
+			padding-left: 30px;
+			background: rgba(0, 0, 0, 0) url(https://platform.twitter.com/widgets/images/btn.27237bab4db188ca749164efd38861b0.png) -20px 9px no-repeat;
+		}
+.btn-twitter:hover {
+	background-position:  -21px -16px;
+}
+.edui-image ul li a {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #eaeaea;
+    background: #f8f8f8 url(../img/bg-upd.jpg) no-repeat 50% 40%;
+    display: block;
+    position: relative;
+}
+.edui-image ul li {
+width: 92px;
+height: 90px;
+padding: 5px 20px 20px 0px;
+float: left;
+list-style: none;
+margin-right:10px;
+}
+
+.edui-image ul li a .pos-upd {
+width: 100%;
+height: 22px;
+text-align: center;
+display: block;
+color: #999;
+
+}
+.edui-image ul li input {
+width: 90px;
+height: 90px;
+cursor: pointer;
+display: block;
+margin: 0px;
+padding: 0px;
+position: absolute;
+left: 0;
+top: 0;
+filter: alpha(opacity:0);
+opacity: 0;
+}
+.edui-image ul li img {
+width: 90px;
+height: 90px;
+}
+.edui-image ul li a .pos-bg {
+width: 100%;
+height: 22px;
+display: block;
+background: #FFF;
+filter: alpha(opacity:70);
+opacity: 0.7;
+position: absolute;
+left: 0;
+top: 70px;
+z-index: 2;
+}
+.edui-image ul li a .pos-opt {
+width: 100%;
+height: 22px;
+text-align: center;
+display: block;
+position: absolute;
+left: 0;
+top: 70px;
+z-index: 3;
+}
+.marginr14 {
+    margin-right:14px;
+}
+.marginr10 {
+    margin-right:10px;
+}
+
+
