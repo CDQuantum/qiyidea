@@ -26,16 +26,21 @@ template.html
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
-bootstrap/
+qiyiead/
 ├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.min.css
-│   ├── bootstrap-theme.css
-│   └── bootstrap-theme.min.css
+│   ├── index.css（首页样式）
+│   ├── main.css (一些主要样式，如mp0表示margin padding 都为0； fz10表示font-size:10px; color3c)
+│   ├── footer.css(前台模板页脚样式)
+│   ├── rener.css
+│   └── other.css
 ├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
-└── dist
+│   ├── jquery.js
+│   └── other.js
+├──index.html (首页)
+├──head.html(模板页顶)
+├──footer.html(模板页脚，版权等)
+├──template.html(模板页，使用jQuery加载 模板页顶+模板页脚。 container 区域内为正文区域，自定义页面内容请加入此区域。)
+└── dist（bootstrap样式库）
     ├── css/
     │   ├── bootstrap.css
     │   ├── bootstrap.min.css
