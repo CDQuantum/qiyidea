@@ -1,5 +1,95 @@
-﻿#footer{margin:20px 0 0 0;text-align:center;clear:both;font-size:11px}
+﻿/*#footer{margin:20px 0 0 0;text-align:center;clear:both;font-size:11px}
 #footer ul>li{display:inline;padding:0 5px;border-right:1px solid #ccc;position:relative}
 #footer ul>li.undisclosed{display:none}
 #footer ul>li:last-child{border-right:0}
-#footer a,#footer p{display:inline-block;height:13px;line-height:13px;font-size:11px;border-right:0 solid #999}
+#footer a,#footer p{display:inline-block;height:13px;line-height:13px;font-size:11px;border-right:0 solid #999}*/
+.footer>.footer-info {
+height: 250px;
+background: #4D4D4D;
+padding-top: 24px;
+}
+
+
+.footer-info-widget {
+width: 235px;
+float: left;
+text-align: center;
+}
+
+
+.footer-info-widget-container {
+display: inline-block;
+text-align: left;
+}
+
+.footer-info-widget h3 {
+    padding:0; 
+    margin:0;
+margin-bottom: 32px;
+color: #c8c8c8;
+font-size: 14px;
+}
+
+.footer-info-widget ul {
+line-height: 30px;
+font-size: 12px;
+max-width: 190px;
+color: #8f8f8f;
+}
+
+    .footer-info-widget ul li {
+    padding-left:0px;
+    }
+.footer-info-widget a {
+color: #8f8f8f;
+}
+.footer>.footer-info>.wrapper>.footer-info-widget>.footer-info-widget-container > .btn {
+display: inline-block;
+padding: 2px 0;
+width: 80px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+white-space: nowrap;
+cursor: pointer;
+background-image: none;
+}
+.footer>.footer-info>.wrapper>.footer-info-widget>.footer-info-widget-container > .btn-other {
+font-size: 12px;
+font-weight: 700;
+background: #2f2f2f;
+color: #fff;
+}
+
+.footer>.footer-info>.wrapper>.footer-info-widget>.footer-info-widget-container > .btn-other:hover{background:#242424;color:#02a3c6!important}
+.footer>.footer-info>.wrapper>.footer-info-widget>.footer-info-widget-container > .btn-other:active{background:#242424}
+
+.footer-info-widget-follow i {
+margin-right: 9px;
+}
+.list-inline {
+padding-left: 0;
+list-style: none;
+}
+.upicon-weibo {
+display: inline-block;
+width: 20px;
+height: 20px;
+background: url(../img/index/weibo.png);
+background-position: 0 0;
+}
+
+.footer-copy {
+height: 60px;
+background: #F5F5F5;
+color: #5b5b5b;
+font-size: 12px;
+text-align:center;
+}
+ 
+
+    .footer>.footer-copy > .media {
+     padding:25px 0 0 0;
+    }
