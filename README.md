@@ -4,7 +4,7 @@ qiyidea
 奇异点2.0
 
 
-参考模板页面
+参考模板页面(http://cdquantum.github.io/qiyidea/template.html)
 template.html
 
 
