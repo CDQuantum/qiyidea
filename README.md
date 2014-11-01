@@ -32,6 +32,7 @@ qiyiead/
 │   ├── main.css (一些主要样式，如mp0表示margin padding 都为0； fz10表示font-size:10px; color3c)
 │   ├── footer.css(前台模板页脚样式)
 │   ├── rener.css
+│   ├── lyp.css (自定义样式表写入此文件)
 │   └── other.css
 ├── js/
 │   ├── jquery.js
