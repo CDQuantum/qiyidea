@@ -1,4 +1,4 @@
-ï»¿body {
+body {
 }
 .landing {
     min-height:665px;
@@ -19,8 +19,8 @@
     width:100%;
     /* background-color: #FFF; */
 background:rgba(255,255,255,0.4);
-/*  startcolorstr å…¶æ ¼å¼ä¸º #AARRGGBB ã€‚ AA ã€ RR ã€ GG ã€ BB ä¸ºåå…­è¿›åˆ¶æ­£æ•´æ•°ã€‚å–å€¼èŒƒå›´ä¸º 00 â€“ FF ã€‚ RR æŒ‡å®šçº¢è‰²å€¼ï¼Œ GG æŒ‡å®šç»¿è‰²å€¼ï¼Œ BB æŒ‡å®šè“è‰²å€¼ï¼Œå‚é˜… #RRGGBB é¢œè‰²å•ä½ã€‚ AA æŒ‡å®šé€æ˜åº¦ã€‚ 00 æ˜¯å®Œå…¨é€æ˜ã€‚ FF æ˜¯å®Œå…¨ä¸é€æ˜ã€‚è¶…å‡ºå–å€¼èŒƒå›´çš„å€¼å°†è¢«æ¢å¤ä¸ºé»˜è®¤å€¼ã€‚
-ã€€ã€€å–å€¼èŒƒå›´ä¸º #FF000000 â€“ #FFFFFFFF ã€‚é»˜è®¤å€¼ä¸º #FF0000FF ã€‚ä¸é€æ˜è“è‰²ã€‚
+/*  startcolorstr Æä¸ñÊ½Îª #AARRGGBB ¡£ AA ¡¢ RR ¡¢ GG ¡¢ BB ÎªÊ®Áù½øÖÆÕıÕûÊı¡£È¡Öµ·¶Î§Îª 00 ¨C FF ¡£ RR Ö¸¶¨ºìÉ«Öµ£¬ GG Ö¸¶¨ÂÌÉ«Öµ£¬ BB Ö¸¶¨À¶É«Öµ£¬²ÎÔÄ #RRGGBB ÑÕÉ«µ¥Î»¡£ AA Ö¸¶¨Í¸Ã÷¶È¡£ 00 ÊÇÍêÈ«Í¸Ã÷¡£ FF ÊÇÍêÈ«²»Í¸Ã÷¡£³¬³öÈ¡Öµ·¶Î§µÄÖµ½«±»»Ö¸´ÎªÄ¬ÈÏÖµ¡£
+¡¡¡¡È¡Öµ·¶Î§Îª #FF000000 ¨C #FFFFFFFF ¡£Ä¬ÈÏÖµÎª #FF0000FF ¡£²»Í¸Ã÷À¶É«¡£
     */
 filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
 -webkit-box-shadow: 0 0 0 1px rgba(255,255,255,.6);
@@ -178,8 +178,8 @@ h2 {
 	width: 230px;
 	height: 155px;
 	background:rgba(255,255,255,0.4);
-/*  startcolorstr å…¶æ ¼å¼ä¸º #AARRGGBB ã€‚ AA ã€ RR ã€ GG ã€ BB ä¸ºåå…­è¿›åˆ¶æ­£æ•´æ•°ã€‚å–å€¼èŒƒå›´ä¸º 00 â€“ FF ã€‚ RR æŒ‡å®šçº¢è‰²å€¼ï¼Œ GG æŒ‡å®šç»¿è‰²å€¼ï¼Œ BB æŒ‡å®šè“è‰²å€¼ï¼Œå‚é˜… #RRGGBB é¢œè‰²å•ä½ã€‚ AA æŒ‡å®šé€æ˜åº¦ã€‚ 00 æ˜¯å®Œå…¨é€æ˜ã€‚ FF æ˜¯å®Œå…¨ä¸é€æ˜ã€‚è¶…å‡ºå–å€¼èŒƒå›´çš„å€¼å°†è¢«æ¢å¤ä¸ºé»˜è®¤å€¼ã€‚
-ã€€ã€€å–å€¼èŒƒå›´ä¸º #FF000000 â€“ #FFFFFFFF ã€‚é»˜è®¤å€¼ä¸º #FF0000FF ã€‚ä¸é€æ˜è“è‰²ã€‚
+/*  startcolorstr Æä¸ñÊ½Îª #AARRGGBB ¡£ AA ¡¢ RR ¡¢ GG ¡¢ BB ÎªÊ®Áù½øÖÆÕıÕûÊı¡£È¡Öµ·¶Î§Îª 00 ¨C FF ¡£ RR Ö¸¶¨ºìÉ«Öµ£¬ GG Ö¸¶¨ÂÌÉ«Öµ£¬ BB Ö¸¶¨À¶É«Öµ£¬²ÎÔÄ #RRGGBB ÑÕÉ«µ¥Î»¡£ AA Ö¸¶¨Í¸Ã÷¶È¡£ 00 ÊÇÍêÈ«Í¸Ã÷¡£ FF ÊÇÍêÈ«²»Í¸Ã÷¡£³¬³öÈ¡Öµ·¶Î§µÄÖµ½«±»»Ö¸´ÎªÄ¬ÈÏÖµ¡£
+¡¡¡¡È¡Öµ·¶Î§Îª #FF000000 ¨C #FFFFFFFF ¡£Ä¬ÈÏÖµÎª #FF0000FF ¡£²»Í¸Ã÷À¶É«¡£
     */
 filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
 -webkit-box-shadow: 0 0 0 1px rgba(255,255,255,.6);
@@ -263,9 +263,9 @@ line-height: 32px;
 }
 .title-type{
 width:420px;
-overflow:hidden;/* å†…å®¹è¶…å‡ºå®½åº¦æ—¶éšè—è¶…å‡ºéƒ¨åˆ†çš„å†…å®¹ */
-text-overflow:ellipsis;/* å½“å¯¹è±¡å†…æ–‡æœ¬æº¢å‡ºæ—¶æ˜¾ç¤ºçœç•¥æ ‡è®°(...) ï¼›éœ€ä¸overflow:hidden;ä¸€èµ·ä½¿ç”¨ã€‚*/
-white-space:nowrap;/* ä¸æ¢è¡Œ */
+overflow:hidden;/* ÄÚÈİ³¬³ö¿í¶ÈÊ±Òş²Ø³¬³ö²¿·ÖµÄÄÚÈİ */
+text-overflow:ellipsis;/* µ±¶ÔÏóÄÚÎÄ±¾Òç³öÊ±ÏÔÊ¾Ê¡ÂÔ±ê¼Ç(...) £»ĞèÓëoverflow:hidden;Ò»ÆğÊ¹ÓÃ¡£*/
+white-space:nowrap;/* ²»»»ĞĞ */
 }
 .padding0 {
     padding:0px 0px 0px 0px;
@@ -409,5 +409,83 @@ z-index: 3;
 .marginr10 {
     margin-right:10px;
 }
-
-
+/************************ ·¢ÆğÏîÄ¿ ************************/
+.member-list-div{
+	padding:0px;
+	float:left;
+	margin-right:20px;
+}
+.invite-member-div{
+	padding:0px;
+	float:left;
+	width:107px;height:42px; 
+	line-height:42px;
+	cursor:pointer;
+	border:1px dashed  #ddd;
+	text-align:center;
+	background-color:#fff;
+}
+.hr-style{
+	border-top: 1px dashed #cccccc;
+	height: 1px;
+	overflow: hidden;
+}
+.created-return-div{
+	padding:0px;
+	float:left;
+	width:180px;
+	height:42px; 
+	line-height:42px;
+	cursor:pointer;
+	border:1px solid  #5cb85c;
+	color:#5cb85c;
+	text-align:center;
+	background-color:#fff;
+	margin-right:20px;
+}
+.created-return-div1{
+	padding:0px;
+	float:left;
+	width:180px;
+	height:42px; 
+	line-height:42px;
+	cursor:pointer;
+	border:1px dashed  #5cb85c;
+	color:#5cb85c;
+	text-align:center;
+	background-color:#fff;
+	margin-right:20px;
+}
+.preview-div{
+	padding:0px;
+	float:left;
+	width:100%;
+	height:30px; 
+	line-height:30px;
+	cursor:pointer;
+	border:1px solid  #B08454;
+	color:#B08454;
+	text-align:center;
+	background-color:#FCF8E3;
+}
+.paddrow{
+	padding:20px 10px 10px 10px;
+}
+.paddrow1{
+	margin-left:0px;margin-right:0px;margin-top:10px;
+}
+.color-row{
+	color:#D2D2D2;
+}
+.div-block-type{
+	height:152px;
+	line-height:152px;
+	text-align:center;
+	font-size:12px;
+}
+.project-a-type{
+	color:#fff;
+}
+.project-a-type:hover{
+	color:#fff;
+}
