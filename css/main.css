@@ -19,7 +19,15 @@ a.nulinkunderline:hover {
 .dropdown-menu {
   min-width: 0px;
 }
-
+.color-fff {
+color:#fff;
+}
+.color-000 {
+color:#000;
+}
+.color-333 {
+color:#333;
+}
 .color-grey {
 color:#A5ABB8;
 }
@@ -100,7 +108,9 @@ padding-left:10px;
 .pt3 {
     padding-top:3px;
 }
- 
+.pt80 {
+    padding-top:40px;
+}
 div.mt0, p.mt0, h3.mt0,hr.mt0 {
     margin-top: 0px;
 }
@@ -110,6 +120,24 @@ div.mb0, p.mb0, h3.mb0,hr.mb0 {
 div.mp0, p.mp0, h3.mp0,hr.mp0 {
     margin: 0px;
     padding: 0px;
+}
+div.mpt40 {
+    margin-top:40px;
+}
+div.mpl40 {
+margin-left:40px;
+}
+div.mpb40 {
+    margin-bottom:40px;
+}
+div.mpr40 {
+margin-right:40px;
+}
+div.mplun15 {
+margin-left:-15px;
+}
+div.mprun15 {
+margin-right:-15px;
 }
 .fz10 {
     font-size:10px;
