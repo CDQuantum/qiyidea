@@ -118,3 +118,14 @@ padding-bottom:5px;
 }
  /* right img end  */
 
+
+
+.ren-bg-333 {
+background-color:#333;
+}
+
+.ren-top-bg-info-box {
+min-height:35px;
+padding:10px 10px 10px 40px;
+color:#fff;
+}
