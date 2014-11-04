@@ -113,10 +113,10 @@
 			                        <button type="button" class="btn btn-success active disabled">制定计划</button>
 			                    </div>
 			                    <div class="btn-group">
-			                        <button type="button" class="btn btn-success active">成员管理</button>
+                                    <button type="button" class="btn btn-success active disabled">成员管理</button>
 			                    </div>
 			                    <div class="btn-group">
-			                        <button type="button" class="btn btn-default disabled">任务分配</button>
+                                    <button type="button" class="btn btn-success active">任务分配</button>
 			                    </div>
 			                    <div class="btn-group">
 			                        <button type="button" class="btn btn-default  disabled">详细预算</button>
@@ -132,171 +132,104 @@
 	         			<div class="panel-body" >
 		         			<div class="col-lg-9" >
 									<div class="row" style="color:#FF7F00">
-										<div class="col-lg-12">&nbsp;<span style="color:#000;">团队成员</span></div>
+										<div class="col-lg-12">&nbsp;<span style="color:#000;">任务分配</span></div>
 									</div>
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
 										</div>
 									</div>
-									<div class="row">
-										<div class="col-lg-12">
-                                                <div class="table-responsive">
-                                                    <table class="table table-bordered text-center ">
-                                                        <tr>
-                                                            <td></td>
-                                                            <td>昵称</td>
-                                                            <td>姓名</td>
-                                                            <td>性别</td>
-                                                            <td>所在学校/毕业学校</td>
-                                                            <td>状态</td>
-                                                            <td>操作</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="checkbox" /></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td><img src="../img/project/fw_r2_c2.png" /></td>
-                                                            <td><a href="#">删除</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="checkbox" /></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td><img src="../img/project/fw_r4_c2.png" /></td>
-                                                            <td><a href="#">删除</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="checkbox" /></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td><img src="../img/project/fw_r6_c2.png" /></td>
-                                                            <td><a href="#">删除</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="checkbox" /></td>
-                                                            <td colspan="6" class="text-left"><a href="#">全选</a>&nbsp;&nbsp;&nbsp;<a href="#">删除</a></td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-										</div>
-									</div>
-                               <div class="row" style="color:#FF7F00">
-                                   <div class="col-lg-12">&nbsp;<span style="color:#000;">好友邀请</span></div>
-                               </div>
-                               <div class="row">
-                                   <div class="col-lg-12">
-                                       <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
+                               <div class="row martop10">
+                                   <div class="col-lg-5 text-center">
+                                       已经创建的任务
                                    </div>
-                               </div>
-                               <div class="row">
-                                   <div class="col-lg-3">
-                                   </div>
-                                   <div class="col-lg-6">
-                                       <div class="input-group input-group-sm">
-                                           <input type="text" class="form-control" placeholder="输入昵称或姓名查询">
-                                           <span class="input-group-addon input-group-btn cursor" style="background-color:#5CB85C"><i class="glyphicon glyphicon-search"></i></span>
-                                       </div>
-                                   </div>
-                                   <div class="col-lg-3">
+                                   <div class="col-lg-2"></div>
+                                   <div class="col-lg-5 text-center">
+                                      我的项目团队
                                    </div>
                                </div>
                                <div class="row martop10">
-                                   <div class="col-lg-12">
-                                       <div class="table-responsive">
-                                           <table class="table table-bordered text-center ">
-                                               <tr>
-                                                   <td>昵称</td>
-                                                   <td>姓名</td>
-                                                   <td>性别</td>
-                                                   <td>所在学校/毕业学校</td>
-                                                   <td>邀请</td>
-                                               </tr>
-                                               <tr>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td><img src="../img/project/fw_r2_c2_off.png" /></td>
-                                               </tr>
-                                               <tr>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td><img src="../img/project/fw_r2_c2_on.png" /></td>
-                                               </tr>
-                                               <tr>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td><img src="../img/project/fw_r2_c2_off.png" /></td>
-                                               </tr>
-                                           </table>
+                                   <div class="col-lg-5">
+                                       <div class="panel panel-default">
+                                           <div class="panel-heading">
+                                               <div class="row">
+                                                   <div class="col-lg-3">选择</div>
+                                                   <div class="col-lg-3">编码</div>
+                                                   <div class="col-lg-6">任务名称</div>
+                                               </div>
+                                           </div>
+                                           <div class="panel-body" style="height:300px;">
+                                               <div class="row">
+                                                   <div class="col-lg-3"><input type="checkbox" /></div>
+                                                   <div class="col-lg-3">M1T1</div>
+                                                   <div class="col-lg-6 text-left padding0 marbottom10">旅馆住宿与餐饮的协调</div>
+                                               </div>
+                                               <div class="row">
+                                                   <div class="col-lg-3"><input type="checkbox" /></div>
+                                                   <div class="col-lg-3">M1T1</div>
+                                                   <div class="col-lg-6 text-left padding0 marbottom10">展会现场布置</div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-lg-2">
+                                       <table style="width:100%;text-align:center">
+                                           <tr>
+                                               <td style="vertical-align:middle;height:300px;">
+                                                   <img src="../img/project/fw_r2_c2_fenpei.png" /><br /><br />
+                                                   <img src="../img/project/fw_r2_c2_yichu.png" />
+                                               </td>
+                                           </tr>
+                                       </table>
+                                      
+                                       
+                                   </div>
+                                   <div class="col-lg-5">
+                                       <div class="panel panel-default">
+                                           <div class="panel-heading">
+                                               <div class="row">
+                                                   <div class="col-lg-3">选择</div>
+                                                   <div class="col-lg-9">
+                                                       <div class="dropdown">
+                                                           <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                               Dropdown
+                                                               <span class="caret"></span>
+                                                           </button>
+                                                           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="panel-body" style="height:300px;">
+                                               <div class="row">
+                                                   <div class="col-lg-3"><input type="checkbox" /></div>
+                                                   <div class="col-lg-3">M1T1</div>
+                                                   <div class="col-lg-6 text-left padding0 marbottom10">旅馆住宿与餐饮的协调</div>
+                                               </div>
+                                               <div class="row">
+                                                   <div class="col-lg-3"><input type="checkbox" /></div>
+                                                   <div class="col-lg-3">M1T1</div>
+                                                   <div class="col-lg-6 text-left padding0 marbottom10">展会现场布置</div>
+                                               </div>
+                                           </div>
                                        </div>
                                    </div>
                                </div>
-                               <div class="row" style="color:#FF7F00">
-                                   <div class="col-lg-12">&nbsp;<span style="color:#000;">招募中的</span></div>
-                               </div>
-                               <div class="row">
-                                   <div class="col-lg-12">
-                                       <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
+                               <div class="row text-center">
+                                   <div class=" col-lg-3"></div>
+                                   <div class="col-lg-6">
+                                       <div class="alert alert-warning alert-dismissible preview-div" role="alert">任务尚未分配完成，是否继续操作?</div>
                                    </div>
+                                   <div class=" col-lg-3"></div>
                                </div>
-                               <div class="row">
+                               <div class="row text-center marbottom10">
                                    <div class="col-lg-12">
-                                       <div class="table-responsive">
-                                           <table class="table table-bordered text-center ">
-                                               <tr>
-                                                   <td></td>
-                                                   <td>昵称</td>
-                                                   <td>姓名</td>
-                                                   <td>性别</td>
-                                                   <td>所在学校/毕业学校</td>
-                                                   <td>状态</td>
-                                                   <td>操作</td>
-                                               </tr>
-                                               <tr>
-                                                   <td><input type="checkbox" /></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td><img src="../img/project/fw_r10_c3.png" /></td>
-                                                   <td>审核</td>
-                                               </tr>
-                                               <tr>
-                                                   <td><input type="checkbox" /></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td><img src="../img/project/fw_r10_c3.png" /></td>
-                                                   <td>审核</td>
-                                               </tr>
-                                               <tr>
-                                                   <td><input type="checkbox" /></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td></td>
-                                                   <td><img src="../img/project/fw_r10_c3.png" /></td>
-                                                   <td>审核</td>
-                                               </tr>
-                                               <tr>
-                                                   <td><input type="checkbox" /></td>
-                                                   <td colspan="6" class="text-left"><a href="#">全选</a>&nbsp;&nbsp;&nbsp;<a href="#">同意</a>&nbsp;&nbsp;&nbsp;<a href="#">婉拒</a></td>
-                                               </tr>
-                                           </table>
-                                       </div>
+                                       <button type="button" class="btn btn-success">保存并分发</button>
                                    </div>
                                </div>
 							</div>

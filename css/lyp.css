@@ -465,7 +465,6 @@ z-index: 3;
 	cursor:pointer;
 	border:1px solid  #B08454;
 	color:#B08454;
-	text-align:center;
 	background-color:#FCF8E3;
 }
 .paddrow{
@@ -488,4 +487,25 @@ z-index: 3;
 }
 .project-a-type:hover{
 	color:#fff;
+}
+.martop40{
+    margin-top:40px;
+}
+.text-type-1{
+    border:1px solid #BE9B70;
+    background-color:#FCF8E3;
+    color:#B08454;
+    font-size:12px;
+    padding:10px 30px 10px 30px;
+    line-height:20px;
+}
+.text-type-2{
+    background-color:#FBFBFB;
+    color:#858585;
+    font-size:12px;
+    padding:10px 30px 10px 30px;
+    line-height:20px;
+}
+.martop15{
+    margin-top:15px;
 }
