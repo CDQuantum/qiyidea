@@ -482,6 +482,12 @@ z-index: 3;
 	text-align:center;
 	font-size:12px;
 }
+.div-block-type1{
+	height:76px;
+	line-height:76px;
+	text-align:center;
+	font-size:12px;
+}
 .project-a-type{
 	color:#fff;
 }
@@ -508,4 +514,7 @@ z-index: 3;
 }
 .martop15{
     margin-top:15px;
+}
+.group-hover-bgcolor :hover{
+    background-color:#F5F5F5;
 }
