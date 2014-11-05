@@ -111,9 +111,9 @@
 											  <img src="../img/head_50.jpg" style="width:40px;height:40px;" />
 											  <strong>&nbsp;&nbsp;张三&nbsp;&nbsp;</strong> 
 											</div>
-											<div class="alert alert-warning alert-dismissible invite-member-div" role="alert">
-											  +邀请好友
-											</div>
+                                            <div class="alert alert-warning alert-dismissible invite-member-div" role="alert" data-toggle="modal" data-target="#invite-member">
+                                                +邀请好友
+                                            </div>
 	                                    </div>
 	                                    <div class="col-sm-3"></div>
 	                                </div>
@@ -149,7 +149,80 @@
          	</div>
          </div>
     </div>
-
+    <div class="modal fade" id="invite-member" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">好友邀请</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="输入昵称或姓名查询">
+                                <span class="input-group-addon input-group-btn cursor" style="background-color:#5CB85C"><i class="glyphicon glyphicon-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                        </div>
+                    </div>
+                    <div class="row martop10">
+                        <div class="col-lg-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center table-striped ">
+                                    <tr>
+                                        <td>选择</td>
+                                        <td>昵称</td>
+                                        <td>姓名</td>
+                                        <td>性别</td>
+                                        <td>所在学校/毕业学校</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" /></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5" class="text-center fz12"><img src="../img/user/fw_r8_c2.png" />&nbsp;展开更多</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="project-introduction" class="col-sm-2 control-label">诚邀信息：</label>
+                        <div class="col-lg-8 padding0">
+                            <textarea rows="5" class="form-control" id="project-introduction" placeholder=""></textarea>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="clearfix mtb15"></div>
 
     <div id="footer"></div>
