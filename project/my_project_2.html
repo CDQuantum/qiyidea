@@ -125,18 +125,40 @@
                             <!-- Nav tabs -->
                             <div class="row">
                                 <div class="col-lg-12" style="padding:0px 20px 0px 50px;">
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">任务一</a></li>
+                                    <ul class="nav nav-tabs mission-list" role="tablist">
+                                        <li role="presentation" class="active"><a href="#mission-1" role="tab" data-toggle="tab">任务一</a></li>
                                         <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">新增任务</a></li>
                                     </ul>
 
                                     <!-- Tab panes -->
-                                    <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active" id="home">
-
+                                    <div class="tab-content mission-form">
+                                        <div role="tabpanel" class="tab-pane active" id="mission-1">
+                                            <div class="form-group martop15">
+                                                <label for="project-introduction" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10 paddleft0 text-right">
+                                                    任务编号：<span class="mission-number">T1</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="project-introduction" class="col-sm-2 control-label">任务命名：</label>
+                                                <div class="col-sm-10 paddleft0">
+                                                    <input type="text" class="form-control" id="project-name" placeholder="请勿超过8个字">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="project-introduction" class="col-sm-2 control-label">任务简述：</label>
+                                                <div class="col-sm-10 paddleft0">
+                                                    <textarea rows="5" class="form-control" id="project-introduction" placeholder="请输入相关描述内容"></textarea>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div role="tabpanel" class="tab-pane" id="profile">...</div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12" style="padding-left:60px;">
+                                    <a class="color-A7A7A7 add-mission-a" href="#">+点击此处继续添加任务</a>
                                 </div>
                             </div>
                             <!--<div class="form-group">
@@ -210,6 +232,15 @@
         $('#myTab a').click(function (e) {
             e.preventDefault();
             $(this).tab('show');
+        });
+        $(".add-mission-a").click(function () {
+            $(".mission-list li").each(function () {
+                $(this).removeAttr("class");
+            });
+            $(".mission-number").html("T2");
+           
+            $(".mission-form").append(' <div role="tabpanel" class="tab-pane active" id="mission-2"> <div class="form-group martop15"><label for="project-introduction" class="col-sm-2 control-label"></label><div class="col-sm-10 paddleft0 text-right"> 任务编号：<span class="mission-number">T1</span></div> </div><div class="form-group"> <label for="project-introduction" class="col-sm-2 control-label">任务命名：</label><div class="col-sm-10 paddleft0"><input type="text" class="form-control" id="project-name" placeholder="请勿超过8个字"> </div> </div><div class="form-group"> <label for="project-introduction" class="col-sm-2 control-label">任务简述：</label> <div class="col-sm-10 paddleft0"> <textarea rows="5" class="form-control" id="project-introduction" placeholder="请输入相关描述内容"></textarea></div></div></div>');
+            $(".mission-list").append('<li role="presentation" class="active"><a href="#mission-2" role="tab" data-toggle="tab">任务二</a></li>');
         });
 
 
