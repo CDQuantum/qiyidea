@@ -123,9 +123,11 @@ button.plr30 {
 .pt3 {
     padding-top: 3px;
 }
-
-.pt80 {
+.pt40 {
     padding-top: 40px;
+}
+.pt80 {
+    padding-top: 80px;
 }
 
 div.mt0, p.mt0, h3.mt0, hr.mt0 {

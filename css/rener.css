@@ -129,3 +129,39 @@ min-height:35px;
 padding:10px 10px 10px 40px;
 color:#fff;
 }
+
+
+
+/*  ---------timeline flag  task------------  */
+.ren-timeline {
+}
+.ren-timeline >.ren-flag-line {
+    border-left: 1px solid #dfdfdf;
+    margin-top:10px;
+}
+.ren-flag>div.timeicon>i{
+    margin-left:-7px; margin-top:12px; z-index: 99;
+}
+ 
+div.ren-flag-box {
+background:#fff url('../img/task_flag.png') no-repeat -20px -3px; 
+padding:9px 0px 10px 75px; height:41px;max-width:228px; min-width:225px;
+color:#fff;
+}
+div.ren-unflag-box {
+background:#fff url('../img/task_flag.png') no-repeat -20px -153px; 
+padding:12px 0px 10px 75px; height:45px;max-width:228px; min-width:227px;
+color:#DF6D6A;
+}
+.ren-task-container {
+margin-left:38px; margin-top:5px;
+}
+.ren-task-box {
+    background:#fff url('../img/task_flag.png') no-repeat -45px -50px; padding:11px 0px 10px 50px; height:41px;max-width:228px; min-width:202px;
+    color:#fff;
+}
+.ren-untask-box {
+    background:#fff url('../img/task_flag.png') no-repeat -44px -96px; padding:8px 0px 10px 50px; height:41px;max-width:228px; min-width:202px;
+    color:#DCC7AB;
+}
+/*-------- flag  task  end-----------  */
