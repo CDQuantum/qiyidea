@@ -425,3 +425,8 @@ span.ren-info-msg-bell-badge {
 .bg-color-v {
     color: green;
 }
+.hr-style{
+	border-top: 1px dashed #cccccc;
+	height: 1px;
+	overflow: hidden;
+}

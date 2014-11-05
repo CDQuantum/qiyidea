@@ -24,6 +24,7 @@
     <link href="../js/chosen/chosen.css" rel="stylesheet">
     <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/rener.css" rel="stylesheet">
+    <link href="../css/lyp.css" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../js/assets/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -44,7 +45,7 @@
                 <div class="top-bg">
                     <a href="javascript:void(0);" class="change-bg"><i class="change"></i></a>
                     <div class="clearfix"></div>
-                    
+
                     <div class="media mpt40">
                         <div class="pull-left  mpl40 mpr40">
                             <a href="../admin/user-index-info.html" target="_blank">
@@ -56,7 +57,7 @@
 
                             <dl>
                                 <dt>
-                                    <a href="../admin/user-index-info.html" target="_blank" class="fz20 nulinkunderline color-000 vertical-align-middle">死不靠谱夫斯基</a> &nbsp;<img src="../img/badge/good1.png"/>
+                                    <a href="../admin/user-index-info.html" target="_blank" class="fz20 nulinkunderline color-000 vertical-align-middle">死不靠谱夫斯基</a> &nbsp;<img src="../img/badge/good1.png" />
 
                                 </dt>
                                 <dd class="color-333"><span class="glyphicon glyphicon-map-marker"></span>  四川 成都 锦江区 成都七中嘉祥外国语学校</dd>
@@ -88,207 +89,588 @@
                                 <img src="../img/space-user-edit.png" />
                             </div>
                         </div>
-                        
+
                     </div>
-                   
-                    
+
+
                 </div>
-                
+
             </div>
-           
+
         </div>
 
         <div class="clearfix mtb15"></div>
-        
 
+        <br />
+        <br />
         <div class="row">
             <!--left-->
             <div class="col-lg-8">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#my-project" role="tab" data-toggle="tab">我的项目</a></li>
+                    <li role="presentation"><a href="#my-data" role="tab" data-toggle="tab">我的资料</a></li>
+                    <li role="presentation"><a href="#my-group" role="tab" data-toggle="tab">我的群组</a></li>
+                </ul>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">我的综合得分</div>
-                    <div class="panel-body">
-                        <div class="row">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="my-project">
+                        <div class="row martop15 text-left">
                             <div class="col-lg-12">
-                                能力素质A
-                                <div class="progress" style="margin-bottom:5px;">
-                                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                        <span class="sr-only">40% Complete (success)</span>
+                                分类查看：<button class="btn btn-sm btn-danger">全部项目</button>
+                                <button class="btn btn-sm btn-default">我发起的项目</button>
+                                <button class="btn btn-sm btn-default">我参与的项目</button>
+                                <button class="btn btn-sm btn-default">我支持的项目</button>
+                                <button class="btn btn-sm btn-default">我收藏的项目</button>
+                            </div>
+                        </div>
+                        <div class="row martop10">
+                            <div class="col-lg-12 padding0">
+                                <div class="thumbnail" >
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div style="border:1px solid #F4F4F4;">
+                                                <div class="media">
+                                                    <a class="media-left" href="#" style="padding:5px 0px 5px 5px;width:30%">
+                                                        <img src="../img/project/11.jpg" style="width:100%;height:140px;" alt="...">
+                                                    </a>
+                                                    <div class="media-body" style="width:70%;padding-right:13px;">
+                                                        <div class="row">
+                                                            <div class="col-lg-10" style="padding:5px 40px 5px 30px;">
+                                                                <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
+                                                                <div class="row" style="color:#C1C1C1">
+                                                                    <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                                                    <span class="sr-only">60% 完成</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
+                                                                                <span class="rate1">
+                                                                                    <em>￥1,247</em><br>已筹资
+                                                                                </span>
+                                                                                <span class="rate2">
+                                                                                    <em>60%</em><br>已达
+                                                                                </span>
+                                                                                <span class="rate3">
+                                                                                    <em>16天</em><br>剩余时间
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 padding0">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#FFBF00;">众筹中...</div></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                     <div class="div-block-type1" style="background-color:#FFBF00;color:#FFBF00;"><a class="project-a-type" href="#">浏览项目</a></div>
+                                                                    </div>
+                                                                </div>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                能力素质B
-                                <div class="progress" style="margin-bottom:5px;">
-                                    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                        <span class="sr-only">20% Complete</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                能力素质C
-                                <div class="progress" style="margin-bottom:5px;">
-                                    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                        <span class="sr-only">60% Complete (warning)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                能力素质D
-                                <div class="progress" style="margin-bottom:0px;">
-                                    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                        <span class="sr-only">80% Complete (danger)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="row martop10">
+                            <div class="col-lg-12 padding0">
+                                <div class="thumbnail">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div style="border:1px solid #F4F4F4;">
+                                                <div class="media">
+                                                    <a class="media-left" href="#" style="padding:5px 0px 5px 5px;width:30%">
+                                                        <img src="../img/project/11.jpg" style="width:100%;height:140px;" alt="...">
+                                                    </a>
+                                                    <div class="media-body" style="width:70%;padding-right:13px;">
+                                                        <div class="row">
+                                                            <div class="col-lg-10" style="padding:5px 40px 5px 30px;">
+                                                                <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
+                                                                <div class="row" style="color:#C1C1C1">
+                                                                    <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                                                    <span class="sr-only">60% 完成</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
+                                                                                <span class="rate1">
+                                                                                    <em>￥1,247</em><br>已筹资
+                                                                                </span>
+                                                                                <span class="rate2">
+                                                                                    <em>60%</em><br>已达
+                                                                                </span>
+                                                                                <span class="rate3">
+                                                                                    <em>16天</em><br>剩余时间
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 padding0">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#777777;">已失败</div></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="div-block-type1" style="background-color:#777777;color:#fff;"><a class="project-a-type" href="#">浏览项目</a></div>
+                                                                    </div>
+                                                                </div>
 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row martop10">
+                            <div class="col-lg-12 padding0">
+                                <div class="thumbnail">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div style="border:1px solid #F4F4F4;">
+                                                <div class="media">
+                                                    <a class="media-left" href="#" style="padding:5px 0px 5px 5px;width:30%">
+                                                        <img src="../img/project/11.jpg" style="width:100%;height:140px;" alt="...">
+                                                    </a>
+                                                    <div class="media-body" style="width:70%;padding-right:13px;">
+                                                        <div class="row">
+                                                            <div class="col-lg-10" style="padding:5px 40px 5px 30px;">
+                                                                <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
+                                                                <div class="row" style="color:#C1C1C1">
+                                                                    <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
+                                                                            <div class="progress">
+                                                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                                                    <span class="sr-only">60% 完成</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
+                                                                                <span class="rate1">
+                                                                                    <em>￥1,247</em><br>已筹资
+                                                                                </span>
+                                                                                <span class="rate2">
+                                                                                    <em>60%</em><br>已达
+                                                                                </span>
+                                                                                <span class="rate3">
+                                                                                    <em>16天</em><br>剩余时间
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 padding0">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#FF9326;">已成功</div></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="div-block-type1" style="background-color:#FF9326;color:#fff;"><a class="project-a-type" href="#">浏览项目</a></div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="my-data">
 
                     </div>
-
+                    <div role="tabpanel" class="tab-pane" id="my-group">...</div>
                 </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        关注<span class="badge">20</span>人
-                        <span class="pull-right"><a href="settings-contacts.html">全部</a></span>
-                    </div>
-                    <div class="panel-body">
-                        <div class="row marbottom15">
-
-                            <div class="pull-left pl15">
-                                <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine</div>
-                                </a>
-
-                                <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine</div>
-                                </a>
-                                <a class="pull-left text-center" href="#" title="sunshine45454545454ds" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine45454545454ds</div>
-                                </a>
-                                <a class="pull-left text-center" href="#" title="sunshine45454545454ds" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine45454545454ds</div>
-                                </a>
-                                <a class="pull-left text-center" href="#" title="sunshine45454545454ds" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine45454545454ds</div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        被关注<span class="badge">500</span>人
-                        <span class="pull-right"><a href="settings-contacts.html">全部</a></span>
-                    </div>
-                    <div class="panel-body">
-                        <div class="row marbottom15">
-
-                            <div class="pull-left pl15">
-                                <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine</div>
-                                </a>
-
-                                <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine</div>
-                                </a>
-                                <a class="pull-left text-center" href="#" title="sunshine45454545454ds" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine45454545454ds</div>
-                                </a>
-                                <a class="pull-left text-center" href="#" title="sunshine45454545454ds" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine45454545454ds</div>
-                                </a>
-                                <a class="pull-left text-center" href="#" title="sunshine45454545454ds" style="margin-right:5px;">
-                                    <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
-                                    <div class="text-overflow nulinkunderline small">sunshine45454545454ds</div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
- 
-
             </div>
             <!--right box-->
             <div class="col-lg-4">
-
-
                 <div class="panel panel-default">
-                    <div class="panel-heading">徽章</div>
-                    <div class="panel-body">
-                        <a href="#" title="好市民徽章" alt="徽章"><img src="../img/badge/good-citizen.png" alt="..." class="img-circle"></a>
-                        <a href="#" title="努力工作徽章" alt="徽章"><img src="../img/badge/hard-worker.png" alt="..." class="img-circle"></a>
-                        <a href="#" title="家庭好帮手徽章" alt="徽章"><img src="../img/badge/homework-helper.png" alt="..." class="img-circle"></a>
-                        <a href="#" title="练习徽章" alt="徽章"><img src="../img/badge/participant.png" alt="..." class="img-circle"></a>
-                        <a href="#" title="完美徽章" alt="徽章"><img src="../img/badge/perfect-attendance.png" alt="..." class="img-circle grayscale"></a>
-                        <a href="#" title="星级徽章" alt="徽章"><img src="../img/badge/star-performer.png" alt="..." class="img-circle grayscale"></a>
-                        <a href="#" title="学生月徽章" alt="徽章"><img src="../img/badge/student-month.png" alt="..." class="img-circle grayscale"></a>
-
+                    <div class="panel-body" style="background-color:#F0F0F0">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img src="../img/user/fw_r2_c2.png" />&nbsp;&nbsp;奇异综合评分
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" style="padding:15px 40px 10px 40px">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        能力素质A
+                                        <div class="progress" style="margin-bottom:5px;">
+                                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                <span class="sr-only">40% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        能力素质B
+                                        <div class="progress" style="margin-bottom:5px;">
+                                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                <span class="sr-only">20% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        能力素质C
+                                        <div class="progress" style="margin-bottom:5px;">
+                                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                <span class="sr-only">60% Complete (warning)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        能力素质D
+                                        <div class="progress" style="margin-bottom:0px;">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                <span class="sr-only">80% Complete (danger)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img src="../img/user/fw_r4_c3.png" /> 我的关注
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="hr-style" style="margin-top:5px;margin-bottom:10px;"></div>
+                                </div>
+                            </div>
+                            <div class="row marbottom15">
+                                <div class="col-lg-12" style="padding:5px 0px 0px 40px">
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
 
-              
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <img src="../img/user/fw_r4_c3.png" />&nbsp;&nbsp;我的粉丝
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="hr-style" style="margin-top:5px;margin-bottom:10px;"></div>
+                                </div>
+                            </div>
+                            <div class="row marbottom15">
+                                <div class="col-lg-12" style="padding:5px 0px 0px 40px">
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+                                    <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
+                                        <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                        <div class="text-overflow nulinkunderline small">sunshine</div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img />&nbsp;&nbsp;活跃群组
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hr-style" style="margin-top:5px;margin-bottom:20px;"></div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body" style="padding-top:0px;padding-bottom:0px">
+                      
+                        <div class="row group-hover-bgcolor" style="overflow:auto">
+                            <div class="col-lg-12">
+                                <div class="row" style="padding:15px;">
+                                    <div class="col-lg-12">
+                                        <div class="media">
+                                            <a class="media-left" href="#" style="width:20%">
+                                                <img src="../img/project/1.jpg" style="width:60px;height:60px;" alt="...">
+                                            </a>
+                                            <div class="media-body" style="width:80%;padding-left:5px;">
+                                                <div class="row">
+                                                    <div class="col-lg-12 fz14 martop0" style="font-weight:bold">
+                                                        张灯结彩结大瓜
+                                                    </div>
+                                                </div>
+                                                <div class="row fz12" style="color:#C9C9D2;margin-top:3px;">
+                                                    <div class="col-lg-4" style="padding-right:0px;">
+                                                        成员(58)
+                                                    </div>
+                                                    <div class="col-lg-4" style=" padding-right:0px;padding-left:0px;">
+                                                        话题(500)
+                                                    </div>
+                                                    <div class="col-lg-4" style=" padding-right:0px;padding-left:0px;">
+                                                        项目(4)
+                                                    </div>
+                                                </div>
+                                                <div class="row fz12">
+                                                    <div class="col-lg-12" style="margin-top:3px;">
+                                                        <img src="../img/user/fw_r6_c6.png" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hr-style" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row group-hover-bgcolor" style="overflow:auto">
+                            <div class="col-lg-12">
+                                <div class="row" style="padding:15px;">
+                                    <div class="col-lg-12">
+                                        <div class="media">
+                                            <a class="media-left" href="#" style="width:20%">
+                                                <img src="../img/project/1.jpg" style="width:60px;height:60px;" alt="...">
+                                            </a>
+                                            <div class="media-body" style="width:80%;padding-left:5px;">
+                                                <div class="row">
+                                                    <div class="col-lg-12 fz14 martop0" style="font-weight:bold">
+                                                        张灯结彩结大瓜
+                                                    </div>
+                                                </div>
+                                                <div class="row fz12" style="color:#C9C9D2;margin-top:3px;">
+                                                    <div class="col-lg-4" style="padding-right:0px;">
+                                                        成员(58)
+                                                    </div>
+                                                    <div class="col-lg-4" style=" padding-right:0px;padding-left:0px;">
+                                                        话题(500)
+                                                    </div>
+                                                    <div class="col-lg-4" style=" padding-right:0px;padding-left:0px;">
+                                                        项目(4)
+                                                    </div>
+                                                </div>
+                                                <div class="row fz12">
+                                                    <div class="col-lg-12" style="margin-top:3px;">
+                                                        <img src="../img/user/fw_r6_c6.png" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hr-style" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row group-hover-bgcolor" style="overflow:auto">
+                            <div class="col-lg-12">
+                                <div class="row" style="padding:15px;">
+                                    <div class="col-lg-12">
+                                        <div class="media">
+                                            <a class="media-left" href="#" style="width:20%">
+                                                <img src="../img/project/1.jpg" style="width:60px;height:60px;" alt="...">
+                                            </a>
+                                            <div class="media-body" style="width:80%;padding-left:5px;">
+                                                <div class="row">
+                                                    <div class="col-lg-12 fz14 martop0" style="font-weight:bold">
+                                                        张灯结彩结大瓜
+                                                    </div>
+                                                </div>
+                                                <div class="row fz12" style="color:#C9C9D2;margin-top:3px;">
+                                                    <div class="col-lg-4" style="padding-right:0px;">
+                                                        成员(58)
+                                                    </div>
+                                                    <div class="col-lg-4" style=" padding-right:0px;padding-left:0px;">
+                                                        话题(500)
+                                                    </div>
+                                                    <div class="col-lg-4" style=" padding-right:0px;padding-left:0px;">
+                                                        项目(4)
+                                                    </div>
+                                                </div>
+                                                <div class="row fz12">
+                                                    <div class="col-lg-12" style="margin-top:3px;">
+                                                        <img src="../img/user/fw_r6_c6.png" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hr-style"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row group-hover-bgcolor" style="overflow:auto">
+                            <div class="col-lg-12">
+                                <div class="row" style="padding:15px;">
+                                    <div class="col-lg-12">
+                                        <div class="media">
+                                            <a class="media-left" href="#" style="width:20%">
+                                                <img src="../img/project/1.jpg" style="width:60px;height:60px;" alt="...">
+                                            </a>
+                                            <div class="media-body" style="width:80%;padding-left:5px;">
+                                                <div class="row">
+                                                    <div class="col-lg-12 fz14 martop0" style="font-weight:bold">
+                                                        张灯结彩结大瓜
+                                                    </div>
+                                                </div>
+                                                <div class="row fz12" style="color:#C9C9D2;margin-top:3px;">
+                                                    <div class="col-lg-4" style="padding-right:0px;">
+                                                        成员(58)
+                                                    </div>
+                                                    <div class="col-lg-4" style=" padding-right:0px;padding-left:0px;">
+                                                        话题(500)
+                                                    </div>
+                                                    <div class="col-lg-4" style=" padding-right:0px;padding-left:0px;">
+                                                        项目(4)
+                                                    </div>
+                                                </div>
+                                                <div class="row fz12">
+                                                    <div class="col-lg-12" style="margin-top:3px;">
+                                                        <img src="../img/user/fw_r6_c6.png" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="panel panel-default">
+            <div class="panel-heading">徽章</div>
+            <div class="panel-body">
+                <a href="#" title="好市民徽章" alt="徽章"><img src="../img/badge/good-citizen.png" alt="..." class="img-circle"></a>
+                <a href="#" title="努力工作徽章" alt="徽章"><img src="../img/badge/hard-worker.png" alt="..." class="img-circle"></a>
+                <a href="#" title="家庭好帮手徽章" alt="徽章"><img src="../img/badge/homework-helper.png" alt="..." class="img-circle"></a>
+                <a href="#" title="练习徽章" alt="徽章"><img src="../img/badge/participant.png" alt="..." class="img-circle"></a>
+                <a href="#" title="完美徽章" alt="徽章"><img src="../img/badge/perfect-attendance.png" alt="..." class="img-circle grayscale"></a>
+                <a href="#" title="星级徽章" alt="徽章"><img src="../img/badge/star-performer.png" alt="..." class="img-circle grayscale"></a>
+                <a href="#" title="学生月徽章" alt="徽章"><img src="../img/badge/student-month.png" alt="..." class="img-circle grayscale"></a>
 
             </div>
-        </div>
+        </div>-->
 
 
 
 
+                </div>
+            </div>
+            </div>
+            <div class="clearfix mtmb15"></div>
 
 
-    </div>
+            <div id="footer"></div>
 
-    <div class="clearfix mtmb15"></div>
+</div>
 
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="../js/jquery.min.js"></script>
+            <script src="../dist/js/bootstrap.min.js"></script>
 
-    <div id="footer"></div>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
+            <script type="text/javascript">
 
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../dist/js/bootstrap.min.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript">
-
-        $(function () {
-            $("#head").load("../head.html");
-            $("#footer").load("../footer.html");
-             
-             
-
-
-
-
-
-
-        })
-
-    </script>
+                $(function () {
+                    $("#head").load("../head.html");
+                    $("#footer").load("../footer.html");
+                });
+                $('#myTab a').click(function (e) {
+                    e.preventDefault()
+                    $(this).tab('show')
+                });
+            </script>
 
 
 </body>
