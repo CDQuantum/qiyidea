@@ -430,6 +430,11 @@ z-index: 3;
 	height: 1px;
 	overflow: hidden;
 }
+.hr-style-1{
+    border-top: 1px solid #F3F3F3;
+	height: 1px;
+	overflow: hidden;
+}
 .created-return-div{
 	padding:0px;
 	float:left;
@@ -518,7 +523,10 @@ z-index: 3;
 .group-hover-bgcolor :hover{
     background-color:#F5F5F5;
 }
-.c_img{position:relative;}
+.c_img{
+    position:relative;
+
+}
 .c_words{
 position: absolute;
 top: 0px;
@@ -529,4 +537,18 @@ color: #fff;
 }
 .color-A7A7A7{
     color:#A7A7A7;
+}
+.img_reply{
+     position:relative;
+}
+.num_reply{
+ position: absolute;
+top: 0px;
+height: 24px;
+line-height: 20px;
+width:28px;
+color: #fff;
+}
+.member-group-taolun{
+    margin-right:5px;
 }
