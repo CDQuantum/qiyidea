@@ -40,8 +40,7 @@
     <div id="head"></div>
      
 
-    <!-- Carousel
-    ================================================== -->
+    
     
     <!-- Begin page content -->
     <div class="container">
@@ -493,10 +492,11 @@
             //公共部分加载
             $("#head").load("../head.html");
             $("#footer").load("../footer.html");
+            $(".add-return-yes").click(function () {
+                $("#create-new-return").modal("hide");
+            });
         })
-		$(".add-return-yes").click(function(){
-			$("#create-new-return").modal("hide");
-		});
+		
     </script>
 </body>
 </html>

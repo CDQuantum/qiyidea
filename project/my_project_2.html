@@ -38,61 +38,7 @@
 
 <body>
 
-    <!-- Static  navbar -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" >
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                    <a class="navbar-brand" href="#">Project name</a>-->
-                <a class="navbar-brand navbar-brand-logo" href="#">
-                    <img alt="奇异点・qiyidea.com" src="../img/qiyidea_logo.png">
-                </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">首页</a></li>
-                    <li><a href="list.html">浏览项目</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">发起项目 <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">筹资金</a></li>
-                            <li><a href="#">筹实物</a></li>
-                            <li><a href="#">发现小伙伴</a></li>
-                            <!--<li class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>-->
-                        </ul>
-                    </li>
-                    <li><a href="#contact">帮助中心</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="admin/user_signin.html">注册</a></li>
-                    <li><a href="admin/home.html">登录</a></li>
-                    <li><a href="#">第三方登录</a></li>
-                </ul>
-                <div class="navbar-form navbar-right navbar-form-input">
-                    <form class="navbar-left" role="form" action="index.html">
-                        <div class="input-group">
-                            <input type="text" placeholder="发现更多金点子" class="form-control  input-sm">
-                            <span class="input-group-btn">
-                                <button class="btn btn-success btn-sm" type="button">查询</button>
-                            </span>
-                        </div>
-                    </form>
-
-                </div>
-            </div><!--/.nav-collapse -->
-        </div>
-    </nav>
-
-    <!-- Carousel
-    ================================================== -->
+    <div id="head"></div>
     
     <!-- Begin page content -->
     <div class="container">
@@ -219,56 +165,9 @@
          
     </div>
 
+    <div class="clearfix mtb15"></div>
 
-    <div class="footer" >
-        <div class="footer-info">
-            <div class="wrapper">
-                <div class="footer-info-widget footer-info-widget-links">
-                    <div class="footer-info-widget-container">
-                        <h3>众筹项目</h3>
-                        <ul class="list-inline">
-                            <li><a href="http://www.qiyidea.com/" target="_blank">企业项目</a></li>
-                            <li><a href="http://www.qiyidea.com/" target="_blank">个人项目</a></li>
-                            <li>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <li><a href="http://www.qiyidea.com/" target="_blank">优秀团队</a></li>
-                            <li><a href="http://www.qiyidea.com/" target="_blank">金牌个人</a></li>
-                            <li>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <li><a href="http://www.qiyidea.cn/" target="_blank">筹资金</a></li>
-                            <li><a href="http://www.qiyidea.com/" target="_blank">筹实物</a></li>
-                            <li><a href="http://www.qiyidea.com/" target="_blank">找伙伴</a></li>
-                            
-                        </ul>
-                    </div>
-                </div><div class="footer-info-widget footer-info-widget-cs">
-                    <div class="footer-info-widget-container">
-                        <h3>客户服务</h3>
-                        <ul class="list-unstyled">
-                            <li>人工服务：<span class="highlight">028 - 12345678</span></li>
-                            <li>仲裁邮箱：<span class="highlight">info@qiyidea.com</span></li>
-                            <li>QQ：<span class="highlight">xxxxxxxx</span></li>
-                        </ul><a href="/faq.html" class="btn btn-other">常见问题</a>
-                    </div>
-                </div>
-                <div class="footer-info-widget footer-info-widget-about">
-                    <div class="footer-info-widget-container">
-                        <h3>关于我们</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="/about.html">公司简介</a></li>
-                            <li><a href="/contact.html">联系我们</a></li>
-                            <li><a href="/jobs.html">加入我们</a><a href="/jobs.html" class="hiring-footer"></a></li>
-                            <li><a href="/tos.html">服务条款</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-info-widget footer-info-widget-follow">
-                    <div class="footer-info-widget-container">
-                        <h3>关注我们</h3>
-                        <div><img src="../img/index/qiyidea_icon.png" alt="奇异点微信"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footer"></div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -279,9 +178,14 @@
     <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
     <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
     <script type="text/javascript">
-		$(".add-return-yes").click(function(){
-			$("#create-new-return").modal("hide");
-		});
+        $(function () {
+            //公共部分加载
+            $("#head").load("../head.html");
+            $("#footer").load("../footer.html");
+             
+        })
+
+		 
     </script>
 </body>
 </html>
