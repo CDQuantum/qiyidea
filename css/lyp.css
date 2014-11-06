@@ -435,6 +435,11 @@ z-index: 3;
 	height: 1px;
 	overflow: hidden;
 }
+.hr-style-2{
+    border-top: 1px solid #DBDBDB;
+	height: 1px;
+	overflow: hidden;
+}
 .created-return-div{
 	padding:0px;
 	float:left;
@@ -551,4 +556,13 @@ color: #fff;
 }
 .member-group-taolun{
     margin-right:5px;
+}
+.btn-class{
+    padding:2px 8px 2px 8px;
+}
+.color-red{
+    color:red;
+}
+.color-blue{
+    color:blue;
 }
