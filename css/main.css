@@ -41,7 +41,9 @@ a.nulinkunderline:hover {
 .color-danger {
     color: #d9534f;
 }
-
+.color-1684DA {
+color:#1684DA;
+}
 dt, dd {
     line-height: 1.7;
 }
@@ -127,6 +129,16 @@ button.plr30 {
 .pt3 {
     padding-top: 3px;
 }
+.pt5 {
+    padding-top: 5px;
+}
+.pt8 {
+    padding-top: 8px;
+}
+.pt20 {
+    padding-top: 20px;
+}
+
 .pt40 {
     padding-top: 40px;
 }

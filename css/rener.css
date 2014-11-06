@@ -167,7 +167,7 @@ div.dot {
 }
 
 div.ren-flag-box {
-    background: #fff url('../img/task_flag.png') no-repeat -20px -3px;
+    background: url('../img/task_flag.png') no-repeat -20px -3px;
     padding: 9px 0px 10px 75px;
     height: 41px;
     max-width: 228px;
@@ -190,7 +190,7 @@ div.ren-unflag-box {
 }
 
 .ren-task-box {
-    background: #fff url('../img/task_flag.png') no-repeat -45px -50px;
+    background: url('../img/task_flag.png') no-repeat -45px -50px;
     padding: 11px 0px 10px 50px;
     height: 41px;
     max-width: 228px;
@@ -206,6 +206,87 @@ div.ren-unflag-box {
     min-width: 202px;
     color: #DCC7AB;
 }
+.ren-flag-long-box {
+     background: #fff url('../img/task_bg_long.png') no-repeat -50px -10px;
+     padding: 9px 0px 10px 65px;
+     height: 41px;
+     max-width: 780px;
+     min-width: 740px;
+     color: #fff;
+     margin-left:20px;
+     margin-bottom:5px;
+}
+.ren-task-long-box {
+    background: #fff url('../img/task_bg_long.png') no-repeat -69px -67px;
+    padding: 8px 0px 10px 45px;
+    height: 41px;
+    max-width: 780px;
+    min-width: 740px;
+    color: #fff;
+}
+.ren-task-unlong-box {
+    background: #fff url('../img/task_bg_long.png') no-repeat -69px -116px;
+    padding: 8px 0px 10px 45px;
+    height: 41px;
+    max-width: 780px;
+    min-width: 740px;
+    color: #fff;
+}
+.ren-long-task-td1 {
+    max-width:180px; min-width:170px;
+}
+.ren-long-task-td2 {
+    max-width:310px; min-width:300px;
+}
+.ren-long-task-td3 {
+    max-width:200px; min-width:190px;
+}
+.ren-task-status-done-time {
+     background: url('../img/task-flag-status.png') no-repeat -10px -24px;
+    padding: 10px 0px 10px 45px;
+    height: 10px;
+    max-width: 90px;
+    min-width: 90px;
+}
+.ren-task-status-done {
+     background: url('../img/task-flag-status.png') no-repeat -10px -64px;
+    padding: 10px 0px 10px 45px;
+    height: 10px;
+    max-width: 90px;
+    min-width: 90px;
+}
+.ren-task-status-doing {
+     background: url('../img/task-flag-status.png') no-repeat -10px -104px;
+    padding: 10px 0px 10px 45px;
+    height: 10px;
+    max-width: 90px;
+    min-width: 90px;
+}
+
+.ren-task-status-done-update {
+    background: url('../img/task-flag-status.png') no-repeat -10px -180px;
+    padding: 0px 0px 10px 45px;
+    height: 27px;
+    max-width: 90px;
+    min-width: 90px;
+    margin-top:-5px;
+}
+.ren-task-status-doing-check {
+    background: url('../img/task-flag-status.png') no-repeat -10px -140px;
+    padding: 0px 0px 10px 10px;
+    height: 25px;
+    max-width: 90px;
+    min-width: 84px;
+    margin-top:-3px;
+}
+.ren-task-caret {
+    background: url('../img/task-flag-status.png') no-repeat -10px -230px;
+    padding: 0px 15px 10px 0px;
+    height: 11px;
+    max-width: 15px;
+    min-width: 14px;
+}
+
 /*-------- flag  task  end-----------  */
 
 
