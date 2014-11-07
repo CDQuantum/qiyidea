@@ -203,7 +203,7 @@
                                                                 </a>
                                                                 <div class="media-body">
                                                                     <p class="media-heading">
-                                                                        <a href="admin/user-index.html">潇洒的信仰</a>:
+                                                                        <a href="admin/user-index.html" class="ren-show-card">潇洒的信仰</a>:
                                                                         福建厦门的还没收到，浙江金华的也没收到。搞什么啊，都一个多星期了，再小的物流公司，2000本也该发完了？
                                                                     </p>
 
@@ -384,6 +384,58 @@
     <div class="clearfix mtb15"></div>
 
     <div id="footer"></div>
+
+
+    <!--个人名片-->
+    <div class="user-info-card dispalynone">
+        <div class="row">
+            <div class="col-lg-3">
+                <dl class="mp0">
+                    <dt>
+                        <a href="#">
+                            <img class="media-object" src="../img/default_avatar.gif" alt="50*50" title="50*50" style="height:60px; width:60px;">
+                        </a>
+                    </dt>
+                    <dd>
+                        <br />
+                    </dd>
+                    <dd>
+                        <button class="btn btn-xs btn-warning"><span class="glyphicon glyphicon-plus"></span> 加友好</button>
+                        <button class="btn btn-xs btn-success"><span class="glyphicon glyphicon-envelope"></span> 发消息</button>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="col-lg-9">
+
+                <dl>
+                    <dt>
+                        <a href="../admin/user-index-info.html" target="_blank" class="nulinkunderline vertical-align-middle">死不靠谱夫斯基</a> &nbsp;<img src="../img/badge/good1.png" />
+
+                    </dt>
+                    <dd class="color-333 fz12"><span class="glyphicon glyphicon-map-marker"></span>  四川 成都  成都七中嘉祥外国语学校</dd>
+                    <dd class="color-333 fz12">好友：52  &nbsp;&nbsp; 发起：11 &nbsp;&nbsp; 参与：210</dd>
+                    <dd>
+                        <br />
+                    </dd>
+                     <dd>
+                        <span class="label label-default">学生</span>
+                        <span class="label label-default">达人</span>
+                        <span class="label label-default">中学生</span>
+                        <span class="label label-default">机器人爱好者</span>
+                        <span class="label label-default">小说爱好者</span>
+
+
+                    </dd>
+
+                </dl>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--个人名片 end-->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -401,7 +453,34 @@
             $(".add-return-yes").click(function () {
                 $("#create-new-return").modal("hide");
             });
-
+            //user card info
+            $(".ren-show-card").popover({
+                html: true,
+                trigger: 'manual',
+                container: $(this).attr('id'),
+                //placement: 'bottom',
+                content: function () {
+                    //$return = '<div class="hover-hovercard"></div>';
+                    return $('.user-info-card').html();
+                }
+            }).on("mouseenter", function () {
+                var _this = this;
+                $(this).popover("show");
+                $(this).siblings(".popover").on("mouseleave", function () {
+                    //$(_this).popover('hide');
+                });
+            }).on("mouseleave", function () {
+                var _this = this;
+                setTimeout(function () {
+                    if (!$(".popover:hover").length) {
+                        //$(_this).popover("hide")
+                    }
+                }, 100);
+            }).on("show.bs.popover", function (e) {
+                var _this = this;
+                $(this).data("bs.popover").tip().css("max-width", "350px");
+            });
+            //end user card info
         })
 
     </script>
