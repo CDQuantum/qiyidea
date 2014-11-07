@@ -222,6 +222,9 @@ div.minheight30, p.minheight30 {
 div.vertical-align-middle,a.vertical-align-middle  {
     vertical-align:middle;
 }
+.text-indent2em {
+text-indent:2em
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */

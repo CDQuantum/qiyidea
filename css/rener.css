@@ -286,6 +286,20 @@ div.ren-unflag-box {
     max-width: 15px;
     min-width: 14px;
 }
+.ren-task-caret-up {
+    background: url('../img/task-flag-status.png') no-repeat -10px -260px;
+    padding: 0px 15px 10px 0px;
+    height: 11px;
+    max-width: 15px;
+    min-width: 14px;
+}
+
+.ren-task-table-index {
+color:#999; margin-bottom:0px; background-color:#fff; 
+}
+.ren-task-table-index tr:first-child,.ren-task-table-index tr td:first-child {
+    background-color:#FBFBFB;
+}
 
 /*-------- flag  task  end-----------  */
 
