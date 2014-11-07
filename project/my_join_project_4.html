@@ -21,7 +21,8 @@
     <!--<link href="css/sticky-footer-navbar.css" rel="stylesheet">-->
     <link href="../css/lyp.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/rener.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/fileupload-ui/jquery.fileupload-ui.css">
    
 
@@ -72,65 +73,342 @@
                          </div>
          		 		</div>
          		</div>
-         		<div class="row">
-         			<div class="panel panel-default">
-	         			<div class="panel-body" >
-		         			<div class="col-lg-9" >
-									<div class="row" style="color:#FF7F00">
-										<div class="col-lg-12">&nbsp;<span style="color:#000;">任务列表</span></div>
-									</div>
-									<div class="row">
-										<div class="col-lg-12">
-											<div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
-										</div>
-									</div>
-                               <div class="row martop10 text-left">
-                                   <div class="col-lg-12">
-                                       分类查看：<button class="btn btn-sm btn-danger">全部日志</button>
-                                       <button class="btn btn-sm btn-default">只看里程碑</button>
-                                       <button class="btn btn-sm btn-default">只看任务</button>
-                                   </div>
-                               </div>
-                               <div class="row martop10 text-left">
-                                   <div class="col-lg-12">
-                                       任务状态：<button class="btn btn-sm btn-danger">全部状态</button>
-                                       <button class="btn btn-sm btn-default">未激活的</button>
-                                       <button class="btn btn-sm btn-default">进行中的</button>
-                                       <button class="btn btn-sm btn-default">已经完成的</button>
-                                       <button class="btn btn-sm btn-default">已经超时的</button>
-                                   </div>
-                               </div>
-							</div>
-							<div class="col-lg-3" >
-                                <div class="row martop40" >
-                                    <div class="col-lg-12 text-center">
-                                        <div style="background-color:#FBFBFB;color:#B1B1B1;padding:5px 5px 5px 5px;">
-                                            <div class="row">
-                                                <div class="col-lg-6">成员</div>
-                                                <div class="col-lg-6">任务编码</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-body pt20 mpb40">
+                    <div class="col-lg-9">
+                        <div class="row" style="color:#FF7F00">
+                            <div class="col-lg-12 fz18">&nbsp;<span style="color:#000;">任务列表</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
+                            </div>
+                        </div>
+                        <div class="row martop10 text-left">
+                            <div class="col-lg-12">
+                                分类查看：<button class="btn btn-sm btn-danger">全部日志</button>
+                                <button class="btn btn-sm btn-default">只看里程碑</button>
+                                <button class="btn btn-sm btn-default">只看任务</button>
+                            </div>
+                        </div>
+                        <div class="row martop10 text-left">
+                            <div class="col-lg-12">
+                                任务状态：<button class="btn btn-sm btn-danger">全部状态</button>
+                                <!--<button class="btn btn-sm btn-default">未激活的</button>-->
+                                <button class="btn btn-sm btn-default">进行中的</button>
+                                <button class="btn btn-sm btn-default">已经完成的</button>
+                                <button class="btn btn-sm btn-default">已经超时的</button>
+                            </div>
+                        </div>
+                        <div class="row martop10 text-left">
+                            <div class="col-lg-12 mp0" style="margin-top:30px; margin-bottom:10px; color:#952320;">
                                 <div class="row">
-                                    <div class="col-lg-12 text-center">
-                                        <div style="color:#B1B1B1;padding:5px 5px 5px 5px;">
-                                            <div class="row">
-                                                <div class="col-lg-6" style="color:#B08456">爱吃鱼的猫</div>
-                                                <div class="col-lg-6">M1T1,M2T2</div>
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-2" style="max-width：100px; width:100px;">
+                                        <label>时间线</label>
+                                    </div>
+                                    <div class="col-lg-3 fz14">
+                                        <label>里程碑与任务序列</label>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label>任务负责人及周期时间</label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label>执行状态</label>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-12 text-center" style="color:#BDBDBD;">
-                                        <div class="alert alert-warning alert-dismissible preview-div" role="alert">任务分配预览</div>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12">
+                                <!--时间线-->
+                                <div class="ren-timeline">
+                                    <div class="ren-flag-line">
+                                        <!--里程碑-->
+                                        <div class="ren-flag">
+                                            <div class="pull-left timeicon"><i class="glyphicon glyphicon-time color-grey"></i></div>
+                                            <div class="ren-flag-long-box">
+
+                                                <div class="row">
+                                                    <div class="col-lg-3 fz14 text-overflow ren-long-task-td1">
+                                                        <div title="里程碑M1">里程碑M1</div>
+                                                    </div>
+                                                    <div class="col-lg-6 fz12 text-overflow ren-long-task-td2 pt3">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745" style="color:#D8524E;">负责人：张无羽（2014-10-12至2014-11-06）</span>
+                                                    </div>
+                                                    <div class="col-lg-3 fz12 ren-long-task-td3 pt8">
+                                                        <div class="ren-task-status-done-time" data-title="已完成"></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <!--任务1-->
+                                            <div class="ren-task-container ren-task-long-box">
+                                                <div class="row">
+                                                    <div class="col-lg-3 fz14 text-overflow ren-long-task-td1">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745">族管住宿与餐饮的协调办公室电话332154745</span>
+                                                    </div>
+                                                    <div class="col-lg-6 fz12 text-overflow ren-long-task-td2">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745" style="color:#D1B691;">负责人：张无羽（2014-10-12至2014-11-06）</span>
+                                                    </div>
+                                                    <div class="col-lg-3 ren-long-task-td3">
+                                                        <div class="pull-left pt3">
+                                                            <div class="ren-task-status-done"></div>
+                                                        </div>
+                                                        <div class="pull-right color-grey pt5 text-right">
+                                                            <a href="javascript:void(0)" class="ren-task-caret"></a>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <!--任务2-->
+                                            <div class="ren-task-container  ren-task-unlong-box">
+                                                <div class="row">
+                                                    <div class="col-lg-3 fz14 text-overflow ren-long-task-td1">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745">族管住宿与餐饮的协调办公室电话332154745</span>
+                                                    </div>
+                                                    <div class="col-lg-6 fz12 text-overflow ren-long-task-td2">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745" style="color:#ddd;">负责人：张无羽（2014-10-12至2014-11-06）</span>
+                                                    </div>
+                                                    <div class="col-lg-3 ren-long-task-td3">
+                                                        <div class="pull-left pt3">
+                                                            <div class="ren-task-status-done-time"></div>
+                                                        </div>
+                                                        <div class="pull-right color-grey pt5 text-right">
+                                                            <!--<a href="javascript:void(0)" class="ren-task-caret"></a>-->
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--任务3-->
+                                            <div class="ren-task-container  ren-task-unlong-box">
+                                                <div class="row">
+                                                    <div class="col-lg-3 fz14 text-overflow ren-long-task-td1">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745">族管住宿与餐饮的协调办公室电话332154745</span>
+                                                    </div>
+                                                    <div class="col-lg-6 fz12 text-overflow ren-long-task-td2">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745" style="color:#ddd;">负责人：张无羽（2014-10-12至2014-11-06）</span>
+                                                    </div>
+                                                    <div class="col-lg-3 ren-long-task-td3">
+                                                        <div class="pull-left">
+                                                            <div class="ren-task-status-doing-check"></div>
+                                                        </div>
+                                                        <div class="pull-right color-grey pt5 text-right">
+                                                            <!--<a href="javascript:void(0)" class="ren-task-caret"></a>-->
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!--里程碑end-->
+                                        <!--里程碑-->
+                                        <div class="ren-flag mt15">
+                                            <div class="pull-left timeicon"><i class="glyphicon glyphicon-time color-grey"></i></div>
+                                            <div class="ren-flag-long-box">
+
+                                                <div class="row">
+                                                    <div class="col-lg-3 fz14 text-overflow ren-long-task-td1">
+                                                        <div title="里程碑M1">里程碑M2</div>
+                                                    </div>
+                                                    <div class="col-lg-6 fz12 text-overflow ren-long-task-td2 pt3">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745" style="color:#D8524E;">负责人：张无羽（2014-10-12至2014-11-06）</span>
+                                                    </div>
+                                                    <div class="col-lg-3 ren-long-task-td3 pt8">
+                                                        <div class="ren-task-status-done">已完成</div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <!--任务1-->
+                                            <div class="ren-task-container ren-task-long-box">
+                                                <div class="row">
+                                                    <div class="col-lg-3 fz14 text-overflow ren-long-task-td1">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745">族管住宿与餐饮的协调办公室电话332154745</span>
+                                                    </div>
+                                                    <div class="col-lg-6 fz12 text-overflow ren-long-task-td2">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745" style="color:#D1B691;">负责人：张无羽（2014-10-12至2014-11-06）</span>
+                                                    </div>
+                                                    <div class="col-lg-3 ren-long-task-td3">
+                                                        <div class="pull-left pt3">
+                                                            <div class="ren-task-status-doing"></div>
+                                                        </div>
+                                                        <div class="pull-right color-grey pt5 text-right">
+                                                            <a href="javascript:void(0)" class="ren-task-caret-up"></a>
+                                                        </div>
+
+                                                        <div class="clearfix"></div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="row mt15" style="margin-left:-60px; ">
+                                                    <div class="col-lg-11">
+                                                        <div class="alert alert-warning" style="background-color:#FCF8E3;">
+                                                            <div class="pull-left"><h4 style="color:#525252;">任务简述</h4></div>
+                                                            <div class="pull-right">
+                                                                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                            </div>
+                                                            <div class=" clearfix"></div>
+                                                            <p class="fz12 text-indent2em" style="color:#7d7d7d;">
+                                                                工欲善其事，必先利器。在实施项目的过程中，你也需要得到外界的支持与帮助。现在，你将针对前期项目分解出的任务，拟定一个详细的财务预算报告，以便在项目正是启动前能筹集到所需的资金或物资，帮助你和你的团队更好的完成计划项目。
+                                                            </p>
+                                                            <table class="table table-bordered text-center mt15 fz12 ren-task-table-index">
+                                                                <tr class="fz14" style="">
+                                                                    <td width="83px">编号</td>
+                                                                    <td width="75px">类别</td>
+                                                                    <td>单位名称</td>
+                                                                    <td width="58px">单价</td>
+                                                                    <td width="59px">数量</td>
+                                                                    <td width="78px">预算额</td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>M1T11</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                                                支出
+                                                                                <span class="caret"></span>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>M1T11</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                                                支出
+                                                                                <span class="caret"></span>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>M1T11</td>
+                                                                    <td>
+                                                                        <div class="dropdown">
+                                                                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                                                支出
+                                                                                <span class="caret"></span>
+                                                                            </button>
+                                                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="6" class="text-center cursor">
+                                                                        <span class="caret"></span> &nbsp;继续展开表单
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="6" class="text-center" style="background-color:#F9F1C8;color:#D8524D;font-weight:bold;font-size:20px;">TOTAL:<span style="color:#FF8409">￥25520.00</span></td>
+                                                                </tr>
+                                                            </table>
+                                                            <div class="text-center mtmb15">
+                                                                <button class="btn btn-warning plr30">我确认已经完成该任务</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <!--任务2-->
+                                            <div class="ren-task-container ren-task-long-box">
+                                                <div class="row">
+                                                    <div class="col-lg-3 fz14 text-overflow ren-long-task-td1">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745">族管住宿与餐饮的协调办公室电话332154745</span>
+                                                    </div>
+                                                    <div class="col-lg-6 fz12 text-overflow ren-long-task-td2">
+                                                        <span title="族管住宿与餐饮的协调办公室电话332154745" style="color:#D1B691;">负责人：张无羽（2014-10-12至2014-11-06）</span>
+                                                    </div>
+                                                    <div class="col-lg-3 ren-long-task-td3">
+                                                        <div class="pull-left">
+                                                            <div class="ren-task-status-doing-check"></div>
+                                                        </div>
+                                                        <div class="pull-right color-grey pt5 text-right">
+                                                            <a href="javascript:void(0)" class="ren-task-caret"></a>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!--里程碑end-->
+                                    </div>
+                                </div>
+                                <!--时间线end -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="row martop40">
+                            <div class="col-lg-12 text-center">
+                                <div style="background-color:#FBFBFB;color:#B1B1B1;padding:5px 5px 5px 5px;">
+                                    <div class="row">
+                                        <div class="col-lg-6">成员</div>
+                                        <div class="col-lg-6">任务编码</div>
                                     </div>
                                 </div>
                             </div>
-						</div>
-					</div>
-         		</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div style="color:#B1B1B1;padding:5px 5px 5px 5px;">
+                                    <div class="row">
+                                        <div class="col-lg-6" style="color:#B08456">爱吃鱼的猫</div>
+                                        <div class="col-lg-6">M1T1,M2T2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row martop10">
+                            <div class="col-lg-12 text-center" style="color:#BDBDBD;">
+                                <div class="alert alert-warning alert-dismissible preview-div" role="alert">任务分配预览</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="clearfix mpt40"></div>
