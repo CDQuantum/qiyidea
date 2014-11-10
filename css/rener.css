@@ -339,3 +339,84 @@ color:#999; margin-bottom:0px; background-color:#fff;
 
 
 /* bbs end */
+
+
+/*  project view */
+/* index list   */
+.thumbnail {
+padding:0;
+}
+.thumbnail>.caption>p.intro {
+    overflow:hidden;
+    max-height:100px;
+    height:100px;
+}
+.thumbnail> a> img {
+     width:250px; display: block;
+}
+.thumbnail > .progress,.project-view-status>.progress {
+    margin-bottom:0px; border-radius:0px; height:5px;
+}
+.project-view-status > .rener-progress {
+    margin-left:15px;
+    margin-right:15px;
+}
+.project-view-status > hr {
+margin-top:10px;
+margin-bottom:10px;
+border:none;
+border-bottom:1px dashed #e4e4e4;
+}
+.project-view-status > .progress {
+    height:20px;
+}
+.thumbnail > .progress>.progress-bar,.project-view-status>.progress>.progress-bar {
+    background-color:#62D8FF;
+}
+
+
+.caption h5 {
+    min-height:35px;
+    overflow:hidden;
+    max-height:35px;
+    height:32px;
+}
+.caption h5 a {
+    color:#666;
+}
+    .caption h5 a:hover {
+        text-decoration:none;
+        color:#FE9E3E; 
+    }
+.item-rate {
+padding: 8px 10px 15px 10px;
+line-height: 18px;
+color: #bdbdbd;
+position: relative;
+}
+
+.rate1 {
+display: block;
+float: left;
+text-align: left;
+width: 50px;
+}
+.rate2 {
+display: block;
+float: left;
+text-align: center;
+width: 76px;
+}
+.rate3 {
+display: block;
+float: right;
+text-align: right;
+/* width: 60px; */
+}
+
+.item-rate em {
+color: #555;
+}
+.item-rate b {
+color: #525260;
+}

@@ -41,9 +41,35 @@ a.nulinkunderline:hover {
 .color-danger {
     color: #d9534f;
 }
+
 .color-1684DA {
 color:#1684DA;
 }
+
+
+/* gray */
+div.color-a7a7a7,p.color-a7a7a7 {
+color:#a7a7a7;
+}
+
+div.color-525260,p.color-525260 {
+color:#525260;
+}
+div.color-d6d6d6,p.color-d6d6d6,label.color-d6d6d6 {
+color:#d6d6d6;
+}
+div.color-FF7F00,b.color-FF7F00,p.color-FF7F00,label.color-FF7F00 {
+color:#FF7F00;
+}
+
+/* waring */
+div.color-FE9E3E {
+color:#FE9E3E;
+}
+label.bg-FE9E3E {
+    background-color:#FE9E3E;
+}
+
 dt, dd {
     line-height: 1.7;
 }
@@ -108,6 +134,10 @@ button.plr30 {
     margin-bottom: 15px;
 }
 
+.mlr10 {
+margin-left:10px;
+margin-right:10px;
+}
 
 .pl15 {
     padding-left: 15px;
