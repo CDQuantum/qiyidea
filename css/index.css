@@ -73,6 +73,9 @@ text-align: right;
 .item-rate em {
 color: #555;
 }
+.item-rate b {
+color: #666;
+}
 
 /* index page footer img logo */
 .partner {
