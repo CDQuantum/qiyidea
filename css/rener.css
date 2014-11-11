@@ -460,3 +460,13 @@ display: inline-block;
     border-left: 10px solid transparent;
     content: '';
 }
+
+/* project view */
+.ren-project-view-progress-bar {
+height:6px;
+background-color:#ddd;
+border-radius:0px;
+}
+    .ren-project-view-progress-bar > .progress-bar {
+        background-color:#FF8000;
+    }
