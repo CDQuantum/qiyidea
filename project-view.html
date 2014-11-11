@@ -601,21 +601,33 @@
 
                         <div class="row">
                             <div class="col-lg-1 pt35">
-                                <i class="cursor glyphicon glyphicon-chevron-left fz16"></i>
+                                <i class="cursor glyphicon glyphicon-chevron-left fz16 ren-togle"></i>
                             </div>
                             <div class="col-lg-9 mt0">
-                                <h1 class="clearfix color-FF8000" style="margin-top:0;">¥19,305</h1>
-                                <div class="progress ren-project-view-progress-bar" style="margin-bottom:5px;">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="min-width: 20px; width:60%;">
-                                        <span class="sr-only">60% 完成</span>
+                                <div class="money">
+                                    <h1 class="clearfix color-FF8000" style="margin-top:0;">¥19,305</h1>
+                                    <div class="progress ren-project-view-progress-bar" style="margin-bottom:5px;">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="min-width: 20px; width:60%;">
+                                            <span class="sr-only">60% 完成</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="team dispalynone">
+                                    <h1 class="clearfix color-5ABFDE" style="margin-top:0;"><span class="glyphicon glyphicon-user"></span> 40人</h1>
+                                    <div class="progress ren-project-view-progress-bar" style="margin-bottom:5px;">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="background-color:#5ABFDE; min-width: 20px; width:60%;">
+                                            <span class="sr-only">60% 完成</span>
+                                        </div>
+                                    </div>
+                                </div>
+                              
                                 <div class="pull-left color-a7a7a7">已达 <label class="color-52525f">60%</label> </div>
                                 <div class="pull-right color-a7a7a7"><span class="glyphicon glyphicon-time"></span> 剩余 <label class="color-52525f">40天</label></div>
                                 <div class="clearfix"></div>
                             </div>
+
                             <div class="col-lg-1 pt35">
-                                <i class="cursor glyphicon glyphicon-chevron-right fz16"></i>
+                                <i class="cursor glyphicon glyphicon-chevron-right fz16 ren-togle"></i>
                             </div>
                         </div>
 
@@ -995,6 +1007,18 @@
                 animationOutSpeed: 200,
                 scrollText: '<i class="glyphicon glyphicon-chevron-up"></i>',
                 activeOverlay: !1
+            })
+
+            //切换团队
+            $('.ren-togle').click(function () {
+                if ($('.money').attr('data-ischeck')!=0) {
+                    $('.money').hide().attr('data-ischeck', 0);
+                    $('.team').show().attr('data-ischeck', 1);
+                }
+                else {
+                    $('.team').hide().attr('data-ischeck', 0);
+                    $('.money').show().attr('data-ischeck', 1);
+                }
             })
         })
         //$.get("head.html", function (data) {

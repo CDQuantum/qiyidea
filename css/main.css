@@ -96,7 +96,9 @@ div.color-5AB85A,b.color-5AB85A,p.color-5AB85A,label.color-5AB85A,span.color-5AB
 div.color-5ABFDE,b.color-5ABFDE,p.color-5ABFDE,label.color-5ABFDE,span.color-5ABFDE,h1.color-5ABFDE {
     color:#5ABFDE;
 }
- 
+div.bg-color-5ABFDE {
+background-color:#5ABFDE;
+}
 
 dt, dd {
     line-height: 1.7;
