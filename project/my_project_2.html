@@ -84,94 +84,107 @@
             <div class="col-lg-9 padding0">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <fieldset class="scheduler-border">
-                                    <legend class="scheduler-border">里程碑1</legend>
-                                    <form class="form-horizontal" role="form" action="start-project-4.html">
+                        <form class="form-horizontal" role="form" action="start-project-4.html">
+                            <div class="row">
 
-                                        <div class="form-group">
-                                            <label for="project-target" class="col-sm-2 control-label">里程碑命名：</label>
-                                            <div class="col-sm-10 paddleft0">
-                                                <input type="text" class="form-control project-name"  placeholder="请勿超过8个字">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="project-introduction" class="col-sm-2 control-label">设定时间：</label>
-                                            <div class="col-sm-5 paddleft0">
-                                                <div class="input-group date datetimepicker5 pull-left">
-                                                    <span class="input-group-addon">
-                                                        <span class="glyphicon-calendar glyphicon"></span>
-                                                    </span>
-                                                    <input type="text" class="form-control project-marker-start-time" data-date-format="YYYY-MM-DD" placeholder="截止时间">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="project-introduction" class="col-sm-2 control-label">里程碑简述：</label>
-                                            <div class="col-sm-10 paddleft0">
-                                                <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="project-introduction" class="col-sm-2 control-label">创建任务</label>
-                                            <div class="col-sm-10 paddleft0">
-                                            </div>
-                                        </div>
-                                    
+                                <div class="col-lg-12">
+                                    <fieldset class="scheduler-border">
+                                        <legend class="scheduler-border">里程碑<span class="add-flag-number-new">1</span></legend>
+
                                         <div class="row">
-                                            <div class="col-lg-12" style="padding:0px 20px 0px 50px;">
-                                                <ul class="nav nav-tabs mission-list" role="tablist">
-                                                    <li role="presentation" class="active"><a href=".mission-1" role="tab" data-toggle="tab">任务一</a></li>
-                                                </ul>
+                                            <div class="col-lg-12 text-right">里程碑编号：M1</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12" style="padding-right:70px;">
+                                                <div class="form-group martop15">
+                                                    <label for="project-target" class="col-sm-2 control-label">里程碑命名：</label>
+                                                    <div class="col-sm-10 paddleft0">
+                                                        <input type="text" class="form-control project-name" placeholder="请勿超过8个字">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="project-introduction" class="col-sm-2 control-label">设定时间：</label>
+                                                    <div class="col-sm-5 paddleft0">
+                                                        <div class="input-group date datetimepicker5 pull-left">
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon-calendar glyphicon"></span>
+                                                            </span>
+                                                            <input type="text" class="form-control project-marker-start-time" data-date-format="YYYY-MM-DD" placeholder="截止时间">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="project-introduction" class="col-sm-2 control-label">里程碑简述：</label>
+                                                    <div class="col-sm-10 paddleft0">
+                                                        <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="project-introduction" class="col-sm-2 control-label">创建任务</label>
+                                                    <div class="col-sm-10 paddleft0">
+                                                    </div>
+                                                </div>
+                                                <div class="row add-mission-divrow">
+                                                    <div class="col-lg-12" style="padding:0px 20px 0px 50px;">
+                                                        <ul class="nav nav-tabs mission-list" role="tablist">
+                                                            <li role="presentation" class="active"><a href=".flag-1-mission-1" role="tab" data-toggle="tab">任务1</a></li>
+                                                        </ul>
 
-                                                <!-- Tab panes -->
-                                                <div class="tab-content mission-form">
-                                                    <div role="tabpanel" class="tab-pane active mission-1">
-                                                        <div class="form-group martop15">
-                                                            <label for="project-introduction" class="col-sm-2 control-label"></label>
-                                                            <div class="col-sm-10 paddleft0 text-right">
-                                                                任务编号：T1
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="project-introduction" class="col-sm-2 control-label">任务命名：</label>
-                                                            <div class="col-sm-10 paddleft0">
-                                                                <input type="text" class="form-control project-name" placeholder="请勿超过8个字">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="project-introduction" class="col-sm-2 control-label">任务简述：</label>
-                                                            <div class="col-sm-10 paddleft0">
-                                                                <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content mission-form">
+                                                            <div role="tabpanel" class="mission-form-tab tab-pane active flag-1-mission-1">
+                                                                <div class="form-group martop15">
+                                                                    <label for="project-introduction" class="col-sm-2 control-label"></label>
+                                                                    <div class="col-sm-10 paddleft0 text-right">
+                                                                        任务编号：T1
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="project-introduction" class="col-sm-2 control-label">任务命名：</label>
+                                                                    <div class="col-sm-10 paddleft0">
+                                                                        <input type="text" class="form-control project-name" placeholder="请勿超过8个字">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="project-introduction" class="col-sm-2 control-label">任务简述：</label>
+                                                                    <div class="col-sm-10 paddleft0">
+                                                                        <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12" style="padding-left:60px;">
+                                                        <a class="color-A7A7A7" onclick="addMission(this)" href="javascript:void(0);">+点击此处继续添加任务</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12" style="padding-left:60px;">
-                                                <a class="color-A7A7A7 add-mission-a" href="#">+点击此处继续添加任务</a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </fieldset>
-                            </div>
-                        </div>
-                       
 
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <fieldset class="scheduler-border">
-                                    <legend class="scheduler-border">里程碑<span class="add-flag-number">2</span></legend>
-                                    <div class=" fz20 cursor lyp-btn-add-porject-flag">
-                                        点击此处继续添加里程碑
-                                    </div>
-                                </fieldset>
+                                    </fieldset>
+                                </div>
+
                             </div>
+
                             
-                        </div>
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <fieldset class="scheduler-border">
+                                        <legend class="scheduler-border">里程碑<span class="add-flag-number">2</span></legend>
+                                        <div class=" fz20 cursor lyp-btn-add-porject-flag">
+                                            点击此处继续添加里程碑
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <button type="submit" class="btn btn-success" style="padding-left:30px;padding-right:30px;">保&nbsp;&nbsp;存</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -183,89 +196,111 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
 
     <div class="clearfix mtb15"></div>
-
     <div id="footer"></div>
-
+    <div class="lyp-project-mission-moban dispalynone row flag-mission-new-num">
+           
+                <div class="form-group martop15">
+                    <label for="project-introduction" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10 paddleft0 text-right">
+                        任务编号：T1
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="project-introduction" class="col-sm-2 control-label">任务命名：</label>
+                    <div class="col-sm-10 paddleft0">
+                        <input type="text" class="form-control project-name" placeholder="请勿超过8个字">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="project-introduction" class="col-sm-2 control-label">任务简述：</label>
+                    <div class="col-sm-10 paddleft0">
+                        <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
+                    </div>
+                </div>
+           
+    </div>
     <div class="lyp-project-flag-moban dispalynone row">
         <div class="col-lg-12">
             <fieldset class="scheduler-border">
                 <legend class="scheduler-border">里程碑<span class="add-flag-number-new"></span></legend>
-                <form class="form-horizontal" role="form" action="start-project-4.html">
-                        <div class="form-group">
-                            <label for="project-target" class="col-sm-2 control-label">里程碑命名：</label>
-                            <div class="col-sm-10 paddleft0">
-                                <input type="text" class="form-control project-name"  placeholder="请勿超过8个字">
-                            </div>
-                        </div>
-                    <div class="form-group">
-                        <label for="project-introduction" class="col-sm-2 control-label">设定时间：</label>
-                        <div class="col-sm-5 paddleft0">
-                            <div class="input-group date datetimepicker5 pull-left">
-                                <span class="input-group-addon">
-                                    <span class="glyphicon-calendar glyphicon"></span>
-                                </span>
-                                <input type="text"  class="form-control project-marker-start-time" data-date-format="YYYY-MM-DD" placeholder="截止时间">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="project-introduction" class="col-sm-2 control-label">里程碑简述：</label>
-                        <div class="col-sm-10 paddleft0">
-                            <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="project-introduction" class="col-sm-2 control-label">创建任务</label>
-                        <div class="col-sm-10 paddleft0">
-                        </div>
-                    </div>
-
+               <div class="form-horizontal">
                     <div class="row">
-                        <div class="col-lg-12" style="padding:0px 20px 0px 50px;">
-                            <ul class="nav nav-tabs mission-list" role="tablist">
-                                <li role="presentation" class="active"><a href=".mission-1" role="tab" data-toggle="tab">任务一</a></li>
-                                <li role="presentation"><a href=".profile" role="tab" data-toggle="tab">新增任务</a></li>
-                            </ul>
+                        <div class="col-lg-12 text-right">里程碑编号：M1</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12" style="padding-right:70px;">
+                            <div class="form-group martop15">
+                                <label for="project-target" class="col-sm-2 control-label">里程碑命名：</label>
+                                <div class="col-sm-10 paddleft0">
+                                    <input type="text" class="form-control project-name" placeholder="请勿超过8个字">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="project-introduction" class="col-sm-2 control-label">设定时间：</label>
+                                <div class="col-sm-5 paddleft0">
+                                    <div class="input-group date datetimepicker5 pull-left">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon-calendar glyphicon"></span>
+                                        </span>
+                                        <input type="text" class="form-control project-marker-start-time" data-date-format="YYYY-MM-DD" placeholder="截止时间">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="project-introduction" class="col-sm-2 control-label">里程碑简述：</label>
+                                <div class="col-sm-10 paddleft0">
+                                    <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="project-introduction" class="col-sm-2 control-label">创建任务</label>
+                                <div class="col-sm-10 paddleft0">
+                                </div>
+                            </div>
 
-                            <!-- Tab panes -->
-                            <div class="tab-content mission-form">
-                                <div role="tabpanel" class="tab-pane active mission-1">
-                                    <div class="form-group martop15">
-                                        <label for="project-introduction" class="col-sm-2 control-label"></label>
-                                        <div class="col-sm-10 paddleft0 text-right">
-                                            任务编号：T<span class="mission-number">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="project-introduction" class="col-sm-2 control-label">任务命名：</label>
-                                        <div class="col-sm-10 paddleft0">
-                                            <input type="text" class="form-control project-name " placeholder="请勿超过8个字">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="project-introduction" class="col-sm-2 control-label">任务简述：</label>
-                                        <div class="col-sm-10 paddleft0">
-                                            <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
+                            <div class="row add-mission-divrow">
+                                <div class="col-lg-12" style="padding:0px 20px 0px 50px;">
+                                    <ul class="nav nav-tabs mission-list" role="tablist">
+                                        <li role="presentation" class="active"><a href=".flag-2-mission-1" role="tab" data-toggle="tab">任务一</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content mission-form">
+                                        <div role="tabpanel" class="tab-pane flag-mission-number active">
+                                            <div class="form-group martop15">
+                                                <label for="project-introduction" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10 paddleft0 text-right">
+                                                    任务编号：T<span class="mission-number">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="project-introduction" class="col-sm-2 control-label">任务命名：</label>
+                                                <div class="col-sm-10 paddleft0">
+                                                    <input type="text" class="form-control project-name " placeholder="请勿超过8个字">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="project-introduction" class="col-sm-2 control-label">任务简述：</label>
+                                                <div class="col-sm-10 paddleft0">
+                                                    <textarea rows="5" class="form-control project-introduction" placeholder="请输入相关描述内容"></textarea>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane profile" >...</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 add-mission-now" style="padding-left:60px;">
+                                    <a class="color-A7A7A7" onclick="addMission(this)" href="javascript:void(0);">+点击此处继续添加任务</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12" style="padding-left:60px;">
-                            <a class="color-A7A7A7 add-mission-a" href="#">+点击此处继续添加任务</a>
-                        </div>
-                    </div>
-                </form>
+                 
+                </div>
             </fieldset>
         </div>
     </div>
@@ -284,31 +319,45 @@
             //公共部分加载
             $("#head").load("../head.html");
             $("#footer").load("../footer.html");
-            //新加模板
+            $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+                $('.mission-form-tab').each(function () {
+                    $(this).removeClass("active");
+                });
+            });
+            //新加模板里程碑
             $('.lyp-btn-add-porject-flag').click(function () {
-
                 $(".add-flag-number-new").each(function () {
                     $(".add-flag-number-new").last().html($(".add-flag-number").html());
                     $(".mission-number").last().html($(".add-flag-number-new").html());
                 });
                 $(".add-flag-number").html(parseInt($(".add-flag-number-new").last().html()) + 1);
+                $('.add-mission-now a').addClass('add-mission-a');
+               
                 $(this).parent().parent().parent().prev().append($('.lyp-project-flag-moban').html());
+                $(this).parent().parent().parent().prev().find('.flag-mission-number').last().addClass('flag-' + parseInt($(".add-flag-number-new").last().html()) + '-mission-1');
             });
         });
-        $('#myTab a').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-        });
-        $(".add-mission-a").click(function () {
-            $(".mission-list li").each(function () {
+
+        //继续添加任务
+        function addMission(btn) {
+            //新增的任务数
+            var i = 1;
+            //当前里程碑下的任务
+            $(btn).parent().parent().parent().find(".mission-list li").each(function () {
                 $(this).removeAttr("class");
+                i++;
             });
-            $(".mission-number").html("T2");
+            //当前里程碑数
+            var j = $(btn).parent().parent().parent().parent().find('.add-flag-number-new').html();
+            $(btn).parent().parent().parent().find('.add-mission-divrow ul').append('<li role="presentation" class="active"><a href=".flag-' + j + '-mission-' + i + '" role="tab" data-toggle="tab">任务' + i + '</a></li>');
+            $(btn).parent().parent().parent().find('.mission-form div').each(function () {
+                $(this).removeClass("active");
+            });
+            $(btn).parent().parent().parent().find('.mission-form').append(' <div role="tabpanel" class="mission-form-tab tab-pane active' + ' flag-' + j + '-mission-' + i + '">' + $('.lyp-project-mission-moban').html() + '</div>');
 
-            $(".mission-form").append(' <div role="tabpanel" class="tab-pane active" id="mission-2"> <div class="form-group martop15"><label for="project-introduction" class="col-sm-2 control-label"></label><div class="col-sm-10 paddleft0 text-right"> 任务编号：<span class="mission-number">T1</span></div> </div><div class="form-group"> <label for="project-introduction" class="col-sm-2 control-label">任务命名：</label><div class="col-sm-10 paddleft0"><input type="text" class="form-control" id="project-name" placeholder="请勿超过8个字"> </div> </div><div class="form-group"> <label for="project-introduction" class="col-sm-2 control-label">任务简述：</label> <div class="col-sm-10 paddleft0"> <textarea rows="5" class="form-control" id="project-introduction" placeholder="请输入相关描述内容"></textarea></div></div></div>');
-            $(".mission-list").append('<li role="presentation" class="active"><a href="#mission-2" role="tab" data-toggle="tab">任务二</a></li>');
-        });
-
+        }
 
     </script>
 </body>

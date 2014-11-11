@@ -585,7 +585,7 @@ legend.scheduler-border {
     font-size: 1.2em !important;
     font-weight: bold !important;
     text-align: left !important;
-
+    margin-bottom:0px;
 }
 legend.scheduler-border {
     width:inherit; /* Or auto */
