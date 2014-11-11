@@ -420,3 +420,43 @@ color: #555;
 .item-rate b {
 color: #525260;
 }
+.partner {
+    margin-top:50px;
+padding-top: 35px;
+height: 240px;
+background: #d0e0e3;
+text-align: center;
+}
+.partner ul{margin:0}
+.list-inline>li:first-child {
+padding-left: 0;
+}
+.list-inline>li {
+display: inline-block;
+}
+
+/* project list */
+.ren-project-list-box-top::before {
+    position: absolute;
+    margin-top: -21px;   
+    /*margin-top: -28px;*/
+    left: 200px;
+    display: inline-block;
+    border-right: 9px solid transparent;
+    border-top:9px solid #FBFBFB;
+    border-left: 9px solid transparent;
+    border-top-color: #FBFBFB;
+    content: '';
+}
+
+.ren-project-list-box-top::after {
+    position: absolute;
+    left: 199px;
+    /*margin-top: -27px;*/
+    margin-top: -20px;
+    display: inline-block;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #FBFBFB;
+    border-left: 10px solid transparent;
+    content: '';
+}
