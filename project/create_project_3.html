@@ -335,7 +335,7 @@
     <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
     <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
     <script type="text/javascript">
-        var wait = 30;
+        var wait = 10;
         $(function () {
             //公共部分加载
             $("#head").load("../head.html");
@@ -348,7 +348,7 @@
                 time(wait);
             })
             $('#ren-win-agree').on('hidden.bs.modal', function (e) {
-                wait = 30;
+                wait = 10;
                 $('#ren-win-time-btn-send').removeClass('btn-success').addClass('disabled');
             })
 
