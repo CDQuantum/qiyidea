@@ -521,6 +521,44 @@ div.ren-unflag-box {
             vertical-align:middle;
         }
 
+
+ul.ren-porject-list-tab {
+    padding-left:20px;
+}
+    .ren-porject-list-tab li {
+    position:relative;
+    padding-right:20px;
+    }
+        
+     .ren-porject-list-tab li a{
+        color:#72727F;
+        text-decoration:none;
+    }
+     
+     .ren-porject-list-tab li.active a,.ren-porject-list-tab li a:hover{
+        color:#5AB85A;
+    }
+       .ren-porject-list-tab li:hover>s, .ren-porject-list-tab li s.active {
+        position:absolute; top:32px; left:25px; height:0;width:0; border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #FBFBFB;
+        }
+
+
+.ren-project-list-tab-content {
+background-color:#F3F3F1; height:100px;border-radius:5px;
+padding-top:10px;
+}
+    .ren-project-list-tab-content span {
+        margin-right:15px;
+        color:#72727F;
+        cursor:pointer;
+    }
+     /*.ren-project-list-tab-content span:hover {
+         background-color:#d8d8d8;
+    }*/
+     
+        .ren-project-list-tab-content span.label-success {
+            color:#fff;
+        }
 /* project view */
 .ren-project-view-progress-bar {
     height: 6px;
