@@ -49,12 +49,21 @@
             </div>
             <div class="mt5mb15">
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="active"><a href="#home" role="tab" data-toggle="tab">项目介绍</a></li>
-                    <li><a href="#profile" role="tab" data-toggle="tab">项目计划</a></li>
-                    <li><a href="#messages" role="tab" data-toggle="tab">项目动态 <span class="badge">8</span></a></li>
+                <ul class="list-inline ren-project-view-tab" role="tablist" >
+                    <li class="active">
+                        <a href="#home" role="tab" data-toggle="tab">项目介绍</a>
+                        <s class="active"></s>
+                    </li>
+                    <li class="fz16">
+                        <a href="#profile" role="tab" data-toggle="tab">项目计划</a>
+                        <s class=""></s>
+                    </li>
+                    <li class="fz16">
+                        <a href="#messages" role="tab" data-toggle="tab">项目动态</a>
+                        <s class=""></s>
+                    </li>
 
-                    <li class="pull-right pt10" style="width:300px;">
+                    <li class="pull-right" style="width:300px;">
                         <div class="row">
                             <div class="col-lg-5 text-right pt5">
                                 <i class="glyphicon glyphicon-folder-close"></i> <span class="color-FF3F00">325</span>人收藏
@@ -68,8 +77,9 @@
                         </div>
                     </li>
                 </ul>
-                <div class="clearfix"></div>
+                <div class="ren-tab-line clearfix"></div>
             </div>
+            
             <div class="row">
                 <div class="col-lg-8">
 
@@ -1020,6 +1030,13 @@
                     $('.money').show().attr('data-ischeck', 1);
                 }
             })
+
+            //切换tab
+            $('.ren-project-view-tab li').click(function () {
+                $('.ren-project-view-tab li s').removeClass('active');
+                $(this).find('s').addClass('active');
+            });
+            //end tab
         })
         //$.get("head.html", function (data) {
         //    $("#head").html(data);
