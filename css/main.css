@@ -22,7 +22,7 @@ a.nulinkunderline:hover {
     min-width: 0px;
 }
 
-.color-fff {
+.color-fff,ul>li>a.color-fff {
     color: #fff;
 }
 

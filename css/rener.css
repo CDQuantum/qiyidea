@@ -206,16 +206,18 @@ div.ren-unflag-box {
     min-width: 202px;
     color: #DCC7AB;
 }
+
 .ren-flag-long-box {
-     background: #fff url('../img/task_bg_long.png') no-repeat -50px -10px;
-     padding: 9px 0px 10px 65px;
-     height: 41px;
-     max-width: 780px;
-     min-width: 740px;
-     color: #fff;
-     margin-left:20px;
-     margin-bottom:5px;
+    background: #fff url('../img/task_bg_long.png') no-repeat -50px -10px;
+    padding: 9px 0px 10px 65px;
+    height: 41px;
+    max-width: 780px;
+    min-width: 740px;
+    color: #fff;
+    margin-left: 20px;
+    margin-bottom: 5px;
 }
+
 .ren-task-long-box {
     background: #fff url('../img/task_bg_long.png') no-repeat -69px -67px;
     padding: 8px 0px 10px 45px;
@@ -224,6 +226,7 @@ div.ren-unflag-box {
     min-width: 740px;
     color: #fff;
 }
+
 .ren-task-unlong-box {
     background: #fff url('../img/task_bg_long.png') no-repeat -69px -116px;
     padding: 8px 0px 10px 45px;
@@ -232,31 +235,40 @@ div.ren-unflag-box {
     min-width: 740px;
     color: #fff;
 }
+
 .ren-long-task-td1 {
-    max-width:180px; min-width:170px;
+    max-width: 180px;
+    min-width: 170px;
 }
+
 .ren-long-task-td2 {
-    max-width:310px; min-width:300px;
+    max-width: 310px;
+    min-width: 300px;
 }
+
 .ren-long-task-td3 {
-    max-width:200px; min-width:190px;
+    max-width: 200px;
+    min-width: 190px;
 }
+
 .ren-task-status-done-time {
-     background: url('../img/task-flag-status.png') no-repeat -10px -24px;
+    background: url('../img/task-flag-status.png') no-repeat -10px -24px;
     padding: 10px 0px 10px 45px;
     height: 10px;
     max-width: 90px;
     min-width: 90px;
 }
+
 .ren-task-status-done {
-     background: url('../img/task-flag-status.png') no-repeat -10px -64px;
+    background: url('../img/task-flag-status.png') no-repeat -10px -64px;
     padding: 10px 0px 10px 45px;
     height: 10px;
     max-width: 90px;
     min-width: 90px;
 }
+
 .ren-task-status-doing {
-     background: url('../img/task-flag-status.png') no-repeat -10px -104px;
+    background: url('../img/task-flag-status.png') no-repeat -10px -104px;
     padding: 10px 0px 10px 45px;
     height: 10px;
     max-width: 90px;
@@ -269,16 +281,18 @@ div.ren-unflag-box {
     height: 27px;
     max-width: 90px;
     min-width: 90px;
-    margin-top:-5px;
+    margin-top: -5px;
 }
+
 .ren-task-status-doing-check {
     background: url('../img/task-flag-status.png') no-repeat -10px -140px;
     padding: 0px 0px 10px 10px;
     height: 25px;
     max-width: 90px;
     min-width: 84px;
-    margin-top:-3px;
+    margin-top: -3px;
 }
+
 .ren-task-caret {
     background: url('../img/task-flag-status.png') no-repeat -10px -230px;
     padding: 0px 15px 10px 0px;
@@ -286,6 +300,7 @@ div.ren-unflag-box {
     max-width: 15px;
     min-width: 14px;
 }
+
 .ren-task-caret-up {
     background: url('../img/task-flag-status.png') no-repeat -10px -260px;
     padding: 0px 15px 10px 0px;
@@ -295,31 +310,34 @@ div.ren-unflag-box {
 }
 
 .ren-task-table-index {
-color:#999; margin-bottom:0px; background-color:#fff; 
+    color: #999;
+    margin-bottom: 0px;
+    background-color: #fff;
 }
-.ren-task-table-index tr:first-child,.ren-task-table-index tr td:first-child {
-    background-color:#FBFBFB;
-}
+
+    .ren-task-table-index tr:first-child, .ren-task-table-index tr td:first-child {
+        background-color: #FBFBFB;
+    }
 
 /*-------- flag  task  end-----------  */
 
 
 /*--------- ren-bbs ----------- */
 .ren-bbs-box {
-    border:solid #F0F0F0 1px;
-    padding:10px 20px;
-    background-color:#F6F6F6;
+    border: solid #F0F0F0 1px;
+    padding: 10px 20px;
+    background-color: #F6F6F6;
     border-radius: 3px;
 }
 
 .ren-bbs-box-top::before {
     position: absolute;
-    margin-top: -20px;   
+    margin-top: -20px;
     /*margin-top: -28px;*/
     right: 29px;
     display: inline-block;
     border-right: 10px solid transparent;
-    border-bottom:10px solid #f5f5f5;
+    border-bottom: 10px solid #f5f5f5;
     border-left: 10px solid transparent;
     border-bottom-color: #f0f0f0;
     content: '';
@@ -344,106 +362,113 @@ color:#999; margin-bottom:0px; background-color:#fff;
 /*  project view */
 /* index list   */
 .thumbnail {
-padding:0;
+    padding: 0;
 }
-.thumbnail>.caption>p.intro {
-    overflow:hidden;
-    max-height:100px;
-    height:100px;
-}
-.thumbnail> a> img {
-     width:250px; display: block;
-}
-.thumbnail > .progress,.project-view-status>.progress {
-    margin-bottom:0px; border-radius:0px; height:5px;
-}
+
+    .thumbnail > .caption > p.intro {
+        overflow: hidden;
+        max-height: 100px;
+        height: 100px;
+    }
+
+    .thumbnail > a > img {
+        width: 250px;
+        display: block;
+    }
+
+    .thumbnail > .progress, .project-view-status > .progress {
+        margin-bottom: 0px;
+        border-radius: 0px;
+        height: 5px;
+    }
+
 .project-view-status > .rener-progress {
-    margin-left:15px;
-    margin-right:15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
+
 .project-view-status > hr {
-margin-top:10px;
-margin-bottom:10px;
-border:none;
-border-bottom:1px dashed #e4e4e4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px dashed #e4e4e4;
 }
+
 .project-view-status > .progress {
-    height:20px;
+    height: 20px;
 }
-.thumbnail > .progress>.progress-bar,.project-view-status>.progress>.progress-bar {
-    background-color:#62D8FF;
-}
+
+    .thumbnail > .progress > .progress-bar, .project-view-status > .progress > .progress-bar {
+        background-color: #62D8FF;
+    }
 
 
 .caption h5 {
-    min-height:35px;
-    overflow:hidden;
-    max-height:35px;
-    height:32px;
+    min-height: 35px;
+    overflow: hidden;
+    max-height: 35px;
+    height: 32px;
 }
-.caption h5 a {
-    color:#666;
-}
-    .caption h5 a:hover {
-        text-decoration:none;
-        color:#FE9E3E; 
+
+    .caption h5 a {
+        color: #666;
     }
+
+        .caption h5 a:hover {
+            text-decoration: none;
+            color: #FE9E3E;
+        }
+
 .item-rate {
-padding: 8px 10px 15px 10px;
-line-height: 18px;
-color: #bdbdbd;
-position: relative;
+    padding: 8px 10px 15px 10px;
+    line-height: 18px;
+    color: #bdbdbd;
+    position: relative;
 }
 
 .rate1 {
-display: block;
-float: left;
-text-align: left;
-width: 50px;
+    display: block;
+    float: left;
+    text-align: left;
+    width: 50px;
 }
+
 .rate2 {
-display: block;
-float: left;
-text-align: center;
-width: 76px;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 76px;
 }
+
 .rate3 {
-display: block;
-float: right;
-text-align: right;
-/* width: 60px; */
+    display: block;
+    float: right;
+    text-align: right;
+    /* width: 60px; */
 }
 
 .item-rate em {
-color: #555;
+    color: #555;
 }
+
 .item-rate b {
-color: #525260;
+    color: #525260;
 }
-.partner {
-    margin-top:50px;
-padding-top: 35px;
-height: 240px;
-background: #d0e0e3;
-text-align: center;
-}
-.partner ul{margin:0}
-.list-inline>li:first-child {
-padding-left: 0;
-}
-.list-inline>li {
-display: inline-block;
+
+
+.list-inline > li {
+    display: inline-block;
 }
 
 /* project list */
 .ren-project-list-box-top::before {
     position: absolute;
-    margin-top: -21px;   
+    margin-top: -21px;
     /*margin-top: -28px;*/
     left: 200px;
     display: inline-block;
     border-right: 9px solid transparent;
-    border-top:9px solid #FBFBFB;
+    border-top: 9px solid #FBFBFB;
     border-left: 9px solid transparent;
     border-top-color: #FBFBFB;
     content: '';
@@ -461,12 +486,48 @@ display: inline-block;
     content: '';
 }
 
+.ren-partner {
+    margin-top: 50px;
+    height: 250px;
+    background: #d0e0e3;
+    text-align: center;
+}
+
+    .ren-partner ul {
+        margin: 0;
+    }
+
+.list-inline > li:first-child {
+    padding-left: 0;
+}
+
+.ren-buttom-right-link {
+    border-left: dashed 1px #FAFAFA;
+    height: 250px;
+}
+    .ren-buttom-right-link > ul {
+        padding-top:40px;
+    }
+    .ren-buttom-right-link > ul > li {
+        height:40px;
+        line-height:40px;
+    }
+        .ren-buttom-right-link > ul > li img {
+            padding-right:10px;
+        }
+        .ren-buttom-right-link > ul > li a {
+            color: #FAFAFA;
+            font-size: 18px;
+            vertical-align:middle;
+        }
+
 /* project view */
 .ren-project-view-progress-bar {
-height:6px;
-background-color:#ddd;
-border-radius:0px;
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 0px;
 }
+
     .ren-project-view-progress-bar > .progress-bar {
-        background-color:#FF8000;
+        background-color: #FF8000;
     }
