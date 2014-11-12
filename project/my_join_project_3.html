@@ -151,27 +151,26 @@
                             </div>
                         </div>
                         <div class="row martop30">
-                            <div class="col-lg-10 text-center">
+                            <div class="col-lg-12 text-center">
                                 <h4><span style="color:#D1B691">旅馆住宿与餐饮的协调</span> 预算表单</h4>
-                            </div>
-                            <div class="col-lg-2 text-right">
-                                <button class="btn btn-success btn-xs martop10" onclick="addBudget()">添加预算</button>
                             </div>
                         </div>
                         <div class="row">
 
                             <div class="col-lg-12">
                                 <div class="table-responsive" style="color:#808080">
-                                    <table class="table table-bordered text-center budget-table" style="margin-bottom:0px;">
+                                    <table class="table table-bordered text-center" style="margin-bottom:0px;">
                                         <tr>
+                                            <td width="83px">编号</td>
                                             <td width="75px">类别</td>
                                             <td>单位名称</td>
                                             <td width="58px">单价</td>
                                             <td width="59px">数量</td>
                                             <td width="78px">预算额</td>
-                                            <td width="83px">操作</td>
+                                            
                                         </tr>
-                                        <tr class="1">
+                                        <tr>
+                                            <td>M1T11</td>
                                             <td>
                                                 <div class="dropdown">
                                                     <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
@@ -188,12 +187,53 @@
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td>
-                                                <a href="javascript:void(0);" onclick="deleteBudget(this)">删除</a>
-                                            </td>
+                                             
                                         </tr>
                                         <tr>
-                                            <td colspan="7" class="text-center" style="background-color:#FCF8E3;color:#D8524D;font-weight:bold;font-size:20px;">TOTAL:<span style="color:#FF8409">￥520.00</span></td>
+                                            <td>M1T11</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                        支出
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                             
+                                        </tr>
+                                        <tr>
+                                            <td>M1T11</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                        支出
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                             
+                                        </tr>
+                                        <tr>
+                                            <td colspan="6" class="text-center fz12" style="background-color:#FBFBFB;color:#8A8A8A;cursor:pointer;">类别较多，展开表单继续填写</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="6" class="text-center" style="background-color:#FCF8E3;color:#D8524D;font-weight:bold;font-size:20px;">TOTAL:<span style="color:#FF8409">￥520.00</span></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -252,16 +292,7 @@
             </div>
         </div>
     </div>
-    <div class="dropdown dispalynone lyp-dropdown-new">
-        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-            支出
-            <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="top:auto;">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-        </ul>
-    </div>
+
     <div class="clearfix mpt40"></div>
 
     <div id="footer"></div>
@@ -282,16 +313,8 @@
             $(".add-return-yes").click(function () {
                 $("#create-new-return").modal("hide");
             });
-        });
-        //添加预算
-        function addBudget() {
-            var trlen = $(".budget-table tr").length - 1;
-            $(".budget-table tr:first-child").after('<tr class="' + trlen + '"><td>' + $('.lyp-dropdown-new').html() + '</td><td></td><td</td><td></td><td></td><td></td><td><a class="delete-marker" href="javascript:void(0)" onclick="deleteBudget(this)">删除</a></td></tr>');
-        }
-        //删除预算
-        function deleteBudget(delbtn) {
-            $(delbtn).parents("tr").remove();
-        }
+
+        })
 
     </script>
 
