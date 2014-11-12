@@ -373,6 +373,7 @@ div.ren-unflag-box {
 
     .thumbnail > a > img {
         width: 250px;
+        height:170px;
         display: block;
     }
 
@@ -401,6 +402,7 @@ div.ren-unflag-box {
     .thumbnail > .progress > .progress-bar, .project-view-status > .progress > .progress-bar {
         background-color: #62D8FF;
     }
+
 
 
 .caption h5 {
@@ -595,4 +597,44 @@ margin-bottom:6px;
         }
 div.ren-tab-line {
     border-bottom:solid 1px #D6D6D0;
+}
+
+
+/* index */
+hr.ren-line {
+border-top:solid 1px #ddd; 
+}
+
+.people-caption {
+padding: 9px;
+}
+.people-caption h5 {
+    overflow: hidden;
+}
+
+    .people-caption h5 a {
+        color: #666;
+    }
+
+        .people-caption h5 a:hover {
+            text-decoration: none;
+            color: #FE9E3E;
+        }
+        .thumbnail > .people-caption > p {
+        overflow: hidden;
+    }
+.people-space-box {
+    padding:10px 5px 10px 30px;
+}
+
+.people-space-box a {
+    text-decoration:none;
+    color:#aaa;
+}
+.people-space-box a:hover {
+    color:#428BCA;
+}
+.people-space-box a span {
+    padding-left:10px;
+    font-size:24px;
 }
