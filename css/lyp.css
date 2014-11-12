@@ -493,10 +493,11 @@ z-index: 3;
 	font-size:12px;
 }
 .div-block-type1{
-	height:76px;
-	line-height:76px;
+	height:94px;
+	line-height:94px;
 	text-align:center;
 	font-size:12px;
+    margin-bottom:-2px;
 }
 .project-a-type{
 	color:#fff;
@@ -591,4 +592,23 @@ legend.scheduler-border {
     width:inherit; /* Or auto */
     padding:0 10px; /* To give a bit of padding on the left and right */
     border-bottom:none;
+}
+.martop20{
+    margin-top:20px;
+}
+.div-style-1{
+    border:1px solid #EEEEEE;height:49px;line-height:49px;background-color:#FFFFFF;font-size:25px;color:#DBDBDB;
+}
+
+.c_identity_img{
+    position:relative;
+
+}
+.c_identity_words{
+position: absolute;
+top: 0px;
+height: 25px;
+line-height: 25px;
+padding-left: 30px;
+color: #fff;
 }
