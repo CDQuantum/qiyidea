@@ -791,3 +791,16 @@ border-left:dotted 1px #aeaeae;
 .border-right {
 border-right:dotted 1px #aeaeae;
 }
+
+/* ren-dairy-box */
+.ren-dairy-box {
+
+}
+
+    .ren-dairy-box>.row>.timedate h5 {
+    margin-top: 0px;
+    }
+    .ren-dairy-box>.row>.timedate img {
+    width:50px; margin-top:0px;padding-right:8px;
+    }
+    
