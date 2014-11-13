@@ -30,7 +30,7 @@ a.nulinkunderline:hover {
     color: #000;
 }
 
-.color-333 {
+.color-333,b.color-333 {
     color: #333;
 }
 .color-999 {
@@ -60,11 +60,14 @@ color:#a7a7a7;
 div.color-52525f,b.color-52525f,p.color-52525f,label.color-52525f,span.color-52525f,h1.color-52525f {
     color:#52525f;
 }
-div.color-525260,p.color-525260 {
+div.color-525260,p.color-525260,span.color-525260 {
 color:#525260;
 }
 div.color-6A6A6A,b.color-6A6A6A,p.color-6A6A6A,label.color-6A6A6A,span.color-6A6A6A,h1.color-6A6A6A,h3.color-6A6A6A,a.color-6A6A6A {
     color:#6a6a6a;
+}
+div.color-454545,b.color-454545,p.color-454545,label.color-454545,span.color-454545,h1.color-454545,h3.color-454545,a.color-454545,b.color-454545 {
+    color:#454545;
 }
 div.color-AAA,b.color-AAA,p.color-AAA,label.color-AAA,span.color-AAA,h1.color-AAA,h3.color-AAA,a.color-AAA {
     color:#AAA;
@@ -87,6 +90,9 @@ background-color:#d8d8d8;
 
 div.bg-eee {
 background-color:#eee;
+}
+div.bg-f5f5f5 {
+background-color:#F5F5F5;
 }
 
 /* waring */
@@ -282,7 +288,7 @@ div.mprun15 {
     font-weight: normal;
 }
 
-.fz12 {
+.fz12,a.fz12 {
     font-size: 12px;
     font-weight: normal;
 }
