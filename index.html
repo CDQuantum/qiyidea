@@ -1191,7 +1191,13 @@
             $('.ren-top-project-tab li').click(function () {
                 $('.ren-top-project-tab li s').removeClass('active');
                 $(this).find('s').addClass('active');
-                $('.tab-pane').hasClass('active').find('.carousel').carousel(0);
+                //重置为第一张图片
+                $('.tab-pane').each(function () {
+                    if ($(this).hasClass('active')) {
+                        $(this).find('.carousel').carousel(0);
+                    }
+                })
+               
             });
 
             $('.ren-index-top-project-slide .carousel').carousel({

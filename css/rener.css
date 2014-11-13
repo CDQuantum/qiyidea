@@ -750,7 +750,7 @@ line-height: 1.4;
 .ren-index-top-project-slide .carousel .item {
     height:250px;
     background-color: #F5F5F5;
-  -webkit-transform:rotate(0deg) scale(1.05); -moz-transform:rotate(0deg) scale(1.05); transform:rotate(0deg) scale(1.05);
+  -webkit-transform:rotate(0deg) scale(1.05); -moz-transform:rotate(0deg) scale(1.05); transform:rotate(0deg) scale(1.05);  /*new 动画*/
 }
    
 .ren-index-top-project-slide .carousel-inner > .item .media  img {
