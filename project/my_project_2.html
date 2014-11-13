@@ -109,7 +109,7 @@
                                                             <span class="input-group-addon">
                                                                 <span class="glyphicon-calendar glyphicon"></span>
                                                             </span>
-                                                            <input type="text" class="form-control project-marker-start-time" data-date-format="YYYY-MM-DD" placeholder="截止时间">
+                                                            <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -350,7 +350,7 @@
                 i++;
             });
             //当前里程碑数
-            var j = $(btn).parent().parent().parent().parent().find('.add-flag-number-new').html();
+            var j = $(btn).parent().parent().parent().parent().parent().parent().find('.add-flag-number-new').html();
             $(btn).parent().parent().parent().find('.add-mission-divrow ul').append('<li role="presentation" class="active"><a href=".flag-' + j + '-mission-' + i + '" role="tab" data-toggle="tab">任务' + i + '</a></li>');
             $(btn).parent().parent().parent().find('.mission-form div').each(function () {
                 $(this).removeClass("active");
