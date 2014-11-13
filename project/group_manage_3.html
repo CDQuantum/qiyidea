@@ -130,7 +130,7 @@
                                     </div>
                                     <div class="form-group martop40">
                                         <div class="col-sm-12 text-center">
-                                            <button type="submit" class="btn btn-success">&nbsp;&nbsp;创建 &nbsp;&nbsp;</button>
+                                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create-group">&nbsp;&nbsp;创建 &nbsp;&nbsp;</button>
                                         </div>
                                     </div>
                                 </form>
@@ -353,7 +353,168 @@
         </div>
     </div>
 
-
+    <div class="modal fade" id="create-group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body" style="padding:40px 30px 40px 30px;">
+                    <div class="row">
+                        <div class="col-lg-12 bold">
+                            <h4>邀请成员加入群组</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hr-style" style="margin-top:10px;margin-bottom:25px;"></div>
+                        </div>
+                    </div>
+                    <div class="row martop10 text-left">
+                        <div class="col-lg-12">
+                            <div class="text-type-3">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜你，你已成功创建****群组，你可以通过以下几种方式邀请好友加入群组，也可以在“群组管理”中完成邀请操作。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row martop20">
+                        <div class="col-lg-12">
+                            <span class="bold fonts20">方式一（推荐）</span><span class="bold">：通过站内信息邀请好友</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hr-style" style="margin-top:10px;margin-bottom:25px;"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="输入昵称或姓名查询">
+                                <span class="input-group-addon input-group-btn cursor" style="background-color:#5CB85C"><i class="glyphicon glyphicon-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                        </div>
+                    </div>
+                    <div class="row martop10">
+                        <div class="col-lg-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center table-striped ">
+                                    <tbody>
+                                        <tr>
+                                            <td>选择</td>
+                                            <td>昵称</td>
+                                            <td>姓名</td>
+                                            <td>性别</td>
+                                            <td>所在学校/毕业学校</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="text-center fz12"><img src="../img/user/fw_r8_c2.png">&nbsp;展开更多</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="project-introduction" class="col-sm-2 control-label">诚邀信息：</label>
+                        <div class="col-lg-8 padding0">
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <textarea rows="5" class="form-control" id="project-introduction" placeholder="附上几句邀请语，这样他们可能更愿意接受你的邀请（可选）"></textarea>
+                        </div>
+                    </div>
+                    <div class="row martop10">
+                        <div class="col-lg-2">
+                            <button type="button" class="btn btn-sm btn-success">&nbsp;&nbsp;发送邀请&nbsp;&nbsp;</button>
+                        </div>
+                        <div class="col-lg-10 paddleft0 paddtop2">
+                            <img src="../img/user/gougou.png" />&nbsp;<span class="fz12 fcolor5BB85B">邀请信息已发送</span>
+                        </div>
+                    </div>
+                    <div class="row martop20">
+                        <div class="col-lg-12">
+                            <span class="bold fonts20">方式二</span><span class="bold">：发送群组链接邀请</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hr-style" style="margin-top:10px;margin-bottom:25px;"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" class="form-control copy-val" disabled value="http://www.qiyidea.com" />
+                        </div>
+                    </div>
+                    <div class="row martop10">
+                        <div class="col-lg-2">
+                            <button type="button" class="btn btn-sm btn-success copy">&nbsp;&nbsp;复制群链接&nbsp;&nbsp;</button>
+                        </div>
+                        <div class="col-lg-10 paddleft0 paddtop2">
+                            <img src="../img/user/gougou.png" />&nbsp;<span class="fz12 fcolor5BB85B">链接复制成功</span>
+                        </div>
+                    </div>
+                    <div class="row martop20">
+                        <div class="col-lg-12">
+                            <span class="bold fonts20">方式三</span><span class="bold">：发送群组密码邀请</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hr-style" style="margin-top:10px;margin-bottom:25px;"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" class="form-control copy-val" disabled value="http://www.qiyidea.com" />
+                        </div>
+                    </div>
+                    <div class="row martop10">
+                        <div class="col-lg-2">
+                            <button type="button" class="btn btn-sm btn-success copy">&nbsp;&nbsp;复制群组密钥&nbsp;&nbsp;</button>
+                        </div>
+                        <div class="col-lg-10 paddleft0 paddtop2">
+                            <img src="../img/user/gougou.png" />&nbsp;<span class="fz12 fcolor5BB85B">密钥复制成功</span>
+                        </div>
+                    </div>
+                    <div class="row martop30">
+                        <div class="col-lg-12 text-center">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">我已了解，关闭</button>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
     <div class="clearfix mpt40"></div>
 
     <div id="footer"></div>
@@ -362,6 +523,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.zclip.js"></script>
     <script src="../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
@@ -371,35 +533,20 @@
             //公共部分加载
             $("#head").load("../head.html");
             $("#footer").load("../footer.html");
-            $(".add-return-yes").click(function () {
-                $("#create-new-return").modal("hide");
+         
+            $('.copy').zclip({
+                path:'../js/ZeroClipboard.swf',
+                copy: function () {
+                    //$(this).parent().parent().parent().find('.copy-val').val()
+                    return '111';
+                },
+                beforeCopy: function () {/* 按住鼠标时的操作 */
+                    alert();
+                },
+                afterCopy: function () {/* 复制成功后的操作 */
+                    alert();
+                }
             });
-
-        });
-
-        //点击评论
-        $(".open-comment").click(function () {
-            //alert( $(this).parent().parent().parent().outerHeight());
-            $(this).hide();
-            $(this).parent().find(".close-comment").show();
-            $(this).parent().parent().parent().find(".commoent-detail").show();
-            if (!$(this).parent().parent().parent().find(".commoent-detail").is(":hidden")) {
-                //  alert($(this).parent().parent().parent().parent().find(".div-height-1").outerHeight());
-                $(this).parent().parent().parent().parent().find(".div-height-1").outerHeight($(this).parent().parent().parent().outerHeight());
-                //  alert($(this).parent().parent().parent().parent().find(".div-height-1").outerHeight());
-            }
-
-        });
-        //收起评论
-        $(".close-comment").click(function () {
-            $(this).hide();
-            $(this).parent().find(".open-comment").show();
-            $(this).parent().parent().parent().find(".commoent-detail").hide();
-            if ($(this).parent().parent().parent().find(".commoent-detail").is(":hidden")) {
-                //  alert($(this).parent().parent().parent().parent().find(".div-height-1").outerHeight());
-                $(this).parent().parent().parent().parent().find(".div-height-1").outerHeight($(this).parent().parent().parent().outerHeight());
-                //  alert($(this).parent().parent().parent().parent().find(".div-height-1").outerHeight());
-            }
         });
 
     </script>

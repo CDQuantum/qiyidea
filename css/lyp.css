@@ -523,6 +523,14 @@ z-index: 3;
     padding:10px 30px 10px 30px;
     line-height:20px;
 }
+.text-type-3{
+     border:1px solid #FAEFD1;
+    background-color:#FCF8E3;
+    color:#A5723F;
+    font-size:14px;
+    padding:10px 30px 10px 30px;
+    line-height:20px;
+}
 .martop15{
     margin-top:15px;
 }
@@ -611,4 +619,22 @@ height: 25px;
 line-height: 25px;
 padding-left: 30px;
 color: #fff;
+}
+.bold{
+    font-weight:bold;
+}
+.fonts20{
+    font-size:20px;
+}
+.fcolor5BB85B{
+    color:#5BB85B;
+}
+.fcolor2DB200{
+    color:#2DB200;
+}
+.fcolorred{
+    color:red;
+}
+.admin-head:hover{
+    border-color:#ddd;
 }
