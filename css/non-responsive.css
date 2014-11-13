@@ -144,3 +144,21 @@ body {
     margin: 0 auto;
 }
 
+
+
+/* head menu */
+.ren-head-box {
+    border-bottom-color: #bfbfbf;box-shadow: rgb(190, 190, 190) 0px 0px 3px 0px;  background-color:#fff;height:51px;
+}
+    
+    .ren-head-box ul.navbar-nav li a {
+     margin-top:-2px;
+    }
+    .ren-head-box ul.navbar-nav li.active a {
+     border-bottom:solid 2px #5CB85C; 
+     background-color: #fff;
+     color:#5CB85C;
+    }
+    .ren-head-box ul.navbar-nav li a:hover,.ren-head-box ul.navbar-nav li.active>a:focus  {
+        border-bottom:solid 2px #5CB85C; 
+    }

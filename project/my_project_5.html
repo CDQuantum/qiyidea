@@ -21,8 +21,8 @@
     <!--<link href="css/sticky-footer-navbar.css" rel="stylesheet">-->
     <link href="../css/lyp.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/index.css" rel="stylesheet">
     <link href="../css/rener.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/fileupload-ui/jquery.fileupload-ui.css">
 
 
@@ -82,313 +82,212 @@
         <div class="row" style="margin-right:-30px;">
             <div class="panel panel-default">
                 <div class="panel-body pt40">
-                    <form class="form-horizontal">
-                        <div class="col-lg-9">
-                            <div class="row" style="color:#FF7F00">
-                                <div class="col-lg-12">&nbsp;<span class="fz18 color-000">详细预算</span></div>
+                    <div class="col-lg-9">
+                        <div class="row" style="color:#FF7F00">
+                            <div class="col-lg-12">&nbsp;<span class="fz18 color-000">详细预算</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
-                                </div>
-                            </div>
-                            <div class="row martop10 text-left">
-                                <div class="col-lg-12">
-                                    <div class="text-type alert alert-warning">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;团队已经完成并反馈了预算计划，作为项目负责人的你，有必要对单个任务涉及到的预算进行评估与调整，以使得项目在执行阶段能顺利开展各项工作。
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 text-center">
-                                    <h4>项目总预算表</h4>
-                                </div>
-                            </div>
-                            <div class="row martop10">
-                                <div class="col-lg-12">
-                                    <div class="table-responsive" style="color:#808080">
-                                        <table class="table table-bordered text-center " style="margin-bottom:0px;">
-                                            <tr>
-                                                <td>里程碑</td>
-                                                <td>任务编号</td>
-                                                <td>任务名称</td>
-                                                <td>实物支持</td>
-                                                <td>任务预算</td>
-                                                <td>预览操作</td>
-                                                <td>审核状态</td>
-                                            </tr>
-                                            <tr class="1">
-                                                <td>M1</td>
-                                                <td>M1T1</td>
-                                                <td>旅馆住宿与餐馆协调</td>
-                                                <td>有</td>
-                                                <td style="color:#ff8000">520</td>
-                                                <td>
-                                                    <a href="javascript:void(0);" class="expansion-budget">展开&nbsp;<span class=" ren-task-caret"></span></a>
-                                                    <a href="javascript:void(0);" class="collapse-budget dispalynone">收起&nbsp;<span class=" ren-task-caret-up"></span></a>
-                                                </td>
-                                                <td><a href="javascript:void(0);" class="confirm-yes fcolor2DB200">确认</a></td>
-                                            </tr>
-                                            <tr class="budget_1 dispalynone">
-                                                <td colspan="7">
-                                                    <div class="budget-parents-div" style="border:1px solid red">
-                                                        <div class="row">
-                                                            <div class="col-lg-12" style="color:#808080;padding:10px 50px 10px 30px;">
-                                                                <div class="row">
-                                                                    <div class="col-lg-3 paddtop2">该任务计划时间<div class="pull-right" style="font-weight:bold">从</div></div>
-                                                                    <div class="col-lg-3 padding0">
-                                                                        <div class="input-group date datetimepicker5 pull-left">
-                                                                            <span class="input-group-addon">
-                                                                                <span class="glyphicon-calendar glyphicon"></span>
-                                                                            </span>
-                                                                            <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-1 padding0 paddtop2 text-center" style="font-weight:bold">至</div>
-                                                                    <div class="col-lg-3 padding0">
-                                                                        <div class="input-group date datetimepicker5 pull-left">
-                                                                            <span class="input-group-addon">
-                                                                                <span class="glyphicon-calendar glyphicon"></span>
-                                                                            </span>
-                                                                            <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定结束时间">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-2 text-right">
-                                                                        <button type="button" class="btn btn-success btn-xs martop10" onclick="addBudget(this)">添加预算</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-lg-12">
-                                                                <div class="table-responsive" style="color:#808080">
-                                                                    <table class="table table-bordered text-center budget-table" style="margin-bottom:0px;">
-                                                                        <tr style="background-color:#DF6D6A;color:#fff;">
-                                                                            <td width="83px">编号</td>
-                                                                            <td width="75px">类别</td>
-                                                                            <td>单位名称</td>
-                                                                            <td width="80px">单价</td>
-                                                                            <td width="80px">数量</td>
-                                                                            <td width="90px">预算额</td>
-                                                                            <td width="50px">操作</td>
-                                                                        </tr>
-                                                                        <tr class="this-tr">
-                                                                            <td style="background-color:#DF6D6A;color:#fff;">M1T11</td>
-                                                                            <td>
-                                                                                <div class="dropdown">
-                                                                                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                                                                        支出
-                                                                                        <span class="caret"></span>
-                                                                                    </button>
-                                                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td><input type="text" class="form-control" value="一二三" /></td>
-                                                                            <td><input type="text" class="form-control" value="20" /></td>
-                                                                            <td><input type="text" class="form-control" value="20" /></td>
-                                                                            <td><input type="text" class="form-control" value="40000" disabled /></td>
-                                                                            <td><a href="javascript:void(0);" onclick="deleteBudget(this)">删除</a></td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="2">
-                                                <td>M1</td>
-                                                <td>M1T1</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <a href="javascript:void(0);" class="expansion-budget">展开&nbsp;<span class=" ren-task-caret"></span></a>
-                                                    <a href="javascript:void(0);" class="collapse-budget dispalynone">收起&nbsp;<span class=" ren-task-caret-up"></span></a>
-                                                </td>
-                                                <td><a href="javascript:void(0);" class="confirm-yes-1 fcolorred">已确认</a></td>
-                                            </tr>
-                                            <tr class="budget_2 dispalynone">
-                                                <td colspan="7">
-                                                    <div class="budget-parents-div" style="border:1px solid red">
-                                                        <div class="row">
-                                                            <div class="col-lg-12" style="color:#808080;padding:10px 50px 10px 30px;">
-                                                                <div class="row">
-                                                                    <div class="col-lg-3 paddtop2">该任务计划时间<div class="pull-right" style="font-weight:bold">从</div></div>
-                                                                    <div class="col-lg-3 padding0">
-                                                                        <div class="input-group date datetimepicker5 pull-left">
-                                                                            <span class="input-group-addon">
-                                                                                <span class="glyphicon-calendar glyphicon"></span>
-                                                                            </span>
-                                                                            <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-1 padding0 paddtop2 text-center" style="font-weight:bold">至</div>
-                                                                    <div class="col-lg-3 padding0">
-                                                                        <div class="input-group date datetimepicker5 pull-left">
-                                                                            <span class="input-group-addon">
-                                                                                <span class="glyphicon-calendar glyphicon"></span>
-                                                                            </span>
-                                                                            <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定结束时间">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-2 text-right">
-                                                                        <button class="btn btn-success btn-xs martop10" onclick="addBudget(this)">添加预算</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-lg-12">
-                                                                <div class="table-responsive" style="color:#808080">
-                                                                    <table class="table table-bordered text-center budget-table" style="margin-bottom:0px;">
-                                                                        <tr style="background-color:#DF6D6A;color:#fff;">
-                                                                            <td width="83px">编号</td>
-                                                                            <td width="75px">类别</td>
-                                                                            <td>单位名称</td>
-                                                                            <td width="80px">单价</td>
-                                                                            <td width="80px">数量</td>
-                                                                            <td width="90px">预算额</td>
-                                                                            <td width="50px">操作</td>
-                                                                        </tr>
-                                                                        <tr class="this-tr">
-                                                                            <td style="background-color:#DF6D6A;color:#fff;">M1T11</td>
-                                                                            <td>
-                                                                                <div class="dropdown">
-                                                                                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                                                                        支出
-                                                                                        <span class="caret"></span>
-                                                                                    </button>
-                                                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td><input type="text" class="form-control" /></td>
-                                                                            <td><input type="text" class="form-control" /></td>
-                                                                            <td><input type="text" class="form-control" /></td>
-                                                                            <td><input type="text" class="form-control" /></td>
-                                                                            <td><a href="javascript:void(0);" onclick="deleteBudget(this)">删除</a></td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="3">
-                                                <td>M1</td>
-                                                <td>M1T1</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <a href="javascript:void(0);" class="expansion-budget">展开&nbsp;<span class=" ren-task-caret"></span></a>
-                                                    <a href="javascript:void(0);" class="collapse-budget dispalynone">收起&nbsp;<span class=" ren-task-caret-up"></span></a>
-                                                </td>
-                                                <td><a href="javascript:void(0);" class="confirm-yes fcolor2DB200">确认</a></td>
-                                            </tr>
-                                            <tr class="budget_3 dispalynone">
-                                                <td colspan="7">
-                                                    <div class="budget-parents-div" style="border:1px solid red">
-                                                        <div class="row">
-                                                            <div class="col-lg-12" style="color:#808080;padding:10px 50px 10px 30px;">
-                                                                <div class="row">
-                                                                    <div class="col-lg-3 paddtop2">该任务计划时间<div class="pull-right" style="font-weight:bold">从</div></div>
-                                                                    <div class="col-lg-3 padding0">
-                                                                        <div class="input-group date datetimepicker5 pull-left">
-                                                                            <span class="input-group-addon">
-                                                                                <span class="glyphicon-calendar glyphicon"></span>
-                                                                            </span>
-                                                                            <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-1 padding0 paddtop2 text-center" style="font-weight:bold">至</div>
-                                                                    <div class="col-lg-3 padding0">
-                                                                        <div class="input-group date datetimepicker5 pull-left">
-                                                                            <span class="input-group-addon">
-                                                                                <span class="glyphicon-calendar glyphicon"></span>
-                                                                            </span>
-                                                                            <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定结束时间">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-lg-2 text-right">
-                                                                        <button type="button" class="btn btn-success btn-xs martop10" onclick="addBudget(this)">添加预算</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-lg-12">
-                                                                <div class="table-responsive" style="color:#808080">
-                                                                    <table class="table table-bordered text-center budget-table" style="margin-bottom:0px;">
-                                                                        <tr style="background-color:#DF6D6A;color:#fff;">
-                                                                            <td width="83px">编号</td>
-                                                                            <td width="75px">类别</td>
-                                                                            <td>单位名称</td>
-                                                                            <td width="80px">单价</td>
-                                                                            <td width="80px">数量</td>
-                                                                            <td width="90px">预算额</td>
-                                                                            <td width="50px">操作</td>
-                                                                        </tr>
-                                                                        <tr class="this-tr">
-                                                                            <td style="background-color:#DF6D6A;color:#fff;">M1T11</td>
-                                                                            <td>
-                                                                                <div class="dropdown">
-                                                                                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                                                                        支出
-                                                                                        <span class="caret"></span>
-                                                                                    </button>
-                                                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td><input type="text" class="form-control" /></td>
-                                                                            <td><input type="text" class="form-control" /></td>
-                                                                            <td><input type="text" class="form-control" /></td>
-                                                                            <td><input type="text" class="form-control" /></td>
-                                                                            <td><a href="javascript:void(0);" onclick="deleteBudget(this)">删除</a></td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="table-responsive" style="color:#808080">
-                                        <table class="table table-bordered text-center" style="margin-bottom:0px;">
-
-                                            <tr>
-                                                <td colspan="7" class="text-center" style="background-color:#FCF8E3;color:#D8524D;font-weight:bold;font-size:20px;">TOTAL:<span style="color:#FF8409">￥25520.00</span></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row text-center marbottom10 martop30">
-                                <div class="col-lg-12">
-                                    <button type="button" class="btn btn-success plr30">保存并分发</button>
+                        </div>
+                        <div class="row martop10 text-left">
+                            <div class="col-lg-12">
+                                <div class="text-type alert alert-warning">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;团队已经完成并反馈了预算计划，作为项目负责人的你，有必要对单个任务涉及到的预算进行评估与调整，以使得项目在执行阶段能顺利开展各项工作。
                                 </div>
                             </div>
                         </div>
-                    </form>
-                         <div class="col-lg-3">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h4>项目总预算表</h4>
+                            </div>
+                        </div>
+                        <div class="row martop10">
+                            <div class="col-lg-12">
+                                <div class="table-responsive" style="color:#808080">
+                                    <table class="table table-bordered text-center " style="margin-bottom:0px;">
+                                        <tr>
+                                            <td>里程碑</td>
+                                            <td>任务编号</td>
+                                            <td>任务名称</td>
+                                            <td>实物支持</td>
+                                            <td>任务预算</td>
+                                            <td>预览操作</td>
+                                            <td>审核状态</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M1</td>
+                                            <td>M1T1</td>
+                                            <td>旅馆住宿与餐馆协调</td>
+                                            <td>有</td>
+                                            <td style="color:#ff8000">520</td>
+                                            <td><a href="#">展开</a></td>
+                                            <td>审核</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M1</td>
+                                            <td>M1T1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#">展开</a></td>
+                                            <td>审核</td>
+                                        </tr>
+                                        <tr>
+                                            <td>M1</td>
+                                            <td>M1T1</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#">展开</a></td>
+                                            <td>审核</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div style="border:1px solid red">
+                                    <div class="row">
+                                        <div class="col-lg-12" style="color:#808080;padding:10px 50px 10px 30px;">
+                                            <div class="row">
+                                                <div class="col-lg-3 paddtop2">该任务计划时间<div class="pull-right" style="font-weight:bold">从</div></div>
+                                                <div class="col-lg-3 padding0">
+                                                    <div class="input-group date datetimepicker5 pull-left">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon-calendar glyphicon"></span>
+                                                        </span>
+                                                        <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 padding0 paddtop2 text-center" style="font-weight:bold">至</div>
+                                                <div class="col-lg-3 padding0">
+                                                    <div class="input-group date datetimepicker5 pull-left">
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon-calendar glyphicon"></span>
+                                                        </span>
+                                                        <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定结束时间">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-lg-offset-1">
+                                                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="table-responsive" style="color:#808080">
+                                                <table class="table table-bordered text-center" style="margin-bottom:0px;">
+                                                    <tr style="background-color:#DF6D6A;color:#fff;">
+                                                        <td width="83px">编号</td>
+                                                        <td width="75px">类别</td>
+                                                        <td>单位名称</td>
+                                                        <td width="58px">单价</td>
+                                                        <td width="59px">数量</td>
+                                                        <td width="78px">预算额</td>
+                                                        <td width="100px">操作</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color:#DF6D6A;color:#fff;">M1T11</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                                    支出
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><a href="#">添加</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color:#DF6D6A;color:#fff;">M1T11</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                                    支出
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><a href="#">添加</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color:#DF6D6A;color:#fff;">M1T11</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                                    支出
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><a href="#">添加</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="table-responsive" style="color:#808080">
+                                    <table class="table table-bordered text-center" style="margin-bottom:0px;">
+                                        <tr>
+                                            <td width="83px">M1</td>
+                                            <td width="75px">M1T3</td>
+                                            <td></td>
+                                            <td width="58px"></td>
+                                            <td width="59px"></td>
+                                            <td width="78px"></td>
+                                            <td width="100px"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7" class="text-center" style="background-color:#FCF8E3;color:#D8524D;font-weight:bold;font-size:20px;">TOTAL:<span style="color:#FF8409">￥25520.00</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center marbottom10 martop30">
+                            <div class="col-lg-12">
+                                <button type="button" class="btn btn-success plr30">保存并分发</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
                         <!--时间线-->
                         <div class="ren-timeline">
                             <div class="ren-flag-line">
@@ -463,85 +362,7 @@
         </div>
     </div>
     <div class="clearfix mtb15"></div>
-        <div class="col-lg-12 dispalynone budget-div" style="border:1px solid blue;width:100%">
-            <div class="budget-parents-div" style="border:1px solid red">
-                <div class="row">
-                    <div class="col-lg-12" style="color:#808080;padding:10px 50px 10px 30px;">
-                        <div class="row">
-                            <div class="col-lg-3 paddtop2">该任务计划时间<div class="pull-right" style="font-weight:bold">从</div></div>
-                            <div class="col-lg-3 padding0">
-                                <div class="input-group date datetimepicker5 pull-left">
-                                    <span class="input-group-addon">
-                                        <span class="glyphicon-calendar glyphicon"></span>
-                                    </span>
-                                    <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
-                                </div>
-                            </div>
-                            <div class="col-lg-1 padding0 paddtop2 text-center" style="font-weight:bold">至</div>
-                            <div class="col-lg-3 padding0">
-                                <div class="input-group date datetimepicker5 pull-left">
-                                    <span class="input-group-addon">
-                                        <span class="glyphicon-calendar glyphicon"></span>
-                                    </span>
-                                    <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定结束时间">
-                                </div>
-                            </div>
-                            <div class="col-lg-2 text-right">
-                                <button type="button" class="btn btn-success btn-xs martop10" onclick="addBudget(this)">添加预算</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="table-responsive" style="color:#808080">
-                            <table class="table table-bordered text-center budget-table" style="margin-bottom:0px;">
-                                <tr style="background-color:#DF6D6A;color:#fff;">
-                                    <td width="83px">编号</td>
-                                    <td width="75px">类别</td>
-                                    <td>单位名称</td>
-                                    <td width="58px">单价</td>
-                                    <td width="59px">数量</td>
-                                    <td width="78px">预算额</td>
-                                    <td width="100px">操作</td>
-                                </tr>
-                                <tr class="this-tr">
-                                    <td style="background-color:#DF6D6A;color:#fff;">M1T11</td>
-                                    <td>
-                                        <div class="dropdown">
-                                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                                支出
-                                                <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                    <td><input type="text" class="form-control" /></td>
-                                    <td><input type="text" class="form-control" /></td>
-                                    <td><input type="text" class="form-control" /></td>
-                                    <td><input type="text" class="form-control" /></td>
-                                    <td><a href="javascript:void(0);" onclick="deleteBudget(this)">删除</a></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    <div class="dropdown dispalynone lyp-dropdown-new">
-        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-            支出
-            <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="top:auto;">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-        </ul>
-    </div>
     <div id="footer"></div>
 
     <!-- Bootstrap core JavaScript
@@ -560,43 +381,9 @@
             $(".add-return-yes").click(function () {
                 $("#create-new-return").modal("hide");
             });
-        });
 
-        //展开
-        $(".expansion-budget").click(function () {
-            $(this).hide();
-            $(this).parents("td").find('.collapse-budget').show();
-            var index = $(this).parents('tr').attr('class');
-            $('.budget_'+index).show();
-           // $(this).parents("tr").after('<tr class="budget_' + index + '"><td colspan="7">' + $('.budget-div').html() + '</td></tr>');
-        });
-        //收起
-        $(".collapse-budget").click(function () {
-            $(this).hide();
-            $(this).parents("td").find('.expansion-budget').show();
-            var num = $(this).parents('tr').attr('class');
-            $('.budget_' + num).hide();
-        });
-        //添加预算
-        function addBudget(addbtn) {
-            var len = $(addbtn).parents('.budget-parents-div').find('.budget-table tr').length;
-            $(addbtn).parents('.budget-parents-div').find('.budget-table').append('<tr class="this-tr"><td style="background-color:#DF6D6A;color:#fff;">T1M2</td><td>' + $('.lyp-dropdown-new').html() + '</td><td><input type="text" class="form-control" /></td><td><input type="text" class="form-control" /></td><td><input type="text" class="form-control" /></td><td><input type="text" class="form-control" /></td><td><a class="delete-marker" href="javascript:void(0)" onclick="deleteBudget(this)">删除</a></td></tr>');
+        })
 
-            // var trlen = $(".budget-table tr").length - 1;
-            //$(".budget-table tr:first-child").after('<tr class="' + trlen + '"><td>' + $('.lyp-dropdown-new').html() + '</td><td></td><td</td><td></td><td></td><td></td><td><a class="delete-marker" href="javascript:void(0)" onclick="deleteBudget(this)">删除</a></td></tr>');
-        }
-        //删除预算
-        function deleteBudget(delbtn) {
-            $(delbtn).parents(".this-tr").remove();
-        }
-        //确认
-        $('.confirm-yes').click(function () {
-            $(this).removeClass('confirm-yes');
-            $(this).removeClass('fcolor2DB200');
-            $(this).addClass('.confirm-yes-1');
-            $(this).addClass('fcolorred');
-            $(this).html('已确认');
-        });
     </script>
 </body>
 </html>

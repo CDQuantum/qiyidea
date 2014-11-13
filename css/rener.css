@@ -373,7 +373,7 @@ div.ren-unflag-box {
 
     .thumbnail > a > img {
         width: 250px;
-        height:170px;
+        height: 170px;
         display: block;
     }
 
@@ -507,59 +507,75 @@ div.ren-unflag-box {
     border-left: dashed 1px #FAFAFA;
     height: 250px;
 }
+
     .ren-buttom-right-link > ul {
-        padding-top:40px;
+        padding-top: 40px;
     }
-    .ren-buttom-right-link > ul > li {
-        height:40px;
-        line-height:40px;
-    }
-        .ren-buttom-right-link > ul > li img {
-            padding-right:10px;
+
+        .ren-buttom-right-link > ul > li {
+            height: 40px;
+            line-height: 40px;
         }
-        .ren-buttom-right-link > ul > li a {
-            color: #FAFAFA;
-            font-size: 18px;
-            vertical-align:middle;
-        }
+
+            .ren-buttom-right-link > ul > li img {
+                padding-right: 10px;
+            }
+
+            .ren-buttom-right-link > ul > li a {
+                color: #FAFAFA;
+                font-size: 18px;
+                vertical-align: middle;
+            }
 
 
 ul.ren-porject-list-tab {
-    padding-left:20px;
+    padding-left: 20px;
 }
-    .ren-porject-list-tab li {
-    position:relative;
-    padding-right:20px;
+
+.ren-porject-list-tab li {
+    position: relative;
+    padding-right: 20px;
+}
+
+    .ren-porject-list-tab li a {
+        color: #72727F;
+        text-decoration: none;
     }
-        
-     .ren-porject-list-tab li a{
-        color:#72727F;
-        text-decoration:none;
-    }
-     
-     .ren-porject-list-tab li.active a,.ren-porject-list-tab li a:hover{
-        color:#5AB85A;
-    }
-       .ren-porject-list-tab li:hover>s, .ren-porject-list-tab li s.active {
-        position:absolute; top:32px; left:25px; height:0;width:0; border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #FBFBFB;
+
+        .ren-porject-list-tab li.active a, .ren-porject-list-tab li a:hover {
+            color: #5AB85A;
         }
+
+    .ren-porject-list-tab li:hover > s, .ren-porject-list-tab li s.active {
+        position: absolute;
+        top: 32px;
+        left: 25px;
+        height: 0;
+        width: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #FBFBFB;
+    }
 
 
 .ren-project-list-tab-content {
-background-color:#F3F3F1; height:100px;border-radius:5px;
-padding-top:10px;
+    background-color: #F3F3F1;
+    height: 100px;
+    border-radius: 5px;
+    padding-top: 10px;
 }
+
     .ren-project-list-tab-content span {
-        margin-right:15px;
-        color:#72727F;
-        cursor:pointer;
+        margin-right: 15px;
+        color: #72727F;
+        cursor: pointer;
     }
-     /*.ren-project-list-tab-content span:hover {
+        /*.ren-project-list-tab-content span:hover {
          background-color:#d8d8d8;
     }*/
-     
+
         .ren-project-list-tab-content span.label-success {
-            color:#fff;
+            color: #fff;
         }
 /* project view */
 .ren-project-view-progress-bar {
@@ -573,68 +589,218 @@ padding-top:10px;
     }
 
 ul.ren-project-view-tab {
-margin-bottom:6px;
+    margin-bottom: 6px;
 }
+
 .ren-project-view-tab li {
-     position:relative;
-     margin-right:20px;
+    position: relative;
+    margin-right: 20px;
 }
+
     .ren-project-view-tab li:first-child {
-    padding-left:5px;
-    }
-.ren-project-view-tab li a {
-     color:#72727F;
-        text-decoration:none;
-        font-size:16px;
-}
-
-  .ren-project-view-tab li.active a,.ren-project-view-tab li a:hover{
-        color:#5AB85A;
+        padding-left: 5px;
     }
 
-.ren-project-view-tab li:hover>s, .ren-project-view-tab li s.active {
-        position:absolute; bottom:-6px; left:5px;  border-bottom:2px solid #5CB85C; width:64px; height:1px;
+    .ren-project-view-tab li a {
+        color: #72727F;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+        .ren-project-view-tab li.active a, .ren-project-view-tab li a:hover {
+            color: #5AB85A;
         }
+
+    .ren-project-view-tab li:hover > s, .ren-project-view-tab li s.active {
+        position: absolute;
+        bottom: -6px;
+        left: 5px;
+        border-bottom: 2px solid #5CB85C;
+        width: 64px;
+        height: 1px;
+    }
+
 div.ren-tab-line {
-    border-bottom:solid 1px #D6D6D0;
+    border-bottom: solid 1px #D6D6D0;
 }
 
 
 /* index */
 hr.ren-line {
-border-top:solid 1px #ddd; 
+    border-top: solid 1px #ddd;
 }
 
 .people-caption {
-padding: 9px;
+    padding: 9px;
 }
-.people-caption h5 {
+
+    .people-caption h5 {
+        overflow: hidden;
+    }
+
+        .people-caption h5 a {
+            color: #666;
+        }
+
+            .people-caption h5 a:hover {
+                text-decoration: none;
+                color: #FE9E3E;
+            }
+
+.thumbnail > .people-caption > p {
     overflow: hidden;
 }
 
-    .people-caption h5 a {
-        color: #666;
-    }
-
-        .people-caption h5 a:hover {
-            text-decoration: none;
-            color: #FE9E3E;
-        }
-        .thumbnail > .people-caption > p {
-        overflow: hidden;
-    }
 .people-space-box {
-    padding:10px 5px 10px 30px;
+    padding: 10px 5px 10px 30px;
 }
 
-.people-space-box a {
+    .people-space-box a {
+        text-decoration: none;
+        color: #aaa;
+    }
+
+        .people-space-box a:hover {
+            color: #428BCA;
+        }
+
+        .people-space-box a span {
+            padding-left: 10px;
+            font-size: 24px;
+        }
+
+.ren-index-top-read-box {
+}
+
+    .ren-index-top-read-box li {
+        list-style-image: url(../img/top-read-dot.png);
+        height: 40px;
+        line-height: 40px;
+        border-bottom: dotted 1px #e7e7e7;
+    }
+
+        .ren-index-top-read-box li a {
+            color: #A7A7A7;
+        }
+
+            .ren-index-top-read-box li a:hover {
+                color: #5CB85C;
+                text-decoration: none;
+            }
+
+
+
+ul.ren-top-project-tab {
+    margin-bottom: -4px;
+}
+
+.ren-top-project-tab li {
+    position: relative;
+    margin-right: 20px;
+}
+
+    .ren-top-project-tab li:first-child {
+        padding-left: 5px;
+    }
+
+    .ren-top-project-tab li a {
+        color: #72727F;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+
+        .ren-top-project-tab li.active a, .ren-top-project-tab li a:hover {
+            color: #5AB85A;
+        }
+
+    .ren-top-project-tab li:hover > s, .ren-top-project-tab li s.active {
+        position: absolute;
+        bottom: -5px;
+        left: 4px;
+        border-bottom: 2px solid #5CB85C;
+        width: 30px;
+        height: 1px;
+    }
+
+
+.ren-index-top-project-slide {
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.ren-index-top-project-slide .carousel {
+    height: 270px;
+    /*margin-bottom: 60px; */
+}
+/* Since positioning the image, we need to help out the caption */
+.ren-index-top-project-slide .carousel-caption {
+     right: 10px;
+     left:auto;
+}
+.ren-index-top-project-slide .carousel-caption p {
+margin-bottom: 20px;
+font-size: 21px;
+line-height: 1.4;
+}
+
+/* Declare heights because of positioning of img element */
+.ren-index-top-project-slide .carousel .item {
+    height:250px;
+    background-color: #F5F5F5;
+  -webkit-transform:rotate(0deg) scale(1.05); -moz-transform:rotate(0deg) scale(1.05); transform:rotate(0deg) scale(1.05);  /*new 动画*/
+}
+   
+.ren-index-top-project-slide .carousel-inner > .item .media  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 240px;
+    width:380px;
+}
+    .ren-index-top-project-slide .carousel-indicators {
+    bottom:-25px;
+    text-align:left;
+    }
+        .ren-index-top-project-slide .carousel-indicators li {
+        background-color:#E7E7E7;
+        }
+            .ren-index-top-project-slide .carousel-indicators li.active,.ren-index-top-project-slide .carousel-indicators li:hover {
+            background-color:#5CB85C;
+            }
+
+.ren-index-top-project-slide-right {
+    width:310px;
+    margin-left:20px;
+}
+.ren-index-top-project-slide-right a {
+    color:#333;
     text-decoration:none;
-    color:#aaa;
 }
-.people-space-box a:hover {
-    color:#428BCA;
+.ren-index-top-project-slide-right-txt {
+height:100px;
+min-height:90px;
+overflow:hidden;
+padding:10px 0;
 }
-.people-space-box a span {
-    padding-left:10px;
-    font-size:24px;
+.border-left {
+border-left:dotted 1px #aeaeae;
 }
+.border-right {
+border-right:dotted 1px #aeaeae;
+}
+
+/* ren-dairy-box */
+.ren-dairy-box {
+
+}
+
+    .ren-dairy-box>.row>.timedate h5 {
+    margin-top: 0px;
+    }
+    .ren-dairy-box>.row>.timedate img {
+    width:50px; margin-top:0px;padding-right:8px;
+    }
+    
