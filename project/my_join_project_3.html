@@ -272,10 +272,29 @@
     <script src="../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
-    <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
-
+    <script src="../js/bootstrap-datetimepicker/js/moment.js"></script>
+    <script src="../js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker/js/locale/zh-cn.js"></script>
+    <script src="../js/bootstrap-datetimepicker/js/locale/ru.js"></script>
     <script type="text/javascript">
         $(function () {
+            //时间日历
+            $('.datetimepicker5').datetimepicker({
+                language: 'zh-CN',
+                pickTime: false
+            });
+            $('.datetimepicker4').datetimepicker({
+                language: 'ru',
+                pickDate: false
+            });
+            $('.ren-btn-tooltip').tooltip('hide');
+            $(".lyp-ren-info-note-chosen").chosen();
+            $('#ren-btn-submit-datetime').click(function () {
+
+                $('.ren-show-datetime-txt').html($('#ren-input-date').val() + ' ' + $('#ren-input-time').val())
+                $('.bs-datetimepicker-modal').modal('hide');
+            });
+            //日历时间结束
             //公共部分加载
             $("#head").load("../head.html");
             $("#footer").load("../footer.html");

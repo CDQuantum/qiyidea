@@ -106,13 +106,12 @@
                         </div>
                         <div class="row martop10">
                             <div class="col-lg-12">
-                                <div class="table-responsive" style="color:#808080">
+                                <div class="table-responsive" style="color:#808080;overflow:auto;overflow-x:hidden">
                                     <table class="table table-bordered text-center " style="margin-bottom:0px;">
                                         <tr>
                                             <td>里程碑</td>
                                             <td>任务编号</td>
                                             <td>任务名称</td>
-                                            <td>实物支持</td>
                                             <td>任务预算</td>
                                             <td>预览操作</td>
                                             <td>审核状态</td>
@@ -121,7 +120,6 @@
                                             <td>M1</td>
                                             <td>M1T1</td>
                                             <td>旅馆住宿与餐馆协调</td>
-                                            <td>有</td>
                                             <td style="color:#ff8000">520</td>
                                                 <td>
                                                     <a href="javascript:void(0);" class="expansion-budget">展开&nbsp;<span class=" ren-task-caret"></span></a>
@@ -130,7 +128,7 @@
                                                 <td><a href="javascript:void(0);" class="confirm-yes fcolor2DB200">确认</a></td>
                                         </tr>
                                             <tr class="budget_1 dispalynone">
-                                                <td colspan="7">
+                                                <td colspan="6">
                                                     <div class="budget-parents-div" style="border:1px solid red">
                         <div class="row">
                                         <div class="col-lg-12" style="color:#808080;padding:10px 50px 10px 30px;">
@@ -204,7 +202,6 @@
                                                 <td>M1T1</td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
                                                 <td>
                                                     <a href="javascript:void(0);" class="expansion-budget">展开&nbsp;<span class=" ren-task-caret"></span></a>
                                                     <a href="javascript:void(0);" class="collapse-budget dispalynone">收起&nbsp;<span class=" ren-task-caret-up"></span></a>
@@ -212,7 +209,7 @@
                                                 <td><a href="javascript:void(0);" class="confirm-yes-1 fcolorred">已确认</a></td>
                                                     </tr>
                                             <tr class="budget_2 dispalynone">
-                                                <td colspan="7">
+                                                <td colspan="6">
                                                     <div class="budget-parents-div" style="border:1px solid red">
                                                         <div class="row">
                                                             <div class="col-lg-12" style="color:#808080;padding:10px 50px 10px 30px;">
@@ -286,7 +283,6 @@
                                                 <td>M1T1</td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
                                                 <td>
                                                     <a href="javascript:void(0);" class="expansion-budget">展开&nbsp;<span class=" ren-task-caret"></span></a>
                                                     <a href="javascript:void(0);" class="collapse-budget dispalynone">收起&nbsp;<span class=" ren-task-caret-up"></span></a>
@@ -294,7 +290,7 @@
                                                 <td><a href="javascript:void(0);" class="confirm-yes fcolor2DB200">确认</a></td>
                                             </tr>
                                             <tr class="budget_3 dispalynone">
-                                                <td colspan="7">
+                                                <td colspan="6">
                                                     <div class="budget-parents-div" style="border:1px solid red">
                                                         <div class="row">
                                                             <div class="col-lg-12" style="color:#808080;padding:10px 50px 10px 30px;">
@@ -375,7 +371,7 @@
                                     <table class="table table-bordered text-center" style="margin-bottom:0px;">
 
                                         <tr>
-                                            <td colspan="7" class="text-center" style="background-color:#FCF8E3;color:#D8524D;font-weight:bold;font-size:20px;">TOTAL:<span style="color:#FF8409">￥25520.00</span></td>
+                                            <td colspan="6" class="text-center" style="background-color:#FCF8E3;color:#D8524D;font-weight:bold;font-size:20px;">TOTAL:<span style="color:#FF8409">￥25520.00</span></td>
                                         </tr>
                                     </table>
                                 </div>
@@ -552,8 +548,31 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
     <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker/js/moment.js"></script>
+    <script src="../js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../js/bootstrap-datetimepicker/js/locale/zh-cn.js"></script>
+    <script src="../js/bootstrap-datetimepicker/js/locale/ru.js"></script>
+
     <script type="text/javascript">
         $(function () {
+            //时间日历
+            $('.datetimepicker5').datetimepicker({
+                language: 'zh-CN',
+                pickTime: false
+            });
+            $('.datetimepicker4').datetimepicker({
+                language: 'ru',
+                pickDate: false
+            });
+            $('.ren-btn-tooltip').tooltip('hide');
+            $(".lyp-ren-info-note-chosen").chosen();
+            $('#ren-btn-submit-datetime').click(function () {
+
+                $('.ren-show-datetime-txt').html($('#ren-input-date').val() + ' ' + $('#ren-input-time').val())
+                $('.bs-datetimepicker-modal').modal('hide');
+            });
+            //日历时间结束
+
             //公共部分加载
             $("#head").load("../head.html");
             $("#footer").load("../footer.html");
