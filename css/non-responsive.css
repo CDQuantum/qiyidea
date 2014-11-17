@@ -147,47 +147,117 @@ body {
 
 
 /* head menu */
+/*.navbar .nav > li:hover .dropdown-menu {
+	display: block;
+}*/
+
 .ren-head-box .navbar-header img {
-    padding-top:25px;
-}
-.ren-head-box {
-    border-bottom-color: #bfbfbf;box-shadow: rgb(190, 190, 190) 0px 0px 3px 0px;  background-color:#fff;height:80px;
+    padding-top: 25px;
 }
 
-    .ren-head-box ul.navbar-nav>li {
-        height:80px;
-        line-height:80px;
+.ren-head-box {
+    border-bottom-color: #bfbfbf;
+    box-shadow: rgb(190, 190, 190) 0px 0px 3px 0px;
+    background-color: #fff;
+    height: 80px;
+}
+
+    .ren-head-box ul.navbar-nav > li {
+        height: 80px;
+        line-height: 80px;
     }
-    .ren-head-box ul.navbar-nav>li>a {
-        font-size:16px;
-        height:80px;
-        line-height:50px;
-    }
-    .ren-head-box ul.navbar-nav>li.active>a {
-        height:80px;
-        line-height:50px;
-        border-bottom:solid 2px #5CB85C; 
-        background-color: #fff;
-        color:#5CB85C;
-    }
-    .ren-head-box ul.navbar-nav>li>a:hover,.ren-head-box ul.navbar-nav>li.active>a:focus  {
-        border-bottom:solid 2px #5CB85C; 
-    }
+
+        .ren-head-box ul.navbar-nav > li > a {
+            font-size: 16px;
+            height: 80px;
+            line-height: 50px;
+        }
+
+        .ren-head-box ul.navbar-nav > li.active > a {
+            height: 80px;
+            line-height: 50px;
+            border-bottom: solid 2px #5CB85C;
+            background-color: #fff;
+            color: #5CB85C;
+        }
+
+            .ren-head-box ul.navbar-nav > li > a:hover, .ren-head-box ul.navbar-nav > li.active > a:focus {
+                border-bottom: solid 2px #5CB85C;
+            }
 
     .ren-head-box ul.navbar-nav .open .dropdown-menu > li {
-        min-width:106px;
+        min-width: 106px;
     }
 
     .ren-head-box .navbar-form-input {
-        margin-top:20px;
+        margin-top: 20px;
+    }
+    .ren-head-box ul.navbar-nav .open .dropdown-menu > li > a {
+        height:36px;
+        line-height:30px;
+    }
+    .ren-head-box ul.navbar-nav .open .dropdown-menu > li > a:hover,
+    .ren-head-box ul.navbar-nav .open .dropdown-menu > li > a:focus,
+    .ren-head-box ul.navbar-nav .open .dropdown-menu > .active > a,
+    .ren-head-box ul.navbar-nav .open .dropdown-menu > .active > a:hover,
+    .ren-head-box ul.navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fff !important;
+        background-color: #449D44 !important;
     }
 
-.ren-head-box  ul.navbar-nav .open .dropdown-menu > li > a:hover,
-.ren-head-box  ul.navbar-nav .open .dropdown-menu > li > a:focus,
-.ren-head-box  ul.navbar-nav .open .dropdown-menu > .active > a,
-.ren-head-box  ul.navbar-nav .open .dropdown-menu > .active > a:hover,
-.ren-head-box  ul.navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #fff !important;
-    background-color: #449D44 !important;
+
+#ren-btn-notifications .divider,#fat-menu .divider {
+    margin: 1px 0;
+    padding: 0;
+    height: 1px;
+    background-color:#414141;
 }
+
+.ren-head-box ul.ren-head-box-r>li.active>a,
+.ren-head-box ul.ren-head-box-r>li>a:hover {
+    border:none;
+} 
+
+.ren-head-box ul.ren-head-box-r li:hover,
+.ren-head-box ul.ren-head-box-r li.open > a:hover,
+.ren-head-box ul.ren-head-box-r li.open > a:focus {
+    background-color: #2D2D2D;
+    border:none;
+}
+
+    /*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus*/
+    .ren-head-box ul.ren-head-box-r li:hover span.ren-head-ico-bell,
+    .ren-head-box ul.ren-head-box-r li:focus span.ren-head-ico-bell {
+        color: #fff;
+    }
+
+.ren-head-box ul.ren-head-box-r li.open .dropdown-menu {
+    background-color: #2D2D2D;
+    right: -1px;
+}
+#ren-btn-notifications > .dropdown-menu {
+    right:auto;
+    left:-1px;
+}
+#fat-menu  > .dropdown-menu {
+   max-width:140px;
+}
+
+/*.ren-head-box ul.ren-head-box-r li.open .dropdown-menu > li>a {
+    height:36px;
+    line-height:30px;
+}*/
+    .ren-head-box ul.ren-head-box-r li.open .dropdown-menu > li > a {
+        color: #fff;
+    }
+
+        .ren-head-box ul.ren-head-box-r li.open .dropdown-menu > li > a:hover,
+        .ren-head-box ul.ren-head-box-r li.open .dropdown-menu > li > a:focus,
+        .ren-head-box ul.ren-head-box-r li.open .dropdown-menu > .active > a,
+        .ren-head-box ul.ren-head-box-r li.open .dropdown-menu > .active > a:hover,
+        .ren-head-box ul.ren-head-box-r li.open .dropdown-menu > .active > a:focus {
+            color: #fff !important;
+            background-color: #000 !important;
+        }
+
  

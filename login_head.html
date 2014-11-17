@@ -14,8 +14,8 @@
                     <li class="active"><a href="project-list.html">浏览项目</a></li>
                     <li><a href="#">推荐阅读</a><li>
                     <li class="dropdown">
-                        <a href="list.html" class="dropdown-toggle" data-toggle="dropdown">我的项目 <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
+                        <a href="list.html" class="dropdown-toggle" id="ren-project-ddl" data-toggle="dropdown">我的项目 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="ren-project-ddl">
                             <li><a href="#">筹资金</a></li>
                             <li><a href="#">小伙伴</a></li>
 
@@ -24,57 +24,38 @@
                     <li><a href="#contact">我的空间</a></li>
                     <li><a href="#contact">我的群组</a></li>
                 </ul>
-                <!--<ul class="nav navbar-nav navbar-right">
-                    <li id="ren-btn-notifications">
-                        <a href="info-center.html" style="padding:20px 25px 8px 25px;" class="dropdown-toggle ren-dropdown-toggle-user" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-bell" style="font-size:22px;"></span><div class="sr-only">消息</div></a>
-                        <ul class="dropdown-menu ren-dropdown-menu-1" role="menu" aria-labelledby="ren-dropdown-toggle-user">
-                            <li><a href="info-center.html">站点消息 <span class="badge">4</span></a> </li>
+                 
+                <ul class="nav navbar-nav navbar-right ren-head-box-r">
+                    <li id="ren-btn-notifications" class="dropdown">
+                        <a href="info-center.html" style="padding:20px 25px 8px 25px;" id="ren-dropdown-toggle-msg" class="dropdown-toggle ren-dropdown-toggle-user" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-bell ren-head-ico-bell" style="font-size:22px;"></span><div class="sr-only">消息</div></a>
+                        <ul class="dropdown-menu ren-dropdown-menu-1" role="menu" aria-labelledby="ren-dropdown-toggle-msg">
+                            <li><a href="info-center.html">站点通知 <span class="badge">4</span></a> </li>
                             <li class="divider"></li>
                             <li><a href="info-center-project.html">项目消息 </a></li>
                             <li class="divider"></li>
                             <li><a href="group-post.html">群组消息 <span class="badge">9</span></a></li>
                             <li class="divider"></li>
-                            <li><a href="info-center-inbox.html">私信消息 <span class="badge">20</span></a></li>
+                            <li><a href="info-center-inbox.html">私信 <span class="badge">20</span></a></li>
                             <li class="divider"></li>
-                            <li><a href="info-center.html"><i class="glyphicon glyphicon-comment"></i> &nbsp;查看全部</a></li>
+                            <li><a href="info-center.html"><i class="glyphicon glyphicon-comment"></i> &nbsp;全部消息</a></li>
                         </ul>
                     </li>
                     <li id="fat-menu" class="dropdown">
-                        <a href="#" class="dropdown-toggle ren-dropdown-toggle-user" style="padding:10px 20px 0px 20px;" data-toggle="dropdown"><img src="../img/avatar2_small.jpg" class="img-circle pointer dropdown-toggle" data-toggle="dropdown"> </a>
-                        <ul class="dropdown-menu ren-dropdown-menu" role="menu" aria-labelledby="drop3">
-                            <li><a href="user-index.html"><i class="glyphicon glyphicon-dashboard"></i> &nbsp; 个人主页</a> </li>
-                            <li><a href="my-project-home.html"><i class="glyphicon glyphicon-paperclip"></i> &nbsp; 我的项目<span class="badge">4</span></a> </li>
-                            <li><a href="school-list.html"><i class="glyphicon glyphicon-book"></i> &nbsp;&nbsp;我的校园</a></li>
-                            <li><a href="user-page.html"><i class="glyphicon glyphicon-user"></i> &nbsp;&nbsp;个人中心</a></li>
-                            <li><a href="settings.html"><i class="glyphicon glyphicon-cog"></i> &nbsp;&nbsp;系统设置</a></li>
+                        <a href="#" id="ren-setting" style="padding:10px 20px 8px 20px;" class="dropdown-toggle" data-toggle="dropdown"><img src="../img/avatar2_small.jpg" class="img-circle pointer"> </a>
+                        <ul class="dropdown-menu ren-dropdown-menu" role="menu" aria-labelledby="ren-setting">
+                            <li class="text-center"> <a style="color:#5CB85C;" href="#">admin</a> </li>
                             <li class="divider"></li>
-                            <li><a href="user_signin.html"><i class="glyphicon glyphicon-off"></i> &nbsp;&nbsp;退出</a></li>
-                        </ul>
-                    </li>
-                </ul>-->
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="ren-btn-notifications">
-                        <a href="info-center.html" style="padding:20px 25px 8px 25px;" class="dropdown-toggle ren-dropdown-toggle-user" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-bell" style="font-size:22px;"></span><div class="sr-only">消息</div></a>
-                        <ul class="dropdown-menu ren-dropdown-menu-1" role="menu" aria-labelledby="ren-dropdown-toggle-user">
-                            <li><a href="info-center.html">站点消息 <span class="badge">4</span></a> </li>
-                            <li><a href="info-center-project.html">项目消息 </a></li>
-                            <li><a href="group-post.html">群组消息 <span class="badge">9</span></a></li>
-                            <li><a href="info-center-inbox.html">私信消息 <span class="badge">20</span></a></li>
+                            <li><a href="user-index.html"><i class="glyphicon glyphicon-home"></i> &nbsp;我的空间</a> </li>
                             <li class="divider"></li>
-                            <li><a href="info-center.html"><i class="glyphicon glyphicon-comment"></i> &nbsp;查看全部</a></li>
-                        </ul>
-                    </li>
-                    <li id="fat-menu" class="dropdown">
-
-                        <a href="#" class="dropdown-toggle ren-dropdown-toggle-user" style="padding:10px 20px 8px 20px;" data-toggle="dropdown"><img src="../img/avatar2_small.jpg" class="img-circle pointer dropdown-toggle" > </a>
-                        <ul class="dropdown-menu ren-dropdown-menu" role="menu" aria-labelledby="drop3">
-                            <li><a href="user-index.html"><i class="glyphicon glyphicon-dashboard"></i> &nbsp; 个人主页</a> </li>
-                            <li><a href="my-project-home.html"><i class="glyphicon glyphicon-paperclip"></i> &nbsp; 我的项目<span class="badge">4</span></a> </li>
-                            <li><a href="school-list.html"><i class="glyphicon glyphicon-book"></i> &nbsp;&nbsp;我的校园</a></li>
-                            <li><a href="user-page.html"><i class="glyphicon glyphicon-user"></i> &nbsp;&nbsp;个人中心</a></li>
-                            <li><a href="settings.html"><i class="glyphicon glyphicon-cog"></i> &nbsp;&nbsp;系统设置</a></li>
+                            <li><a href="my-project-home.html"><i class="glyphicon glyphicon-tree-deciduous"></i> &nbsp;发起项目<span class="badge">4</span></a> </li>
                             <li class="divider"></li>
-                            <li><a href="user_signin.html"><i class="glyphicon glyphicon-off"></i> &nbsp;&nbsp;退出</a></li>
+                            <li><a href="school-list.html"><i class="glyphicon glyphicon-flag"></i> &nbsp;我的群组</a></li>
+                            <li class="divider"></li>
+                            <li><a href="user-page.html"><i class="glyphicon glyphicon-user"></i> &nbsp;个人中心</a></li>
+                            <li class="divider"></li>
+                            <li><a href="settings.html"><i class="glyphicon glyphicon-cog"></i> &nbsp;账号设置</a></li>
+                            <li class="divider"></li>
+                            <li><a href="user_signin.html"><i class="glyphicon glyphicon-off"></i> &nbsp;退出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -93,3 +74,13 @@
         </div>
     </div>
 </nav>
+
+<script type="text/javascript">
+    //鼠标滑过下拉展示效果
+    $(function () {
+        $('.dropdown').hover(function () {
+            $('.dropdown-toggle', this).trigger('click');
+        });
+         
+    });
+</script>
