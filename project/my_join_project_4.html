@@ -335,8 +335,9 @@
                                                         <span title="族管住宿与餐饮的协调办公室电话332154745" style="color:#D1B691;">负责人：张无羽（2014-10-12至2014-11-06）</span>
                                                     </div>
                                                     <div class="col-lg-3 ren-long-task-td3">
-                                                        <div class="pull-left pt3">
-                                                            <div class="ren-task-status-doing"></div>
+                                                        <div class="pull-left pt3" style="width:90%;">
+                                                            <div class="ren-task-status-doing" style="padding:0px;height:20px;min-width:144px;max-width:144px;"><a href="javascript:void(0);" class="confirm-now"><img class="pull-right" style="margin-top:-8px;" src="../img/user/update.fw.png" /></a></div>
+                                                           
                                                         </div>
                                                         <div class="pull-right color-grey pt5 text-right">
                                                             <a href="javascript:void(0)" class="ren-task-caret"></a>
@@ -640,7 +641,9 @@
             $(this).parent().find('.ren-task-caret').show();
             $(this).parent().parent().parent().parent().find('.lyp-detail-info').hide();
         });
-		
+        $('.confirm-now').click(function () {
+            $(this).hide();
+        });
     </script>
 </body>
 </html>

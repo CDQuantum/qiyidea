@@ -487,8 +487,8 @@ z-index: 3;
 	color:#D2D2D2;
 }
 .div-block-type{
-	height:152px;
-	line-height:152px;
+	height:179px;
+	line-height:179px;
 	text-align:center;
 	font-size:12px;
 }
@@ -539,7 +539,6 @@ z-index: 3;
 }
 .c_img{
     position:relative;
-
 }
 .c_words{
 position: absolute;
@@ -650,4 +649,25 @@ color: #fff;
 }
 .color525252{
     color:#525252;
+}
+.p_img{
+    position:relative;
+}
+.p_word1{
+position: absolute;
+top: 20px;
+height: 95px;
+line-height: 95px;
+padding-left: 48px;
+color: #fff;
+font-size:24px;
+}
+.p_word2{
+position: absolute;
+top: 20px;
+height: 95px;
+line-height: 95px;
+padding-left: 158px;
+color: #fff;
+font-size:24px;
 }
