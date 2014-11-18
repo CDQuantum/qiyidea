@@ -178,7 +178,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-3">
-                                <div class=" div-height-1" style="background-color:#F5F5F5">
+                                <div class=" div-height-1 ready-div-height-left" style="background-color:#F5F5F5">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <img src="../img/user/louzhu.png" />
@@ -237,13 +237,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-9" style="min-height:296px;">
+                            <div class="col-lg-9 ready-div-height" style="min-height:296px;">
                                 <div class="row">
-                                    <div class="col-lg-12" style="color:#969696;padding:15px 30px 15px 10px;">
-                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧
+                                    <div class="col-lg-12" style="color:#969696;padding:15px 30px 15px 10px;min-height:220px;">
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
+                                        思维导图，不知道大家知不知道，很多人都用它来改进自己的思维方式，增强记忆力，这里有一些免费的教程资源，要的赶紧<br />
                                     </div>
                                 </div>
-                                <div class="row" style="color:#969696;padding-right:10px;margin-top:170px;">
+                                <div class="row" style="color:#969696;padding-right:10px;margin-top:20px;">
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-6  ">
                                         <button type="button" class="btn btn-sm btn-default btn-class"><img src="../img/user/zan.png" />&nbsp;&nbsp;赞&nbsp;&nbsp;<span class="color-red">152</span></button>&nbsp;&nbsp;
@@ -416,11 +431,11 @@
                             </div>
                             <div class="col-lg-9" style="min-height:294px;">
                                 <div class="row">
-                                    <div class="col-lg-12" style="color:#969696;padding:15px 30px 15px 10px;">
+                                    <div class="col-lg-12" style="color:#969696;padding:15px 30px 15px 10px;min-height:220px;">
                                         我已经用上了，需要的请留言，私信我也行！~~~~
                                     </div>
                                 </div>
-                                <div class="row" style="color:#969696;padding-right:10px;margin-top:170px;">
+                                <div class="row" style="color:#969696;padding-right:10px;margin-top:20px;">
                                     <div class="col-lg-3"></div>
                                     <div class="col-lg-6  ">
                                         <button type="button" class="btn btn-sm btn-default btn-class"><img src="../img/user/zan.png" />&nbsp;&nbsp;赞&nbsp;&nbsp;<span class="color-red">152</span></button>&nbsp;&nbsp;
@@ -936,7 +951,8 @@
             $(".add-return-yes").click(function () {
                 $("#create-new-return").modal("hide");
             });
-
+            var height = $('.ready-div-height').outerHeight();
+            $('.ready-div-height-left').outerHeight(height);
         });
         //点击评论
         $(".open-comment").click(function () {

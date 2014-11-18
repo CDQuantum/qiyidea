@@ -24,7 +24,7 @@
     <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/rener.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/fileupload-ui/jquery.fileupload-ui.css">
-
+    <link href="../js/datetimepicker/jquery.datetimepicker.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="js/assets/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -121,12 +121,7 @@
                             </div>
                             <div class="col-lg-1 martop15 text-center padding0">从</div>
                             <div class="col-lg-3 martop10 padding0">
-                                <div class="input-group date datetimepicker5 pull-left">
-                                    <span class="input-group-addon">
-                                        <span class="glyphicon-calendar glyphicon"></span>
-                                    </span>
-                                    <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
-                                </div>
+                                <input type="text" id="datetimepicker2">
                             </div>
                             <div class="col-lg-1 text-center martop15">至</div>
                             <div class="col-lg-3 martop10 paddleft0">
@@ -272,28 +267,19 @@
     <script src="../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
-    <script src="../js/bootstrap-datetimepicker/js/moment.js"></script>
-    <script src="../js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="../js/bootstrap-datetimepicker/js/locale/zh-cn.js"></script>
-    <script src="../js/bootstrap-datetimepicker/js/locale/ru.js"></script>
+    <script src="../js/datetimepicker/jquery.datetimepicker.js"></script>
     <script type="text/javascript">
         $(function () {
             //时间日历
-            $('.datetimepicker5').datetimepicker({
-                language: 'zh-CN',
-                pickTime: false
+            $('#datetimepicker2').datetimepicker({
+                lang: 'ch',
+                timepicker: false,
+                format: 'd/m/Y',
+                formatDate: 'Y/m/d',
+                minDate: '2014/11/15', // yesterday is minimum date
+                maxDate: '2014/11/17'
             });
-            $('.datetimepicker4').datetimepicker({
-                language: 'ru',
-                pickDate: false
-            });
-            $('.ren-btn-tooltip').tooltip('hide');
-            $(".lyp-ren-info-note-chosen").chosen();
-            $('#ren-btn-submit-datetime').click(function () {
-
-                $('.ren-show-datetime-txt').html($('#ren-input-date').val() + ' ' + $('#ren-input-time').val())
-                $('.bs-datetimepicker-modal').modal('hide');
-            });
+           
             //日历时间结束
             //公共部分加载
             $("#head").load("../head.html");
