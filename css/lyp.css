@@ -671,3 +671,45 @@ padding-left: 158px;
 color: #fff;
 font-size:24px;
 }
+.martop70{
+    margin-top:70px;
+}
+.colorA5A5A5{
+    color:#A5A5A5;
+}
+.bq-style{
+    display:inline-block;
+    font-size:14px;
+    padding:5px 15px 5px 15px;
+    margin-right:10px;
+    font-weight:100;
+    margin-bottom:10px;
+}
+.label-gray{
+    background-color:#D1B691;
+    font-weight:100;
+}
+.label-gray-1{
+    background-color:#fff;
+    color:#D1B691;
+    border:1px solid #D1B691;
+    padding:4px 14px 4px 14px;
+}
+.lable-danger-1{
+    background-color:#fff;
+    color:#d9534f;
+    border:1px solid #d9534f;
+    padding:4px 14px 4px 14px;
+}
+.btn-img{
+    width:72px;
+    height:72px;
+    text-align:center;
+    color:#959595;
+    cursor:pointer;
+    background:url(../img/login/_r5_c6.png) left top no-repeat;
+}
+.btn-img-hover{
+    color:#fff;
+    background:url(../img/login/_r5_c7.png) left top no-repeat;
+}
