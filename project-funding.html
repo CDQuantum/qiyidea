@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge; chrome=1">
+    <meta name="keywords" content="众筹,在校学生众筹,校园众筹,大学生,电商,社交,sns,创业,就业,创客,投资,支持,项目,学生创业,愿望">
+    <meta name="description" content="奇异点（qiyidea.com）——在校学生创业平台，首家利用新概念模式（筹资金、找伙伴、谈想法、搞活动）为在校学生解决社会上创业问题的综合性平台网站。">
+    <meta name="author" content="qiyi.com">
+
+    <!-- Note there is no responsive meta tag here -->
+
+    <link rel="icon" href="favicon.ico">
+
+    <title>支付 - 奇异点・qiyidea.com | 在校学生创业平台</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/non-responsive.css" rel="stylesheet">
+    <!--<link href="css/sticky-footer-navbar.css" rel="stylesheet">-->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/rener.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/assets/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/assets/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/assets/html5shiv.min.js"></script>
+      <script src="js/assets/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="head"></div>
+    <div class="container">
+        <!--<h2 class="bs-docs-featurette-title text-center">为所有学生提供一个孵化梦想的平台。</h2>
+        <p class="lead text-center"> 全部  筹资金  筹实物  找伙伴 搞活动   最新  最热</p>-->
+        <!--<hr class="half-rule">-->
+        <div class="clearfix mtb15"></div>
+        <div class="mtb15">
+            <div class="row mtb15">
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success text-overflow active nocursor">订单信息填写页</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default  disabled">订单信息确认页</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default disabled">支付</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default disabled">完成</button>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix mt5mb15"></div>
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4>青春就是用来折腾抑郁忧伤低潮，但谁不爱青春？《卡在咽喉的时光》寻求出版支持！</h4>
+                    </div>
+                    <div class="panel-body ren-funding">
+                        <dl class="dl-horizontal">
+                            <dt>支持金额：</dt>
+                            <!--<dd class="has-error">￥<label class="control-label">1,230.00</label>元</dd>-->
+                            <dd class="has-error">￥<label class="control-label">35.00</label>元</dd>
+                            <dt>配送运费：</dt>
+                            <dd class="fz12">免运费</dd>
+                            <dt>回报内容：</dt>
+                            <dd class="fz12">为感谢您对智歌的关注，恭喜您获得了抽奖机会，将有5位免费获得智歌智能互联车载终端一台</dd>
+                            <dt>发票：</dt>
+                            <dd>
+                                <!--<div class="btn-group btn-group-xs">
+                                    <button type="button" class="btn btn-success active">无需发票</button>
+                                    <button type="button" class="btn btn-default">需要发票</button>
+                                </div>-->
+                                <div class="btn-group btn-group-xs" id="ren-needfunding" data-toggle="buttons">
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="options" id="noneedfunding" autocomplete="off" checked> 无需发票
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="options" id="needfunding" autocomplete="off"> 需要发票
+                                    </label>
+
+                                </div>
+                                <div class="clearfix mtmb15 ren-fill-funding-box">
+                                    <div class="form-group">
+                                        <div class="col-sm-4 mp0">
+                                            <input type="text" maxlength="200" class="form-control input-sm fz12" id="inputEmail3" placeholder="" value="个人">
+                                        </div>
+                                        <label for="inputEmail3" class="col-sm-2 fz12 control-label">* 发票抬头</label>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>备注：</dt>
+                            <dd>
+                                <input type="text" class="form-control fz12" placeholder="您可以填写关于回报或您希望发起人知道的信息，鼓励一下也好~~">
+                            </dd>
+                        </dl>
+                        <div class="clearfix dot"></div>
+                        <div class="pt10 mtmb15">
+                            <dl class="dl-horizontal">
+                                <dt>收货人：</dt>
+                                <dd class="fz12 has-error">
+                                    <address>
+                                        <span> 李琉璃 13980053200 <label class="control-label">(手机号码用于接收回报信息，请确认无误！)</label></span><br>
+                                        四川成都市武侯区三环以内xxx街xx号xxx2栋2单元4号  <a href="#"> 修改</a>
+                                    </address>
+                                </dd>
+                                <dd class="fz12">
+                                    
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <input name="addrList" id="addrList_1" type="radio" selected="" value="1">&nbsp;<label class="fz12" for="addrList_1">吴三桂&nbsp;&nbsp;xxxx街xxx号xxxx2栋2单元4号&nbsp;13980650000</label>&nbsp;&nbsp;&nbsp;<a class="f_blue" href="javascript:editaddr('22700855','吴三桂','xxxxx号xxx2栋2单元4号','','1398065000','',22,1930,50947,3891);">编辑</a>&nbsp;&nbsp;&nbsp;<a class="f_blue write_del" href="javascript:removeaddr('22700855');">删除</a>
+                                        </li>
+                                        <li>
+                                            <input name="addrList" id="addrList_2" type="radio" selected="" value="2">&nbsp;<label class="fz12" for="addrList_2">吴三桂&nbsp;&nbsp;xxxx街xxx号xxxx2栋2单元4号&nbsp;13980650000</label>&nbsp;&nbsp;&nbsp;<a class="f_blue" href="javascript:editaddr('22700855','吴三桂','xxxxx号xxx2栋2单元4号','','1398065000','',22,1930,50947,3891);">编辑</a>&nbsp;&nbsp;&nbsp;<a class="f_blue write_del" href="javascript:removeaddr('22700855');">删除</a>
+                                        </li>
+                                    </ul>
+
+                                    <hr />
+                                    <div class="bor_t_li">
+                                        <p class="bg_yellow840">
+                                            <input name="addrList" id="newAddress" type="radio" onclick="newAddress();" value="0"> <label for="newAddress">使用新地址</label>
+                                        </p>
+                                        <div id="modifyaddDiv" style="display: block;">
+                                            <input id="addressId" name="addressId" type="hidden" value="57656628">
+                                            <input id="addressOpt" name="addressOpt" type="hidden" value="modify">
+                                            <div class="new_add pt10">
+                                                <dl>
+                                                    <dt><span class="f_red">*</span> 收货人：</dt>
+                                                    <dd><input name="name" id="name" maxlength="50" type="text" class="inp145"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><span class="f_red">*</span>所在地区：</dt>
+                                                    <dd>
+                                                        <select name="consignee_province" id="consignee_province" onchange="loadcitys();" class="sel75"><option value="0">请选择</option><option value="1">北京</option><option value="2">上海</option><option value="3">天津</option><option value="4">重庆</option><option value="5">河北</option><option value="6">山西</option><option value="7">河南</option><option value="8">辽宁</option><option value="9">吉林</option><option value="10">黑龙江</option><option value="11">内蒙古</option><option value="12">江苏</option><option value="13">山东</option><option value="14">安徽</option><option value="15">浙江</option><option value="16">福建</option><option value="17">湖北</option><option value="18">湖南</option><option value="19">广东</option><option value="20">广西</option><option value="21">江西</option><option value="22">四川</option><option value="23">海南</option><option value="24">贵州</option><option value="25">云南</option><option value="26">西藏</option><option value="27">陕西</option><option value="28">甘肃</option><option value="29">青海</option><option value="30">宁夏</option><option value="31">新疆</option><option value="32">台湾</option><option value="42">香港</option><option value="43">澳门</option><option value="84">钓鱼岛</option></select>
+                                                        <select name="consignee_city" id="consignee_city" onchange="loadCountys();" class="sel75"><option value="0">请选择</option><option value="1930">成都市</option><option value="1946">自贡市</option><option value="1950">攀枝花市</option><option value="1954">泸州市</option><option value="1960">绵阳市</option><option value="1962">德阳市</option><option value="1977">广元市</option><option value="1983">遂宁市</option><option value="1988">内江市</option><option value="1993">乐山市</option><option value="2005">宜宾市</option><option value="2016">广安市</option><option value="2022">南充市</option><option value="2033">达州市</option><option value="2042">巴中市</option><option value="2047">雅安市</option><option value="2058">眉山市</option><option value="2065">资阳市</option><option value="2070">阿坝州</option><option value="2084">甘孜州</option><option value="2103">凉山州</option></select>
+                                                        <select name="consignee_countyid" id="consignee_countyid" onchange="loadTowns()" class="sel75"><option value="0">请选择</option><option value="50947">武侯区</option><option value="50946">金牛区</option><option value="50944">青羊区</option><option value="50948">成华区</option><option value="50949">高新区</option><option value="50945">锦江区</option><option value="49322">郫县</option><option value="49324">双流县</option><option value="4284">高新西区</option><option value="49316">龙泉驿区</option><option value="49314">新都区</option><option value="49315">温江区</option><option value="49321">都江堰市</option><option value="49318">彭州市</option><option value="49317">青白江区</option><option value="49319">崇州市</option><option value="49327">金堂县</option><option value="49323">新津县</option><option value="49320">邛崃市</option><option value="49325">大邑县</option><option value="49326">蒲江县</option></select>
+                                                         
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><span class="f_red">*</span> 详细地址：</dt>
+                                                    <dd><span id="area_div"></span><input maxlength="500" style="width:356px;" name="consignee_address" id="consignee_address" type="text" class="inp315"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><span class="f_red">*</span> 手机号码：</dt>
+                                                    <dd><input name="mobile" id="mobile" type="text" maxlength="13" class="inp145">&nbsp;或&nbsp;&nbsp;&nbsp;<span class="f_333">固定号码：</span><input name="phone" id="phone" type="text" maxlength="20" class="inp145"></dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>邮箱：</dt>
+                                                    <dd><input name="email" id="email" type="text" class="inp145"></dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <p class="mt10"><button class="btn btn-danger btn-sm plr30" onclick="saveAddress();">保存收货人地址</button></p>
+                                    </div>
+
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clearfix dot"></div>
+                        <div class="alert alert-warning mtmb15 pt10" role="alert">
+                            <h4>风险说明</h4>
+                            <hr class="mp0" />
+                            <p class="fz12 pt10">
+                                奇异点(QiYidea.com)是一个开放的众筹平台，公众基于对项目、发起人和回报的认同，通过资助的方式参与和支持创新。
+
+                            </p>
+                            <p class="fz12">
+                                筹资成功后，执行的过程中，如果项目没有按照预期的目标执行，项目发起人可能无法正常发放回报。如果产生了这种情况，您支持金额中的部分金额会退还给您，但是由于其中部分金额已经被项目组织者使用，您需要和项目组织者协商订金退还的事宜，奇异点(QiYidea.com)没有帮您追讨资金的义务。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <button class="btn btn-danger plr30" onclick="location.href='project-funding-2.html'">下一步</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix mtmb15"></div>
+        </div>
+
+    </div>
+    <div class="clearfix mtmb15"></div>
+
+    <div id="footer"></div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/assets/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            //公共部分加载
+            $("#head").load("head.html");
+            $("#footer").load("footer.html");
+
+            $.scrollUp({
+                scrollName: "scrollUp",
+                topDistance: "300",
+                topSpeed: 300,
+                animation: "fade",
+                animationInSpeed: 200,
+                animationOutSpeed: 200,
+                scrollText: '<i class="glyphicon glyphicon-chevron-up"></i>',
+                activeOverlay: !1
+            })
+            $('.ren-fill-funding-box').hide();
+            //选择发票时出现
+            $('#ren-needfunding').change(function () {
+                var isneedfunding = $('#ren-needfunding #needfunding').is(':checked')
+                //var checkedDays = $("#ren-needfunding :checkbox").map(function () {
+                //    return +$(this).is(':checked');
+                //}).get();
+                if (isneedfunding) {
+                    $('.ren-fill-funding-box').show();
+                }
+                else
+                    $('.ren-fill-funding-box').hide();
+                console.log(isneedfunding);
+            })
+
+
+        })
+
+    </script>
+
+
+
+</body>
+</html>
