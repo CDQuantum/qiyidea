@@ -713,3 +713,24 @@ font-size:24px;
     color:#fff;
     background:url(../img/login/_r5_c7.png) left top no-repeat;
 }
+.height38{
+    height:38px;
+}
+.pwd-info{
+    width:71px;
+    height:18px;
+    float:left;
+    margin-right:1px;
+    color:#fff;
+    text-align:center;
+    font-size:12px;
+}
+.pwd-info-1{
+   background-color:#ddd;
+}
+.pwd-info-2{
+   background-color:#ddd;
+}
+.pwd-info-3{
+   background-color:#ddd;
+}
