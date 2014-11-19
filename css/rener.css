@@ -727,80 +727,116 @@ ul.ren-top-project-tab {
 .ren-index-top-project-slide {
 }
 
-/* CUSTOMIZE THE CAROUSEL
+    /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.ren-index-top-project-slide .carousel {
-    height: 270px;
-    /*margin-bottom: 60px; */
-}
-/* Since positioning the image, we need to help out the caption */
-.ren-index-top-project-slide .carousel-caption {
-     right: 10px;
-     left:auto;
-}
-.ren-index-top-project-slide .carousel-caption p {
-margin-bottom: 20px;
-font-size: 21px;
-line-height: 1.4;
-}
-
-/* Declare heights because of positioning of img element */
-.ren-index-top-project-slide .carousel .item {
-    height:250px;
-    background-color: #F5F5F5;
-  -webkit-transform:rotate(0deg) scale(1.05); -moz-transform:rotate(0deg) scale(1.05); transform:rotate(0deg) scale(1.05);  /*new 动画*/
-}
-   
-.ren-index-top-project-slide .carousel-inner > .item .media  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 240px;
-    width:380px;
-}
-    .ren-index-top-project-slide .carousel-indicators {
-    bottom:-25px;
-    text-align:left;
+    /* Carousel base class */
+    .ren-index-top-project-slide .carousel {
+        height: 270px;
+        /*margin-bottom: 60px; */
     }
-        .ren-index-top-project-slide .carousel-indicators li {
-        background-color:#E7E7E7;
+    /* Since positioning the image, we need to help out the caption */
+    .ren-index-top-project-slide .carousel-caption {
+        right: 10px;
+        left: auto;
+    }
+
+        .ren-index-top-project-slide .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 21px;
+            line-height: 1.4;
         }
-            .ren-index-top-project-slide .carousel-indicators li.active,.ren-index-top-project-slide .carousel-indicators li:hover {
-            background-color:#5CB85C;
+
+    /* Declare heights because of positioning of img element */
+    .ren-index-top-project-slide .carousel .item {
+        height: 250px;
+        background-color: #F5F5F5;
+        -webkit-transform: rotate(0deg) scale(1.05);
+        -moz-transform: rotate(0deg) scale(1.05);
+        transform: rotate(0deg) scale(1.05); /*new 动画*/
+    }
+
+    .ren-index-top-project-slide .carousel-inner > .item .media img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 240px;
+        width: 380px;
+    }
+
+    .ren-index-top-project-slide .carousel-indicators {
+        bottom: -25px;
+        text-align: left;
+    }
+
+        .ren-index-top-project-slide .carousel-indicators li {
+            background-color: #E7E7E7;
+        }
+
+            .ren-index-top-project-slide .carousel-indicators li.active, .ren-index-top-project-slide .carousel-indicators li:hover {
+                background-color: #5CB85C;
             }
 
 .ren-index-top-project-slide-right {
-    width:310px;
-    margin-left:20px;
+    width: 310px;
+    margin-left: 20px;
 }
-.ren-index-top-project-slide-right a {
-    color:#333;
-    text-decoration:none;
-}
+
+    .ren-index-top-project-slide-right a {
+        color: #333;
+        text-decoration: none;
+    }
+
 .ren-index-top-project-slide-right-txt {
-height:100px;
-min-height:90px;
-overflow:hidden;
-padding:10px 0;
+    height: 100px;
+    min-height: 90px;
+    overflow: hidden;
+    padding: 10px 0;
 }
+
 .border-left {
-border-left:dotted 1px #aeaeae;
+    border-left: dotted 1px #aeaeae;
 }
+
 .border-right {
-border-right:dotted 1px #aeaeae;
+    border-right: dotted 1px #aeaeae;
 }
 
 /* ren-dairy-box */
 .ren-dairy-box {
-
 }
 
-    .ren-dairy-box>.row>.timedate h5 {
-    margin-top: 0px;
+    .ren-dairy-box > .row > .timedate h5 {
+        margin-top: 0px;
     }
-    .ren-dairy-box>.row>.timedate img {
-    width:50px; margin-top:0px;padding-right:8px;
+
+    .ren-dairy-box > .row > .timedate img {
+        width: 50px;
+        margin-top: 0px;
+        padding-right: 8px;
     }
-    
+
+
+/* feedback */
+.ren-feedback-head {
+    padding-left: 15px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+    .ren-feedback-head li {
+        min-height:80px;
+        max-height: 80px;
+        min-width: 130px;
+        max-width: 200px;
+        background-color: #333;
+        /*background-color: #FBFBFB !important;*/
+        padding: 10px 30px;
+        display: inline-block;
+        float: left;
+        border-left: dotted 1px #c6c6c6;
+    }
+
+        .ren-feedback-head li:first-child {
+            border-left: none;
+        }
