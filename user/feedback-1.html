@@ -40,32 +40,76 @@
     <div id="head"></div>
     <div class="clearfix mtmb15"></div>
     <div class="container">
-         
-        
+
+
         <h3>回馈管理</h3>
         <div class="ren-tab-line clearfix"></div>
-        <div class="row">
-            <ul class="ren-feedback-head">
-
-                <li>
-                    <span class="glyphicon glyphicon-asterisk"></span>
-                    <span class="glyphicon-class">glyphicon glyphicon-asterisk</span>
+        <div class="row pl15">
+            <ul class="ren-feedback-head" role="tablist">
+                <li class="active" role="presentation">
+                    <h4><a href="#home" role="tab" data-toggle="tab">回馈我的</a></h4>
+                    <s></s>
                 </li>
-                <li>
-                    <span class="glyphicon glyphicon-asterisk"></span>
-                    <span class="glyphicon-class">glyphicon glyphicon-asterisk</span>
+                <li role="presentation">
+                    <h4><a href="#profile" role="tab" data-toggle="tab">我发放的</a></h4>
+                    <s></s>
                 </li>
 
             </ul>
+            <div class="clearfix pt40"></div>
         </div>
-        <div class="clearfix mtmb15"></div>
+        <div class="clearfix mtb15 pt40"></div>
+
+        <div class="panel">
+            <div class="panel-body">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!--回馈我的-->
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <h4>项目回馈清单</h4>
+                        <div class="dot clearfix"></div>
+                        <div class="clearfix mtmb15 pt40"></div>
+                        <div class="table-responsive ren-feedback-body-table">
+                            <table class="table table-bordered mp0">
+                                <thead>
+                                    <tr>
+                                        <th>项目内容及回馈描述</th>
+                                        <th>支持金额</th>
+                                        <th>物流方式</th>
+                                        <th>发放期限</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="row mp0 fz12">
+                                <div class="col-lg-5">
+                                    <label class="fz12 color-9B9B9B">
+                                        <input type="checkbox" name="all" /> 全选
+                                    </label>
+                                    &nbsp;&nbsp;
+                                    <a href="#" class="color-9B9B9B ">删除</a>
+                                </div>
+                                <div class="col-lg-7"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--我发放的-->
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        tab2
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
-        
+
+
+
 
     </div>
 
-    <div class="clearfix mtmb15"></div>
+    <div class="clearfix mtmb15 pt20"></div>
     <div id="footer"></div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -81,7 +125,7 @@
             $("#head").load("../login_head.html");
             $("#footer").load("../footer.html");
         });
-        
+
     </script>
 
 
