@@ -151,12 +151,23 @@
         });
         function getResult(s) {
             var num = /^[\d]*$/;//纯数字
+
             var str = /^[A-Za-z]*$/;//纯字符
+
             var str1 = /^[\^\%\&\'\,\;\=\?\$\x22]+$/;//纯特殊字符
+
             var str2 = /^[\w]*$/;//数字+字符
-            var str3 = /^[A-Za-z0-9]*$/;//数字+特殊字符
-            var str4 = /^[A-Za-z0-9]*$/;//字符+特殊字符
-            var str5 = /^[A-Za-z0-9]*$/;//数字+字符+特殊字符
+
+            var str3 = /[\d]+/;//数字+特殊字符---至少包含一个数字
+            var str3_1 = /[\^\%\&\'\,\;\=\?\$\x22]+/;//数字+特殊字符---至少包含一个字符
+
+            var str4 = /[A-Za-z]+/;//字符+特殊字符
+            var str4_1 = /[\^\%\&\'\,\;\=\?\$\x22]+/;//字符+特殊字符
+
+            var str5 = /[\d]+/;//数字+字符+特殊字符
+            var str5_1 = /[A-Za-z]+/;//数字+字符+特殊字符
+            var str5_2 = /[\^\%\&\'\,\;\=\?\$\x22]+/;//数字+字符+特殊字符
+            //纯数字
             if (num.test(s)) {
                 if(s.length>0 && s.length<=15){
                     return 1;
@@ -166,6 +177,7 @@
                     return 3;
                 }
             }
+            //纯字符
             if (str.test(s)) {
                 if (s.length > 0 && s.length <= 9) {
                     return 1;
@@ -175,6 +187,7 @@
                     return 3;
                 }
             }
+            //纯特殊字符
             if (str1.test(s)) {
                 if (s.length > 0 && s.length <= 10) {
                     return 1;
@@ -184,6 +197,7 @@
                     return 3;
                 }
             }
+            //数字+字符
             if (str2.test(s)) {
                 if (s.length > 0 && s.length < 9) {
                     return 1;
@@ -193,6 +207,37 @@
                     return 3;
                 }
             }
+            //数字+特殊字符
+            if (str3.test(s) && str3_1.test(s)) {
+                if (s.length > 0 && s.length < 10) {
+                    return 1;
+                } else if (s.length == 10) {
+                    return 2;
+                } else {
+                    return 3;
+                }
+            }
+            //字符+特殊字符
+            if (str4.test(s) && str4_1.test(s)) {
+                if (s.length > 0 && s.length < 8) {
+                    return 1;
+                } else if (s.length >= 8 && s.length < 10) {
+                    return 2;
+                } else {
+                    return 3;
+                }
+            }
+            //数字+字符+特殊字符
+            if (str5.test(s) && str5_1.test(s) && str5_2.test(s)) {
+                if (s.length > 0 && s.length < 8) {
+                    return 1;
+                } else if (s.length == 8) {
+                    return 2;
+                } else {
+                    return 3;
+                }
+            }
+
         }
     </script>
 
