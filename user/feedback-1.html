@@ -73,7 +73,7 @@
                                 <table class="table table-bordered mp0">
                                     <thead class="text-center">
                                         <tr>
-                                            <th>项目内容及回馈描述</th>
+                                            <th style="width:400px;">项目内容及回馈描述</th>
                                             <th>支持金额</th>
                                             <th>物流方式</th>
                                             <th>发放期限</th>
@@ -89,29 +89,239 @@
                                         &nbsp;&nbsp;
                                         <a href="#" class="color-9B9B9B ">删除</a>
                                     </div>
-                                    <div class="col-lg-7"></div>
+                                    <div class="col-lg-7">
+                                        <div class="pull-right">
+                                            <a href="#"><img src="../img/btn-pre-page.png" /></a>
+                                            <a href="#"><img src="../img/btn-next-page.gif" /></a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
                                 </div>
-                                <table class="table table-bordered mp0">
-                                    <thead class="text-center">
+
+                                <table class="ren-feedback-body-table-data table table-bordered">
+                                    <thead>
                                         <tr>
-                                            <th>项目内容及回馈描述</th>
-                                            <th>支持金额</th>
-                                            <th>物流方式</th>
-                                            <th>发放期限</th>
-                                            <th>操作</th>
+                                            <th>
+                                                <label class="fz14 color-3F3F3F" style="line-height:10px;">
+                                                    <input type="checkbox" name="all" /> 2014-12-01
+                                                </label>
+                                                &nbsp; &nbsp; &nbsp; &nbsp;发起人：张三
+                                                &nbsp; &nbsp; &nbsp; &nbsp;项目进度：50%
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>
+                                                <a href="#"><i class="pull-right glyphicon glyphicon-trash fz16" style="line-height:20px;"></i></a>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>ddd</td>
-                                            <td>ddd</td>
-                                            <td>ddd</td>
-                                            <td>ddd</td>
-                                            <td>ddd</td>
+                                            <td>
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img src="../img/project/1.jpg" alt="...">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading">有梦想，就有新世界，项目名称</h5>
+                                                        <p class="color-8B8B8B">
+                                                            回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发送给您。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h1 class="clearfix color-FF8000">¥19,305</h1>
+                                            </td>
+                                            <td class="color-3F3F3F">无需物流</td>
+                                            <td class="color-3F3F3F">
+                                                剩余<span class="fz20 color-FF8000">18</span>天
+
+                                            </td>
+                                            <td>
+                                                <span class="color-FF8000 fz12">众筹进行中</span>
+                                                <br />
+                                                <button class="mt15 btn btn-default btn-sm" data-toggle="modal" data-target="#ren-receiving-modal">确认收货</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="ren-feedback-body-table-data table table-bordered mp0">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label class="fz14 color-3F3F3F" style="line-height:10px;">
+                                                    <input type="checkbox" name="all" /> 2014-12-01
+                                                </label>
+                                                &nbsp; &nbsp; &nbsp; &nbsp;发起人：张三
+                                                &nbsp; &nbsp; &nbsp; &nbsp;项目进度：50%
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>
+                                                <a href="#"><i class="pull-right glyphicon glyphicon-trash fz16" style="line-height:20px;"></i></a>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img src="../img/project/1.jpg" alt="...">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading">有梦想，就有新世界，项目名称</h5>
+                                                        <p class="color-8B8B8B">
+                                                            回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发送给您。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h1 class="clearfix color-FF8000">¥19,305</h1>
+                                            </td>
+                                            <td class="color-3F3F3F">无需物流</td>
+                                            <td class="color-3F3F3F">
+                                                剩余<span class="fz20 color-FF8000">18</span>天
+                                                <br />(已延期)
+                                            </td>
+                                            <td>
+                                                <span class="color-9B9B9B fz12">已延期收货</span>
+                                                <br />
+                                                <button class="mt15 btn btn-default btn-sm" data-toggle="modal" data-target="#ren-exreceiving-modal">延期收货</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="ren-feedback-body-table-data table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label class="fz14 color-3F3F3F" style="line-height:10px;">
+                                                    <input type="checkbox" name="all" /> 2014-12-01
+                                                </label>
+                                                &nbsp; &nbsp; &nbsp; &nbsp;发起人：张三
+                                                &nbsp; &nbsp; &nbsp; &nbsp;项目进度：50%
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>
+                                                <a href="#"><i class="pull-right glyphicon glyphicon-trash fz16" style="line-height:20px;"></i></a>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img src="../img/project/1.jpg" alt="...">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading">有梦想，就有新世界，项目名称</h5>
+                                                        <p class="color-8B8B8B">
+                                                            回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发送给您。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h1 class="clearfix color-FF8000">¥19,305</h1>
+                                            </td>
+                                            <td class="color-3F3F3F">无需物流</td>
+                                            <td class="color-3F3F3F">
+                                                剩余<span class="fz20 color-FF8000">18</span>天
+
+                                            </td>
+                                            <td>
+                                                <span class="color-0035D8 fz12">延期退款</span>
+                                                <br />
+                                                <button class="mt15 btn btn-default btn-sm" data-toggle="modal" data-target="#ren-exrefund-modal">延期退款</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <table class="ren-feedback-body-table-data table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label class="fz14 color-3F3F3F" style="line-height:10px;">
+                                                    <input type="checkbox" name="all" /> 2014-12-01
+                                                </label>
+                                                &nbsp; &nbsp; &nbsp; &nbsp;发起人：张三
+                                                &nbsp; &nbsp; &nbsp; &nbsp;项目进度：50%
+                                            </th>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>
+                                                <a href="#"><i class="pull-right glyphicon glyphicon-trash fz16" style="line-height:20px;"></i></a>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img src="../img/project/1.jpg" alt="...">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h5 class="media-heading">有梦想，就有新世界，项目名称</h5>
+                                                        <p class="color-8B8B8B">
+                                                            回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发送给您。
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h1 class="clearfix color-FF8000">¥19,305</h1>
+                                            </td>
+                                            <td class="color-3F3F3F">无需物流</td>
+                                            <td class="color-3F3F3F">
+                                                剩余<span class="fz20 color-FF8000">18</span>天
+
+                                            </td>
+                                            <td>
+                                                <span class="color-FF0000 fz12">众筹失败</span>
+                                                <br />
+                                                <button class="mt15 btn btn-default btn-sm" data-toggle="modal" data-target="#ren-appraisal-model">发布评论</button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="row mt15 pl15 fz12">
+                                <div class="col-lg-5">
+                                    <label class="fz12 color-9B9B9B">
+                                        <input type="checkbox" name="all" /> 全选
+                                    </label>
+                                    &nbsp;&nbsp;
+                                    <a href="#" class="color-9B9B9B ">删除</a>
+                                </div>
+                                <div class="col-lg-7 mp0">
+                                    <nav class="pull-right">
+                                        <ul class="pagination pagination-sm" style="margin:0 15px 0 0;">
+                                            <li><a href="#">&laquo;</a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">&raquo;</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
                         </div>
                         <!--我发放的-->
                         <div role="tabpanel" class="tab-pane" id="profile">
@@ -124,7 +334,7 @@
 
 
         </div>
-       
+
 
 
 
@@ -133,6 +343,248 @@
 
     <div class="clearfix mtmb15 pt20"></div>
     <div id="footer"></div>
+
+
+
+
+    <!-- 确认收货 Modal -->
+    <div class="modal" id="ren-receiving-modal" tabindex="-1" role="dialog" aria-labelledby="ren-receiving" aria-hidden="true">
+        <div class="modal-dialog" style="width:760px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="ren-receiving">确认收货</h4>
+                </div>
+                <div class="modal-body ptrbl30">
+                    <h4>尊敬的<span class="color-00B259">XXX</span>:</h4>
+                    <h5>你好！</h5>
+                    <p>
+                        <span class="color-00B259">XXXXXXX</span>项目团队全体成员感谢你对项目的支持，目前项目已经圆满结束，根据回馈约定，<br>
+                        我们已经将回馈礼品发出，以表谢意！请务必仔细检查礼品是否与此前回馈描述一致，同时请检查礼品的完整性，如有疑问请在第一时间与项目发起人张鑫帆（13566985424）取得联系。
+                        <br>
+                        再次感谢您对我们的信任与支持！
+                    </p>
+                    <h5 class="pull-right">
+                        <span class="color-00B259">XXXXXXX项目团队</span>
+                        <br />
+                        2014年11月12日（读取发货日期）
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="ren-receiving-submit btn btn-lg btn-success btn-block">我已确认收到该项目的回馈礼品</button>
+                    <button type="button" id="ren-want-appraisal" class="btn btn-lg btn-warning btn-block dispalynone">我要对该项目展开评价</button>
+                    <div class="clearfix mt15"></div>
+                    <div class="alert alert-warning fz10 pt10 pb10 mt0 mb0 text-left">*如逾期未确认，系统将在2014年11月27日（读取发货日期+15天）自动默认为“确认收悉”。</div>
+                    <div class="alert alert-warning fz10 pt10 pb10 mt0 mb0 text-left dispalynone">*如逾期未展开评价，系统将在2014年11月27日（读取退款日期+15天）自动默认为“好评”。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 评价 Modal -->
+    <div class="modal" id="ren-appraisal-model" tabindex="-1" role="dialog" aria-labelledby="ren-appraisal" aria-hidden="true">
+        <div class="modal-dialog" style="width:1000px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="ren-appraisal">发表评价</h4>
+                </div>
+                <div class="modal-body ptrbl30">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="active text-center">
+                                <th style="width:440px;">项目概况介绍</th>
+                                <th style="width:240px;">参与数据</th>
+                                <th>项目印象评价</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="media ptrbl15">
+                                        <a class="media-left" href="#">
+                                            <img src="../img/project/p0.jpg" style="max-height:100px; max-width:120px;" alt="...">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">有梦想，就有新世界，项目名称</h4>
+                                            <p class="color-8B8B8B">
+                                                回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发送给您。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="fz12 ptb5">筹集资金 <span class="color-FF8000">￥62000.00</span>元 (完成120%)</div>
+                                    <div class="alert alert-warning fz12">
+
+                                        <p>项目计划 <span class="color-00B259">60</span>天 / 实际执行 <span class="color-00B259">80</span>天</p>
+                                        <p>团队成员 <span class="color-00B259">85</span>人 / 支持者们 <span class="color-00B259">85</span>人</p>
+                                        <p>发起话题 <span class="color-00B259">100</span>个 / 参与讨论 <span class="color-00B259">85</span>人</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="line-height:120px;">
+                                        项目印象
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div class="clearfix mt15"></div>
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="active text-center">
+                                <th style="width:440px;">回馈礼物介绍</th>
+                                <th style="width:240px;">我的支持金额</th>
+                                <th>回馈评价</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="media ptrbl15">
+                                        <a class="media-left" href="#">
+                                            <img src="../img/project/1.jpg" style="max-height:100px; max-width:120px;" alt="...">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">有梦想，就有新世界，项目名称</h4>
+                                            <p class="color-8B8B8B">
+                                                回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发送给您。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h3 class="color-FF8000 text-center">￥62000.00</h3>
+                                    <div class="alert alert-warning fz12 text-center">
+                                        已经于<span class="color-00B259">2014年11月27日</span>发放
+                                        
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="line-height:120px;">
+                                        回馈评价
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-lg-2 pt35">
+                                <h4>我的项目点评</h4>
+                            </div>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center mb15">
+                        <button type="button" class="btn btn-success plr30">发表评价</button>
+                        <button type="button" class="btn btn-success plr30" data-dismiss="modal">取消评价</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 延期退款 Modal -->
+    <div class="modal" id="ren-exrefund-modal" tabindex="-1" role="dialog" aria-labelledby="ren-exrefund" aria-hidden="true">
+        <div class="modal-dialog" style="width:760px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="ren-exrefund">延期退款</h4>
+                </div>
+                <div class="modal-body ptrbl30">
+                    <h4>尊敬的<span class="color-00B259">XXX</span>:</h4>
+                    <h5>你好！</h5>
+                    <p>
+                        根据此前约定，系统将为您延迟15天收款时间。确认后，收款时间将被延长至<span class="color-FF0000">2014年11月27日</span>（创建新日期），如有疑问请在第一时间与奇异点客户服务人员取得联系，联系电话（0000000）。
+                        <br>感谢您对该项目的信任与支持！
+
+                    </p>
+                    <h5 class="pull-right">
+                        奇异点客户服务
+                        <br />
+                        2014年11月12日（读取发货日期）
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="ren-exreceiving-submit btn btn-lg btn-success btn-block">我已确认延长退款时间</button>
+
+                    <div class="clearfix mt15"></div>
+                    <div class="alert alert-warning fz10 pt10 pb10 mt0 mb0 text-left">*如逾期未确认，系统将在2014年11月27日（读取发货日期+15天）自动默认为“确认收悉”。</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 延期收货 Modal -->
+    <div class="modal" id="ren-exreceiving-modal" tabindex="-1" role="dialog" aria-labelledby="ren-exreceiving" aria-hidden="true">
+        <div class="modal-dialog" style="width:760px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="ren-exreceiving">延期收货</h4>
+                </div>
+                <div class="modal-body ptrbl30">
+                    <h4>尊敬的<span class="color-00B259">XXX</span>:</h4>
+                    <h5>你好！</h5>
+                    <p>
+                        根据此前约定，系统将为您延迟15天收货时间。确认后，收货时间将被延长至<span class="color-FF0000">2014年11月27日</span>（创建新日期），如有疑问请在第一时间与奇异点客户服务人员取得联系，联系电话（0000000）。
+                        <br>感谢您对该项目的信任与支持！
+
+                    </p>
+                    <h5 class="pull-right">
+                        奇异点客户服务
+                        <br />
+                        2014年11月12日（读取发货日期）
+                    </h5>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="ren-exreceiving-submit btn btn-lg btn-success btn-block">我已确认延长收货时间</button>
+
+                    <div class="clearfix mt15"></div>
+                    <div class="alert alert-warning fz10 pt10 pb10 mt0 mb0 text-left">*如逾期未确认，系统将在2014年11月27日（读取发货日期+15天）自动默认为“确认收悉”。</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -146,6 +598,17 @@
         $(function () {
             $("#head").load("../login_head.html");
             $("#footer").load("../footer.html");
+            //确认收货后按钮变换
+            $('.ren-receiving-submit').click(function () {
+                $(this).hide().next().show();
+                $(this).next().next().next().hide().next().show();
+            })
+            //要发表评价的按钮
+            $('#ren-want-appraisal').click(function () {
+                $('#ren-receiving-modal').modal('hide');
+                $('#ren-appraisal-model').modal('show');
+            })
+
         });
 
     </script>

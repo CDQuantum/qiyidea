@@ -871,6 +871,7 @@ ul.ren-top-project-tab {
 
 .ren-feedback-body-table > table {
     margin-bottom: 5px;
+    margin-top:5px;
 }
 
 .ren-feedback-body-table > .table-bordered {
@@ -884,9 +885,24 @@ ul.ren-top-project-tab {
         background-color: #FFF8E1;
         text-align: center;
     }
+        .ren-feedback-body-table > .ren-feedback-body-table-data > thead > tr > th:first-child {
+            text-align:left; padding-left:13px;
+        }
 
-.table-bordered > tbody > tr > td {
+.ren-feedback-body-table > .table-bordered > tbody > tr > td:first-child {
+    padding:15px;width:450px;
+}
+
+.ren-feedback-body-table >.table-bordered > tbody > tr > td:nth-child(n+2) {
+    vertical-align:middle; text-align:center;
+}
+.ren-feedback-body-table >.table-bordered > tbody > tr > td {
     border-bottom: 1px solid #FFE599;
     border-right: 1px solid #FFE599;
     border-left: 1px solid #FFE599;
+}
+
+.ren-feedback-body-table >.table-bordered > tbody >tr .media> a>img{
+    max-height:100px;
+    max-width:120px;
 }
