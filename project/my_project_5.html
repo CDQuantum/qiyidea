@@ -563,6 +563,9 @@
 
     <script type="text/javascript">
         $(function () {
+            //公共部分加载
+            $("#head").load("../head.html");
+            $("#footer").load("../footer.html");
             //时间日历
             $('.datetimepicker5').datetimepicker({
                 language: 'zh-CN',
@@ -581,9 +584,7 @@
             });
             //日历时间结束
 
-            //公共部分加载
-            $("#head").load("../head.html");
-            $("#footer").load("../footer.html");
+            
             $(".add-return-yes").click(function () {
                 $("#create-new-return").modal("hide");
             });
