@@ -204,7 +204,7 @@ div.mtb15 {
     margin-bottom: 15px;
 }
 
-button.plr30 {
+button.plr30,div.plr30 {
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -235,7 +235,7 @@ margin-right:10px;
     padding-left: 10px;
 }
 
-.pt10 {
+.pt10,div.pt10 {
     padding-top: 10px;
 }
 
@@ -278,8 +278,12 @@ padding-bottom:10px;
 .ptrbl15 {
 padding:15px 20px;
 }
-.ptrbl30 {
+.ptrbl30 ,div.ptrbl30{
 padding:30px;
+}
+
+div.ptb20lr30 {
+padding:20px 35px 10px 35px;
 }
 
 div.mt0, p.mt0, h3.mt0, hr.mt0 {
