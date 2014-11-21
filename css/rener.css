@@ -939,26 +939,32 @@ ul.ren-top-project-tab {
 
 
 .ren-star-rating {
-    margin: 0;
-    padding: 0;
     list-style: none;
     clear:both;
-    width:145px;
+    width:142px;
+    height:22px;
     position:relative;
+    margin:0;
+	padding:0;
+    background: url('../img/star2.png') no-repeat -20px -10px;
 }
 
+.nostar {background-position:-20px -10px;}
+.onestar {background-position:-20px -40px;}
+.twostar {background-position:-20px -70px;}
+.threestar {background-position:-20px -100px;}
+.fourstar {background-position:-20px -130px;}
+.fivestar {background-position:-20px -160px;}
     .ren-star-rating li {
         float: left;
         position:absolute;
         z-index:999;
-        background: url('../img/star2.png') no-repeat -20px -10px;
         cursor:pointer;
-        margin-right:8px;
         height: 22px;
         width: 22px;
         left:0;
 	    top:0;
-	    text-decoration:none;
+	    text-decoration:none;
     }
      .ren-star-rating li.one {
         left:0;
@@ -967,41 +973,39 @@ ul.ren-top-project-tab {
          left:30px;
     }
        .ren-star-rating li.three {
-         left:44px;
+         left:60px;
     }
         .ren-star-rating li.four {
-         left:66px;
+         left:90px;
     }
          .ren-star-rating li.five {
-         left:88px;
+         left:120px;
     }
 
     .ren-star-rating li:hover {
-        background: url('../img/star2.png') no-repeat 0px 0px;
-        width:140px;
+        background: url('../img/star2.png') no-repeat -20px -10px;
+        width:142px;
         overflow:hidden;
 	    left:0;	
         z-index:5;
     }
 
-     .ren-star-rating li.one:hover {
+     .ren-star-rating li.one:hover, .ren-star-rating li.one.active{
         background-position:-20px -40px;
     }
-      .ren-star-rating li.two:hover {
+      .ren-star-rating li.two:hover,.ren-star-rating li.two.active {
          background-position:-20px -70px;
     }
-       .ren-star-rating li.three:hover {
+       .ren-star-rating li.three:hover,.ren-star-rating li.three.active {
          background-position:-20px -100px;
     }
-        .ren-star-rating li.four:hover {
+        .ren-star-rating li.four:hover,.ren-star-rating li.four.active {
          background-position:-20px -130px;
     }
-         .ren-star-rating li.five:hover {
+         .ren-star-rating li.five:hover, .ren-star-rating li.five.active{
          background-position:-20px -160px;
     }
-    .ren-star-rating li.active {
-        background: url('../img/star.png') no-repeat -10px -10px;
-    }
+     
 
 
     /* readonly */
@@ -1009,17 +1013,17 @@ ul.ren-top-project-tab {
     margin: 0;
     padding: 0;
     list-style: none;
+    clear:both;
 }
 
     .ren-star-rating-disabled li {
         float: left;
         background: url('../img/star.png') no-repeat -10px -70px;
-        cursor:text;
         margin-right:8px;
         height: 22px;
         width: 22px;
     }
      
-    .ren-star-rating-disabled.active {
+    .ren-star-rating-disabled li.active {
         background: url('../img/star.png') no-repeat -10px -10px;
     }

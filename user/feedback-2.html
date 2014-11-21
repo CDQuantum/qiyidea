@@ -172,23 +172,17 @@
                                             <button class="btn btn-xs btn-default">确定发放</button>
                                         </td>
                                         <td>
-                                            <div class="ren-star-box">
-                                                <ul class="ren-star-rating">
-                                                    <li class="one"></li>
-                                                    <li class="two"></li>
-                                                    <li class="three"></li>
-                                                    <li class="four"></li>
-                                                    <li class="five"></li>
-                                                </ul>
-                                                
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="show-msg-box cursor">
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
+                                            <div class="show-msg-box cursor pl15">
+                                                <div class="ren-star-box">
+                                                    <ul class="ren-star-rating-disabled">
+                                                        <li class="one active"></li>
+                                                        <li class="two active"></li>
+                                                        <li class="three active"></li>
+                                                        <li class="four active"></li>
+                                                        <li class="five"></li>
+                                                    </ul>
+                                                    <div class="clearfix"></div>
+                                                </div>
                                             </div>
 
                                         </td>
@@ -206,12 +200,18 @@
                                             <span class="color-FF8000 fz12">已经发放</span>
                                         </td>
                                         <td>
-                                            <div class="show-msg-box cursor">
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
-                                                <span class="glyphicon glyphicon-star-empty"></span>
+                                             
+                                            <div class="show-msg-box cursor pl15">
+                                                <div class="ren-star-box">
+                                                    <ul class="ren-star-rating-disabled">
+                                                        <li class="one active"></li>
+                                                        <li class="two active"></li>
+                                                        <li class="three active"></li>
+                                                        <li class="four"></li>
+                                                        <li class="five"></li>
+                                                    </ul>
+                                                    <div class="clearfix"></div>
+                                                </div>
                                             </div>
 
                                         </td>
@@ -269,53 +269,65 @@
     <!--个人点评-->
     <div class="user-appraisal-card dispalynone">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4" style="max-width:100px;">
                 <dl class="mp0">
-                    <dt>
+                    <dt class="text-center">
                         <a href="#">
-                            <img class="media-object" src="../img/default_avatar.gif" alt="50*50" title="50*50" style="max-height:40px; max-width:40px;">
+                            <img class="media-object img-circle"  src="../img/default_avatar.gif" alt="50*50" title="50*50" style="max-height:50px; max-width:50px;">
                         </a>
                     </dt>
                     <dd class="pt10">
 
                     </dd>
-                    <dd class="fz12">
-                        <a href="../admin/user-index-info.html" target="_blank" class="nulinkunderline vertical-align-middle">死不靠谱夫斯基</a>
+                    <dd class="fz12 text-overflow">
+                        <a href="../admin/user-index-info.html" target="_blank" class="nulinkunderline" title="死不靠谱夫斯基">死不靠谱夫斯基</a>
                     </dd>
                 </dl>
 
             </div>
             <div class="col-lg-8">
-                <dl class="mp0">
-                    <dt>
-
+                <div class="pt10">
+                    <div class="pull-left">
                         项目印象
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-
-                    </dt>
-
-                    <dd>
-
+                    </div>
+                    <div class="pull-right">
+                        <div class="ren-star-box">
+                            <ul class="ren-star-rating-disabled">
+                                <li class="one active"></li>
+                                <li class="two active"></li>
+                                <li class="three active"></li>
+                                <li class="four"></li>
+                                <li class="five"></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="pt10">
+                    <div class="pull-left">
                         回馈评价
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </div>
+                    <div class="pull-right">
 
+                        <div class="ren-star-box">
+                            <ul class="ren-star-rating-disabled">
+                                <li class="one active"></li>
+                                <li class="two active"></li>
+                                <li class="three active"></li>
+                                <li class="four active"></li>
+                                <li class="five"></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
 
-
-                    </dd>
-
-                </dl>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
             <div class="col-lg-12 mp0">
                 <div class="row mp0">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 text-right">
                         <h5>他的点评</h5>
                     </div>
                     <div class="col-lg-9">
