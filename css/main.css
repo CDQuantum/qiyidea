@@ -298,6 +298,14 @@ div.mp0, p.mp0, h3.mp0, hr.mp0 {
     margin: 0px;
     padding: 0px;
 }
+div.mtb0 {
+margin-bottom:0;
+margin-top:0;
+}
+div.ptb10 {
+padding-top:10px;
+padding-bottom:10px;
+}
 
 div.mpt40 {
     margin-top: 40px;
