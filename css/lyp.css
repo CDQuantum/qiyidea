@@ -709,7 +709,7 @@ font-size:24px;
     cursor:pointer;
     background:url(../img/login/_r5_c6.png) left top no-repeat;
 }
-.btn-img-hover{
+.btn-img:hover{
     color:#fff;
     background:url(../img/login/_r5_c7.png) left top no-repeat;
 }
