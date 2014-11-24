@@ -156,41 +156,49 @@
                                 <a href="javascript:void(0);" class="pull-right color525252">+添加管理员</a>
                             </div>
                             <div class="panel-body" style="padding-top:30px;padding-left:70px;padding-bottom:30px;">
-                                <div class="pull-left text-center admin-head" onmouseover="Over(this);" onmouseout="Out(this);">
+                                <div class="pull-left text-center admin-head cursor ren-admin-manage">
                                     <div style="width:14px;height:14px;float:right">
-                                        <img src="../img/user/yichu.png" class="pull-right cursor  del-icon dispalynone" />
+                                        <img src="../img/user/yichu.png" class="pull-right cursor  del-icon ren-del-admin dispalynone" />
                                     </div>
-                                    <img class="media-object" src="../img/user/touxiang.png" style="width:60px;height:60px;margin-top:8px;margin-left:10px;" alt="...">
+                                    <img class="media-object" src="../img/user/touxiang.png" style="max-width:60px;max-height:60px;margin-top:8px;margin-left:10px;" alt="...">
                                     <div class="text-center"><a href="javascript:void(0)">张叶冰</a></div>
                                 </div>
-                                <div class="pull-left text-center admin-head" onmouseover="Over(this);" onmouseout="Out(this);">
+                                <div class="pull-left text-center admin-head cursor ren-admin-manage">
                                     <div style="width:14px;height:14px;float:right">
-                                        <img src="../img/user/yichu.png" class="pull-right cursor dispalynone del-icon" />
+                                        <img src="../img/user/yichu.png" class="pull-right cursor  del-icon ren-del-admin dispalynone" />
                                     </div>
-                                    <img class="media-object  img-circle" src="../img/user/touxiang.png" style="width:60px;height:60px;margin-top:8px;margin-left:10px;" alt="...">
+                                    <img class="media-object" src="../img/user/touxiang.png" style="max-width:60px;max-height:60px;margin-top:8px;margin-left:10px;" alt="...">
                                     <div class="text-center"><a href="javascript:void(0)">张叶冰</a></div>
                                 </div>
-                                <div class="pull-left text-center admin-head" onmouseover="Over(this);" onmouseout="Out(this);">
+                                <div class="pull-left text-center admin-head cursor ren-admin-manage">
                                     <div style="width:14px;height:14px;float:right">
-                                        <img src="../img/user/yichu.png" class="pull-right cursor dispalynone del-icon" />
+                                        <img src="../img/user/yichu.png" class="pull-right cursor  del-icon ren-del-admin dispalynone" />
                                     </div>
-                                    <img class="media-object  img-circle" src="../img/user/touxiang.png" style="width:60px;height:60px;margin-top:8px;margin-left:10px;" alt="...">
+                                    <img class="media-object" src="../img/user/touxiang.png" style="max-width:60px;max-height:60px;margin-top:8px;margin-left:10px;" alt="...">
                                     <div class="text-center"><a href="javascript:void(0)">张叶冰</a></div>
                                 </div>
-                                <div class="pull-left text-center admin-head" onmouseover="Over(this);" onmouseout="Out(this);">
+                                <div class="pull-left text-center admin-head cursor ren-admin-manage">
                                     <div style="width:14px;height:14px;float:right">
-                                        <img src="../img/user/yichu.png" class="pull-right cursor dispalynone del-icon" />
+                                        <img src="../img/user/yichu.png" class="pull-right cursor  del-icon ren-del-admin dispalynone" />
                                     </div>
-                                    <img class="media-object  img-circle" src="../img/user/touxiang.png" style="width:60px;height:60px;margin-top:8px;margin-left:10px;" alt="...">
+                                    <img class="media-object" src="../img/user/touxiang.png" style="max-width:60px;max-height:60px;margin-top:8px;margin-left:10px;" alt="...">
                                     <div class="text-center"><a href="javascript:void(0)">张叶冰</a></div>
                                 </div>
-                                <div class="pull-left text-center admin-head" onmouseover="Over(this);" onmouseout="Out(this);">
+                                <div class="pull-left text-center admin-head cursor ren-admin-manage">
                                     <div style="width:14px;height:14px;float:right">
-                                        <img src="../img/user/yichu.png" class="pull-right cursor dispalynone del-icon" />
+                                        <img src="../img/user/yichu.png" class="pull-right cursor  del-icon ren-del-admin dispalynone" />
                                     </div>
-                                    <img class="media-object  img-circle" src="../img/user/touxiang.png" style="width:60px;height:60px;margin-top:8px;margin-left:10px;" alt="...">
+                                    <img class="media-object" src="../img/user/touxiang.png" style="max-width:60px;max-height:60px;margin-top:8px;margin-left:10px;" alt="...">
                                     <div class="text-center"><a href="javascript:void(0)">张叶冰</a></div>
                                 </div>
+                                <div class="pull-left text-center admin-head cursor ren-admin-manage">
+                                    <div style="width:14px;height:14px;float:right">
+                                        <img src="../img/user/yichu.png" class="pull-right cursor  del-icon ren-del-admin dispalynone" />
+                                    </div>
+                                    <img class="media-object" src="../img/user/touxiang.png" style="max-width:60px;max-height:60px;margin-top:8px;margin-left:10px;" alt="...">
+                                    <div class="text-center"><a href="javascript:void(0)">张叶冰</a></div>
+                                </div>
+                                
                                
                             </div>
                         </div>
@@ -538,15 +546,40 @@
             $(".add-return-yes").click(function () {
                 $("#create-new-return").modal("hide");
             });
+
+            //隐藏
+            $('.ren-admin-manage').mouseover(function () {
+                $(this).css('border', '1px dashed #ddd').find('.del-icon').show()
+            }).mouseout(function () {
+                $(this).css('border', '1px dashed #fff').find('.del-icon').hide()
+            })
+            //删除管理员
+            $('.ren-del-admin').click(function () {
+                if (confirm("确认要删除管理员？")) {
+                    //调用 删除事件 ajax
+                    //do something
+                    //成功后
+                    $(this).parent().parent().remove();
+                    alert('删除成功');
+                }else
+                    window.event.returnValue = false;
+            })
+
+            //隐藏
+            $('.ren-user-manage').mouseover(function () {
+                $(this).css('border', '1px dashed #ddd').find('.del-member-icon').show().find('.colorA6A6A6').show();
+            }).mouseout(function () {
+                $(this).css('border', '1px dashed #fff').find('.del-member-icon').hide().find('.colorA6A6A6').hide();
+            })
         });
-        function Over(o) {
-            o.style.border = '1px dashed #ddd';
-            $(o).find('.del-icon').show();
-        }
-        function Out(o) {
-            o.style.border = '1px dashed #fff';
-            $(o).find('.del-icon').hide();
-        }
+        //function Over(o) {
+        //    o.style.border = '1px dashed #ddd';
+        //    $(o).find('.del-icon').show();
+        //}
+        //function Out(o) {
+        //    o.style.border = '1px dashed #fff';
+        //    $(o).find('.del-icon').hide();
+        //}
         function overMember(o) {
             o.style.border = '1px dashed #ddd';
             $(o).find('.del-member-icon').show();
@@ -557,6 +590,7 @@
             $(o).find('.del-member-icon').hide();
             $(o).find('.colorA6A6A6').hide();
         }
+
 
     </script>
 </body>
