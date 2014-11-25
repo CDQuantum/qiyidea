@@ -23,7 +23,7 @@
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/fileupload-ui/jquery.fileupload-ui.css">
-
+    <link rel="stylesheet" type="text/css" href="../js/umeditor-1.2.2/umeditor.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="js/assets/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -142,7 +142,15 @@
                                     <div class="form-group">
                                         <label for="project-introduction" class="col-sm-3 control-label">项目的描述：</label>
                                         <div class="col-sm-9">
-                                            <textarea rows="5" class="form-control" id="project-introduction" placeholder="请勿超过60字，侵害用简明的语言归纳项目的主题，这段文字将在展示项目预览界面展示给大家。"></textarea>
+
+                                            <div id="editor" contenteditable="true"></div>
+
+
+
+
+                                            
+                                           
+                                            <!--<textarea rows="5" class="form-control" id="project-introduction" placeholder="请勿超过60字，侵害用简明的语言归纳项目的主题，这段文字将在展示项目预览界面展示给大家。"></textarea>-->
                                         </div>
                                     </div>
                                     <div class="row" style="margin-top:40px;">
@@ -225,6 +233,24 @@
         })
 
     </script>
+
+
+    <script type="text/javascript" src="../js/umeditor-1.2.2/umeditor.config.js"></script>
+    <script type="text/javascript" src="../js/umeditor-1.2.2/umeditor.js"></script>
+    <script type="text/javascript">
+        //初始化toolbar
+        $opt = {
+            toolbar: ['title typeset link image']
+        };
+        var editor = UM.getEditor('editor', $opt);
+        editor.ready(function () {
+            editor.setContent('<h3>关于我</h3><p>向支持者介绍一下你自己，以及你与所发起的项目之间的背景。这样有助于拉近你与支持者之间的距离。建议不超过100字。</p><h3>我想要做什么</h3><p>以视频、图文并茂的方式简洁生动地说明你的项目，让大家一目了然，这会决定是否将你的项目描述继续看下去。建议不超过300字。</p><h3>项目的进展和风险</h3><p>让大家更好的了解项目的进度，增加对项目的信任度，以及在支持者选择支持前就了解和认同项目在执行过程中所存在的风险。</p><h3>为什么需要你的支持</h3><p>这是加分项。说说你的项目不同寻常的特色、资金用途、以及大家支持你的理由。这会让更多人能够支持你，不超过200个汉字。</p><h3>我的承诺与回报</h3><p>让大家感到你对待项目的认真程度，鞭策你将项目执行最终成功。同时向大家展示一下你为支持者准备的回报，来吸引更多人支持你。</p>');
+        });
+
+
+    </script>
+
+
 
 </body>
 </html>
