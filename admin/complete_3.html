@@ -64,7 +64,7 @@
                     </div>
                     <div class="row martop30">
                         <div class="col-lg-6" style="color:#A3A3A3;font-size:13px;">
-                            <button type="button" class="btn btn-success" style="padding:8px 25px 8px 25px;font-size:18px;">选择我的学校</button>
+                            <button type="button" class="btn btn-success" style="padding:8px 25px 8px 25px;font-size:18px;" data-toggle="modal" data-target="#select-school">选择我的学校</button>
                         </div>
                         <div class="col-lg-6"> </div>
                     </div>
@@ -332,7 +332,110 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="select-school" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">选择学校</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel panel-default">
+                        <div class="panel-body select-provinces">
+                            <a href="#">&nbsp;<span>北京</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>上海</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>天津</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>安徽</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>福建</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>广东</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>广西</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>四川</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>云南</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>贵州</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>湖北</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>湖南</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>河北</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>河南</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>浙江</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>西藏</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>重庆</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>山东</span>&nbsp;</a>&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div class="panel panel-default select-city-1" style="display:none">
+                        <div class="panel-body select-city">
+                            <a href="#">&nbsp;<span>成都</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>绵阳</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>阿坝</span>&nbsp;</a>&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div class="panel panel-default select-area-1" style="display:none">
+                        <div class="panel-body select-area">
+                            <a href="#">&nbsp;<span>锦江区</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>青羊区</span>&nbsp;</a>&nbsp;&nbsp;
+                            <a href="#">&nbsp;<span>金牛区</span>&nbsp;</a>&nbsp;&nbsp;
+                        </div>
+                    </div>
+                    <div class="add-my-school-div" style="display:none">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group input-group-sm">
+                                    <input type="text" class="form-control add-school-name" placeholder="输入学校名称…">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group input-group-sm">
+                                    <a href="#" class="back-serach-school">返回搜索学校</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-school-1" style="display:none">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group input-group-sm">
+                                    <input type="text" class="form-control seaech-school" placeholder="输入学校名称搜索…">
+                                    <span class="input-group-addon input-group-btn cursor seaech-school-click"><i class="glyphicon glyphicon-search"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group input-group-sm">
+                                    <a href="#" class="add-my-school">没有我的学校?</a>
+                                </div>
 
+                            </div>
+                        </div>
+                        <div class="row martop10">
+                            <div class="col-lg-12">
+                                <div class="panel panel-default ">
+                                    <div class="panel-body select-school-2">
+                                        <div class="row marbottom10">
+                                            <div class="col-lg-1">B</div>
+                                            <div class="col-lg-11 paddleft0 select-school-3">
+                                                <a href="#">&nbsp;<span>八七小学</span>&nbsp;</a>&nbsp;&nbsp;
+                                                <a href="#">&nbsp;<span>保和中心小学</span>&nbsp;</a>&nbsp;&nbsp;
+                                            </div>
+                                        </div>
+                                        <div class="row marbottom10">
+                                            <div class="col-lg-1">C</div>
+                                            <div class="col-lg-11 paddleft0 select-school-3">
+                                                <a href="#">&nbsp;<span>成都师范学校附属小学万科</span>&nbsp;</a>&nbsp;&nbsp;
+                                                <a href="#">&nbsp;<span>成都师范学校附属小学</span>&nbsp;</a>&nbsp;&nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancel-secelt-school" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary determine-secelt-school">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="footer"></div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -382,6 +485,171 @@
             $(this).parent().find('.add-firend-list').show();
         });
 
+
+        //点击省份
+        $(".select-provinces a").click(function () {
+            $(this).html();
+            $(".select-provinces a").each(function () {
+                $(".select-provinces a").removeClass("bg-color");
+                $(".select-provinces a").removeClass("active");
+            });
+            $(".select-city a").each(function () {
+                $(".select-city a").removeClass("bg-color");
+                $(".select-city a").removeClass("active");
+            });
+            $(this).addClass("bg-color");
+            $(this).addClass("active");
+            $(".select-city-1").show();
+            $(".select-area-1").hide();
+            $(".select-school-1").hide();
+        });
+        //点击城市
+        $(".select-city a").click(function () {
+            $(this).html();
+            $(".select-city a").each(function () {
+                $(".select-city a").removeClass("bg-color");
+                $(".select-city a").removeClass("active");
+            });
+            $(".select-area a").each(function () {
+                $(".select-area a").removeClass("bg-color");
+                $(".select-area a").removeClass("active");
+            });
+            $(this).addClass("bg-color");
+            $(this).addClass("active");
+            $(".select-area-1").show();
+            $(".select-school-1").hide();
+        });
+        //点击区域
+        $(".select-area a").click(function () {
+            $(this).html();
+            $(".select-area a").each(function () {
+                $(".select-area a").removeClass("bg-color");
+                $(".select-area a").removeClass("active");
+            });
+            $(".select-school-3 a").each(function () {
+                $(".select-school-3 a").removeClass("bg-color");
+                $(".select-school-3 a").removeClass("active");
+            });
+            $(this).addClass("bg-color");
+            $(this).addClass("active");
+            $(".select-school-1").show();
+        });
+        //点击学校
+        $(".select-school-3 a").click(function () {
+            $(this).html();
+            $(".select-school-3 a").each(function () {
+                $(".select-school-3 a").removeClass("bg-color");
+                $(".select-school-3 a").removeClass("active");
+            });
+            $(this).addClass("bg-color");
+            $(this).addClass("active");
+        });
+        //点击搜索按钮
+        $(".seaech-school-click").click(function () {
+
+        });
+        //点击 添加学校
+        $(".add-my-school").click(function () {
+            $(".add-my-school-div").show();
+            $(".select-school-3 a").each(function () {
+                $(".select-school-3 a").removeClass("bg-color");
+                $(".select-school-3 a").removeClass("active");
+            });
+            $(".seaech-school").val("");
+            $(".select-school-1").hide();
+        });
+        //点击 返回搜索学校
+        $(".back-serach-school").click(function () {
+            $(".add-my-school-div").hide();
+            $(".add-school-name").val("");
+            $(".select-school-1").show();
+        });
+        //取消选择学校
+        $(".cancel-secelt-school").click(function () {
+            $(".select-provinces a").each(function () {
+                $(".select-provinces a").removeClass("bg-color");
+                $(".select-provinces a").removeClass("active");
+            });
+            $(".select-city a").each(function () {
+                $(".select-city a").removeClass("bg-color");
+                $(".select-city a").removeClass("active");
+            });
+            $(".select-area a").each(function () {
+                $(".select-area a").removeClass("bg-color");
+                $(".select-area a").removeClass("active");
+            });
+            $(".select-school-3 a").each(function () {
+                $(".select-school-3 a").removeClass("bg-color");
+                $(".select-school-3 a").removeClass("active");
+            });
+            $(".add-school-name").val("");
+            $(".select-city-1").hide();
+            $(".select-area-1").hide();
+            $(".select-school-1").hide();
+            $(".add-my-school-div").hide();
+            $("#select-school").modal("hide");
+        });
+        //确定选择学校
+        $(".determine-secelt-school").click(function () {
+            var provinces_name = "";
+            var city_name = "";
+            var area_name = "";
+            var school_name = "";
+            $(".select-provinces a").each(function () {
+                if ($(this).hasClass("active")) {
+                    provinces_name = $(this).text().trim();
+                }
+            });
+            $(".select-city a").each(function () {
+                if ($(this).hasClass("active")) {
+                    city_name = $(this).text().trim();
+                }
+            });
+            $(".select-area a").each(function () {
+                if ($(this).hasClass("active")) {
+                    area_name = $(this).text().trim();
+                }
+            });
+            $(".select-school-3 a").each(function () {
+                if ($(this).hasClass("active")) {
+                    school_name = $(this).text().trim();
+                }
+            });
+
+            if (school_name == "") {
+                school_name = $(".add-school-name").val();
+                if (school_name != "") {
+                    $(".already-select-school").html(provinces_name + city_name + area_name + school_name);
+                }
+
+            } else {
+                $(".already-select-school").html(provinces_name + city_name + area_name + school_name);
+            }
+
+
+            $(".select-provinces a").each(function () {
+                $(".select-provinces a").removeClass("bg-color");
+                $(".select-provinces a").removeClass("active");
+            });
+            $(".select-city a").each(function () {
+                $(".select-city a").removeClass("bg-color");
+                $(".select-city a").removeClass("active");
+            });
+            $(".select-area a").each(function () {
+                $(".select-area a").removeClass("bg-color");
+                $(".select-area a").removeClass("active");
+            });
+            $(".select-school-3 a").each(function () {
+                $(".select-school-3 a").removeClass("bg-color");
+                $(".select-school-3 a").removeClass("active");
+            });
+            $(".select-city-1").hide();
+            $(".select-area-1").hide();
+            $(".select-school-1").hide();
+            $(".add-my-school-div").hide();
+            $(".add-school-name").val("");
+            $("#select-school").modal("hide");
+        });
 
     </script>
 

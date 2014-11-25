@@ -55,181 +55,151 @@
                     <div class="row" style="margin-top:50px;padding:15px 30px 30px 15px;">
                         <div class="col-lg-12" style="padding-left:30px;">
                             <div class="row">
-                                <div class="col-lg-12" style="font-size:18px;">创建项目回报：</div>
+                                <div class="col-lg-12" style="font-size:18px;">填写个人账户信息：</div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-12" style="padding-left:20px;padding-right:30px;">
                                     <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-12" style="padding:20px 60px 10px 60px;">
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥10回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥20回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥30回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥50回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥80回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div1 glyphicon glyphicon-plus" role="alert" data-toggle="modal" data-target="#create-new-return">
-                                        新增回报
+                            <div class="row martop10 text-left">
+                                <div class="col-lg-12">
+                                    <div class="text-type alert alert-warning" style="line-height:20px;font-size:12px;color:#A5723F;">
+                                        填写提示，提示信息填写提示，提示信息填写提示，提示信息填写提示，提示信息填写提示，提示信息填写提示，
+                                        提示信息填写提示，提示信息填写提示，提示信息填写提示，提示信息填写提示，提示信息填写提示，提示信息填写提示，提示信息填写提示，提示信息
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" style="margin-top:30px;margin-bottom:30px;">
+                            <div class="row martop30">
+                                <div class="col-lg-12">
+                                    <form class="form-horizontal" role="form" action="#">
+                                        <div class="form-group">
+                                            <label for="project-name" class="col-sm-3 control-label">开户银行：</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="project-name" placeholder="请准确填写开户银行名称">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="project-name" class="col-sm-3 control-label">开户人：</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="project-name" placeholder="请准确填写开户人姓名">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="project-name" class="col-sm-3 control-label">银行账户：</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="project-name" placeholder="请准确填写开户银行账户">
+                                            </div>
+                                        </div>
+                                        <div class="form-group martop40 text-center">
+                                            <label for="project-name" class="col-sm-3 control-label"></label>
+                                            <div class="col-sm-6">
+                                                <button type="button" class="btn btn-success" onclick="window.location.href='create_project_3.html'">&nbsp;&nbsp;上一步 &nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ren-win-agree">&nbsp;&nbsp;完成 &nbsp;&nbsp;</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
+                            <!--<div class="row" style="margin-top:60px;margin-bottom:30px;">
                                 <div class="col-sm-3 text-right">
                                     <button type="button" class="btn btn-warning">&nbsp;&nbsp;预览 &nbsp;&nbsp;</button>
                                 </div>
                                 <div class="col-sm-9 text-center">
-                                    <button type="button" class="btn btn-success" onclick="window.location.href='create_project_3.html'">&nbsp;&nbsp;上一步 &nbsp;&nbsp;</button>
-                                    <button type="button" class="btn btn-success" onclick="window.location.href='my_project_1.html'">&nbsp;&nbsp;下一步 &nbsp;&nbsp;</button>
+                                    
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+        </div>
     <div class="clearfix mpt40 mpb40"></div>
 
     <div id="footer"></div>
 
-    <!-- Modal -->
-    <div class="modal fade bs-example-modal-lg" id="create-new-return" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="myModalLabel">新增回报</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-8" style="padding-right:40px;">
-                            <form class="form-horizontal" role="form" action="create_project_3.html">
-                                <div class="form-group">
-                                    <label for="project-name" class="col-sm-3 control-label">支持金额：</label>
-                                    <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="project-name" placeholder="">
-                                    </div>
-                                    <div class="col-sm-6 martop5 paddleft0">元</div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project-name" class="col-sm-3 control-label">回报内容：</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="project-name" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project-name" class="col-sm-3 control-label">回报描述：</label>
-                                    <div class="col-sm-9">
-                                        <textarea rows="3" class="form-control" id="project-introduction" placeholder=""></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project-name" class="col-sm-3 control-label">回报数量：</label>
-                                    <div class="col-sm-3 paddright0 martop5">
-                                        <input type="radio" name="number" />不限&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <input type="radio" name="number" />设限
-                                    </div>
-                                    <div class="col-sm-3 paddleft0">
-                                        <input type="text" class="form-control" id="project-name" placeholder="">
-                                    </div>
-                                    <div class="col-sm-3 paddleft0 martop5">份</div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project-name" class="col-sm-3 control-label">上传封面图片：</label>
-                                    <div class="col-sm-9">
-                                        <span class="btn  fileinput-button" style="background-color:#FF7F00;color:#fff;">
-                                            <span>添加图片</span>
-                                            <input type="file" name="files[]" multiple="" id="project-cover-image">
-                                        </span>
-                                        <span style="color:#808080">图片大小勿超过1M</span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project-name" class="col-sm-3 control-label">回报时间：</label>
-                                    <div class="col-sm-3 martop5">
-                                        预计在项目结束后
-                                    </div>
-                                    <div class="col-sm-2 paddleft0">
-                                        <input type="text" class="form-control pull-left" id="project-name" placeholder="">
-                                    </div>
-                                    <div class="col-sm-4 paddleft0">
-                                        <span style="font-size:18px;font-weight:bold">天</span>内，发放该回报
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="project-name" class="col-sm-3 control-label">物流信息：</label>
-                                    <div class="col-sm-9 paddright0 martop5">
-                                        <input type="radio" name="wuliu" />无需物流&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <input type="radio" name="wuliu" />不包邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <input type="radio" name="wuliu" />全国包邮（不含港台地区）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="thumbnail">
-                                <div class="row paddrow" style="color:#FF7F00;font-size:20px;">
-                                    <div class="col-lg-6">￥100</div>
-                                    <div class="col-lg-6 text-right"><button type="button" class="btn btn-success">&nbsp;&nbsp;支持 &nbsp;&nbsp;</button></div>
-                                </div>
-                                <div class="row paddrow1">
-                                    <div class="col-lg-12" style="font-size:16px;font-weight:bold">回报内容</div>
-                                </div>
-                                <div class="row paddrow1 color-row">
-                                    <div class="col-lg-12">
-                                        回报描述：1元有家，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注汇总留下电子邮箱方便我们发送），
-                                        电子感谢信最终将以电子邮件或者旺旺消息发送给您
-                                    </div>
-                                </div>
-                                <div class="row paddrow1">
-                                    <div class="col-lg-12">
-                                        <img class="media-object" id="preview-img" width="80" height="80" style="width:80px;height:80px;" src="../img//project/6.jpg" alt="220*150">
-                                    </div>
-                                </div>
-                                <div class="row paddrow1 color-row">
-                                    <div class="col-lg-12">
-                                        <div class="media">
-                                            <a class="media-left paddright0" href="#">
-                                                <img src="../img/head_50.jpg" style="width:20px;height:20px;" alt="...">
-                                            </a>
-                                            <div class="media-body paddleft0">
-                                                已有<span style="color:#64CC64;font-weight:bold;">1251</span>位支持者
-                                            </div>
-                                        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="ren-win-agree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">用户协议</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <textarea class="form-control text-left" rows="25" readonly="readonly">
+                                    请仔细阅读本下述文本，奇异点将依据以下服务条款提供您所享有的服务。
+                                    如果您接受，请点按“我同意”进入注册页面。
 
+                                    欢迎阅读奇异点服务条款协议(下称“本协议”)。
+                                    本协议阐述之条款和条件适用于您使用奇异点所提供的服务(下称“服务”)。
+                                    一.本站服务条款的确认和接纳
+                                    本站的各项电子服务的所有权和运作权归本站。用户必须完全同意所有服务条款并完成注册程序，才能成为本站的正式用户。
 
-                                    </div>
-                                </div>
-                                <div class="row paddrow1 color-row" style="margin-top:0px;">
-                                    <div class="col-lg-12">
-                                        *预计回报发送时间：项目筹款成功后的30天内
-                                    </div>
-                                </div>
+                                    二.服务简介
+                                    基于本站所提供的网络服务的重要性，用户应同意：
+                                    (1)提供详尽、准确的个人资料。
+                                    (2)不断更新注册资料，符合及时、详尽、准确的要求。
+                                    本站不公开用户的姓名、地址、电子邮箱和笔名， 除以下情况外：
+                                    (1)用户授权本站透露这些信息。
+                                    (2)相应的法律及程序要求本站提供用户的个人资料。
+                                    如果用户提供的资料包含有不正确的信息，本站保留结束用户使用网络服务资格的权利。
+
+                                    三.服务条款的修改和服务修订
+                                    本站有权在必要时修改服务条款。如果不同意所改动的内容，用户可以主动取消获得的网络服务。如果用户继续享用网络服务，则视为接受服务条款的变动。
+
+                                    四.用户隐私制度
+                                    尊重用户个人隐私是本站的一项基本政策。除非有法律许可要求或本站在诚信的基础上认为透露这些信息是必要的：
+
+                                    五.用户的帐号，密码和安全性
+                                    用户一旦注册成功，成为本站的合法用户，将得到一个密码和用户名。
+                                    用户将对用户名和密码安全负全部责任。另外，每个用户都要对以其用户名进行的所有活动和事件负全责。
+                                    您可随时根据指示改变您的密码。
+                                    用户若发现任何非法使用用户帐号或存在安全漏洞的情况，请立即通告本站。
+
+                                    六.有限责任
+                                    本站对任何直接、间接、偶然、特殊及继起的损害不负责任。
+
+                                    七.对用户信息的存储和限制
+                                    本站不对用户所发布信息的删除或储存失败负责。。
+
+                                    八.用户管理
+                                    用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于本站的国家法律、地方法律和国际法律标准的。
+
+                                    九.结束服务
+                                    用户或本站可随时根据实际情况中断一项或多项网络服务
+
+                                    十.通告
+                                    所有发给用户的通告都可通过重要页面的公告或电子邮件或常规的信件传送。服务条款的修改、服务变更、或其它重要事件的通告都会以此形式进行。
+
+                                    十一.法律
+                                    网络服务条款要与中华人民共和国的法律解释相一致，用户和本站一致同意服从高等法院所有管辖。
+                                    注意:
+                                    请填写真实地址，以便我们准确给您发货。
+                                </textarea>
                             </div>
-                            <div class="alert alert-warning alert-dismissible preview-div text-center" role="alert">预览效果</div>
+
                         </div>
+                        <div class="row text-center">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" id="iagree" checked> 我已认真阅读，并承诺同意执行以上条款。
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="text-align:center;">
+                        <button type="button" id="ren-win-time-btn-send" class="btn btn-default disabled plr30" onclick="window.location.href='my_project_1.html'">10秒后可以提交</button>
+                        <!--<button type="button" class="btn btn-success add-return-yes plr30">同意</button>-->
+                        <button type="button" class="btn btn-danger plr30" data-dismiss="modal">不同意</button>
                     </div>
 
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                    <button type="button" class="btn btn-primary add-return-yes">确定</button>
-                </div>
             </div>
         </div>
-    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -239,6 +209,7 @@
     <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
     <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
     <script type="text/javascript">
+        var wait = 10;
         $(function () {
             //公共部分加载
             $("#head").load("../head.html");
@@ -246,8 +217,27 @@
             $(".add-return-yes").click(function () {
                 $("#create-new-return").modal("hide");
             });
-
-        })
+            $('#ren-win-agree').on('shown.bs.modal', function (e) {
+                time(wait);
+            })
+            $('#ren-win-agree').on('hidden.bs.modal', function (e) {
+                wait = 10;
+                $('#ren-win-time-btn-send').removeClass('btn-success').addClass('disabled');
+            })
+        });
+        function time(wait) {
+            if (wait == 0) {
+                $('#ren-win-time-btn-send').addClass('btn-success').removeClass('disabled').html('同意');
+            }
+            else {
+                $('#ren-win-time-btn-send').removeClass('btn-success').addClass('disabled').html(wait + " 秒后可以提交");
+                wait--;
+                setTimeout(function () {
+                    time(wait)
+                },
+                1000)
+            }
+        }
 
     </script>
 

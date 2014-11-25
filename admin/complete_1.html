@@ -100,10 +100,10 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="pull-left">
-                                <img src="../img/login/44_140.jpg" style="width:150px;height:150px;" width="150" height="150" />
+                                <img id="preview-img" src="../img/login/44_140.jpg" style="width:150px;height:150px;" width="150" height="150" />
                             </div>
                             <div class="pull-right" style="margin-top:85px;">
-                                <img src="../img/login/44_140.jpg" style="width:68px;height:68px;" width="68" height="68" class="img-circle" />
+                                <img id="preview-img1" src="../img/login/44_140.jpg" style="width:68px;height:68px;" width="68" height="68" class="img-circle" />
                             </div>
                         </div>
                     </div>
@@ -139,6 +139,7 @@
     <script src="../js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="../js/bootstrap-datetimepicker/js/locale/zh-cn.js"></script>
     <script src="../js/bootstrap-datetimepicker/js/locale/ru.js"></script>
+    <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
 
     <script type="text/javascript">
 
@@ -161,7 +162,9 @@
                 $('.bs-datetimepicker-modal').modal('hide');
             });
             //日历时间结束
-
+            //图片上传本地预览
+            $("#project-cover-image").uploadPreview({ Img: "preview-img", Width: 150, Height: 150, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], Callback: function () { } });
+            $("#project-cover-image").uploadPreview({ Img: "preview-img1", Width: 68, Height: 68, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], Callback: function () { } });
         });
        
     </script>
