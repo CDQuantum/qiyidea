@@ -189,18 +189,18 @@
     <div class="lyp-common-months">
         <ul class="lyp-left-time-ul">
             <li class="select-year"></li>
-            <li class="lyp-month-style active">12月 <s></s> </li>
-            <li class="lyp-month-style">11月<s></s> </li>
-            <li class="lyp-month-style">10月<s></s></li>
-            <li class="lyp-month-style">9月<s></s></li>
-            <li class="lyp-month-style">8月<s></s></li>
-            <li class="lyp-month-style">7月<s></s></li>
-            <li class="lyp-month-style">6月<s></s> </li>
-            <li class="lyp-month-style">5月<s></s></li>
-            <li class="lyp-month-style">4月<s></s></li>
-            <li class="lyp-month-style">3月<s></s></li>
-            <li class="lyp-month-style">2月<s></s> </li>
-            <li class="lyp-month-style">1月<s></s></li>
+            <li class="lyp-month-style" data-m="11">12月 <s></s> </li>
+            <li class="lyp-month-style" data-m="10">11月<s></s> </li>
+            <li class="lyp-month-style" data-m="9">10月<s></s></li>
+            <li class="lyp-month-style" data-m="8">9月<s></s></li>
+            <li class="lyp-month-style" data-m="7">8月<s></s></li>
+            <li class="lyp-month-style" data-m="6">7月<s></s></li>
+            <li class="lyp-month-style" data-m="5">6月<s></s> </li>
+            <li class="lyp-month-style" data-m="4">5月<s></s></li>
+            <li class="lyp-month-style" data-m="3">4月<s></s></li>
+            <li class="lyp-month-style" data-m="2">3月<s></s></li>
+            <li class="lyp-month-style" data-m="1">2月<s></s> </li>
+            <li class="lyp-month-style" data-m="0">1月<s></s></li>
             <li class="lyp-year-style"></li>
         </ul>
     </div>
@@ -217,6 +217,7 @@
     <script type="text/javascript">
         var d = new Date();
         var year_now = d.getFullYear();
+        var renmonth= d.getMonth();
         $(function () {
             $("#head").load("../head.html");
             $("#footer").load("../footer.html");
@@ -224,12 +225,16 @@
             $('.lyp-left-time-ul li:first-child').html(year_now + '年');
             $('.lyp-left-time-ul li:last-child').html(year_now - 1 + '年');
             $('.lyp-years-content').html($('.lyp-common-months'));
+             //默认选中当前月份
+            $('.lyp-month-style').each(function () {
+                if ($(this).attr('data-m')==renmonth) {
+                    $(this).addClass('active');
+                }
+            })
         });
         //点击月份
         $('.lyp-month-style').click(function () {
-            $('.lyp-month-style').each(function(){
-                $(this).removeClass('active');
-            });
+            $('.lyp-month-style').removeClass('active');
             $(this).addClass('active');
         });
         //点击底部年份
