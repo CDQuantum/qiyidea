@@ -22,6 +22,7 @@
     <link href="../css/lyp.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/rener.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/fileupload-ui/jquery.fileupload-ui.css">
 
 
@@ -48,22 +49,27 @@
         <div class="row">
             <div class="col-lg-12 padding0"><hr /></div>
         </div>
+
         <div class="row">
-            <div class="col-lg-12 padding0">
-                <div class="btn-group btn-group-justified marbottom15">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-success">我的群组</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default" onclick="location.href='group_manage_2.html'">查找群组</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default" onclick="location.href = 'group_manage_3.html'">创建群组</button>
-                    </div>
-                   
-                </div>
-            </div>
+            <ul class="ren-feedback-head">
+                <li class="active">
+                    <h4><a href="group_manage_1.html">我的群组</a></h4>
+                    <s></s>
+                </li>
+                <li>
+                    <h4><a href="group_manage_2.html">查找群组</a></h4>
+                    <s></s>
+                </li>
+                <li>
+                    <h4><a href="group_manage_3.html">创建群组</a></h4>
+                    <s></s>
+                </li>
+            </ul>
+            <div class="clearfix pt40"></div>
         </div>
+        <div class="clearfix mtb15 pt40"></div>
+
+    
         <div class="row">
             <div class="panel panel-default">
                 <div class="panel-body">
@@ -312,7 +318,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="row">
-                                            <div class="col-lg-6 paddright0">
+                                            <div class="col-lg-6 paddright0 marbottom20">
                                                 <div class="media like-add-div" style="border:1px solid #ddd;border-radius:6px;">
                                                     <div class="media-left" style="width:20%">
                                                         <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
@@ -340,62 +346,19 @@
                                                         <a href="javascript:void(0);" data-toggle="modal" data-target=".apply-add-group">
                                                             <div class="col-lg-4 martop20"><img src="../img/user/add-group.png" class="cursor" /></div>
                                                             <div class="col-lg-8 text-left martop30"><span style="color:#F8F8F8;font-size:20px;">加入当前群组</span></div>
-                                                        </a> 
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 paddright0">
-                                                <div class="media like-add-div" style="border:1px solid #ddd;border-radius:6px;">
-                                                    <div class="media-left"  style="width:20%">
-                                                        <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
-                                                    </div>
-                                                    <div class="media-body" style="width:80%;">
-                                                        <img src="../img/user/renzhengqun.png" style="margin-right:-1px;float:right;">
-                                                        <div class="clearfix"></div>
-                                                        <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">狗狗救护站</div></div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
-                                                                成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
-                                                                话题(<span style="color:#66CC66">500</span>)
-                                                            </div>
-                                                        </div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;">
-                                                                创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
-                                                                创建日期：14-05-15
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="add-group-div text-center" style=" border:1px solid #ddd;border-radius:6px;background-color:#D9534F;display:none;vertical-align:middle;">
-                                                    <div class="row">
-                                                        <a href="javascript:void(0);" data-toggle="modal" data-target=".apply-add-group">
-                                                            <div class="col-lg-4 martop20"><img src="../img/user/add-group.png" class="cursor" /></div>
-                                                            <div class="col-lg-8 text-left martop30"><span style="color:#F8F8F8;font-size:20px;">加入当前群组</span></div>
-                                                        </a> 
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row paddright13">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-6 paddright0">
+                                            <div class="col-lg-6 paddright0 marbottom20">
                                                 <div class="media like-add-div" style="border:1px solid #ddd;border-radius:6px;">
                                                     <div class="media-left" style="width:20%">
                                                         <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
                                                     </div>
                                                     <div class="media-body" style="width:80%;">
-                                                        <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;">
+                                                        <img src="../img/user/renzhengqun.png" style="margin-right:-1px;float:right;">
                                                         <div class="clearfix"></div>
-                                                        <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">绿盟爱好者</div></div>
+                                                        <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">狗狗救护站</div></div>
                                                         <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
                                                             <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
                                                                 成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
@@ -410,18 +373,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="add-group-div text-center" style=" border:1px solid #ddd;border-radius:6px;background-color:#D9534F;display:none;vertical-align:middle;">
+                                                <div class="add-group-div text-center" style=" border:1px solid #ddd;border-radius:6px;background-color:#D9534F;display:none;min-height:92px;">
                                                     <div class="row">
                                                         <a href="javascript:void(0);" data-toggle="modal" data-target=".apply-add-group">
                                                             <div class="col-lg-4 martop20"><img src="../img/user/add-group.png" class="cursor" /></div>
                                                             <div class="col-lg-8 text-left martop30"><span style="color:#F8F8F8;font-size:20px;">加入当前群组</span></div>
-                                                        </a> 
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 paddright0">
+                                            <div class="col-lg-6 paddright0 marbottom20">
                                                 <div class="media like-add-div" style="border:1px solid #ddd;border-radius:6px;">
-                                                    <div class="media-left"  style="width:20%">
+                                                    <div class="media-left" style="width:20%">
                                                         <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
                                                     </div>
                                                     <div class="media-body" style="width:80%;">
@@ -442,21 +405,53 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="add-group-div text-center" style=" border:1px solid #ddd;border-radius:6px;background-color:#D9534F;display:none;vertical-align:middle;">
+                                                <div class="add-group-div text-center" style=" border:1px solid #ddd;border-radius:6px;background-color:#D9534F;display:none;min-height:92px;">
                                                     <div class="row">
                                                         <a href="javascript:void(0);" data-toggle="modal" data-target=".apply-add-group">
                                                             <div class="col-lg-4 martop20"><img src="../img/user/add-group.png" class="cursor" /></div>
                                                             <div class="col-lg-8 text-left martop30"><span style="color:#F8F8F8;font-size:20px;">加入当前群组</span></div>
-                                                        </a> 
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="col-lg-6 paddright0 marbottom20">
+                                                <div class="media like-add-div" style="border:1px solid #ddd;border-radius:6px;">
+                                                    <div class="media-left" style="width:20%">
+                                                        <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
+                                                    </div>
+                                                    <div class="media-body" style="width:80%;">
+                                                        <img src="../img/user/renzhengqun.png" style="margin-right:-1px;float:right;">
+                                                        <div class="clearfix"></div>
+                                                        <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">狗狗救护站</div></div>
+                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                            <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
+                                                                成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
+                                                                话题(<span style="color:#66CC66">500</span>)
+                                                            </div>
+                                                        </div>
+                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                            <div class="col-lg-12" style="padding-right:0px;">
+                                                                创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
+                                                                创建日期：14-05-15
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-group-div text-center" style=" border:1px solid #ddd;border-radius:6px;background-color:#D9534F;display:none;min-height:92px;">
+                                                    <div class="row">
+                                                        <a href="javascript:void(0);" data-toggle="modal" data-target=".apply-add-group">
+                                                            <div class="col-lg-4 martop20"><img src="../img/user/add-group.png" class="cursor" /></div>
+                                                            <div class="col-lg-8 text-left martop30"><span style="color:#F8F8F8;font-size:20px;">加入当前群组</span></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                      
                     </div>
                     <div class="col-lg-4">
                         <div class="row" style="margin-top:23px;">
@@ -807,13 +802,14 @@
             var width = $(this).outerWidth();
             $(this).parent().find('.add-group-div').outerHeight(height);
             $(this).parent().find('.add-group-div').outerWidth(width);
-            $(this).parent().find('.add-group-div').show();
-            $(this).hide();
+                
+                $(this).parent().find('.add-group-div').show();
+                $(this).hide();
         });
       
         $('.add-group-div').mouseleave(function (event) {
-            $(this).hide();
-            $(this).parent().find('.like-add-div').show();
+                  $(this).hide();
+                 $(this).parent().find('.like-add-div').show();
         });
         $('.send-msg').click(function () {
             $('.content').hide();
