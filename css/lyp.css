@@ -756,10 +756,16 @@ font-size:24px;
     vertical-align:middle;
     border-bottom:1px solid #DFDFDF;
 }
+.lyp-left-letter-ul > li a{
+     color:#999;
+}
 .lyp-left-letter-ul > li:hover{
    background-color:#F5F5F5;
     cursor:pointer;
 }
+   .lyp-left-letter-ul > li.active a {
+        color:#fff;
+    }
 .lyp-left-letter-ul > li.active {
     background-color:#5CB85C;
     color:#fff;
