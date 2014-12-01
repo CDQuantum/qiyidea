@@ -12,20 +12,22 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="project-list.html">浏览项目</a></li>
-                    <li><a href="#">推荐阅读</a><li>
-                    <li class="dropdown">
-                        <a href="list.html" class="dropdown-toggle" id="ren-project-ddl" data-toggle="dropdown">我的项目 <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="ren-project-ddl">
-                            <li><a href="#">筹资金</a></li>
-                            <li><a href="#">小伙伴</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="#contact">我的空间</a></li>
+                    <li><a href="list.html">我的项目</a></li>
                     <li><a href="#contact">我的群组</a></li>
+                    <li><a href="#">推荐阅读</a></li>
                 </ul>
                  
                 <ul class="nav navbar-nav navbar-right ren-head-box-r">
+                    <li id="ren-btn-mail" class="dropdown">
+                        <a href="info-center.html" style="padding:20px 25px 8px 25px;" id="ren-dropdown-toggle-mail" class="dropdown-toggle ren-dropdown-toggle-user" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-envelope ren-head-ico-bell" style="font-size:22px;"></span><div class="sr-only">私信</div></a>
+                        <ul class="dropdown-menu ren-dropdown-menu-2" role="menu" aria-labelledby="ren-dropdown-toggle-mail">
+                            <li><a href="info-center.html">收到的私信 <span class="badge">4</span></a> </li>
+                            <li class="divider"></li>
+                            <li><a href="info-center-project.html">发送的私信 </a></li>
+                            <li class="divider"></li>
+                            <li><a href="group-post.html"><span class="glyphicon glyphicon-edit"></span> &nbsp;写私信</a></li>
+                        </ul>
+                    </li>
                     <li id="ren-btn-notifications" class="dropdown">
                         <a href="info-center.html" style="padding:20px 25px 8px 25px;" id="ren-dropdown-toggle-msg" class="dropdown-toggle ren-dropdown-toggle-user" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-bell ren-head-ico-bell" style="font-size:22px;"></span><div class="sr-only">消息</div></a>
                         <ul class="dropdown-menu ren-dropdown-menu-1" role="menu" aria-labelledby="ren-dropdown-toggle-msg">
@@ -35,7 +37,7 @@
                             <li class="divider"></li>
                             <li><a href="group-post.html">群组消息 <span class="badge">9</span></a></li>
                             <li class="divider"></li>
-                            <li><a href="info-center-inbox.html">私信 <span class="badge">20</span></a></li>
+                            <li><a href="info-center-inbox.html">给我的评论 <span class="badge">20</span></a></li>
                             <li class="divider"></li>
                             <li><a href="info-center.html"><i class="glyphicon glyphicon-comment"></i> &nbsp;全部消息</a></li>
                         </ul>

@@ -208,7 +208,7 @@ body {
     }
 
 
-#ren-btn-notifications .divider,#fat-menu .divider {
+#ren-btn-notifications .divider,#fat-menu .divider ,#ren-btn-mail .divider {
     margin: 1px 0;
     padding: 0;
     height: 1px;
@@ -240,10 +240,12 @@ body {
     background-color: #2D2D2D;
     right: -1px;
 }
-#ren-btn-notifications > .dropdown-menu {
+#ren-btn-notifications > .dropdown-menu ,#ren-btn-mail> .dropdown-menu{
     right:auto;
     left:-1px;
 }
+
+
 #fat-menu  > .dropdown-menu {
    max-width:140px;
 }

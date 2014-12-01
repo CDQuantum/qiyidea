@@ -1,4 +1,4 @@
-﻿GF<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8">
@@ -25,7 +25,8 @@
     <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/rener.css" rel="stylesheet">
     <link href="../css/lyp.css" rel="stylesheet">
-    <link href="../css/index.css" rel="stylesheet">
+    <!--<link href="../css/index.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../css/fileupload-ui/jquery.fileupload-ui.css">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../js/assets/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../js/assets/ie-emulation-modes-warning.js"></script>
@@ -48,7 +49,7 @@
 
                     <div class="media mpt40">
                         <div class="pull-left  mpl40 mpr40">
-                            <a href="../admin/user-index-info.html" target="_blank">
+                            <a href="#" target="_blank" data-toggle="modal" data-target="#ren-win-upload">
                                 <img class="media-object img-thumbnail" src="../img/default_avatar.gif" alt="..." style="width:160px; height:160px;">
                             </a>
                         </div>
@@ -63,8 +64,10 @@
                                 <dd class="color-333"><span class="glyphicon glyphicon-map-marker"></span>  四川 成都 锦江区 成都七中嘉祥外国语学校</dd>
                                 <dd class="color-333">好友：52  &nbsp;&nbsp; 发起：11 &nbsp;&nbsp; 参与：210</dd>
                                 <dd style="height:30px">
-                                  
 
+                                    <span class="label label-default cursor">科技</span>
+                                    <span class="label label-default cursor">科技</span>
+                                    <span class="label label-default cursor">科技</span>
                                     <!--<button class="btn btn-xs btn-success" onclick="window.location.href = 'user-page-tag.html'"><span class="glyphicon glyphicon-pencil small"></span> 给TA贴标签</button>-->
                                 </dd>
                                 <dd>
@@ -120,20 +123,20 @@
                 </div>
 
                 <!-- Tab panes -->
-               
-                    <div id="my-data">
-                        <div class="row martop5 marleft10 color999999">
-                            <div class="col-lg-12">
-                                <div class="row marbottom10 text-right">
-                                    <div class="col-lg-12">
-                                        <button type="button" class="btn btn-default btn-xs edit-data"><img src="../img/user/shezhi.png" />&nbsp;编辑资料</button>
-                                        <button type="button" class="btn btn-default btn-xs set-up-grant"><img src="../img/user/quanxian.png" />&nbsp;权限设置</button>&nbsp;&nbsp;
-                                        <a href="javascript:void(0);" class="back-my-data-div dispalynone" style="font-size:11px;"><img src="../img/user/_r3_c3.png" />&nbsp;返回</a>
-                                    </div>
+
+                <div id="my-data">
+                    <div class="row martop5 marleft10 color999999">
+                        <div class="col-lg-12">
+                            <div class="row marbottom10 text-right">
+                                <div class="col-lg-12">
+                                    <button type="button" class="btn btn-default btn-xs edit-data"><img src="../img/user/shezhi.png" />&nbsp;编辑资料</button>
+                                    <button type="button" class="btn btn-default btn-xs set-up-grant"><img src="../img/user/quanxian.png" />&nbsp;权限设置</button>&nbsp;&nbsp;
+                                    <a href="javascript:void(0);" class="back-my-data-div dispalynone" style="font-size:11px;"><img src="../img/user/_r3_c3.png" />&nbsp;返回</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="my-data-div">
+                    </div>
+                    <div class="my-data-div">
                         <div class="row martop5 marleft10 color999999">
                             <div class="col-lg-12">
                                 <div class="row marbottom10">
@@ -249,817 +252,817 @@
                                 <span class="label label-gray cursor bq-style label-gray-1">舞蹈</span>
                             </div>
                         </div>
-                        </div>
-                        <div class="edit-my-data-div dispalynone" style="background-color:#FBFDFF;border:1px solid #CAE3FF;padding-top:50px;padding-bottom:50px;">
-                            <form class="form-horizontal" role="form" action="">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">姓名：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
+                    </div>
+                    <div class="edit-my-data-div dispalynone" style="background-color:#FBFDFF;border:1px solid #CAE3FF;padding-top:50px;padding-bottom:50px;">
+                        <form class="form-horizontal" role="form" action="">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">姓名：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">性别：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">出生年月：</label>
+                                <div class="col-sm-5 padding0">
+                                    <div class="input-group date datetimepicker5 pull-left">
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon-calendar glyphicon"></span>
+                                        </span>
+                                        <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">性别：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
+                                <div class="col-sm-4">
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">出生年月：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <div class="input-group date datetimepicker5 pull-left">
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon-calendar glyphicon"></span>
-                                            </span>
-                                            <input type="text" id="project-marker-start-time" class="form-control" data-date-format="YYYY-MM-DD" placeholder="设定开始时间">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">血型：</label>
+                                <div class="col-sm-5 padding0" style="padding-top:5px;">
+                                    <select>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>O</option>
+                                        <option>AB</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="row martop30">
+                                <div class="col-lg-12">
+                                    <div class="hr-style" style="margin-top:5px;margin-bottom:30px;margin-left:40px;margin-right:40px;"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">所在地：</label>
+                                <div class="col-sm-5 padding0" style="padding-top:5px;">
+                                    <select>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>O</option>
+                                        <option>AB</option>
+                                    </select>
+                                    <select>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>O</option>
+                                        <option>AB</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">故乡：</label>
+                                <div class="col-sm-5 padding0" style="padding-top:5px;">
+                                    <select>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>O</option>
+                                        <option>AB</option>
+                                    </select>
+                                    <select>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>O</option>
+                                        <option>AB</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">所在学校：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="row martop30">
+                                <div class="col-lg-12">
+                                    <div class="hr-style" style="margin-top:5px;margin-bottom:30px;margin-left:40px;margin-right:40px;"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">收件地址：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">邮编：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="row martop30">
+                                <div class="col-lg-12">
+                                    <div class="hr-style" style="margin-top:5px;margin-bottom:30px;margin-left:40px;margin-right:40px;"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">手机：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">QQ：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">E-mail：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">新浪微博：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">个人网站：</label>
+                                <div class="col-sm-5 padding0">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                            <div class="row martop30">
+                                <div class="col-lg-12">
+                                    <div class="hr-style" style="margin-top:5px;margin-bottom:30px;margin-left:40px;margin-right:40px;"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">我的兴趣爱好：</label>
+                                <div class="col-sm-5 padding0">
+                                    <span class="label label-danger cursor bq-style">科技</span>
+                                    <span class="label label-danger cursor bq-style">音乐</span>
+                                    <span class="label label-danger cursor bq-style">舞蹈</span>
+                                    <span class="label label-danger cursor bq-style">足球</span>
+                                    <span class="label label-danger cursor bq-style">篮球</span>
+                                    <span class="label label-danger cursor bq-style lable-danger-1">科技</span>
+                                    <span class="label label-danger cursor bq-style  lable-danger-1">舞蹈</span>
+                                </div>
+                                <div class="col-sm-4 paddtop2 colorA5A5A5">
+                                    标签数量请勿超过5个
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label">我擅长的领域：</label>
+                                <div class="col-sm-5 padding0">
+                                    <span class="label label-gray cursor bq-style">科技</span>
+                                    <span class="label label-gray cursor bq-style">音乐</span>
+                                    <span class="label label-gray cursor bq-style">舞蹈</span>
+                                    <span class="label label-gray cursor bq-style">足球</span>
+                                    <span class="label label-gray cursor bq-style">篮球</span>
+                                    <span class="label label-gray cursor bq-style label-gray-1">科技</span>
+                                    <span class="label label-gray cursor bq-style label-gray-1">舞蹈</span>
+                                </div>
+                                <div class="col-sm-4 paddtop2 colorA5A5A5">
+                                    标签数量请勿超过5个
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-5 padding0 text-center">
+                                    <button type="submit" class="btn btn-success">完成修改并保存</button>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="edit-my-grant-div dispalynone" style="background-color:#FBFDFF;border:1px solid #CAE3FF;padding-top:30px;padding-bottom:50px;padding-left:30px;padding-right:30px;">
+                        <form class="form-horizontal" role="form" action="">
+                            <div class="row" style="font-weight:bold">
+                                <div class="col-lg-6">基本资料</div>
+                                <div class="col-lg-6">扩展资料</div>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF marright15">
+                                        <div class="col-lg-6">
+                                            性别
                                         </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">血型：</label>
-                                    <div class="col-sm-5 padding0" style="padding-top:5px;">
-                                        <select>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>O</option>
-                                            <option>AB</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="row martop30">
-                                    <div class="col-lg-12">
-                                        <div class="hr-style" style="margin-top:5px;margin-bottom:30px;margin-left:40px;margin-right:40px;"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">所在地：</label>
-                                    <div class="col-sm-5 padding0" style="padding-top:5px;">
-                                        <select>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>O</option>
-                                            <option>AB</option>
-                                        </select>
-                                        <select>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>O</option>
-                                            <option>AB</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">故乡：</label>
-                                    <div class="col-sm-5 padding0" style="padding-top:5px;">
-                                        <select>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>O</option>
-                                            <option>AB</option>
-                                        </select>
-                                        <select>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>O</option>
-                                            <option>AB</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">所在学校：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="row martop30">
-                                    <div class="col-lg-12">
-                                        <div class="hr-style" style="margin-top:5px;margin-bottom:30px;margin-left:40px;margin-right:40px;"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">收件地址：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">邮编：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="row martop30">
-                                    <div class="col-lg-12">
-                                        <div class="hr-style" style="margin-top:5px;margin-bottom:30px;margin-left:40px;margin-right:40px;"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">手机：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">QQ：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">E-mail：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">新浪微博：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">个人网站：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                                <div class="row martop30">
-                                    <div class="col-lg-12">
-                                        <div class="hr-style" style="margin-top:5px;margin-bottom:30px;margin-left:40px;margin-right:40px;"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">我的兴趣爱好：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <span class="label label-danger cursor bq-style">科技</span>
-                                        <span class="label label-danger cursor bq-style">音乐</span>
-                                        <span class="label label-danger cursor bq-style">舞蹈</span>
-                                        <span class="label label-danger cursor bq-style">足球</span>
-                                        <span class="label label-danger cursor bq-style">篮球</span>
-                                        <span class="label label-danger cursor bq-style lable-danger-1">科技</span>
-                                        <span class="label label-danger cursor bq-style  lable-danger-1">舞蹈</span>
-                                    </div>
-                                    <div class="col-sm-4 paddtop2 colorA5A5A5">
-                                        标签数量请勿超过5个
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label">我擅长的领域：</label>
-                                    <div class="col-sm-5 padding0">
-                                        <span class="label label-gray cursor bq-style">科技</span>
-                                        <span class="label label-gray cursor bq-style">音乐</span>
-                                        <span class="label label-gray cursor bq-style">舞蹈</span>
-                                        <span class="label label-gray cursor bq-style">足球</span>
-                                        <span class="label label-gray cursor bq-style">篮球</span>
-                                        <span class="label label-gray cursor bq-style label-gray-1">科技</span>
-                                        <span class="label label-gray cursor bq-style label-gray-1">舞蹈</span>
-                                    </div>
-                                    <div class="col-sm-4 paddtop2 colorA5A5A5">
-                                        标签数量请勿超过5个
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label"></label>
-                                    <div class="col-sm-5 padding0 text-center">
-                                        <button type="submit" class="btn btn-success">完成修改并保存</button>
-                                    </div>
-                                    <div class="col-sm-4">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="edit-my-grant-div dispalynone" style="background-color:#FBFDFF;border:1px solid #CAE3FF;padding-top:30px;padding-bottom:50px;padding-left:30px;padding-right:30px;">
-                            <form class="form-horizontal" role="form" action="">
-                                <div class="row"style="font-weight:bold">
-                                    <div class="col-lg-6">基本资料</div>
-                                    <div class="col-lg-6">扩展资料</div>
-                                </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF marright15">
-                                            <div class="col-lg-6">
-                                                性别
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF">
-                                            <div class="col-lg-6">
-                                                收件地址
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row marright15">
-                                            <div class="col-lg-6">
-                                                生日
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF">
+                                        <div class="col-lg-6">
+                                            收件地址
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                邮编
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF marright15">
-                                            <div class="col-lg-6">
-                                                年龄
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row marright15">
+                                        <div class="col-lg-6">
+                                            生日
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF">
-                                            <div class="col-lg-6">
-                                               手机
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row marright15">
-                                            <div class="col-lg-6">
-                                                星座
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            邮编
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                QQ
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF marright15">
-                                            <div class="col-lg-6">
-                                                生肖
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF marright15">
+                                        <div class="col-lg-6">
+                                            年龄
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF">
-                                            <div class="col-lg-6">
-                                                E-mail
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row marright15">
-                                            <div class="col-lg-6">
-                                                血型
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF">
+                                        <div class="col-lg-6">
+                                            手机
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                新浪微博
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF marright15">
-                                            <div class="col-lg-6">
-                                                所在地
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row marright15">
+                                        <div class="col-lg-6">
+                                            星座
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF">
-                                            <div class="col-lg-6">
-                                                个人网站
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row marright15">
-                                            <div class="col-lg-6">
-                                                故乡
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            QQ
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                               兴趣爱好
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row martop10">
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF marright15">
-                                            <div class="col-lg-6">
-                                                学校
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF marright15">
+                                        <div class="col-lg-6">
+                                            生肖
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="row backgrundcolorEEF7FF">
-                                            <div class="col-lg-6">
-                                                擅长领域
-                                            </div>
-                                            <div class="col-lg-6 text-right">
-                                                <select>
-                                                    <option>全部可见</option>
-                                                    <option>仅好友可见</option>
-                                                    <option>仅自己可见</option>
-                                                </select>
-                                            </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group martop30">
-                                    <label for="exampleInputEmail1" class="col-sm-3 control-label"></label>
-                                    <div class="col-sm-5 padding0 text-center">
-                                        <button type="submit" class="btn btn-success">完成修改并保存</button>
-                                    </div>
-                                    <div class="col-sm-4">
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF">
+                                        <div class="col-lg-6">
+                                            E-mail
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row marright15">
+                                        <div class="col-lg-6">
+                                            血型
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            新浪微博
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF marright15">
+                                        <div class="col-lg-6">
+                                            所在地
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF">
+                                        <div class="col-lg-6">
+                                            个人网站
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row marright15">
+                                        <div class="col-lg-6">
+                                            故乡
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            兴趣爱好
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row martop10">
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF marright15">
+                                        <div class="col-lg-6">
+                                            学校
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row backgrundcolorEEF7FF">
+                                        <div class="col-lg-6">
+                                            擅长领域
+                                        </div>
+                                        <div class="col-lg-6 text-right">
+                                            <select>
+                                                <option>全部可见</option>
+                                                <option>仅好友可见</option>
+                                                <option>仅自己可见</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group martop30">
+                                <label for="exampleInputEmail1" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-5 padding0 text-center">
+                                    <button type="submit" class="btn btn-success">完成修改并保存</button>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="dispalynone" id="my-project">
+                    <div class="row text-left" style="margin-top:20px;">
+                        <div class="col-lg-12">
+                            分类查看：<button class="btn btn-sm btn-danger btn-class">全部项目</button>
+                            <button class="btn btn-sm btn-default btn-class">我发起的项目</button>
+                            <button class="btn btn-sm btn-default btn-class">我参与的项目</button>
+                            <button class="btn btn-sm btn-default btn-class">我支持的项目</button>
+                            <button class="btn btn-sm btn-default btn-class">我收藏的项目</button>
                         </div>
                     </div>
-                    <div class="dispalynone" id="my-project">
-                        <div class="row text-left" style="margin-top:20px;">
-                            <div class="col-lg-12">
-                                分类查看：<button class="btn btn-sm btn-danger btn-class">全部项目</button>
-                                <button class="btn btn-sm btn-default btn-class">我发起的项目</button>
-                                <button class="btn btn-sm btn-default btn-class">我参与的项目</button>
-                                <button class="btn btn-sm btn-default btn-class">我支持的项目</button>
-                                <button class="btn btn-sm btn-default btn-class">我收藏的项目</button>
-                            </div>
-                        </div>
-                        <div class="row martop15">
-                            <div class="col-lg-12">
-                                <div class="thumbnail">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div style="border:1px solid #F4F4F4;">
-                                                <div class="media">
-                                                    <a class="media-left" href="#" style="padding:7px 0px 5px 5px;width:36%;">
-                                                        <img src="../img/project/11.jpg" style="width:250px;height:170px;" alt="...">
-                                                    </a>
-                                                    <div class="media-body" style="width:64%;padding-right:13px;">
-                                                        <div class="row">
-                                                            <div class="col-lg-10" style="padding:20px 0px 5px 30px;">
-                                                                <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
-                                                                <div class="row" style="color:#C1C1C1">
-                                                                    <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12">
-                                                                        <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
-                                                                            <div class="progress">
-                                                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                                                                    <span class="sr-only">60% 完成</span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
-                                                                                <span class="rate1">
-                                                                                    <em>￥1,247</em><br>已筹资
-                                                                                </span>
-                                                                                <span class="rate2">
-                                                                                    <em>60%</em><br>已达
-                                                                                </span>
-                                                                                <span class="rate3">
-                                                                                    <em>16天</em><br>剩余时间
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 paddright0">
-                                                                <div class="row">
-                                                                    <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#FFBF00;">众筹中...</div></div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12">
-                                                                        <div class="div-block-type1" style="background-color:#FFBF00;color:#FFBF00;"><a class="project-a-type" href="#">浏览项目</a></div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row martop15">
-                            <div class="col-lg-12">
-                                <div class="thumbnail">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div style="border:1px solid #F4F4F4;">
-                                                <div class="media">
-                                                    <a class="media-left" href="#" style="padding:7px 0px 5px 5px;width:36%;">
-                                                        <img src="../img/project/11.jpg" style="width:250px;height:170px;" alt="...">
-                                                    </a>
-                                                    <div class="media-body" style="width:64%;padding-right:13px;">
-                                                        <div class="row">
-                                                            <div class="col-lg-10" style="padding:20px 0px 5px 30px;">
-                                                                <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
-                                                                <div class="row" style="color:#C1C1C1">
-                                                                    <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12">
-                                                                        <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
-                                                                            <div class="progress">
-                                                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                                                                    <span class="sr-only">60% 完成</span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
-                                                                                <span class="rate1">
-                                                                                    <em>￥1,247</em><br>已筹资
-                                                                                </span>
-                                                                                <span class="rate2">
-                                                                                    <em>60%</em><br>已达
-                                                                                </span>
-                                                                                <span class="rate3">
-                                                                                    <em>16天</em><br>剩余时间
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 paddright0">
-                                                                <div class="row">
-                                                                    <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#FFBF00;">众筹中...</div></div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12">
-                                                                        <div class="div-block-type1" style="background-color:#FFBF00;color:#FFBF00;"><a class="project-a-type" href="#">浏览项目</a></div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row martop15">
-                            <div class="col-lg-12">
-                                <div class="thumbnail">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div style="border:1px solid #F4F4F4;">
-                                                <div class="media">
-                                                    <a class="media-left" href="#" style="padding:7px 0px 5px 5px;width:36%;">
-                                                        <img src="../img/project/11.jpg" style="width:250px;height:170px;" alt="...">
-                                                    </a>
-                                                    <div class="media-body" style="width:64%;padding-right:13px;">
-                                                        <div class="row">
-                                                            <div class="col-lg-10" style="padding:20px 0px 5px 30px;">
-                                                                <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
-                                                                <div class="row" style="color:#C1C1C1">
-                                                                    <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12">
-                                                                        <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
-                                                                            <div class="progress">
-                                                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                                                                    <span class="sr-only">60% 完成</span>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
-                                                                                <span class="rate1">
-                                                                                    <em>￥1,247</em><br>已筹资
-                                                                                </span>
-                                                                                <span class="rate2">
-                                                                                    <em>60%</em><br>已达
-                                                                                </span>
-                                                                                <span class="rate3">
-                                                                                    <em>16天</em><br>剩余时间
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-2 paddright0">
-                                                                <div class="row">
-                                                                    <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#FFBF00;">众筹中...</div></div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-lg-12">
-                                                                        <div class="div-block-type1" style="background-color:#FFBF00;color:#FFBF00;"><a class="project-a-type" href="#">浏览项目</a></div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                    <div class="dispalynone" id="my-group">
-                        <div class="row martop30 paddright13">
-                            <div class="col-lg-12">
+                    <div class="row martop15">
+                        <div class="col-lg-12">
+                            <div class="thumbnail">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-6 paddright0">
-                                                <div class="media" style="border:1px solid #ddd;border-radius:6px;">
-                                                    <a class="media-left" href="#" style="width:20%">
-                                                      <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
-                                                    </a>
-                                                    <div class="media-body" style="width:80%;">
-                                                        <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;" />
-                                                        <div class="clearfix"></div>
-                                                        <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">绿盟爱好者</div></div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
-                                                                成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
-                                                                话题(<span style="color:#66CC66">500</span>)
+                                        <div style="border:1px solid #F4F4F4;">
+                                            <div class="media">
+                                                <a class="media-left" href="#" style="padding:7px 0px 5px 5px;width:36%;">
+                                                    <img src="../img/project/11.jpg" style="width:250px;height:170px;" alt="...">
+                                                </a>
+                                                <div class="media-body" style="width:64%;padding-right:13px;">
+                                                    <div class="row">
+                                                        <div class="col-lg-10" style="padding:20px 0px 5px 30px;">
+                                                            <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
+                                                            <div class="row" style="color:#C1C1C1">
+                                                                <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                                                <span class="sr-only">60% 完成</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
+                                                                            <span class="rate1">
+                                                                                <em>￥1,247</em><br>已筹资
+                                                                            </span>
+                                                                            <span class="rate2">
+                                                                                <em>60%</em><br>已达
+                                                                            </span>
+                                                                            <span class="rate3">
+                                                                                <em>16天</em><br>剩余时间
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;">
-                                                                创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
-                                                                创建日期：14-05-15
+                                                        <div class="col-lg-2 paddright0">
+                                                            <div class="row">
+                                                                <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#FFBF00;">众筹中...</div></div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 paddright0">
-                                                <div class="media" style="border:1px solid #ddd;border-radius:6px;">
-                                                    <a class="media-left" href="#" style="width:20%">
-                                                        <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
-                                                    </a>
-                                                    <div class="media-body" style="width:80%;">
-                                                        <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;" />
-                                                        <div class="clearfix"></div>
-                                                        <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">狗狗救护站</div></div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
-                                                                成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
-                                                                话题(<span style="color:#66CC66">500</span>)
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <div class="div-block-type1" style="background-color:#FFBF00;color:#FFBF00;"><a class="project-a-type" href="#">浏览项目</a></div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;">
-                                                                创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
-                                                                创建日期：14-05-15
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                          
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row martop30 paddright13">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="row">
-                                            <div class="col-lg-6 paddright0 curs">
-                                                <div class="media" style="border:1px solid #ddd;border-radius:6px;">
-                                                    <a class="media-left" href="#" style="width:20%">
-                                                        <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
-                                                    </a>
-                                                    <div class="media-body" style="width:80%;">
-                                                        <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;" />
-                                                        <div class="clearfix"></div>
-                                                        <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">绿盟爱好者</div></div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
-                                                                成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
-                                                                话题(<span style="color:#66CC66">500</span>)
-                                                            </div>
-                                                        </div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;">
-                                                                创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
-                                                                创建日期：14-05-15
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 paddright0">
-                                                <div class="media" style="border:1px solid #ddd;border-radius:6px;">
-                                                    <a class="media-left" href="#" style="width:20%">
-                                                        <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
-                                                    </a>
-                                                    <div class="media-body" style="width:80%;">
-                                                        <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;" />
-                                                        <div class="clearfix"></div>
-                                                        <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">狗狗救护站</div></div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
-                                                                成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
-                                                                话题(<span style="color:#66CC66">500</span>)
-                                                            </div>
-                                                        </div>
-                                                        <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
-                                                            <div class="col-lg-12" style="padding-right:0px;">
-                                                                创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
-                                                                创建日期：14-05-15
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-               
+                    <div class="row martop15">
+                        <div class="col-lg-12">
+                            <div class="thumbnail">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div style="border:1px solid #F4F4F4;">
+                                            <div class="media">
+                                                <a class="media-left" href="#" style="padding:7px 0px 5px 5px;width:36%;">
+                                                    <img src="../img/project/11.jpg" style="width:250px;height:170px;" alt="...">
+                                                </a>
+                                                <div class="media-body" style="width:64%;padding-right:13px;">
+                                                    <div class="row">
+                                                        <div class="col-lg-10" style="padding:20px 0px 5px 30px;">
+                                                            <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
+                                                            <div class="row" style="color:#C1C1C1">
+                                                                <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                                                <span class="sr-only">60% 完成</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
+                                                                            <span class="rate1">
+                                                                                <em>￥1,247</em><br>已筹资
+                                                                            </span>
+                                                                            <span class="rate2">
+                                                                                <em>60%</em><br>已达
+                                                                            </span>
+                                                                            <span class="rate3">
+                                                                                <em>16天</em><br>剩余时间
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2 paddright0">
+                                                            <div class="row">
+                                                                <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#FFBF00;">众筹中...</div></div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <div class="div-block-type1" style="background-color:#FFBF00;color:#FFBF00;"><a class="project-a-type" href="#">浏览项目</a></div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row martop15">
+                        <div class="col-lg-12">
+                            <div class="thumbnail">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div style="border:1px solid #F4F4F4;">
+                                            <div class="media">
+                                                <a class="media-left" href="#" style="padding:7px 0px 5px 5px;width:36%;">
+                                                    <img src="../img/project/11.jpg" style="width:250px;height:170px;" alt="...">
+                                                </a>
+                                                <div class="media-body" style="width:64%;padding-right:13px;">
+                                                    <div class="row">
+                                                        <div class="col-lg-10" style="padding:20px 0px 5px 30px;">
+                                                            <div class="media-heading" style="font-weight:bold;font-size:16px;">项目名称</div>
+                                                            <div class="row" style="color:#C1C1C1">
+                                                                <div class="col-lg-12">支持者：<span style="color:#FF9122">24</span>人</div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <div class="thumbnail" style="border:none;margin-top:40px;margin-bottom:0px;">
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                                                <span class="sr-only">60% 完成</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="item-rate clearfix small" style="padding:8px 10px 0px 10px">
+                                                                            <span class="rate1">
+                                                                                <em>￥1,247</em><br>已筹资
+                                                                            </span>
+                                                                            <span class="rate2">
+                                                                                <em>60%</em><br>已达
+                                                                            </span>
+                                                                            <span class="rate3">
+                                                                                <em>16天</em><br>剩余时间
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-2 paddright0">
+                                                            <div class="row">
+                                                                <div class="col-lg-12"><div class="div-block-type1" style="background-color:#F6F6F6;color:#FFBF00;">众筹中...</div></div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                    <div class="div-block-type1" style="background-color:#FFBF00;color:#FFBF00;"><a class="project-a-type" href="#">浏览项目</a></div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dispalynone" id="my-group">
+                    <div class="row martop30 paddright13">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 paddright0">
+                                            <div class="media" style="border:1px solid #ddd;border-radius:6px;">
+                                                <a class="media-left" href="#" style="width:20%">
+                                                    <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
+                                                </a>
+                                                <div class="media-body" style="width:80%;">
+                                                    <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;" />
+                                                    <div class="clearfix"></div>
+                                                    <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">绿盟爱好者</div></div>
+                                                    <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                        <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
+                                                            成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
+                                                            话题(<span style="color:#66CC66">500</span>)
+                                                        </div>
+                                                    </div>
+                                                    <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                        <div class="col-lg-12" style="padding-right:0px;">
+                                                            创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
+                                                            创建日期：14-05-15
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 paddright0">
+                                            <div class="media" style="border:1px solid #ddd;border-radius:6px;">
+                                                <a class="media-left" href="#" style="width:20%">
+                                                    <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
+                                                </a>
+                                                <div class="media-body" style="width:80%;">
+                                                    <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;" />
+                                                    <div class="clearfix"></div>
+                                                    <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">狗狗救护站</div></div>
+                                                    <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                        <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
+                                                            成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
+                                                            话题(<span style="color:#66CC66">500</span>)
+                                                        </div>
+                                                    </div>
+                                                    <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                        <div class="col-lg-12" style="padding-right:0px;">
+                                                            创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
+                                                            创建日期：14-05-15
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row martop30 paddright13">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 paddright0 curs">
+                                            <div class="media" style="border:1px solid #ddd;border-radius:6px;">
+                                                <a class="media-left" href="#" style="width:20%">
+                                                    <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
+                                                </a>
+                                                <div class="media-body" style="width:80%;">
+                                                    <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;" />
+                                                    <div class="clearfix"></div>
+                                                    <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">绿盟爱好者</div></div>
+                                                    <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                        <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
+                                                            成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
+                                                            话题(<span style="color:#66CC66">500</span>)
+                                                        </div>
+                                                    </div>
+                                                    <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                        <div class="col-lg-12" style="padding-right:0px;">
+                                                            创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
+                                                            创建日期：14-05-15
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 paddright0">
+                                            <div class="media" style="border:1px solid #ddd;border-radius:6px;">
+                                                <a class="media-left" href="#" style="width:20%">
+                                                    <img src="../img/project/11.jpg" style="width:90px;height:90px;border:solid 0px rgba(255, 255, 255, 0.00);border-radius:5px;" alt="...">
+                                                </a>
+                                                <div class="media-body" style="width:80%;">
+                                                    <img src="../img/user/putongqun.png" style="margin-right:-1px;float:right;" />
+                                                    <div class="clearfix"></div>
+                                                    <div class="row fz16"><div class="col-lg-12" style="margin-top:-35px;">狗狗救护站</div></div>
+                                                    <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                        <div class="col-lg-12" style="padding-right:0px;margin-top:-12px;">
+                                                            成员(<span style="color:#66CC66">58</span>)&nbsp;&nbsp;&nbsp;
+                                                            话题(<span style="color:#66CC66">500</span>)
+                                                        </div>
+                                                    </div>
+                                                    <div class="row fz12 paddtop2" style="color:#C9C9D2;margin-top:3px;padding-left:3px;">
+                                                        <div class="col-lg-12" style="padding-right:0px;">
+                                                            创建人：<span style="color:#418BCA">张栋</span>&nbsp;&nbsp;&nbsp;
+                                                            创建日期：14-05-15
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <!--right box-->
             <div class="col-lg-4">
-               
+
                 <div class="panel panel-default">
                     <div class="panel-body" style="background-color:#F0F0F0">
                         <div class="row">
@@ -1114,7 +1117,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12" >
+                    <div class="col-lg-12">
                         <div class="panel panel-default" style="padding:6px;background-color:#F0F0F0;border:0px;">
                             <div class="panel-body" style="background-color:#fff;padding-bottom:0px;">
                                 <div class="row">
@@ -1129,24 +1132,24 @@
                                     <div class="row marbottom15">
                                         <div class="col-lg-12" style="padding:20px 0px 0px 70px">
                                             <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
-                                                <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                                <img class="img-circle ren-show-card" src="../img/login/user_normal.jpg" alt="...">
                                                 <div class="text-overflow nulinkunderline small">sunshine</div>
                                             </a>
 
                                             <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
-                                                <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                                <img class="media-object img-circle ren-show-card" src="../img/login/user_normal.jpg" alt="...">
                                                 <div class="text-overflow nulinkunderline small">sunshine</div>
                                             </a>
                                             <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
-                                                <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                                <img class="media-object img-circle ren-show-card" src="../img/login/user_normal.jpg" alt="...">
                                                 <div class="text-overflow nulinkunderline small">sunshine</div>
                                             </a>
                                             <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
-                                                <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                                <img class="media-object img-circle ren-show-card" src="../img/login/user_normal.jpg" alt="...">
                                                 <div class="text-overflow nulinkunderline small">sunshine</div>
                                             </a>
                                             <a class="pull-left text-center" href="#" title="sunshine" style="margin-right:30px;margin-bottom:20px;">
-                                                <img class="media-object" src="../img/login/user_normal.jpg" alt="...">
+                                                <img class="media-object img-circle ren-show-card" src="../img/login/user_normal.jpg" alt="...">
                                                 <div class="text-overflow nulinkunderline small">sunshine</div>
                                             </a>
                                         </div>
@@ -1157,7 +1160,7 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="row">
                     <div class="col-lg-12">
                         <img src="../img/user/_r1_c1.png" />&nbsp;&nbsp;活跃群组
@@ -1342,12 +1345,110 @@
         <div class="clearfix mtmb15"></div>
 
 
-        
+
 
     </div>
 
 
     <div id="footer"></div>
+
+    <!--个人名片-->
+    <div class="user-info-card dispalynone">
+        <div class="row">
+            <div class="col-lg-3">
+                <dl class="mp0">
+                    <dt>
+                        <a href="#">
+                            <img class="media-object" src="../img/default_avatar.gif" alt="50*50" title="50*50" style="height:60px; width:60px;">
+                        </a>
+                    </dt>
+                    <dd class="pt10">
+
+                    </dd>
+                    <dd>
+                        <!--<button class="btn btn-xs btn-warning"><span class="glyphicon glyphicon-plus"></span> 加友好</button>-->
+                        <button class="btn btn-xs btn-success"><span class="glyphicon glyphicon-envelope"></span> 发消息</button>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="col-lg-9">
+
+                <dl>
+                    <dt>
+                        <a href="../admin/user-index-info.html" target="_blank" class="nulinkunderline vertical-align-middle">死不靠谱夫斯基</a> &nbsp;<img src="../img/badge/good1.png" />
+
+                    </dt>
+                    <dd class="color-333 fz12"><span class="glyphicon glyphicon-map-marker"></span>  四川 成都  成都七中嘉祥外国语学校</dd>
+                    <dd class="color-333 fz12">好友：52  &nbsp;&nbsp; 发起：11 &nbsp;&nbsp; 参与：210</dd>
+                    <dd class="pt5">
+
+                    </dd>
+                    <dd>
+                        <span class="label label-default">学生</span>
+                        <span class="label label-default">达人</span>
+                        <span class="label label-default">中学生</span>
+                        <span class="label label-default">机器人爱好者</span>
+                        <span class="label label-default">小说爱好者</span>
+
+
+                    </dd>
+
+                </dl>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--个人名片 end-->
+    <!-- Modal -->
+    <div class="modal fade" id="ren-win-upload" tabindex="-1" role="dialog" aria-labelledby="ren-upload" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="ren-upload">修改头像</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form" action="#">
+                        <div class="row">
+                            <div class="col-lg-6 col-lg-offset-3">
+                                <div class="pull-left">
+                                    <img id="preview-img" src="../img/login/44_140.jpg" style="width:150px;height:150px;" width="150" height="150" />
+                                </div>
+                                <div class="pull-right" style="margin-top:85px;">
+                                    <img id="preview-img1" src="../img/login/44_140.jpg" style="width:68px;height:68px;" width="68" height="68" class="img-circle" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row martop20">
+                            <div class="col-lg-6 col-lg-offset-3">
+                                <div class="alert alert-warning alert-dismissible preview-div text-center" role="alert">当前头像预览</div>
+                            </div>
+                        </div>
+                        <div class="row martop20">
+                            <div class="col-lg-8 col-lg-offset-3">
+                                <div class="form-group">
+                                    更换头像：
+                                     <span class="btn  fileinput-button" style="background-color:#FF7F00;color:#fff;">
+                                        <span>选择图片</span>
+                                        <input type="file" name="files[]" multiple="" id="project-cover-image">
+                                    </span>
+                                    <span class="color-A7A7A7">图片大小不要超过2M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default plr30" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-success plr30">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -1360,6 +1461,7 @@
     <script src="../js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="../js/bootstrap-datetimepicker/js/locale/zh-cn.js"></script>
     <script src="../js/bootstrap-datetimepicker/js/locale/ru.js"></script>
+    <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
     <script type="text/javascript">
 
         $(function () {
@@ -1381,6 +1483,39 @@
                 $('.bs-datetimepicker-modal').modal('hide');
             });
             //日历时间结束
+
+            //图片上传本地预览
+            $("#project-cover-image").uploadPreview({ Img: "preview-img", Width: 220, Height: 160, ImgType: ["gif", "jpeg", "jpg", "bmp", "png"], Callback: function () { } });
+
+            //user card info
+            $(".ren-show-card").popover({
+                html: true,
+                trigger: 'manual',
+                container: $(this).attr('id'),
+                placement: 'left',
+                content: function () {
+                    //$return = '<div class="hover-hovercard"></div>';
+                    return $('.user-info-card').html();
+                }
+            }).on("mouseenter", function () {
+                var _this = this;
+                $(this).popover("show");
+                $(this).siblings(".popover").on("mouseleave", function () {
+                    $(_this).popover('hide');
+                });
+            }).on("mouseleave", function () {
+                var _this = this;
+                setTimeout(function () {
+                    if (!$(".popover:hover").length) {
+                        $(_this).popover("hide")
+                    }
+                }, 100);
+            }).on("show.bs.popover", function (e) {
+                var _this = this;
+                $(this).data("bs.popover").tip().css("max-width", "350px");
+            });
+            //end user card info
+
         });
         $('#myTab a').click(function (e) {
             e.preventDefault();
@@ -1437,7 +1572,7 @@
             $('.lyp-user-index-nav li').each(function () {
                 $(this).removeClass('active');
                 $(this).find('a').removeAttr('style');
-                var id_hide = "#"+$(this).attr('value');
+                var id_hide = "#" + $(this).attr('value');
                 $(id_hide).hide();
             });
             $(this).addClass('active');
