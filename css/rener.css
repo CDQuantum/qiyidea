@@ -940,90 +940,156 @@ ul.ren-top-project-tab {
 
 .ren-star-rating {
     list-style: none;
-    clear:both;
-    width:142px;
-    height:22px;
-    position:relative;
-    margin:0;
-	padding:0;
+    clear: both;
+    width: 142px;
+    height: 22px;
+    position: relative;
+    margin: 0;
+    padding: 0;
     background: url('../img/star2.png') no-repeat -20px -10px;
 }
 
-.nostar {background-position:-20px -10px;}
-.onestar {background-position:-20px -40px;}
-.twostar {background-position:-20px -70px;}
-.threestar {background-position:-20px -100px;}
-.fourstar {background-position:-20px -130px;}
-.fivestar {background-position:-20px -160px;}
-    .ren-star-rating li {
-        float: left;
-        position:absolute;
-        z-index:999;
-        cursor:pointer;
-        height: 22px;
-        width: 22px;
-        left:0;
-	    top:0;
-	    text-decoration:none;
+.nostar {
+    background-position: -20px -10px;
+}
+
+.onestar {
+    background-position: -20px -40px;
+}
+
+.twostar {
+    background-position: -20px -70px;
+}
+
+.threestar {
+    background-position: -20px -100px;
+}
+
+.fourstar {
+    background-position: -20px -130px;
+}
+
+.fivestar {
+    background-position: -20px -160px;
+}
+
+.ren-star-rating li {
+    float: left;
+    position: absolute;
+    z-index: 999;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+}
+
+    .ren-star-rating li.one {
+        left: 0;
     }
-     .ren-star-rating li.one {
-        left:0;
+
+    .ren-star-rating li.two {
+        left: 30px;
     }
-      .ren-star-rating li.two {
-         left:30px;
+
+    .ren-star-rating li.three {
+        left: 60px;
     }
-       .ren-star-rating li.three {
-         left:60px;
+
+    .ren-star-rating li.four {
+        left: 90px;
     }
-        .ren-star-rating li.four {
-         left:90px;
-    }
-         .ren-star-rating li.five {
-         left:120px;
+
+    .ren-star-rating li.five {
+        left: 120px;
     }
 
     .ren-star-rating li:hover {
         background: url('../img/star2.png') no-repeat -20px -10px;
-        width:142px;
-        overflow:hidden;
-	    left:0;	
-        z-index:5;
+        width: 142px;
+        overflow: hidden;
+        left: 0;
+        z-index: 5;
     }
 
-     .ren-star-rating li.one:hover, .ren-star-rating li.one.active{
-        background-position:-20px -40px;
+    .ren-star-rating li.one:hover, .ren-star-rating li.one.active {
+        background-position: -20px -40px;
     }
-      .ren-star-rating li.two:hover,.ren-star-rating li.two.active {
-         background-position:-20px -70px;
+
+    .ren-star-rating li.two:hover, .ren-star-rating li.two.active {
+        background-position: -20px -70px;
     }
-       .ren-star-rating li.three:hover,.ren-star-rating li.three.active {
-         background-position:-20px -100px;
+
+    .ren-star-rating li.three:hover, .ren-star-rating li.three.active {
+        background-position: -20px -100px;
     }
-        .ren-star-rating li.four:hover,.ren-star-rating li.four.active {
-         background-position:-20px -130px;
+
+    .ren-star-rating li.four:hover, .ren-star-rating li.four.active {
+        background-position: -20px -130px;
     }
-         .ren-star-rating li.five:hover, .ren-star-rating li.five.active{
-         background-position:-20px -160px;
+
+    .ren-star-rating li.five:hover, .ren-star-rating li.five.active {
+        background-position: -20px -160px;
     }
-     
 
 
-    /* readonly */
- .ren-star-rating-disabled {
+
+/* readonly */
+.ren-star-rating-disabled {
     margin: 0;
     padding: 0;
     list-style: none;
-    clear:both;
+    clear: both;
 }
 
     .ren-star-rating-disabled li {
         float: left;
         background: url('../img/star.png') no-repeat -10px -70px;
-        margin-right:8px;
+        margin-right: 8px;
         height: 22px;
         width: 22px;
     }
-     
-    .ren-star-rating-disabled li.active {
-        background: url('../img/star.png') no-repeat -10px -10px;
+
+        .ren-star-rating-disabled li.active {
+            background: url('../img/star.png') no-repeat -10px -10px;
+        }
+
+/* easy pie charts */
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+}
+
+    .chart canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
+
+.percent {
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+}
+
+    .percent:after {
+        content: '℃';
+        margin-left: 0.1em;
+        font-size: .8em;
+    }
+
+
+    /* project-team-hun ping */
+    .fl{ float: left; display: inline;}
+.ren-project-team-square .square_ul{background: url(../img/square.png) no-repeat -10px -9px; width: 468px; z-index: 10; position: relative; height: 22px; list-style:none;}
+.ren-project-team-square .square_ul li{ float: left;  margin-right:1px;width: 114px; height: 22px; }
+.ren-project-team-square .square_ul li a{ display: block; height: 22px; position: absolute; left: 0; top: 0; text-indent: -999em;}
+.ren-project-team-square .square_ul li .active-square{background: url(../img/square.png) no-repeat;}
+.ren-project-team-square .square_ul li .square-1{width: 116px;background-position:-10px -49px; z-index: 50;}
+.ren-project-team-square .square_ul li .square-2{width:232px;background-position:-10px -89px;z-index: 40;}
+.ren-project-team-square .square_ul li .square-3{width:348px; background-position:-10px -129px;z-index: 30;}
+.ren-project-team-square .square_ul li .square-4{width:468px; background-position:-10px -169px;z-index: 20;}

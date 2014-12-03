@@ -19,6 +19,7 @@
     <!-- Custom styles for this template -->
     <link href="../css/non-responsive.css" rel="stylesheet">
     <!--<link href="css/sticky-footer-navbar.css" rel="stylesheet">-->
+    <link href="../js/chosen/chosen.css" rel="stylesheet">
     <link href="../css/lyp.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/rener.css" rel="stylesheet">
@@ -57,7 +58,7 @@
                 <ul class="lyp-left-letter-ul">
                     <li class="fz16 active"><a href="my_private_letter.html">收到的私信(28)</a> <s></s> </li>
                 </ul>
-                <button style="background-color:#FF7F00;border-color:#FF7F00;" type="button" class="btn btn-lg btn-danger btn-block" onclick=" location.href = 'my_private_letter-send.html'" data-toggle="modal" data-target=".write-private-letter-modal">
+                <button style="background-color:#FF7F00;border-color:#FF7F00;" type="button" class="btn btn-lg btn-danger btn-block" data-toggle="modal" onclick=" location.href = 'my_private_letter-send.html'" data-target=".write-private-letter-modal">
                     <img style="margin-top:-5px;" src="../img/user/_r1_c2.png" />&nbsp;&nbsp;&nbsp;写私信
                 </button>
             </div>
@@ -69,65 +70,38 @@
                 <div class="row">
                     <div class="col-lg-12" style="border-left:1px solid #DFDFDF;height:100%;">
                        
-                        <!--帖子回复1-->
-                        <div class="panel panel-info" >
-                            <div class="panel-heading" style="background-color:#EEF8FD;">
-                                <div class="row">
-                                    <div class="col-lg-6"><a title="知乎世界杯竞猜大奖赛" href="user-index.html">知乎世界杯竞猜大奖赛</a> <span class="badge">20</span> </div>
-                                    <div class="col-lg-6 text-right">
 
-                                    </div>
+                        <div>
+                            <form role="form">
+
+                                <div class="form-group">
+                                    <select data-placeholder="发给谁…" class="chosen-select ren-info-note-chosen" style="width:100%;" multiple tabindex="6">
+                                        <option value=""></option>
+                                        <option>Dallas Cowboys</option>
+                                        <option>New York Giants</option>
+                                        <option>Philadelphia Eagles</option>
+                                        <option>Washington Redskins</option>
+                                        <option>Chicago Bears</option>
+                                        <option>Detroit Lions</option>
+                                        <option>Green Bay Packers</option>
+                                        <option>Minnesota Vikings</option>
+                                        <option>Atlanta Falcons</option>
+                                        <option>Carolina Panthers</option>
+                                        <option>New Orleans Saints</option>
+                                        <option>Tampa Bay Buccaneers</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="panel-body fz12">
-                                <div class="media pt10 ren-newest-info">
-                                    <a class="pull-left" href="#">
-                                        <img class="media-object img-circle" src="../img/default_avatar.gif" alt="50*50" title="50*50" style="height:50px; width:50px;">
-                                    </a>
-                                    <div class="media-body pl15">
-                                        <div class="zm-pm-item-main">
-                                            <a title="知乎世界杯竞猜大奖赛" href="user-index.html">知乎世界杯竞猜大奖赛</a>：世界杯竞猜大奖赛已经上线了三四名决赛荷兰对巴西的比赛竞猜：<a href="http://worldcup2014.zhihu.com/" class="internal"><span class="hidden">http://</span><span class="visible">worldcup2014.zhihu.com/</span><span class="invisible"></span></a><br>提示：刘看山徽章的真面目来咯！可在知识青年专栏查看详情。
-                                        </div>
-
-                                    </div>
+                                <div class="clearfix mt5mb15"></div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="sr-only">内容</label>
+                                    <textarea class="form-control ren-textarea" placeholder="说点什么吧…" rows="3"></textarea>
                                 </div>
-                            </div>
-                            <div class="panel-footer panel-info" style="background-color:#EEF8FD;">
-                                <div class="row fz12">
-                                    <div class="col-lg-8">
-                                        <a href="info-center-inbox-msg.html">共<span>20</span>条对话</a>
-                                        <span>最新消息更新于  9月15日 11:58</span>
+                           
 
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="text-right">
-
-                                            <a href="info-center-inbox-msg.html" class="nulinkunderline">
-                                                <span class="glyphicon glyphicon-comment"> </span>  回复
-                                            </a> &nbsp;
-                                            <a href="javascript:void(0)" class="nulinkunderline">
-                                                <span class="glyphicon glyphicon-phone-alt"> </span> 举报
-                                            </a> &nbsp;
-                                            <a href="javascript:void(0)" class="nulinkunderline">
-                                                <span class="glyphicon glyphicon-star"> </span>  删除
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                                <button type="submit" class="btn btn-sm btn-success plr30 pull-right">发送</button>
+                            </form>
+                            <div class="clearfix"></div>
                         </div>
-                        <nav class="text-center">
-                            <ul class="pagination">
-                                <li><a href="#">&laquo;</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">&raquo;</a></li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
 
@@ -156,6 +130,7 @@
     <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="../js/umeditor/umeditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="../js/umeditor/umeditor.min.js"></script>
+    <script src="../js/chosen/chosen.jquery.js"></script>
     <script type="text/javascript">
         $(function () {
             //公共部分加载
@@ -170,6 +145,10 @@
                 //这里可以选择自己需要的工具按钮名称,此处仅选择如下七个
                 toolbar: ['justifyright image video link'],
             });
+            //选择发送的人
+            $('.ren-info-note-chosen').chosen();
+             
+
         });
         $('.checkall').click(function () {
             if ($(this).is(':checked')) {
