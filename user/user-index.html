@@ -1832,19 +1832,38 @@
             var id_show = "#" + $(this).attr('value');
             $(id_show).show();
         });
-        $('.add-firend-list').mouseenter(function (event) {
-            var height = $(this).outerHeight();
-            var width = $(this).outerWidth();
-            $(this).parent().find('.add-firend-list-1').outerHeight(height);
-            $(this).parent().find('.add-firend-list-1').outerWidth(width);
-            $(this).parent().find('.add-firend-list-1').show();
-            $(this).hide();
-        });
 
-        $('.add-firend-list-1').mouseleave(function (event) {
-            $(this).hide();
+        // 滑动事件
+        //$('.add-firend-list').mouseenter(function (event) {
+        //    $('.add-firend-list-1').hide();
+        //    var height = $(this).outerHeight();
+        //    var width = $(this).outerWidth();
+        //    $(this).parent().find('.add-firend-list-1').outerHeight(height);
+        //    $(this).parent().find('.add-firend-list-1').outerWidth(width);
+        //    $(this).parent().find('.add-firend-list-1').show();
+        //    $(this).hide();
+        //});
+        //$('.add-firend-list-1').mouseleave(function (event) {
+        //    $('.add-firend-list').show();
+        //    $(this).parent().find('.add-firend-list').show();
+        //});
+        // 滑动事件
+        $('.add-firend-list').hover(function () {
+            $(this).parent().find('.add-firend-list-1').show();
+            $(this).parent().find('.add-firend-list').hide();
+        }, function () {
+            $(this).parent().find('.add-firend-list-1').hide();
             $(this).parent().find('.add-firend-list').show();
         });
+        $('.add-firend-list-1').hover(function () {
+            $(this).parent().find('.add-firend-list-1').show();
+            $(this).parent().find('.add-firend-list').hide();
+        }, function () {
+            $(this).parent().find('.add-firend-list-1').hide();
+            $(this).parent().find('.add-firend-list').show();
+        });
+
+
 
         $('.add-firend-1').click(function () {
             $('#search-modal').modal('hide');
