@@ -471,18 +471,20 @@
         });
        
 
-        $('.add-firend-list').mouseenter(function (event) {
-            var height = $(this).outerHeight();
-            var width = $(this).outerWidth();
-            $(this).parent().find('.add-firend-list-1').outerHeight(height);
-            $(this).parent().find('.add-firend-list-1').outerWidth(width);
-            $(this).parent().find('.add-firend-list-1').show();
-            $(this).hide();
-        });
+        // 滑动事件
+        $('.add-firend-list').hover(function () {
+            $(this).parent().find('.add-firend-list-1').show().prev().hide();
 
-        $('.add-firend-list-1').mouseleave(function (event) {
-            $(this).hide();
-            $(this).parent().find('.add-firend-list').show();
+        }, function () {
+            $(this).parent().find('.add-firend-list-1').hide().prev().show();
+
+        });
+        $('.add-firend-list-1').hover(function () {
+            $(this).parent().find('.add-firend-list-1').show().prev().hide();
+
+        }, function () {
+            $(this).parent().find('.add-firend-list-1').hide().prev().show();
+
         });
 
 
