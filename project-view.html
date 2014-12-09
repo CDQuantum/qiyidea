@@ -67,15 +67,26 @@
                         <s class="active"></s>
                     </li>
 
-                    <li class="pull-right" style="width:300px;">
+                    <li class="pull-right" style="width:300px; margin-right:0;">
                         <div class="row">
                             <div class="col-lg-5 text-right pt5">
                                 <i class="glyphicon glyphicon-folder-close"></i> <span class="color-FF3F00">325</span>人收藏
                             </div>
                             <div class="col-lg-7">
+                                <!-- Baidu Button BEGIN -->
+                                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare bdsharebuttonbox"  data-tag="share_1">
+                                    <a class="bds_qzone" data-cmd="qzone" href="#" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_tsina" data-cmd="tsina" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_baidu" data-cmd="baidu" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_renren" data-cmd="renren" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_tqq" data-cmd="tqq" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_more fz12" data-cmd="more" style="height:25px;line-height:25px"></a>
+                                </div>
 
-                                <div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
-                                <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                                <!-- Baidu Button END -->
+
+                                <!--<div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+                                <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>-->
 
                             </div>
                         </div>
@@ -914,7 +925,11 @@
                                 <em class="color-999 fz20">42</em> 位支持者
                             </div>
                             <div class="col-lg-6">
-                                <em class="color-999 fz20">199</em> 人分享
+                                <div id="bdshare" style="padding-bottom: 0px;height: auto;line-height:28.5714302062988px; font-size:20px;">
+                                    <em class="color-999 fz20 shareCount"></em> 
+                                </div>
+                                <span class="pull-left pt5"> 人分享</span>
+                               <div class="clearfix"></div>
                             </div>
                         </div>
                         <div class="row color-c5c5c5 fz16 pl10">
@@ -1408,6 +1423,14 @@
     </script>
 
 
+    
+
+   
+    <script type="text/javascript" id="bdshare_js" data="type=slide&mini=1"></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        document.getElementById('bdshell_js').src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);
+    </script>
 
 </body>
 </html>
