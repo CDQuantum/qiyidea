@@ -19,7 +19,7 @@
                  
                 <ul class="nav navbar-nav navbar-right ren-head-box-r">
                     <li id="ren-btn-mail" class="dropdown">
-                        <a href="info-center.html" style="padding:20px 25px 8px 25px;" id="ren-dropdown-toggle-mail" class="dropdown-toggle ren-dropdown-toggle-user" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-envelope ren-head-ico-bell" style="font-size:22px;"></span><div class="sr-only">私信</div></a>
+                        <a href="info-center.html" style="padding:20px 25px 8px 25px;" id="ren-dropdown-toggle-mail" class="dropdown-toggle ren-dropdown-toggle-user ren-dropdown-js-activated" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-envelope ren-head-ico-bell" style="font-size:22px;"></span><div class="sr-only">私信</div></a>
                         <ul class="dropdown-menu ren-dropdown-menu-2" role="menu" aria-labelledby="ren-dropdown-toggle-mail">
                             <li><a href="info-center.html">收到的私信 <span class="badge">4</span></a> </li>
                             <li class="divider"></li>
@@ -29,7 +29,7 @@
                         </ul>
                     </li>
                     <li id="ren-btn-notifications" class="dropdown">
-                        <a href="info-center.html" style="padding:20px 25px 8px 25px;" id="ren-dropdown-toggle-msg" class="dropdown-toggle ren-dropdown-toggle-user" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-bell ren-head-ico-bell" style="font-size:22px;"></span><div class="sr-only">消息</div></a>
+                        <a href="info-center.html" style="padding:20px 25px 8px 25px;" id="ren-dropdown-toggle-msg" class="dropdown-toggle ren-dropdown-toggle-user ren-dropdown-js-activated" data-toggle="dropdown"><span class="badge ren-info-msg-bell-badge">99+</span><span class="glyphicon glyphicon-bell ren-head-ico-bell" style="font-size:22px;"></span><div class="sr-only">消息</div></a>
                         <ul class="dropdown-menu ren-dropdown-menu-1" role="menu" aria-labelledby="ren-dropdown-toggle-msg">
                             <li><a href="info-center.html">站点通知 <span class="badge">4</span></a> </li>
                             <li class="divider"></li>
@@ -43,7 +43,7 @@
                         </ul>
                     </li>
                     <li id="fat-menu" class="dropdown">
-                        <a href="#" id="ren-setting" style="padding:10px 20px 8px 20px;" class="dropdown-toggle" data-toggle="dropdown"><img src="../img/avatar2_small.jpg" class="img-circle pointer"> </a>
+                        <a href="#" id="ren-setting" style="padding:10px 20px 8px 20px;" class="dropdown-toggle ren-dropdown-js-activated" data-toggle="dropdown"><img src="../img/avatar2_small.jpg" class="img-circle pointer"> </a>
                         <ul class="dropdown-menu ren-dropdown-menu" role="menu" aria-labelledby="ren-setting">
                             <li class="text-center disabled"> <a style="color:#5CB85C;" href="#">admin</a> </li>
                             <li class="divider"></li>
@@ -82,12 +82,40 @@
     </div>
 </nav>
 
+
+<script src="../js/bootstrap-hover-dropdown.min.js"></script>
+
 <script type="text/javascript">
     //鼠标滑过下拉展示效果
     $(function () {
-        $('.dropdown').hover(function () {
-            $('.dropdown-toggle', this).trigger('click');
-        });
-         
+       
+       
+        $('.ren-dropdown-js-activated').dropdownHover().dropdown();
+        //$('.dropdown').hover(function () {
+        //    //$('.dropdown-toggle', this).trigger('click');
+        //    $(this).toggleClass('open');
+        //    //return false;
+        //});
+        ////$('.dropdown').hover(function () {
+        ////    $(this).addClass('open');
+        ////}, function () {
+        ////    //$(this).toggleClass('open');
+        ////    $(this).removeClass('open');
+        ////});
+        ////$('.dropdown').hover(function () {
+        ////    $(this).toggleClass('open');
+        ////});
+        //$('.dropdown').click(function () {
+        //    $(this).addClass('open');
+        //});
+        //$('.ren-dropdown-menu li a').click(function () {
+        //    //$(this).parent().parent().parent().find('.dropdown').addClass('open');
+        //    $(this).parents().find('.dropdown').addClass('open');
+        //});
+        //$('.ren-dropdown-menu li').click(function () {
+        //    //$(this).parent().parent().parent().find('.dropdown').addClass('open');
+        //    $(this).parents().find('.dropdown').addClass('open');
+        //});
+
     });
 </script>

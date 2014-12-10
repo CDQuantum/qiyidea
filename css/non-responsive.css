@@ -151,10 +151,6 @@ body {
 	display: block;
 }*/
 
-.ren-head-box .navbar-header img {
-    padding-top: 25px;
-}
-
 .ren-head-box {
     border-bottom-color: #bfbfbf;
     box-shadow: rgb(190, 190, 190) 0px 0px 3px 0px;
@@ -207,8 +203,20 @@ body {
         background-color: #449D44 !important;
     }
 
+/* 2014.12.09 */
+/*#ren-btn-notifications:hover .dropdown-menu, #fat-menu .dropdown-menu ,#ren-btn-mail .dropdown-menu {
+    display: block;
+ }*/
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+ }*/
 
-#ren-btn-notifications .divider,#fat-menu .divider ,#ren-btn-mail .divider {
+.ren-head-box .navbar-header img {
+    padding-top: 25px;
+}
+
+
+#ren-btn-notifications:hover .divider,#fat-menu:hover .divider ,#ren-btn-mail:hover .divider {
     margin: 1px 0;
     padding: 0;
     height: 1px;
@@ -269,5 +277,5 @@ body {
 
 #fat-menu>a>img{max-width:40px;max-height:40px;}
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus
+
  

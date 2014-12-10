@@ -1714,11 +1714,31 @@
     <script src="../js/bootstrap-datetimepicker/js/locale/zh-cn.js"></script>
     <script src="../js/bootstrap-datetimepicker/js/locale/ru.js"></script>
     <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
+    <link rel="stylesheet" href="../js/jGrowl/jquery.jgrowl.min.css" type="text/css" />
+    <script type="text/javascript" src="../js/jGrowl/jquery.jgrowl.min.js"></script>
     <script type="text/javascript">
 
         $(function () {
             $("#head").load("../login_head.html");
             $("#footer").load("../footer.html");
+
+            //// Sample 1 默认带关闭所有，会消失
+            //$.jGrowl("Hello world!");
+            // Sample 2  固定不消失,点击关闭消失
+            //$.jGrowl("Stick this!", { sticky: true });
+            //// Sample 3  带title 和正文的内容 会消失
+            //$.jGrowl("A message with a header", { header: 'Important' });
+            //// Sample 4  顶部暂停10秒 消失
+            $.jGrowl("这是一个很长很长的项目提示内容，长达30多个文字。你说怕不怕。", { life: 10000 });
+            //// Sample 5 几秒后关闭时触发事件
+            //$.jGrowl("A message with a beforeOpen callback and a different opening animation.", {
+            //    beforeClose: function (e, m) {
+            //        alert('About to close this notification!');
+            //    },
+            //    animateOpen: {
+            //        height: 'show'
+            //    }
+            //});
             //时间日历
             $('.datetimepicker5').datetimepicker({
                 language: 'zh-CN',
