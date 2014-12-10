@@ -1123,7 +1123,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <img src="../img/user/fw_r4_c3.png" />&nbsp;&nbsp;我的好友
-                                        <a href="javascript:void(0)" class="pull-right" data-toggle="modal" data-target="#search-modal">加好友</a>
+                                        <a href="javascript:void(0)" class="pull-right" data-toggle="modal" data-target="#search-modal">查看更多</a>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12">
@@ -1155,6 +1155,10 @@
                                             </a>
                                         </div>
 
+                                    </div>
+                                    <div class="dot"></div>
+                                    <div class="ptrbl15 text-center">
+                                        <button class="btn btn-success plr30" data-toggle="modal" data-target="#search-modal"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;添加好友</button>
                                     </div>
                                 </div>
                             </div>
@@ -1433,7 +1437,7 @@
                             <div class="col-lg-8 col-lg-offset-3">
                                 <div class="form-group">
                                     更换头像：
-                                     <span class="btn  fileinput-button" style="background-color:#FF7F00;color:#fff;">
+                                    <span class="btn  fileinput-button" style="background-color:#FF7F00;color:#fff;">
                                         <span>选择图片</span>
                                         <input type="file" name="files[]" multiple="" id="project-cover-image">
                                     </span>
@@ -1643,7 +1647,7 @@
                         </div>
                     </div>
                 </div>
-              
+
             </div>
         </div>
     </div>
@@ -1870,17 +1874,17 @@
         // 滑动事件
         $('.add-firend-list').hover(function () {
             $(this).parent().find('.add-firend-list-1').show().prev().hide();
-            
+
         }, function () {
             $(this).parent().find('.add-firend-list-1').hide().prev().show();
-            
+
         });
         $('.add-firend-list-1').hover(function () {
             $(this).parent().find('.add-firend-list-1').show().prev().hide();
-            
+
         }, function () {
             $(this).parent().find('.add-firend-list-1').hide().prev().show();
-            
+
         });
 
 
