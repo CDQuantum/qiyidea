@@ -1107,7 +1107,7 @@ ul.ren-top-project-tab {
 }
 
     .percent:after {
-        content: '℃';
+        content: '°C';
         margin-left: 0.1em;
         font-size: .8em;
     }
