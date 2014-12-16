@@ -403,7 +403,37 @@ div.ren-unflag-box {
         background-color: #62D8FF;
     }
 
+.ren-project-view-pingjia-tab a {
+color:#aaa;
+text-decoration:none;
+padding-left:8px;
+font-weight:bold;
+}
 
+.ren-project-view-pingjia-tab a.active {
+    color:#FF7F00;
+}
+
+.ren-project-view-pingjia-lookpingyu-box .box1 {
+    background-color:#F5FFEC;height:64px;width:490px; overflow:auto;
+}
+.ren-project-view-pingjia-lookpingyu-box .box2 {
+background-color:#FFFAEF;height:44px;width:490px; overflow:auto;
+}
+#looknengli dl dt, #looknengli dl dd {
+    height:30px;
+    line-height:1;
+}
+#looknengli dl dt {
+font-size:12px;
+font-weight:normal;
+}
+#looknengli .progress {
+height:10px;
+}
+    #looknengli .progress .progress-bar {
+    background-color:#FF9966;
+    }
 
 .caption h5 {
     min-height: 35px;
