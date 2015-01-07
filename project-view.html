@@ -67,15 +67,25 @@
                         <s class="active"></s>
                     </li>
 
-                    <li class="pull-right" style="width:300px;">
+                    <li class="pull-right" style="width:300px; margin-right:0;">
                         <div class="row">
                             <div class="col-lg-5 text-right pt5">
                                 <i class="glyphicon glyphicon-folder-close"></i> <span class="color-FF3F00">325</span>人收藏
                             </div>
                             <div class="col-lg-7">
+                                <!-- Baidu Button BEGIN -->
+                                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare bdsharebuttonbox" data-tag="share_1">
+                                    <a class="bds_qzone" data-cmd="qzone" href="#" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_tsina" data-cmd="tsina" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_baidu" data-cmd="baidu" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_renren" data-cmd="renren" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_tqq" data-cmd="tqq" style="height:25px;line-height:25px"></a>
+                                    <a class="bds_more fz12" data-cmd="more" style="height:25px;line-height:25px"></a>
+                                </div>
 
-                                <div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
-                                <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                                <!-- Baidu Button END -->
+                                <!--<div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+                                <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>-->
 
                             </div>
                         </div>
@@ -606,261 +616,355 @@
 
                         </div>
                         <div class="tab-pane active" id="appraisal">
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <div class="well ptb10 fz14">
-                                        项目热度：<span class="color-FF7F00">98</span>
-                                    </div>
-                                    <div class="dot clearfix"></div>
-                                    <h5 class="pt20">小组成员互评</h5>
 
-                                    <div class="well">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="media">
-                                                    <div class="media-left text-center">
-                                                        <a href="#">
-                                                            <img src="../img/default_avatar.gif" style="max-height:60px; max-width:60px;" class="img-circle" alt="...">
-                                                        </a>
-                                                        <br />
-                                                        <a href="#">张山</a>
+                            <div class="well">
+                                <div class="ptb10 fz14">
+                                    项目热度：<span class="color-FF7F00">98</span> &nbsp;<img src="img/project-pj-hot.png" />
+                                </div>
+                                <div class="dot clearfix"></div>
+                                <div class="ptb10">
+                                    任务状态：<button class="btn btn-sm btn-danger">全部状态</button>
+                                    <button class="btn btn-sm btn-default">成员互评</button>
+                                    <button class="btn btn-sm btn-default">回馈评价</button>
+                                    <button class="btn btn-sm btn-default">支持者说</button>
+                                </div>
+
+                                <div class="clearfix pt10"></div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-body plr30">
+                                        <h4 class="pull-left">项目成员互评结果 
+                                            
+                                        </h4>
+                                        <div class="pull-right fz12 pt20 ren-project-view-pingjia-tab">
+                                            <!-- Nav tabs -->
+                                            
+                                            <a href="#looknengli" role="presentation" class="active nulinkunderline" role="tab" data-toggle="tab">查看能力</a>
+                                            <a href="#lookpingyu" role="tab" role="presentation" class="nulinkunderline" data-toggle="tab">查看评语</a>
+
+
+                                        </div>
+                                        <div class="clearfix dot" ></div>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="looknengli">
+                                                <div class="pt20">
+                                                    <div class="media ">
+                                                        <div class="media-left text-center pt20">
+                                                            <a href="#">
+                                                                <img src="../img/default_avatar.gif" style="height:60px; width:60px; max-height:60px; max-width:60px;" class="img-circle" alt="...">
+                                                            </a>
+                                                            <br />
+                                                            <a href="#">张山</a>
+                                                        </div>
+
+                                                        <div class="media-body">
+                                                            <dl class="dl-horizontal">
+                                                                <dt style="width:90px;">领导力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                                <dt style="width:90px;">团队合作力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                                <dt style="width:90px;">团队合作力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                                <dt style="width:90px;">团队合作力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                                <dt style="width:90px;">团队合作力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+
+
+                                                        </div>
+
                                                     </div>
+                                                    <div class=" dot clearfix mb5"></div>
+                                                    <div class="media ">
+                                                        <div class="media-left text-center pt20">
+                                                            <a href="#">
+                                                                <img src="../img/default_avatar.gif" style="height:60px; width:60px; max-height:60px; max-width:60px;" class="img-circle" alt="...">
+                                                            </a>
+                                                            <br />
+                                                            <a href="#">张山</a>
+                                                        </div>
+
+                                                        <div class="media-body">
+                                                            <dl class="dl-horizontal">
+                                                                <dt style="width:90px;">领导力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                                <dt style="width:90px;">团队合作力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                                <dt style="width:90px;">团队合作力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                                <dt style="width:90px;">团队合作力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                                <dt style="width:90px;">团队合作力</dt>
+                                                                <dd style="margin-left:100px;">
+                                                                    <div class="progress" style="width:430px;">
+                                                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                                            <span class="sr-only">40% Complete (success)</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="clearfix mb5"></div>
+                                                    <div class="text-center fz12">
+                                                        <a href="#" class="nulinkunderline color-999">展开更多<span class="caret"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="lookpingyu">
+
+                                                <div class="pt20">
+                                                    <div class="media ">
+                                                        <div class="media-left text-center pt10">
+                                                            <a href="#">
+                                                                <img src="../img/default_avatar.gif" style="height:60px; width:60px; max-height:60px; max-width:60px;" class="img-circle" alt="...">
+                                                            </a>
+                                                            <br />
+                                                            <a href="#">张dd</a>
+                                                        </div>
+
+                                                        <div class="media-body pl10 ren-project-view-pingjia-lookpingyu-box">
+                                                            <div class="ptrbl15 fz12 box1">
+                                                                回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息
+                                                            </div>
+                                                            <div class="dot"></div>
+                                                            <div class="ptrbl15 fz12 box2">
+                                                                回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="clearfix mb5"></div>
                                                     
-                                                    <div class="media-body">
-
-
-                                                        <div class="pull-left pl15">
-                                                            能力C
-                                                        </div>
-                                                        <div class="pull-right">
-                                                            <div class="ren-star-box pl10">
-                                                                <ul class="ren-star-rating-disabled">
-                                                                    <li class="one active"></li>
-                                                                    <li class="two active"></li>
-                                                                    <li class="three active"></li>
-                                                                    <li class="four"></li>
-                                                                    <li class="five"></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                        <div class="pull-left pt10 pl15">
-                                                            能力C
-                                                        </div>
-                                                        <div class="pull-right">
-                                                            <div class="ren-star-box pt8 pl10">
-                                                                <ul class="ren-star-rating-disabled">
-                                                                    <li class="one active"></li>
-                                                                    <li class="two active"></li>
-                                                                    <li class="three active"></li>
-                                                                    <li class="four active"></li>
-                                                                    <li class="five"></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                        <div class="pull-left pt10 pl15">
-                                                            能力C
-                                                        </div>
-                                                        <div class="pull-right">
-                                                            <div class="ren-star-box pt8 pl10">
-                                                                <ul class="ren-star-rating-disabled">
-                                                                    <li class="one active"></li>
-                                                                    <li class="two active"></li>
-                                                                    <li class="three "></li>
-                                                                    <li class="four "></li>
-                                                                    <li class="five"></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-
-
+                                                    <div class="text-center fz12">
+                                                        <a href="#" class="nulinkunderline color-999">展开更多<span class="caret"></span></a>
                                                     </div>
                                                 </div>
-                                               
                                             </div>
-                                            <div class="col-lg-6" style="border-left:dashed 1px #c6c6c6;">
-                                                <h5 class="color-6A6A6A" style="padding-top:0; margin-top:0;">评语</h5>
-                                                <p class="fz12 color-8B8B8B mp0">
-                                                    回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="well">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="media">
-                                                    <div class="media-left text-center">
-                                                        <a href="#">
-                                                            <img src="../img/default_avatar.gif" style="max-height:60px; max-width:60px;" class="img-circle" alt="...">
-                                                        </a>
-                                                        <br />
-                                                        <a href="#">张山</a>
-                                                    </div>
-
-                                                    <div class="media-body">
-
-
-                                                        <div class="pull-left pl15">
-                                                            能力C
-                                                        </div>
-                                                        <div class="pull-right">
-                                                            <div class="ren-star-box pl10">
-                                                                <ul class="ren-star-rating-disabled">
-                                                                    <li class="one active"></li>
-                                                                    <li class="two active"></li>
-                                                                    <li class="three active"></li>
-                                                                    <li class="four"></li>
-                                                                    <li class="five"></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                        <div class="pull-left pt10 pl15">
-                                                            能力C
-                                                        </div>
-                                                        <div class="pull-right">
-                                                            <div class="ren-star-box pt8 pl10">
-                                                                <ul class="ren-star-rating-disabled">
-                                                                    <li class="one active"></li>
-                                                                    <li class="two active"></li>
-                                                                    <li class="three active"></li>
-                                                                    <li class="four active"></li>
-                                                                    <li class="five"></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                        <div class="pull-left pt10 pl15">
-                                                            能力C
-                                                        </div>
-                                                        <div class="pull-right">
-                                                            <div class="ren-star-box pt8 pl10">
-                                                                <ul class="ren-star-rating-disabled">
-                                                                    <li class="one active"></li>
-                                                                    <li class="two active"></li>
-                                                                    <li class="three "></li>
-                                                                    <li class="four "></li>
-                                                                    <li class="five"></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="clearfix"></div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-lg-6" style="border-left:dashed 1px #c6c6c6;">
-                                                <h5 class="color-6A6A6A" style="padding-top:0; margin-top:0;">评语</h5>
-                                                <p class="fz12 color-8B8B8B mp0">
-                                                    回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix dot"></div>
-                                    <div class="well ptb10 mt15">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="pull-left pl15 fz16">
-                                                    支持者整体印象
-                                                </div>
-                                                <div class="pull-right">
-                                                    <div class="ren-star-box pl10">
-                                                        <ul class="ren-star-rating-disabled">
-                                                            <li class="one active"></li>
-                                                            <li class="two active"></li>
-                                                            <li class="three active"></li>
-                                                            <li class="four"></li>
-                                                            <li class="five"></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="pull-left pl15 fz16">
-                                                    项目回馈评价
-                                                </div>
-                                                <div class="pull-right">
-                                                    <div class="ren-star-box pl10">
-                                                        <ul class="ren-star-rating-disabled">
-                                                            <li class="one active"></li>
-                                                            <li class="two active"></li>
-                                                            <li class="three active"></li>
-                                                            <li class="four active"></li>
-                                                            <li class="five"></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
+                                            
                                         </div>
                                         
                                     </div>
+                                </div>
 
-                                    <h5 class="pt10">支持者说</h5>
-                                    <div class="well" style="position:static;">
-                                        <div class="media" style="min-height:100%;">
-                                            <div class="media-left text-center ">
-                                                <a href="#">
-                                                    <img src="../img/default_avatar.gif" style="max-height:60px; max-width:60px;" class="img-circle" alt="...">
-                                                </a>
-                                                <br />
-                                                <a href="#">张山</a>
-                                            </div>
 
-                                            <div class="media-body" style="position:relative; height:100%;width:100%;margin-left:20px;">
-                                                
-                                                <div class="popover right ren-supporter-msg show" style="max-width:none;">
-                                                    <div class="arrow"></div>
-                                                 
-                                                    <div class="popover-content">
-                                                        <p class="color-8B8B8B">
-                                                            回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发。
-                                                        </p>
-                                                    </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-body plr30">
+                                        <h4>项目回馈评价</h4>
+                                        <hr />
+                                        <div class="pt20" style="position:static;">
+                                            <div class="media " style="min-height:150px; height:auto;">
+                                                <div class="media-left text-center ">
+                                                    <a href="#">
+                                                        <img src="../img/default_avatar.gif" style="height:60px; width:60px; max-height:60px; max-width:60px;" class="img-circle" alt="...">
+                                                    </a>
+                                                    <br />
+                                                    <a href="#">张山</a>
                                                 </div>
-                                                
-                                            </div>
-                                             
-                                        </div>
-                                        <div class="media" style="min-height:100%;">
-                                            <div class="media-left text-center ">
-                                                <a href="#">
-                                                    <img src="../img/default_avatar.gif" style="max-height:60px; max-width:60px;" class="img-circle" alt="...">
-                                                </a>
-                                                <br />
-                                                <a href="#">张山</a>
-                                            </div>
 
-                                            <div class="media-body" style="position:relative; height:100%;width:100%;margin-left:20px;">
+                                                <div class="media-body" style="position:relative; height:100%;width:100%;margin-left:20px;">
 
-                                                <div class="popover right ren-supporter-msg show" style="max-width:none;">
-                                                    <div class="arrow"></div>
+                                                    <div class="popover right ren-supporter-msg show" style="max-width:none;">
+                                                        <div class="arrow">
+                                                        </div>
 
-                                                    <div class="popover-content">
-                                                        <p class="color-8B8B8B">
-                                                            回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发。
-                                                        </p>
+                                                        <div class="popover-content">
+                                                            <div class="pb10">
+                                                                <div class="ren-star-box">
+                                                                    <ul class="ren-star-rating-disabled">
+                                                                        <li class="one active"></li>
+                                                                        <li class="two active"></li>
+                                                                        <li class="three active"></li>
+                                                                        <li class="four"></li>
+                                                                        <li class="five"></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="dot mb15"></div>
+                                                            <p class="color-8B8B8B">
+                                                                回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发。
+                                                            </p>
+                                                        </div>
                                                     </div>
+
                                                 </div>
+
                                             </div>
-                                        </div>
-                                        <div class="clearfix mt15"></div>
-                                        <div class="text-center">
-                                            <a href="#" class="nulinkunderline">展开更多<span class="caret"></span></a> 
+                                            <div class="clearfix mb5"></div>
+                                            <div class="media " style="min-height:150px; height:auto;">
+                                                <div class="media-left text-center ">
+                                                    <a href="#">
+                                                        <img src="../img/default_avatar.gif" style="height:60px; width:60px; max-height:60px; max-width:60px;" class="img-circle" alt="...">
+                                                    </a>
+                                                    <br />
+                                                    <a href="#">张山</a>
+                                                </div>
+
+                                                <div class="media-body" style="position:relative; height:100%;width:100%;margin-left:20px;">
+
+                                                    <div class="popover right ren-supporter-msg show" style="max-width:none;">
+                                                        <div class="arrow">
+                                                        </div>
+
+                                                        <div class="popover-content">
+                                                            <div class="pb10">
+                                                                <div class="ren-star-box">
+                                                                    <ul class="ren-star-rating-disabled">
+                                                                        <li class="one active"></li>
+                                                                        <li class="two active"></li>
+                                                                        <li class="three active"></li>
+                                                                        <li class="four"></li>
+                                                                        <li class="five"></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="dot mb15"></div>
+                                                            <p class="color-8B8B8B">
+                                                                回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发。
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="clearfix mb5"></div>
+                                            <div class="text-center fz12">
+                                                <a href="#" class="nulinkunderline color-999">展开更多<span class="caret"></span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-body plr30">
+                                        <h4>支持者说</h4>
+                                        <hr />
+                                        <div class="pt20" style="position:static;">
+                                            <div class="media " style="min-height:100%;">
+                                                <div class="media-left text-center ">
+                                                    <a href="#">
+                                                        <img src="../img/default_avatar.gif" style="height:60px; width:60px; max-height:60px; max-width:60px;" class="img-circle" alt="...">
+                                                    </a>
+                                                    <br />
+                                                    <a href="#">张山</a>
+                                                </div>
+
+                                                <div class="media-body" style="position:relative; height:100%;width:100%;margin-left:20px;">
+
+                                                    <div class="popover right ren-supporter-msg show" style="max-width:none;">
+                                                        <div class="arrow"></div>
+
+                                                        <div class="popover-content">
+                                                            <p class="color-8B8B8B">
+                                                                回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发。
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="clearfix mt15"></div>
+                                            <div class="media" style="min-height:100%;">
+                                                <div class="media-left text-center ">
+                                                    <a href="#">
+                                                        <img src="../img/default_avatar.gif" style="height:60px; width:60px;max-height:60px; max-width:60px;" class="img-circle" alt="...">
+                                                    </a>
+                                                    <br />
+                                                    <a href="#">张山</a>
+                                                </div>
+
+                                                <div class="media-body" style="position:relative; height:100%;width:100%;margin-left:20px;">
+
+                                                    <div class="popover right ren-supporter-msg show" style="max-width:none;">
+                                                        <div class="arrow"></div>
+
+                                                        <div class="popover-content">
+                                                            <p class="color-8B8B8B">
+                                                                回报描述：1元有价，爱心无价，您将获得韩红老师电子感谢信一封（请您在备注中留下电子邮箱方便我们发送，电子感谢信最终将以电子邮件或者旺旺消息发。
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix mt15"></div>
+                                            <div class="text-center fz12">
+                                                <a href="#" class="nulinkunderline color-999">展开更多<span class="caret"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
+                       
                     </div>
 
 
@@ -914,7 +1018,11 @@
                                 <em class="color-999 fz20">42</em> 位支持者
                             </div>
                             <div class="col-lg-6">
-                                <em class="color-999 fz20">199</em> 人分享
+                                <div id="bdshare" style="padding-bottom: 0px;height: auto;line-height:28.5714302062988px; font-size:20px;">
+                                    <em class="color-999 fz20 shareCount"></em>
+                                </div>
+                                <span class="pull-left pt5"> 人分享</span>
+                                <div class="clearfix"></div>
                             </div>
                         </div>
                         <div class="row color-c5c5c5 fz16 pl10">
@@ -1395,7 +1503,7 @@
             });
             //end tab
 
-           
+
 
         })
         //$.get("head.html", function (data) {
@@ -1408,6 +1516,14 @@
     </script>
 
 
+
+
+
+    <script type="text/javascript" id="bdshare_js" data="type=slide&mini=1"></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        document.getElementById('bdshell_js').src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);
+    </script>
 
 </body>
 </html>
