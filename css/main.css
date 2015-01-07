@@ -279,7 +279,9 @@ margin-right:10px;
 .pt90 {
     padding-top: 90px;
 }
-
+p.pr10 {
+padding-right:10px;
+}
 .pb10 {
 padding-bottom:10px;
 }
