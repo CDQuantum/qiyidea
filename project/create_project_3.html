@@ -53,53 +53,208 @@
                         </div>
                     </div>
                     <div class="row" style="margin-top:50px;padding:15px 30px 30px 15px;">
-                        <div class="col-lg-12" style="padding-left:30px;">
-                            <div class="row">
-                                <div class="col-lg-12" style="font-size:18px;">创建项目回报：</div>
+                        <div class="col-lg-3">
+                            <div class="btn-group lyp-dis-tab">
+                                <button type="button" class="btn btn-danger active" value="all-col">全部</button>
+                                <button type="button" class="btn btn-default" value="money-col">筹钱</button>
+                                <button type="button" class="btn btn-default" value="person-col">筹人</button>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-12" style="padding-left:20px;padding-right:30px;">
-                                    <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group row">
+                                <label for="project-name" class="col-sm-3 control-label text-right">众筹天数：</label>
+                                <div class="col-sm-5 paddright0">
+                                    <input type="text" class="form-control" id="project-name" placeholder="不能小于0">
+                                </div>
+                                <div class="col-sm-4">
+                                    <span>天</span><span class="pl10 color-A7A7A7">不大于60天</span>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-12" style="padding:20px 60px 10px 60px;">
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥10回报
+                        </div>
+                    </div>
+                    <div class="row all-col dis-all">
+                        <div class="col-lg-12">
+                            <div class="form-group row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-10" style="font-size:14px;">筹钱：</div>
+                                    <div class="col-sm-1"></div>
+                            </div>
+                            <div class="form-group row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-10" style="padding-left:20px;padding-right:30px;">
+                                        <div class="hr-style" style="margin-bottom:10px;"></div>
                                     </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥20回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥30回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥50回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div" role="alert">
-                                        已创建￥80回报
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissible created-return-div1 glyphicon glyphicon-plus" role="alert" data-toggle="modal" data-target="#create-new-return">
-                                        新增回报
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label">预计筹资：</label>
+                                <div class="col-sm-2 paddright0">
+                                    <input type="text" class="form-control error" maxlength="5" id="project-total-amount" name="project.p_total_amount" value="97" placeholder="不能小于0元" aria-required="true" aria-invalid="true">
+                                    <!--<label id="project-total-amount-error" class="help-block error" for="project-total-amount">ddddd</label>-->
+                                </div>
+                                <div class="col-sm-1" style="margin-top:5px;">
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label" style="margin-top:5px;">回报天数：</label>
+                                <div class="col-sm-2 paddright0">
+                                    <input type="text" class="form-control" id="project-name" placeholder="不能小于0">
+                                </div>
+                                <div class="col-sm-1" style="padding-top:5px;">
+                                    <span>天</span>
+                                </div>
+                            </div>
+                            <div class="form-group row dis-a">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label"></label>
+                                <div class="col-sm-6">
+                                    <a href="javascript:void(0);" class="tx-huibao-1">创建回报</a>
+                                </div>
+                            </div>
+                            <div class="form-group huibao-div-1 row">
+                                <div class="col-lg-12 one-huibao ">
+                                    <div class="col-lg-12" style="padding-left:30px;">
+                                        <div class="row">
+                                            <div class="col-sm-12" style="padding-left:20px;padding-right:30px;">
+                                                <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12" style="padding:20px 60px 10px 60px;">
+                                                <div class="alert alert-warning alert-dismissible created-return-div1 glyphicon glyphicon-plus" role="alert" data-toggle="modal" data-target="#create-new-return">
+                                                    新增回报
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" style="margin-top:30px;margin-bottom:30px;">
-                                <div class="col-sm-3 text-right">
-                                    <button type="button" class="btn btn-warning">&nbsp;&nbsp;预览 &nbsp;&nbsp;</button>
-                                </div>
-                                <div class="col-sm-9 text-center">
-                                    <button type="button" class="btn btn-success" onclick="window.location.href='create_project_2.html'">&nbsp;&nbsp;上一步 &nbsp;&nbsp;</button>
-                                    <button type="button" class="btn btn-success" onclick="window.location.href='create_project_4.html'">&nbsp;&nbsp;下一步 &nbsp;&nbsp;</button>
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label">筹人</label>
+                                <div class="col-sm-9">
+                                    <div class="row">
+                                        <div class="col-sm-12" style="padding-left:20px;padding-right:30px;">
+                                            <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label">招募成员：</label>
+                                <div class="col-sm-2 paddright0">
+                                    <input type="text" class="form-control" id="project-name" placeholder="不能小于0">
+                                </div>
+                                <div class="col-sm-1" style="padding-top:5px;">人</div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label">招募描述：</label>
+                                <div class="col-sm-6">
+                                    <textarea rows="5" class="form-control" id="project-introduction" placeholder="请勿超过100字"></textarea>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="row money-col dis-all dispalynone">
+                        <div class="col-lg-12">
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label">预计筹资：</label>
+                                <div class="col-sm-2 paddright0">
+                                    <input type="text" class="form-control error" maxlength="5" id="project-total-amount" name="project.p_total_amount" value="97" placeholder="不能小于0元" aria-required="true" aria-invalid="true">
+                                    <!--<label id="project-total-amount-error" class="help-block error" for="project-total-amount">ddddd</label>-->
+                                </div>
+                                <div class="col-sm-1" style="margin-top:5px;">
+                                    <span>元</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 control-label text-right">众筹天数：</label>
+                                <div class="col-sm-2 paddright0">
+                                    <input type="text" class="form-control" id="project-name" placeholder="不能小于0">
+                                </div>
+                                <div class="col-sm-2">
+                                    <span>天</span><span class="pl10 color-A7A7A7">不大于60天</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label" style="margin-top:5px;">回报天数：</label>
+                                <div class="col-sm-2 paddright0">
+                                    <input type="text" class="form-control" id="project-name" placeholder="不能小于0">
+                                </div>
+                                <div class="col-sm-1" style="padding-top:5px;">
+                                    <span>天</span>
+                                </div>
+                            </div>
+                            <div class="form-group row dis-a">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label"></label>
+                                <div class="col-sm-6">
+                                    <a href="javascript:void(0);" class="tx-huibao-2">创建回报</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row person-col dis-all dispalynone">
+                        <div class="col-lg-12">
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label">招募成员：</label>
+                                <div class="col-sm-2 paddright0">
+                                    <input type="text" class="form-control" id="project-name" placeholder="不能小于0">
+                                </div>
+                                <div class="col-sm-1" style="padding-top:5px;">人</div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1"></div>
+                                <label for="project-name" class="col-sm-2 text-right control-label">招募描述：</label>
+                                <div class="col-sm-6">
+                                    <textarea rows="5" class="form-control" id="project-introduction" placeholder="请勿超过100字"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="row dispalynone huibao-div-2">
+                       <div class="col-lg-12 two-huibao"></div>
+                   </div>
+                    <div class="row" style="margin-top:30px;margin-bottom:30px;">
+                        <div class="col-sm-3 text-right">
+                            <button type="button" class="btn btn-warning">&nbsp;&nbsp;预览 &nbsp;&nbsp;</button>
+                        </div>
+                        <div class="col-sm-9 text-center">
+                            <button type="button" class="btn btn-success" onclick="window.location.href='create_project_2.html'">&nbsp;&nbsp;上一步 &nbsp;&nbsp;</button>
+                            <button type="button" class="btn btn-success" onclick="window.location.href='create_project_4.html'">&nbsp;&nbsp;下一步 &nbsp;&nbsp;</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="row dispalynone huibao-div">
+        <div class="col-lg-12" style="padding-left:30px;">
+            <div class="row">
+                <div class="col-sm-12" style="padding-left:20px;padding-right:30px;">
+                    <div class="hr-style" style="margin-top:15px;margin-bottom:10px;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" style="padding:20px 60px 10px 60px;">
+                    <div class="alert alert-warning alert-dismissible created-return-div1 glyphicon glyphicon-plus" role="alert" data-toggle="modal" data-target="#create-new-return">
+                        新增回报
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
     <div class="clearfix mpt40 mpb40"></div>
 
     <div id="footer"></div>
@@ -232,7 +387,7 @@
     </div>
 
 
-  
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -242,7 +397,7 @@
     <script src="../js/assets/ie10-viewport-bug-workaround.js"></script>
     <script src="../js/fileupload-ui/uploadPreview.min.js"></script>
     <script type="text/javascript">
-       
+
         $(function () {
             //公共部分加载
             $("#head").load("../head.html");
@@ -251,11 +406,34 @@
                 $("#create-new-return").modal("hide");
             });
 
-         
 
-        })
 
-      
+        });
+        $('.lyp-dis-tab button').click(function () {
+            $('.lyp-dis-tab button').removeClass('active');
+            $('.lyp-dis-tab button').removeClass('btn-danger');
+            $('.lyp-dis-tab button').addClass('btn-default');
+            $(this).addClass('active');
+            $(this).removeClass('btn-default');
+            $(this).addClass('btn-danger');
+            $('.dis-all').hide();
+            $('.huibao-div').hide();
+            $('.' + $(this).attr('value')).show();
+            $('.' + $(this).attr('value')).find('.dis-a').show();
+            $('.huibao-div-2').hide();
+            $('.huibao-div-1').hide();
+        });
+        $('.tx-huibao-1').click(function () {
+            $(this).parents('.dis-a').hide();
+            $('.one-huibao').html($('.huibao-div').html());
+            $('.huibao-div-1').show();
+        });
+        $('.tx-huibao-2').click(function () {
+            $(this).parents('.dis-a').hide();
+            $('.two-huibao').html($('.huibao-div').html());
+            $('.huibao-div-1').hide();
+            $('.huibao-div-2').show();
+        });
 
     </script>
 
