@@ -1183,3 +1183,13 @@ ul.ren-top-project-tab {
 	 
 	 
 }
+
+
+.hidden
+{
+	display: none;
+}
+.visible
+{
+	display: block;
+}

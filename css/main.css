@@ -316,7 +316,11 @@ div.ptb10 {
 padding-top:10px;
 padding-bottom:10px;
 }
-
+p.limit-h34 {
+max-height:34px;
+min-height:30px;
+overflow:hidden;
+}
 div.mpt40 {
     margin-top: 40px;
 }
