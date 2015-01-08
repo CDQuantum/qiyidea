@@ -320,6 +320,7 @@ p.limit-h34 {
 max-height:34px;
 min-height:30px;
 overflow:hidden;
+height:34px;
 }
 div.mpt40 {
     margin-top: 40px;
