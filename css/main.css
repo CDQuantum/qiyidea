@@ -324,7 +324,10 @@ overflow:hidden;
 div.mpt40 {
     margin-top: 40px;
 }
-
+p.plr15 {
+padding-left:15px;
+padding-right:15px;
+}
 div.mpl40 {
     margin-left: 40px;
 }
