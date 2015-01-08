@@ -279,7 +279,9 @@ margin-right:10px;
 .pt90 {
     padding-top: 90px;
 }
-
+p.pr10 {
+padding-right:10px;
+}
 .pb10 {
 padding-bottom:10px;
 }
@@ -314,7 +316,11 @@ div.ptb10 {
 padding-top:10px;
 padding-bottom:10px;
 }
-
+p.limit-h34 {
+max-height:34px;
+min-height:30px;
+overflow:hidden;
+}
 div.mpt40 {
     margin-top: 40px;
 }

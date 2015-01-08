@@ -1123,3 +1123,73 @@ ul.ren-top-project-tab {
 .ren-project-team-square .square_ul li .square-2{width:232px;background-position:-10px -89px;z-index: 40;}
 .ren-project-team-square .square_ul li .square-3{width:348px; background-position:-10px -129px;z-index: 30;}
 .ren-project-team-square .square_ul li .square-4{width:468px; background-position:-10px -169px;z-index: 20;}
+
+
+
+/* index-new 2015.1.7 */
+.ren-img-hover-box {
+	 position: relative;
+	 overflow: hidden;
+	 display: inline;
+	 margin: 0 10px;
+     float:left;
+}
+
+/* The banner divs */
+.ren-img-hover-box img {
+	 display: block;
+	 border: none;
+}
+
+/* The dark animated divs */
+.ren-img-hover-box div.rencorner {
+	 position: absolute;
+	 z-index: 100;
+	 background-color: #111;
+	 width: 0px;
+	 height: 0px;
+	 cursor: pointer;
+
+	/*	Setting a really big value for border-radius
+		will make the divs perfect circles */
+	 -moz-border-radius:0px;
+	 -webkit-border-radius:0px;
+	 border-radius:0px;
+}
+
+/*	Positioning the animated divs outside the
+	corners of the visible banner area: */
+    .ren-img-hover-box .rencorner {left:-0px;top:-0px; }
+.banner .cornerTL { left:-63px; top:-63px; }
+.banner .cornerTR { right:-63px; top:-63px; }
+.banner .cornerBL { left:-63px; bottom:-63px; }
+.banner .cornerBR { right:-63px; bottom:-63px; }
+
+/* The "Visit Company" text */
+.ren-img-hover-box .companyInfo {
+     width: 100%;
+	 left: 0;
+	 z-index: 300;
+	 position: absolute;
+	 font-family:  "Microsoft Yahei",Tahoma, Arial, Helvetica, sans-serif;
+	 color: #FFF;
+	 text-align: center;
+      cursor: pointer;
+     display: none;	/* hidden by default */
+}
+.ren-img-hover-box p {
+      
+	 font-size: 16px;
+	 
+	 
+}
+
+
+.hidden
+{
+	display: none;
+}
+.visible
+{
+	display: block;
+}
