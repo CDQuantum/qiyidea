@@ -6,7 +6,7 @@
                 scrollspeed: 500,
                 delay: 5000,
                 itemstodisplay: 4,
-                autoscroll: false,
+                autoscroll: true,
                 onthumbnailclick: null
             }, options);
             return this.each(function() {
@@ -119,31 +119,42 @@
                 function showThumbs() {
                     var current = $('.visible');
                     var scrollSpeed = speed;
-
-                    if (direction == "forward") {
+                    //right
+                    if (direction == "forward") {                        leftbutton.css('background-image', 'url(../img/left_arrow.jpg)');
                         index++;
-                        if (index < noOfBlocks) {
-                            $('>div:eq(' + index + ')', slidercontents).removeClass('hidden').addClass('visible').css({
-                                'left': getDimensions(-containerWidth)
-                            }).stop().animate({ 'left': '+=' + getDimensions(containerWidth) }, scrollSpeed);
-
+                        if (index < noOfBlocks) {
+
+                            $('>div:eq(' + index + ')', slidercontents).removeClass('hidden').addClass('visible').css({
+                                'left': getDimensions(-containerWidth)
+                            }).stop().animate({ 'left': '+=' + getDimensions(containerWidth) }, scrollSpeed);
                             current.stop().animate({ 'left': '+=' + getDimensions(containerWidth) }, scrollSpeed,
-                            function() {
-                                $(this).removeClass('visible').addClass('hidden');
-                                $(this).css('left', getDimensions(-containerWidth));
+                            function () {
+
+                                $(this).removeClass('visible').addClass('hidden');
+                                $(this).css('left', getDimensions(-containerWidth));
+
                             });
-
-                        } else index = noOfBlocks - 1;
-                    }
-                    else if (direction == "backward") {
+                        } else {
+                            index = noOfBlocks - 1;
+                            rightbutton.hide();                        }
+                    }
+                    else if (direction == "backward") {  //left                        rightbutton.show();
                         index--;
-                        if (index >= 0) {
+                        if (index >= 0) {
+
                             $('>div:eq(' + index + ')', slidercontents).css('left', getDimensions(containerWidth)).removeClass('hidden').addClass('visible').stop().animate({ 'left': '-=' + getDimensions(containerWidth) }, scrollSpeed);
-                            current.stop().animate({ 'left': '-=' + getDimensions(containerWidth) }, scrollSpeed, function() {
+                            current.stop().animate({ 'left': '-=' + getDimensions(containerWidth) }, scrollSpeed, function () {
+
                                 $(this).removeClass('visible').addClass('hidden');
-                                $(this).css('left', left);
-                            });
-                        } else index = 0;
+                                $(this).css('left', left);
+
+                            });
+
+                        } else {
+                            index = 0;
+                            //leftbutton.hide();
+                            leftbutton.css('background-image', 'none');
+                        }
                     }
                 }
             });

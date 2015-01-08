@@ -1193,3 +1193,37 @@ ul.ren-top-project-tab {
 {
 	display: block;
 }
+
+.jscarousal {
+    width:1132px;
+    max-width: none !important;
+    margin:0 auto;
+}
+.jscarousal-contents{
+width: 1080px;height:395px; float: left;position: relative;overflow: hidden;
+}
+.jscarousal .jscarousal-left, .jscarousal .jscarousal-right
+{
+	float: left;
+	width: 20px;
+	height: 44px;
+	background-color: #fbfbfb;
+	color: White;
+	position: relative;
+	top: 150px;
+	cursor: pointer;
+}
+.jscarousal .jscarousal-left
+{
+	background-image: url(../img/left_arrow.jpg);
+	background-repeat: no-repeat;
+    margin-right:20px;
+	background-position: left;
+}
+.jscarousal .jscarousal-right
+{
+	background-image: url(../img/right_arrow.jpg);
+	background-repeat: no-repeat;
+    margin-left:20px;
+	background-position: right;
+}
